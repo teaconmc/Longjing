@@ -47,13 +47,13 @@ async function getInstallationToken(jwtToken: string): Promise<string> {
   return request.data.token
 }
 
-async function doFinalTrigger(installationToken: string, target: string): Promise<void> {
+async function doBuildCallbackTrigger(installationToken: string, target: string): Promise<void> {
   const octokitRepos = new Octokit({ auth: installationToken })
 
   const request = await octokitRepos.request('POST /repos/{owner}/{repo}/dispatches', {
+    event_type: 'build_callback',
     owner: 'teaconmc',
     repo: target,
-    event_type: 'callback',
   })
 
   check(request.status === 204)
@@ -64,7 +64,7 @@ export async function handleRequest(request: Request): Promise<Response> {
   check(method === 'POST', 'Method should be POST')
 
   const url = new URL(request.url)
-  check(url.pathname === '/callback', 'Unrecognized request path: ' + url.pathname)
+  check(url.pathname === '/build-callback', 'Unrecognized request path: ' + url.pathname)
 
   const { target, source } = await request.json()
   check(targetRegexp.test(target), 'Invalid target: ' + target)
@@ -75,7 +75,7 @@ export async function handleRequest(request: Request): Promise<Response> {
 
   try {
     const accessToken = await getInstallationToken(jwtToken)
-    await doFinalTrigger(accessToken, target)
+    await doBuildCallbackTrigger(accessToken, target)
   } catch (e) {
     check(false, 'Failed to trigger repository because of network reasons: ' + target)
   }
