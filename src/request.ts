@@ -33,8 +33,8 @@ async function toJWT(payload: object) {
   return msgHeaders + '.' + msg + '.' + msgFooter
 }
 
-async function getInstallationToken(jwtToken: string): Promise<string> {
-  const octokitApp = new Octokit({ auth: jwtToken })
+async function getInstallationToken(token: string): Promise<string> {
+  const octokitApp = new Octokit({ auth: token })
 
   const requestPre = await octokitApp.request('GET /app/installations')
 
@@ -47,13 +47,14 @@ async function getInstallationToken(jwtToken: string): Promise<string> {
   return request.data.token
 }
 
-async function doBuildCallbackTrigger(installationToken: string, target: string): Promise<void> {
-  const octokitRepos = new Octokit({ auth: installationToken })
+async function doBuildCallbackTrigger<P extends { target: string }>(token: string, payload: P): Promise<void> {
+  const octokitRepos = new Octokit({ auth: token })
 
   const request = await octokitRepos.request('POST /repos/{owner}/{repo}/dispatches', {
     event_type: 'build_callback',
+    client_payload: payload,
+    repo: payload.target,
     owner: 'teaconmc',
-    repo: target,
   })
 
   check(request.status === 204)
@@ -75,7 +76,7 @@ export async function handleRequest(request: Request): Promise<Response> {
 
   try {
     const accessToken = await getInstallationToken(jwtToken)
-    await doBuildCallbackTrigger(accessToken, target)
+    await doBuildCallbackTrigger(accessToken, { source, target })
   } catch (e) {
     check(false, 'Failed to trigger repository because of network reasons: ' + target)
   }
