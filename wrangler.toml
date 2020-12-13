@@ -1,0 +1,7 @@
+name = "teacon-repository-trigger"
+type = "webpack"
+account_id = "ecf2250a6ac578ba3bcc9a98db708498"
+workers_dev = true
+route = "repository-trigger.teacon.org/*"
+zone_id = "bd5a95260d191c231b6d3f1280db13f9"
+webpack_config = "webpack.config.js"

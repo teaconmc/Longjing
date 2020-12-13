@@ -1,0 +1,26 @@
+{
+  "name": "teacon-repository-trigger",
+  "version": "0.1.0",
+  "description": "TeaCon Repository Trigger",
+  "main": "dist/worker.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "NODE_ENV=development npm run build",
+    "format": "prettier --write '**/*.{ts,js,css,json,md}'"
+  },
+  "author": "TeaCon",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^2.1.0",
+    "@types/node": "^8.5.0",
+    "prettier": "^2.2.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@octokit/core": "^3.2.4",
+    "js-base64": "^3.6.0"
+  }
+}

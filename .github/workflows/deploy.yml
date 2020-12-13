@@ -1,0 +1,20 @@
+name: Depoly Repository Trigger
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      TEACON_BOT_APP_ID: 92556
+      TEACON_BOT_PRIVATE_KEY: ${{ secrets.TEACON_BOT_PRIVATE_KEY }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@1.2.0
+        with:
+          apiToken: ${{ secrets.TEACON_CLOUDFLARE_WORKERS_API_TOKEN }}
