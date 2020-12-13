@@ -1,7 +1,7 @@
 {
-  "name": "teacon-repository-trigger",
+  "name": "teacon-longjing",
   "version": "0.1.0",
-  "description": "TeaCon Repository Trigger",
+  "description": "Make a Cup of Longjing Tea",
   "main": "dist/worker.js",
   "scripts": {
     "build": "webpack",
