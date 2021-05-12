@@ -1,0 +1,99 @@
+import org.gradle.api.tasks.bundling.AbstractArchiveTask
+
+afterProject { project ->
+    // Only do this on root project for now. 
+    // We are not sure about multi-project builds - we will come back later.
+    if (project != rootProject) {
+        return
+    }
+
+    // Apply maven-publishing plugin if haven't.
+    if (!project.pluginManager.hasPlugin("maven-publish")) {
+        project.pluginManager.apply "maven-publish"
+    }
+    // Apply signing plugin if haven't.
+    if (!project.pluginManager.hasPlugin("signing")) {
+        project.pluginManager.apply "signing"
+    }
+
+    // Try locating the task that produces production-ready artifact.
+    // The precedence, from high to low, is as following:
+    //   1. If `teaconArtifactTask' is defined in project extension, use the value specified there.
+    //   2. If plugin `com.github.johnrengelman.shadow` is present, use `shadowJar` from that plugin.
+    //   3. Use `jar`, failing if not found.
+    // The task is expected to have type of org.gradle.api.tasks.bundling.AbstractArchiveTask.
+    def targetTask = project.jar
+    if (project.pluginManager.hasPlugin("com.github.johnrengelman.shadow")) {
+        targetTask = project.tasks.shadowJar
+    }
+    if (project.ext.has("teaconArtifactTask")) {
+        targetTask = project.ext.teaconArtifactTask
+    }
+    assert targetTask instanceof AbstractArchiveTask
+
+    // Configure our publication task
+    project.publishing {
+        // Define the artifact to publish
+        publications {
+            teacon(MavenPublication) {
+                // Hard-code group id to signify that we produced these builds.
+                groupId = "org.teacon.teacon2021"
+                // Assign a unique (maybe) artifact id
+                artifactId = project.archivesBaseName
+                // Append GitHub Action run number as part of the version number
+                // We use hyphen to comply both Maven-style versioning (build number)
+                // as well as SemVer (pre-release version number).
+                version += "-${System.env.GITHUB_RUN_NUMBER}"
+
+                artifact targetTask
+
+                pom {
+                    description = 'TeaCon2021 participating mod produced by Longjing, the TeaCon2021 Continuous Integration Framework.'
+                }
+            }
+        }
+
+        // Define our target repository
+        repositories {
+            maven {
+                name = "teacon"
+                // TODO We moved bucket name to the endpoint URL to trick gradle to use the 
+                // virtual-host-style URL. Before gradle adds the support for generating a 
+                // virtual-host-style URL for requesting, we probably want to use another 
+                // S3-compliant service that supports path-style access.
+                url = "s3://ci/maven"
+                credentials(AwsCredentials) {
+                    accessKey System.env.S3_ACCESS_KEY
+                    secretKey System.env.S3_SECRET_KEY
+                }
+            }
+        }
+
+        /*
+         * After defining our publication and repository, executing the task `publishTeaconPublicationToTeaconRepository`
+         * will publish the build result to our repository. Example:
+         *
+         *     ./gradlew -I setup.gradle publishTeaconPublicationToTeaconRepository
+         *
+         * The -I option is to specify this script as an init script, so that this script get executed against the
+         * target project.
+         */
+    }
+
+    project.signing {
+        def keyId = project.findProperty('signKeyId')
+        def key = project.findProperty('signKey')
+        def keyPassword = project.findProperty('signKeyPassword')
+        useInMemoryPgpKeys(keyId, key, keyPassword)
+        sign project.publishing.publications.teacon 
+    }
+    
+    project.tasks.named("publishTeaconPublicationToTeaconRepository") {
+        doLast {
+            project.file("../artifact").text = "${publication.groupId}:${publication.artifactId}:${publication.version}"
+            //publication.artifacts.collect { artifact ->
+            //    println "${publication.groupId}:${publication.artifactId}:${publication.version}:${artifact.classifier}:${artifact.extension}"
+            //}
+        }
+    }
+}
