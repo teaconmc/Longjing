@@ -1,8 +1,5 @@
 name: Scheduled Polling
 on:
-  schedule:
-    # 42th minute of every hour.
-    - cron: '42 * * * *'
   workflow_dispatch:
 jobs:
   fetch-update:
