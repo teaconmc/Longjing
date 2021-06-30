@@ -61,7 +61,7 @@ afterProject { project ->
                 // virtual-host-style URL. Before gradle adds the support for generating a 
                 // virtual-host-style URL for requesting, we probably want to use another 
                 // S3-compliant service that supports path-style access.
-                url = "s3://ci/maven"
+                url = "s3://2021/ci/maven"
                 credentials(AwsCredentials) {
                     accessKey System.env.S3_ACCESS_KEY
                     secretKey System.env.S3_SECRET_KEY
