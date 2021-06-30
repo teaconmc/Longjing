@@ -39,9 +39,9 @@ jobs:
         if: $${{ steps.gradlew-presence.outputs.GRADLEW }}
         shell: bash
         env:
-          ORG_GRADLE_PROJECT_signKey: $${{ secrets.PGP_KEY }}
-          ORG_GRADLE_PROJECT_signKeyId: $${{ secrets.PGP_ID }}
-          ORG_GRADLE_PROJECT_signKeyPassword: $${{ secrets.PGP_PWD }}
+          PGP_KEY: $${{ secrets.PGP_KEY }}
+          PGP_ID: $${{ secrets.PGP_ID }}
+          PGP_PWD: $${{ secrets.PGP_PWD }}
           S3_ENDPOINT: $${{ secrets.S3_ENDPOINT }}
           S3_ACCESS_KEY: $${{ secrets.S3_ACCESS_KEY }}
           S3_SECRET_KEY: $${{ secrets.S3_SECRET_KEY }}

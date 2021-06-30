@@ -38,7 +38,7 @@ ACCESS_TOKEN_URL=`curl --silent -H "Authorization: Bearer $JWT" -H "Accept: appl
 TOKEN=`curl --silent -X POST -H "Authorization: Bearer $JWT" -H "Accept: application/vnd.github.v3+json" $ACCESS_TOKEN_URL | jq -r .token`
 
 # Step 7: Configure local git to use GitHub App's credentials.
-git config credential.helper 'store'
+git config --local credential.helper 'store'
 echo "https://x-access-token:$TOKEN@github.com" > ~/.git-credentials
 git config --local user.email '75922763+teacon-bot[bot]@users.noreply.github.com'
 git config --local user.name '龙井 [TeaCon CI Service]'

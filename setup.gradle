@@ -81,9 +81,9 @@ afterProject { project ->
     }
 
     project.signing {
-        def keyId = project.findProperty('signKeyId')
-        def key = project.findProperty('signKey')
-        def keyPassword = project.findProperty('signKeyPassword')
+        def keyId = System.env.PGP_ID
+        def key = System.env.PGP_KEY
+        def keyPassword = System.env.PGP_PWD
         useInMemoryPgpKeys(keyId, key, keyPassword)
         sign project.publishing.publications.teacon 
     }
