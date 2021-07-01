@@ -15,12 +15,17 @@ import urllib.request
 team_list_url = 'https://biluochun.teacon.cn/api/team/'
 team_list = []
 try:
-    with urllib.request.urlopen(team_list_url) as f:
+    print('Fetching team/mod list')
+    with urllib.request.urlopen(team_list_url, timeout = 10) as f:
         team_list = json.load(f)
 except:
     print('Error occured while fetching participting team/mod list')
+    if os.getenv('GITHUB', False):
+        print('::error::Error occured while fetching participting team/mod list, check log for details')
     print(sys.exc_info())
     exit(-1)
+else:
+    print('Successfully fetched team/mod list')
 
 # Load GitHub Action Workflow template
 # As we only perform simple string subtitution, we uses the built-in string.Template
@@ -30,6 +35,15 @@ with open('workflow_template.yaml') as f:
 
 # Check each team.
 for team in team_list:
+    print(f"Fetching information for team #{team['id']} ({team['name']}) from {team['repo']}")
+
+    if not team['repo']:
+        print(f"Team #{team['id']} ({team['name']}) doesn't seem to provide a valid git repo, skipping")
+        print(f"The repo URI is {team['repo']}")
+        if os.getenv('GITHUB', False):
+            print(f"::warning::Team #{team['id']} ({team['name']}) seems to have an invalid repo: {team['repo']}")
+        continue
+    
     # Escape ' by doubling it. YAML decides to use this for single-quoted strings.
     team['name'] = team['name'].replace("'", "''")
     team['mod_name'] = team['mod_name'].replace("'", "''")
@@ -61,7 +75,16 @@ for team in team_list:
     if os.path.exists(f"{info_dir}/HEAD"):
         with open(f"{info_dir}/HEAD") as f:
             previous_head = f.read()
-    get_head_process = subprocess.run(['git', 'ls-remote', team['repo'], 'HEAD'], capture_output = True, text = True)
+    try:
+        get_head_process = subprocess.run(['git', 'ls-remote', team['repo'], 'HEAD'], 
+            timeout = 10,
+            capture_output = True, 
+            text = True)
+    except subprocess.TimeoutExpired:
+        print(f"Timeout while fetching git repo information for team #{team['id']} (upstream {team['repo']})")
+        if os.getenv('GITHUB', False):
+            print(f"::warning::Timeout while fetching {team['repo']} for team #{team['id']}. Information about this team will not be updated.")
+        continue
     if get_head_process.returncode == 0:
         current_head = None
         if get_head_process.stdout:
