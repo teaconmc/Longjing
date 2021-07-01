@@ -1,0 +1,77 @@
+name: 'MarbleGate 纯白之门'
+on:
+  push:
+    paths:
+      - 'mods/team-4/HEAD'
+jobs:
+  publish:
+    name: 'Build LieLieTea Tea Shop 烈烈茶本铺'
+    environment: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout build environment
+        uses: actions/checkout@v2
+      - name: Set up JDK 8
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '8'
+      - name: Apply Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          restore-keys:
+            ${{ runner.os }}-gradle-
+      # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
+      # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
+      # sake of a faster build.
+      - name: Checkout mod repository
+        shell: bash
+        run: |
+          cd mods/team-4
+          mkdir repo
+          cd repo
+          git init
+          git remote add origin `cat ../remote`
+          git fetch --depth=1 origin `cat ../HEAD`
+          git reset --hard `cat ../HEAD`
+      - name: Check Gradle wrapper presence
+        id: gradlew-presence
+        shell: bash
+        run: |
+          cd mods/team-4/repo/
+          if [[ -f gradlew ]]
+          then
+            echo '::set-output name=GRADLEW::true'
+          else
+            echo '::set-output name=GRADLEW::false'
+          fi
+      - name: Publish
+        if: ${{ steps.gradlew-presence.outputs.GRADLEW }}
+        shell: bash
+        env:
+          LONGJING: "true"
+          PGP_KEY: ${{ secrets.PGP_KEY }}
+          PGP_ID: ${{ secrets.PGP_ID }}
+          PGP_PWD: ${{ secrets.PGP_PWD }}
+          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
+          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
+        run: |
+          cd mods/team-4/repo/
+          chmod +x ./gradlew
+          ./gradlew -Dorg.gradle.s3.endpoint=${S3_ENDPOINT} -I ../../../setup.gradle publishTeaconPublicationToTeaconRepository
+      # This part won't work because multiple action runners can do simultaneous pushes
+      # TODO Find an alternative way to do this
+      #- name: Update Artifact ID
+      #  if: ${{ steps.gradlew-presence.outputs.GRADLEW }}
+      #  shell: bash
+      #  run: |
+      #    bash commit_info.sh
+      #    cd mods/team-4/
+      #    git add artifact
+      #    git commit -m "`date -u`: update artifact id" || true
+      #    git push
