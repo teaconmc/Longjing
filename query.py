@@ -20,7 +20,7 @@ try:
         team_list = json.load(f)
 except:
     print('Error occured while fetching participting team/mod list')
-    if os.getenv('GITHUB', False):
+    if os.getenv('GITHUB_ACTIONS', False):
         print('::error::Error occured while fetching participting team/mod list, check log for details')
     print(sys.exc_info())
     exit(-1)
@@ -40,7 +40,7 @@ for team in team_list:
     if not team['repo']:
         print(f"Team #{team['id']} ({team['name']}) doesn't seem to provide a valid git repo, skipping")
         print(f"The repo URI is {team['repo']}")
-        if os.getenv('GITHUB', False):
+        if os.getenv('GITHUB_ACTIONS', False):
             print(f"::warning::Team #{team['id']} ({team['name']}) seems to have an invalid repo: {team['repo']}")
         continue
     
@@ -57,9 +57,10 @@ for team in team_list:
     if not os.path.exists(info_dir):
         # Create meta information directory
         os.makedirs(info_dir)
-        # Create workflow run
-        with open(f".github/workflows/team-{team['id']}.yaml", 'w') as f:
-            f.write(workflow_template.substitute(team))
+
+    # Create workflow run, or force update it if already exist
+    with open(f".github/workflows/team-{team['id']}.yaml", 'w') as f:
+        f.write(workflow_template.substitute(team))
     
     # Write repo address to $info_dir/remote
     # This is always done in case that a team updates their remote repo address.
@@ -82,7 +83,7 @@ for team in team_list:
             text = True)
     except subprocess.TimeoutExpired:
         print(f"Timeout while fetching git repo information for team #{team['id']} (upstream {team['repo']})")
-        if os.getenv('GITHUB', False):
+        if os.getenv('GITHUB_ACTIONS', False):
             print(f"::warning::Timeout while fetching {team['repo']} for team #{team['id']}. Information about this team will not be updated.")
         continue
     if get_head_process.returncode == 0:

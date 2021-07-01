@@ -32,7 +32,7 @@ jobs:
         shell: bash
         run: |
           git add .github/workflows
-          git commit -m "`date -u`: create new build workflow(s)" || true
+          git commit -m "`date -u`: create/update new build workflow(s)" || true
           git add mods
           git commit -m "`date -u`: trigger new build(s)" || true
           git push
