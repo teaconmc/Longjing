@@ -5,12 +5,26 @@ on:
       - 'mods/team-$id/HEAD'
 jobs:
   publish:
-    name: Build $mod_name
+    name: 'Build $mod_name'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout build environment
         uses: actions/checkout@v2
+      - name: Set up JDK 8
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '8'
+      - name: Apply Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: $${{ runner.os }}-gradle-$${{ hashFiles('**/*.gradle*') }}
+          restore-keys:
+            $${{ runner.os }}-gradle-
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
@@ -39,6 +53,7 @@ jobs:
         if: $${{ steps.gradlew-presence.outputs.GRADLEW }}
         shell: bash
         env:
+          LONGJING: "true"
           PGP_KEY: $${{ secrets.PGP_KEY }}
           PGP_ID: $${{ secrets.PGP_ID }}
           PGP_PWD: $${{ secrets.PGP_PWD }}
@@ -49,12 +64,14 @@ jobs:
           cd mods/team-$id/repo/
           chmod +x ./gradlew
           ./gradlew -Dorg.gradle.s3.endpoint=$${S3_ENDPOINT} -I ../../../setup.gradle publishTeaconPublicationToTeaconRepository
-      - name: Update Artifact ID
-        if: $${{ steps.gradlew-presence.outputs.GRADLEW }}
-        shell: bash
-        run: |
-          cd mods/team-$id/
-          bash commit_info.sh
-          git add artifact
-          git commit -m "`date -u`: update artifact id" || true
-          git push
+      # This part won't work because multiple action runners can do simultaneous pushes
+      # TODO Find an alternative way to do this
+      #- name: Update Artifact ID
+      #  if: $${{ steps.gradlew-presence.outputs.GRADLEW }}
+      #  shell: bash
+      #  run: |
+      #    bash commit_info.sh
+      #    cd mods/team-$id/
+      #    git add artifact
+      #    git commit -m "`date -u`: update artifact id" || true
+      #    git push

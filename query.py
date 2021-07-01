@@ -30,6 +30,10 @@ with open('workflow_template.yaml') as f:
 
 # Check each team.
 for team in team_list:
+    # Escape ' by doubling it. YAML decides to use this for single-quoted strings.
+    team['name'] = team['name'].replace("'", "''")
+    team['mod_name'] = team['mod_name'].replace("'", "''")
+
     # Each team gets their own directory to storing related information.
     # Internal team id is used because it is permenant.
     info_dir = f"./mods/team-{team['id']}"

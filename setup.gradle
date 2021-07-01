@@ -31,6 +31,10 @@ afterProject { project ->
     }
     assert targetTask instanceof AbstractArchiveTask
 
+    if ("modid" == project.archivesBaseName) {
+        println "::warning::Using default value ('modid') for archive base name; this is very likely to cause conflicts"
+    }
+
     // Configure our publication task
     project.publishing {
         // Define the artifact to publish
@@ -43,7 +47,7 @@ afterProject { project ->
                 // Append GitHub Action run number as part of the version number
                 // We use hyphen to comply both Maven-style versioning (build number)
                 // as well as SemVer (pre-release version number).
-                version += "-${System.env.GITHUB_RUN_NUMBER}"
+                version += System.env.GITHUB_RUN_NUMBER ? "-${System.env.GITHUB_RUN_NUMBER}" : "-private"
 
                 artifact targetTask
 
@@ -89,11 +93,12 @@ afterProject { project ->
     }
     
     project.tasks.named("publishTeaconPublicationToTeaconRepository") {
-        doLast {
-            project.file("../artifact").text = "${publication.groupId}:${publication.artifactId}:${publication.version}"
-            //publication.artifacts.collect { artifact ->
-            //    println "${publication.groupId}:${publication.artifactId}:${publication.version}:${artifact.classifier}:${artifact.extension}"
-            //}
+        onlyIf {
+            System.env.LONGJING
         }
+        // defuncted due to design issue
+        //doLast {
+        //    project.file("../artifact").text = "${publication.groupId}:${publication.artifactId}:${publication.version}"
+        //}
     }
 }
