@@ -96,9 +96,11 @@ afterProject { project ->
         onlyIf {
             System.env.LONGJING
         }
-        // defuncted due to design issue
-        //doLast {
-        //    project.file("../artifact").text = "${publication.groupId}:${publication.artifactId}:${publication.version}"
-        //}
+        doLast {
+            if (System.env.GITHUB_ACTIONS) {
+                println "::set-output name=maven::${publication.groupId}:${publication.artifactId}:${publication.version}"
+                println "::set-output name=download::https://archive.teacon.cn/2021/ci/maven/${publication.groupId.replace('.', '/')}/${publication.artifactId}/${publication.version}/${publication.artifactId}-${publication.version}.jar"
+            }
+        }
     }
 }
