@@ -11,8 +11,17 @@ jobs:
     steps:
       - name: Checkout 
         uses: actions/checkout@v2
+      - name: Auth as Github App
+        id: auth-as-github-app
+        shell: bash
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+        run: bash auth.sh
+      - name: Re-Checkout
+        uses: actions/checkout@v2
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ steps.auth-as-github-app.outputs.token }}
       - name: Setup Python3
         uses: actions/setup-python@v2
         with:
@@ -21,16 +30,10 @@ jobs:
       - name: Query updates
         shell: bash
         run: python3 query.py
-      - name: Auth as Github App
-        shell: bash
-        #env:
-        #  APP_ID: ${{ secrets.APP_ID }}
-        #  APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
-        #run: bash auth.sh && bash commit_info.sh
-        run: bash commit_info.sh
       - name: Commit changes
         shell: bash
         run: |
+          source commit_info.sh
           git add .github/workflows
           git commit -m "`date -u`: create/update new build workflow(s)" || true
           git add mods

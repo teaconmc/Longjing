@@ -19,7 +19,7 @@ HEAD='{"alg":"RS256","typ":"JWT"}'
 # Env variable $APP_ID is supplied via GitHub Action.
 TIME_NOW=`date +%s`
 IAT=`expr $TIME_NOW - 30`
-EXP=`expr $TIME_NOW + 30`
+EXP=`expr $TIME_NOW + 60`
 PAYLOAD="{\"iat\":$IAT,\"exp\":$EXP,\"iss\":$APP_ID}"
 
 # Step 3: Assemble the payload to sign and produce the signature.
@@ -37,8 +37,9 @@ ACCESS_TOKEN_URL=`curl --silent -H "Authorization: Bearer $JWT" -H "Accept: appl
 # Step 6: Authenticate as a GitHub App installation.
 TOKEN=`curl --silent -X POST -H "Authorization: Bearer $JWT" -H "Accept: application/vnd.github.v3+json" $ACCESS_TOKEN_URL | jq -r .token`
 
-# Step 7: Configure local git to use GitHub App's credentials.
-git config --local credential.helper 'store'
-echo "https://x-access-token:$TOKEN@github.com" > ~/.git-credentials
-git config --local user.email '75922763+teacon-bot[bot]@users.noreply.github.com'
-git config --local user.name '龙井 [TeaCon CI Service]'
+# Step 7: Passdown token to further steps in our GitHub Action workflow, if detected
+if [ $GITHUB_ACTIONS ]
+then
+  echo "::add-mask::$TOKEN"
+  echo "::set-output name=token::$TOKEN"
+fi
