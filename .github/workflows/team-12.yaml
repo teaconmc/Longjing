@@ -43,6 +43,7 @@ jobs:
         with:
           min-wrapper-count: 1
       - name: Publish
+        id: publish
         shell: bash
         env:
           LONGJING: "true"
@@ -56,13 +57,11 @@ jobs:
           cd mods/team-12/repo/
           chmod +x ./gradlew
           ./gradlew -Dorg.gradle.s3.endpoint=${S3_ENDPOINT} -I ../../../setup.gradle publishTeaconPublicationToTeaconRepository
-      # This part won't work because multiple action runners can do simultaneous pushes
-      # TODO Find an alternative way to do this
-      #- name: Update Artifact ID
-      #  shell: bash
-      #  run: |
-      #    bash commit_info.sh
-      #    cd mods/team-12/
-      #    git add artifact
-      #    git commit -m "`date -u`: update artifact id" || true
-      #    git push
+      - name: Add notice
+        shell: bash
+        env:
+          TEAM_ID: 12
+          TOKEN: ${{ github.token }}
+          MAVEN_COORD: ${{ steps.publish.outputs.maven }}
+          DOWNLOAD_LINK: ${{ steps.publish.outputs.download  }}
+        run: source create_notice.sh
