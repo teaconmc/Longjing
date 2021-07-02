@@ -38,19 +38,11 @@ jobs:
           git remote add origin `cat ../remote`
           git fetch --depth=1 origin `cat ../HEAD`
           git reset --hard `cat ../HEAD`
-      - name: Check Gradle wrapper presence
-        id: gradlew-presence
-        shell: bash
-        run: |
-          cd mods/team-44/repo/
-          if [[ -f gradlew ]]
-          then
-            echo '::set-output name=GRADLEW::true'
-          else
-            echo '::set-output name=GRADLEW::false'
-          fi
+      - name: Validate Gradle Wrapper
+        uses: gradle/wrapper-validation-action@v1
+        with:
+          min-wrapper-count: 1
       - name: Publish
-        if: ${{ steps.gradlew-presence.outputs.GRADLEW }}
         shell: bash
         env:
           LONGJING: "true"
@@ -67,7 +59,6 @@ jobs:
       # This part won't work because multiple action runners can do simultaneous pushes
       # TODO Find an alternative way to do this
       #- name: Update Artifact ID
-      #  if: ${{ steps.gradlew-presence.outputs.GRADLEW }}
       #  shell: bash
       #  run: |
       #    bash commit_info.sh
