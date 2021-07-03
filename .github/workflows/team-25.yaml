@@ -1,11 +1,11 @@
-name: '萌娘游戏-兔子座制作组'
+name: '萌娘游戏-查理九世制作组'
 on:
   push:
     paths:
       - 'mods/team-25/HEAD'
 jobs:
   publish:
-    name: 'Build 我们在兔子座上相遇'
+    name: 'Build 查理九世'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
