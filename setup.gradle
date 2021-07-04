@@ -38,6 +38,16 @@ afterProject { project ->
         println "::warning::Using default value ('modid') for archive base name; this is very likely to cause conflicts"
     }
 
+    // Check if the artifact id contains space. If so, replace it with hyphen.
+    // Regex [A-Za-z0-9_\-.]+ shall match all valid artifactId.
+    // TODO Deal with other characters
+    if (project.archivesBaseName.contains(' ')) {
+        println '::warning::Using whitespace in archivesBaseName is not recommended. Replacing it with hyphen. ' + 
+                'It is recommended to make your archivesBaseName comply with the following RegEx: [A-Za-z0-9_\\-.]+'
+        // This `tr` method works in a similar fashion as of that Unix utility with the same name.
+        project.archivesBaseName = project.archivesBaseName.tr(' ', '-')
+    }
+
     // Check if the project has correctly configured the reobf task as a finalizer task of the 
     // given archive task. Finalizer tasks are tasks that guaranteed to run after a task, regardless 
     // succeeded or failed. 
@@ -74,7 +84,7 @@ afterProject { project ->
     } else {
         // For non-default `Jar` task, the corresponding reobf task must be manually created.
         // This means that they should be available at this stage.
-        def reobfTaskName = "reobf" + Character.toUpperCase(targetTask.name.charAt(0)) + targetTask.name.substring(1)
+        def reobfTaskName = "reobf" + targetTask.name.capitalize()
         try {
             project.tasks.named(reobfTaskName, reobfTaskType) { reobfTask ->
                 if (!(reobfTask in targetTask.finalizedBy.getDependencies(targetTask))) {
@@ -96,7 +106,7 @@ afterProject { project ->
             teacon(MavenPublication) {
                 // Hard-code group id to signify that we produced these builds.
                 groupId = "org.teacon.teacon2021"
-                // Assign a unique (maybe) artifact id
+                // Assign a unique (maybe) artifact id.
                 artifactId = project.archivesBaseName
                 // Append GitHub Action run number as part of the version number
                 // We use hyphen to comply both Maven-style versioning (build number)
