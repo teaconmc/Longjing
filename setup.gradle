@@ -55,9 +55,9 @@ afterProject { project ->
     // 'NonStandardJar' -> 'reobfNonStandardJar'.
     def targetTaskName = targetTask.name
     def reobfTaskName = "reobf" + Character.toUpperCase(targetTaskName.charAt(0)) + targetTaskName.substring(1)
-    def reobfTaskType = Class.forName('net.minecraftforge.gradle.userdev.tasks.RenameJarInPlace')
+    //def reobfTaskType = Class.forName('net.minecraftforge.gradle.userdev.tasks.RenameJarInPlace') // TODO Somehow get this type
     try {
-        project.tasks.named(reobfTaskName, reobfTaskType) { reobfTask ->
+        project.tasks.named(reobfTaskName/*, reobfTaskType*/) { reobfTask ->
             if (!(reobfTask in targetTask.finalizedBy.getDependencies(targetTask))) {
                 println "::warning::Task '${targetTaskName}' did not correctly configure its finalizer tasks. " + 
                         "It is required to do so in order to make reobf work with publishing plugin. " + 
