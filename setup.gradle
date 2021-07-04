@@ -53,22 +53,40 @@ afterProject { project ->
     // In ForgeGradle, the name of a reobf task starts with 'reobf', followed by the original task name 
     // but with first letter capitalized. This means 'jar' -> 'reobfJar', 'shadowJar' -> 'reobfShadowJar',
     // 'NonStandardJar' -> 'reobfNonStandardJar'.
-    def targetTaskName = targetTask.name
-    def reobfTaskName = "reobf" + Character.toUpperCase(targetTaskName.charAt(0)) + targetTaskName.substring(1)
     def reobfTaskType = Class.forName('net.minecraftforge.gradle.userdev.tasks.RenameJarInPlace', true, project.buildscript.getClassLoader())
-    try {
-        project.tasks.named(reobfTaskName, reobfTaskType) { reobfTask ->
-            if (!(reobfTask in targetTask.finalizedBy.getDependencies(targetTask))) {
-                println "::warning::Task '${targetTaskName}' did not correctly configure its finalizer tasks. " + 
-                        "It is required to do so in order to make reobf work with publishing plugin. " + 
-                        "This is also a sign that you have edited the MDK-provided build.gradle too far. " + 
-                        "To fix this, re-add this at the end of your build.gradle: jar.finalizedBy('reobfJar')"
-                        
-                targetTask.finalizedBy reobfTask
+    if (targetTask.is(project.jar)) {
+        // reobfJar task might have not been created at this stage.
+        // We use a task creation listener to capture the task.
+        project.tasks.whenTaskAdded { task ->
+            if ('reobfJar' != task.name) return
+            if (reobfTaskType.isInstance(task)) {
+                if (!(task in targetTask.finalizedBy.getDependencies(targetTask))) {
+                    println "::warning::Task 'jar' did not correctly configure its finalizer tasks. " +
+                            "It is required to do so in order to make reobf work with publishing plugin. " +
+                            "This is also a sign that you have edited the MDK-provided build.gradle too far. " +
+                            "To fix this, re-add this at the end of your build.gradle: jar.finalizedBy('reobfJar')"
+                    targetTask.finalizedBy task
+                }
+            } else {
+                println "::warning::Unexpected reobfJar task type. Please report it to Longjing."
             }
         }
-    } catch (UnknownTaskException e) {
-        println "::error::Cannot find task '${reobfTaskName}, did the project correctly configure it?'"
+    } else {
+        // For non-default `Jar` task, the corresponding reobf task must be manually created.
+        // This means that they should be available at this stage.
+        def reobfTaskName = "reobf" + Character.toUpperCase(targetTask.name.charAt(0)) + targetTask.name.substring(1)
+        try {
+            project.tasks.named(reobfTaskName, reobfTaskType) { reobfTask ->
+                if (!(reobfTask in targetTask.finalizedBy.getDependencies(targetTask))) {
+                    println "::warning::Task '${targetTask.name}' did not correctly configure its finalizer tasks. " +
+                            "It is required to do so in order to make reobf work with publishing plugin. " +
+                            "To fix this, add this at the end of your build.gradle: ${targetTask.name}.finalizeBy('${reobfTaskName}')"
+                    targetTask.finalizedBy reobfTask
+                }
+            }
+        } catch (UnknownTaskException e) {
+            println "::error::Cannot find task '${reobfTaskName}'. It is a sign that the project did not correctly configure reobf. Build result might be unexpected."
+        }
     }
 
     // Configure our publication task
