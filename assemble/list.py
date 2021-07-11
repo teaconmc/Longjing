@@ -19,6 +19,11 @@ headers={
 
 artifacts=[]
 
+blacklist={}
+
+with open('blacklist.json') as f:
+    blacklist=json.load(f)
+
 wfs_req=urllib.request.Request('https://api.github.com/repos/teaconmc/Longjing/actions/workflows?per_page=100', headers = headers)
 with urllib.request.urlopen(wfs_req) as ws:
     workflows=json.load(ws)
@@ -29,10 +34,14 @@ with urllib.request.urlopen(wfs_req) as ws:
                 runs=json.load(rs)
                 latest_run={}
                 latest_run_num=0
+                faulty_builds=blacklist.get(workflow['path'], [])
                 for run in runs['workflow_runs']:
                     if run['status'] == 'completed' and run['conclusion'] == 'success' and run['run_number'] > latest_run_num:
-                        latest_run=run
-                        latest_run_num=run['run_number']
+                        if run['run_number'] in faulty_builds:
+                            print(f"Skipping faulty builds {workflow['path']}#{run['run_number']}")
+                        else:
+                            latest_run=run
+                            latest_run_num=run['run_number']
                 if not latest_run:
                     continue
                 cs_req=urllib.request.Request(latest_run['check_suite_url'], headers = headers)

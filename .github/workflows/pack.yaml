@@ -25,4 +25,4 @@ jobs:
           S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           S3_BUCKET_NAME: ${{ secrets.S3_BUCKET }}
-        run: python3 list.py
+        run: cd assemble && python3 list.py
