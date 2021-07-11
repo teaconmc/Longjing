@@ -2,6 +2,9 @@ name: Scheduled Testing Pack Update
 on:
   schedule:
     - cron: "0 1 * * *"
+  push:
+    paths:
+      - 'assemble/blacklist.json'
   workflow_dispatch:
 jobs:
   assemble-mod-list:
