@@ -5,7 +5,7 @@ on:
       - 'mods/team-16/HEAD'
 jobs:
   publish:
-    name: 'Build The Wandering Earth 带着地球去流浪'
+    name: 'Build The Wandering Earth 流浪地球'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
