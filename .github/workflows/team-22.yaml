@@ -5,7 +5,7 @@ on:
       - 'mods/team-22/HEAD'
 jobs:
   publish:
-    name: 'Build 三体工业：文明之间的对决'
+    name: 'Build 三体工业（Teacon预览版）'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
