@@ -1,11 +1,11 @@
-name: 'Zaia Enterprise'
+name: '射命丸政的单人队伍'
 on:
   push:
     paths:
       - 'mods/team-14/HEAD'
 jobs:
   publish:
-    name: 'Build Project 01'
+    name: 'Build 中式剑'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
