@@ -4,5 +4,6 @@
   ".github/workflows/team-25.yaml": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
   ".github/workflows/team-30.yaml": [ 12, 14, 15 ],
   ".github/workflows/team-56.yaml": [ 5, 6 ],
+  ".github/workflows/team-59.yaml": [ 8 ],
   ".github/workflows/team-62.yaml": [ 4 ]
 }
