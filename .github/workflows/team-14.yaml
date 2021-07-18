@@ -1,4 +1,4 @@
-name: '射命丸政的单人队伍'
+name: '射命丸政的单人小组'
 on:
   push:
     paths:
