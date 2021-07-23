@@ -1,11 +1,11 @@
-name: 'MarbleGate 纯白之门'
+name: '混沌之门 Chaos Gate'
 on:
   push:
     paths:
       - 'mods/team-4/HEAD'
 jobs:
   publish:
-    name: 'Build LieLieTea Tea Shop 烈烈茶本铺'
+    name: 'Build XXSRK'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
