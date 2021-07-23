@@ -76,8 +76,12 @@ for team in team_list:
     if os.path.exists(f"{info_dir}/HEAD"):
         with open(f"{info_dir}/HEAD") as f:
             previous_head = f.read()
+    head_ref = 'HEAD'
+    if os.path.exists(f"{info_dir}/ref"):
+        with open(f"{info_dir}/ref") as f:
+            head_ref = f.read()
     try:
-        get_head_process = subprocess.run(['git', 'ls-remote', team['repo'], 'HEAD'], 
+        get_head_process = subprocess.run(['git', 'ls-remote', team['repo'], head_ref],
             timeout = 10,
             capture_output = True, 
             text = True)
