@@ -1,0 +1,37 @@
+[
+  {
+    "name": "jei-1.16.5-7.7.1.110.jar",
+    "file": "https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar",
+    "sha256": "2a7a61bc4feef8890116f5e340c0cd8b04623a6928a79e5ff488775be14e741c"
+  },
+  {
+    "name": "mmlib-1.0.1.jar",
+    "file": "https://media.forgecdn.net/files/3382/295/mmlib-1.0.1.jar",
+    "sha256": "822f0605fbabceed2959a56778c6783665ac140dd37c9b265ba3ed1d721654dc"
+  },
+  {
+    "name": "curios-forge-1.16.5-4.0.5.1.jar",
+    "file": "https://media.forgecdn.net/files/3275/653/curios-forge-1.16.5-4.0.5.1.jar",
+    "sha256": "1e01e467c3b8d379926b5dc8d40d8088092dc7928c0bb25a49d545de82ff32a8"
+  },
+  {
+    "name": "geckolib-forge-1.16.5-3.0.41.jar",
+    "file": "https://media.forgecdn.net/files/3344/733/geckolib-forge-1.16.5-3.0.41.jar",
+    "sha256": "a4fc2d446c64682b302b1a4bd7670767f1f913ebdd0b31a496c609fd48555251"
+  },
+  {
+    "name": "Patchouli-1.16.4-53.1.jar",
+    "file": "https://media.forgecdn.net/files/3374/63/Patchouli-1.16.4-53.1.jar",
+    "sha256": "c70100bfc79517ba6d71bf5ab5dab42e6138ace502f111c3e3114d82c66b4e34"
+  },
+  {
+    "name": "fantasySoup-1.0.jar",
+    "file": "https://github.com/zomb-676/fantasySoup/releases/download/0.1/fantasySoup-1.0.jar",
+    "sha256": "980447e6e28fc69ba6b0aee4db85b8985c520c94cf31c5d2696a10d8c3b9c90a"
+  },
+  {
+    "name": "SilveroakOutpost-Forge-1.16.5-0.3.5-Beta.jar",
+    "file": "https://maven.lemonslice.cloud/releases/cloud/lemonslice/silveroak/SilveroakOutpost-Forge-1.16.5/0.3.5-Beta/SilveroakOutpost-Forge-1.16.5-0.3.5-Beta.jar",
+    "sha256": "dfabe29c0f85506db565addca9b66b1c988d087fa14abd9608a9de491111d8fd"
+  }
+]

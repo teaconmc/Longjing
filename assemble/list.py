@@ -70,6 +70,14 @@ for artifact in artifacts:
       'sig': sig_url
     })
 
+with open('extra.json') as f:
+    for entry in json.load(f):
+        mod_list.append({
+          'name': entry['name'],
+          'file': f"https://archive.teacon.cn/2021/ci/extra/{entry['name']}",
+          'sig': f"https://archive.teacon.cn/2021/ci/extra/{entry['name']}.asc"
+        })
+
 s3=boto3.client(
     service_name='s3',
     config=Config(s3={'addressing_style': 'virtual'}),

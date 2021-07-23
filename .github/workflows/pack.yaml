@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'assemble/blacklist.json'
+      - 'assemble/extra.json'
   workflow_dispatch:
 jobs:
   assemble-mod-list:
