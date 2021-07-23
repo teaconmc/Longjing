@@ -33,5 +33,10 @@
     "name": "SilveroakOutpost-Forge-1.16.5-0.3.5-Beta.jar",
     "file": "https://maven.lemonslice.cloud/releases/cloud/lemonslice/silveroak/SilveroakOutpost-Forge-1.16.5/0.3.5-Beta/SilveroakOutpost-Forge-1.16.5-0.3.5-Beta.jar",
     "sha256": "dfabe29c0f85506db565addca9b66b1c988d087fa14abd9608a9de491111d8fd"
+  },
+  {
+    "name": "xkdeco_0.2.0.jar",
+    "file": "https://media.forgecdn.net/files/3398/181/xkdeco_0.2.0.jar",
+    "sha256": "5e026e6872d833847a6cb3d893f3c933b2d63043b9ecf7a55a4602e69c4c4889"
   }
 ]
