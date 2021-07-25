@@ -1,8 +1,9 @@
-name: 'PigeonDew'
+name: 'TeaCon2021 PigeonDew'
 on:
   push:
     paths:
       - 'mods/team-21/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 白糖工艺'
@@ -38,19 +39,12 @@ jobs:
           git remote add origin `cat ../remote`
           git fetch --depth=1 origin `cat ../HEAD`
           git reset --hard `cat ../HEAD`
-      - name: Check Gradle wrapper presence
-        id: gradlew-presence
-        shell: bash
-        run: |
-          cd mods/team-21/repo/
-          if [[ -f gradlew ]]
-          then
-            echo '::set-output name=GRADLEW::true'
-          else
-            echo '::set-output name=GRADLEW::false'
-          fi
+      - name: Validate Gradle Wrapper
+        uses: gradle/wrapper-validation-action@v1
+        with:
+          min-wrapper-count: 1
       - name: Publish
-        if: ${{ steps.gradlew-presence.outputs.GRADLEW }}
+        id: publish
         shell: bash
         env:
           LONGJING: "true"
@@ -64,14 +58,11 @@ jobs:
           cd mods/team-21/repo/
           chmod +x ./gradlew
           ./gradlew -Dorg.gradle.s3.endpoint=${S3_ENDPOINT} -I ../../../setup.gradle publishTeaconPublicationToTeaconRepository
-      # This part won't work because multiple action runners can do simultaneous pushes
-      # TODO Find an alternative way to do this
-      #- name: Update Artifact ID
-      #  if: ${{ steps.gradlew-presence.outputs.GRADLEW }}
-      #  shell: bash
-      #  run: |
-      #    bash commit_info.sh
-      #    cd mods/team-21/
-      #    git add artifact
-      #    git commit -m "`date -u`: update artifact id" || true
-      #    git push
+      - name: Add notice
+        shell: bash
+        env:
+          TEAM_ID: 21
+          TOKEN: ${{ github.token }}
+          MAVEN_COORD: ${{ steps.publish.outputs.maven }}
+          DOWNLOAD_LINK: ${{ steps.publish.outputs.download  }}
+        run: source create_notice.sh
