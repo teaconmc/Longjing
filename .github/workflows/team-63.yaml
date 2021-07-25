@@ -1,8 +1,9 @@
-name: '无极真炎'
+name: 'TeaCon2021 无极真炎'
 on:
   push:
     paths:
       - 'mods/team-63/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 历史记录者：星之匙'

@@ -1,8 +1,9 @@
-name: '幻想乡未来科技研发部'
+name: 'TeaCon2021 幻想乡未来科技研发部'
 on:
   push:
     paths:
       - 'mods/team-47/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 推进鞘翅（ElytraBooster）'

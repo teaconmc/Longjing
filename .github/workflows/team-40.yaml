@@ -1,8 +1,9 @@
-name: 'QuantumStudio'
+name: 'TeaCon2021 QuantumStudio'
 on:
   push:
     paths:
       - 'mods/team-40/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build SerializableConsciousness(SeriCons)'

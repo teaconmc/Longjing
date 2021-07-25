@@ -1,8 +1,9 @@
-name: '纯白之门'
+name: 'TeaCon2021 纯白之门'
 on:
   push:
     paths:
       - 'mods/team-31/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Rising Uppercut | 上勾拳！'

@@ -1,8 +1,9 @@
-name: '阳电子工作室'
+name: 'TeaCon2021 阳电子工作室'
 on:
   push:
     paths:
       - 'mods/team-57/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 三体-智子'

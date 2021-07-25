@@ -1,8 +1,9 @@
-name: 'Funny_Baymax''s Team'
+name: 'TeaCon2021 Funny_Baymax''s Team'
 on:
   push:
     paths:
       - 'mods/team-44/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build PaiMonFood'

@@ -1,8 +1,9 @@
-name: '符咒工作室 Talisman Studio'
+name: 'TeaCon2021 符咒工作室 Talisman Studio'
 on:
   push:
     paths:
       - 'mods/team-60/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 十二符咒 Twelve Talismans'

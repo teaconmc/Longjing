@@ -1,8 +1,9 @@
-name: '斌政♂工作室'
+name: 'TeaCon2021 斌政♂工作室'
 on:
   push:
     paths:
       - 'mods/team-22/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 三体工业（Teacon预览版）'

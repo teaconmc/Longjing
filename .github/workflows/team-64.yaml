@@ -1,8 +1,9 @@
-name: '宏楼'
+name: 'TeaCon2021 宏楼'
 on:
   push:
     paths:
       - 'mods/team-64/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 水源'

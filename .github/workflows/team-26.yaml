@@ -1,8 +1,9 @@
-name: '幻梦边际'
+name: 'TeaCon2021 幻梦边际'
 on:
   push:
     paths:
       - 'mods/team-26/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build AotuWorId'

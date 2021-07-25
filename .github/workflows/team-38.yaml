@@ -1,8 +1,9 @@
-name: 'Ilmarinen'
+name: 'TeaCon2021 Ilmarinen'
 on:
   push:
     paths:
       - 'mods/team-38/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Uusi Aurinko'

@@ -1,8 +1,9 @@
-name: '潘家园古玩市场 二楼茶馆'
+name: 'TeaCon2021 潘家园古玩市场 二楼茶馆'
 on:
   push:
     paths:
       - 'mods/team-66/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 摸金'

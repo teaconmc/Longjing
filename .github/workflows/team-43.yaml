@@ -1,8 +1,9 @@
-name: 'Lemonade!'
+name: 'TeaCon2021 Lemonade!'
 on:
   push:
     paths:
       - 'mods/team-43/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 往来'

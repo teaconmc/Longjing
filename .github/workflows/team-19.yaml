@@ -1,8 +1,9 @@
-name: 'AmazingRabbit Studio'
+name: 'TeaCon2021 AmazingRabbit Studio'
 on:
   push:
     paths:
       - 'mods/team-19/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 和谐之元'

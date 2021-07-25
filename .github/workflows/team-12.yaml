@@ -1,8 +1,9 @@
-name: '致不灭的你'
+name: 'TeaCon2021 致不灭的你'
 on:
   push:
     paths:
       - 'mods/team-12/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 流年年的随想作'

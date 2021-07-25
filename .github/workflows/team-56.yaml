@@ -1,8 +1,9 @@
-name: '喜羊羊（绝非官方！）'
+name: 'TeaCon2021 喜羊羊（绝非官方！）'
 on:
   push:
     paths:
       - 'mods/team-56/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 喜羊羊工艺'

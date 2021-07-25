@@ -1,8 +1,9 @@
-name: '[旧月组] 明日方舟专项组'
+name: 'TeaCon2021 [旧月组] 明日方舟专项组'
 on:
   push:
     paths:
       - 'mods/team-30/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 明日方舟'

@@ -1,8 +1,9 @@
-name: 'S2White'
+name: 'TeaCon2021 S2White'
 on:
   push:
     paths:
       - 'mods/team-27/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Crock Pot'

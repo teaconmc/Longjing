@@ -1,8 +1,9 @@
-name: 'Kogasa Studio'
+name: 'TeaCon2021 Kogasa Studio'
 on:
   push:
     paths:
       - 'mods/team-35/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 序章 ~ 稻生草子'

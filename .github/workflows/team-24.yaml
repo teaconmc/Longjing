@@ -1,8 +1,9 @@
-name: '!神代回归一组!'
+name: 'TeaCon2021 !神代回归一组!'
 on:
   push:
     paths:
       - 'mods/team-24/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 魔城传说3D'

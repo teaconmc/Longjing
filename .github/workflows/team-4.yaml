@@ -1,8 +1,9 @@
-name: '混沌之门 Chaos Gate'
+name: 'TeaCon2021 混沌之门 Chaos Gate'
 on:
   push:
     paths:
       - 'mods/team-4/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build XXSRK'

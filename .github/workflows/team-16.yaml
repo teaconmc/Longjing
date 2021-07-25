@@ -1,8 +1,9 @@
-name: 'oSPRingO'
+name: 'TeaCon2021 oSPRingO'
 on:
   push:
     paths:
       - 'mods/team-16/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build The Wandering Earth 流浪地球'

@@ -1,8 +1,9 @@
-name: '摸了'
+name: 'TeaCon2021 摸了'
 on:
   push:
     paths:
       - 'mods/team-65/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build DarkSword22'

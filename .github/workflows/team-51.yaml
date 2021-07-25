@@ -1,8 +1,9 @@
-name: '// icemeowzhi''s team'
+name: 'TeaCon2021 // icemeowzhi''s team'
 on:
   push:
     paths:
       - 'mods/team-51/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Favourite Tags'

@@ -1,8 +1,9 @@
-name: 'Gallum Caeruleus'
+name: 'TeaCon2021 Gallum Caeruleus'
 on:
   push:
     paths:
       - 'mods/team-53/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Icarus Wings'

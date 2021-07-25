@@ -1,8 +1,9 @@
-name: 'how to be partyParr0t v.19.999099979'
+name: 'TeaCon2021 how to be partyParr0t v.19.999099979'
 on:
   push:
     paths:
       - 'mods/team-15/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build La Luz del Alba'

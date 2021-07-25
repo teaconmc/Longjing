@@ -1,8 +1,9 @@
-name: 'Lemon Slice Studio'
+name: 'TeaCon2021 Lemon Slice Studio'
 on:
   push:
     paths:
       - 'mods/team-42/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 茶风·纪事'

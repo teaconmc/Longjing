@@ -1,8 +1,9 @@
-name: 'MC百科模组开发小组'
+name: 'TeaCon2021 MC百科模组开发小组'
 on:
   push:
     paths:
       - 'mods/team-48/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 茶叶魔法使——Tea Sorcerer'

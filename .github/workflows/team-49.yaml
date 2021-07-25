@@ -1,8 +1,9 @@
-name: 'M[T]c制作组'
+name: 'TeaCon2021 M[T]c制作组'
 on:
   push:
     paths:
       - 'mods/team-49/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Mine[Touhou]Card'

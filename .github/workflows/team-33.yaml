@@ -1,8 +1,9 @@
-name: 'MTP-Studio'
+name: 'TeaCon2021 MTP-Studio'
 on:
   push:
     paths:
       - 'mods/team-33/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Props-of-Doraemon'

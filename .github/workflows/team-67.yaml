@@ -1,8 +1,9 @@
-name: '[旧月组] 大爱牛不来专项组'
+name: 'TeaCon2021 [旧月组] 大爱牛不来专项组'
 on:
   push:
     paths:
       - 'mods/team-67/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 星云子史莱姆'

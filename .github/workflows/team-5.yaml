@@ -1,8 +1,9 @@
-name: '萌娘游戏-华夏工艺项目组'
+name: 'TeaCon2021 萌娘游戏-华夏工艺项目组'
 on:
   push:
     paths:
       - 'mods/team-5/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 华夏工艺'

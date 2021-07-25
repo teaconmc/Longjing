@@ -1,8 +1,9 @@
-name: '南织鸽子'
+name: 'TeaCon2021 南织鸽子'
 on:
   push:
     paths:
       - 'mods/team-41/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 鸽子的小物件'

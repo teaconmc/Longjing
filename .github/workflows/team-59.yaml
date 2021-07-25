@@ -1,8 +1,9 @@
-name: '//不死组的蓬莱秘药专项小组'
+name: 'TeaCon2021 //不死组的蓬莱秘药专项小组'
 on:
   push:
     paths:
       - 'mods/team-59/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 不死灵药'

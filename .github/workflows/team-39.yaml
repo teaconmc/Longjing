@@ -1,8 +1,9 @@
-name: '一星评审员'
+name: 'TeaCon2021 一星评审员'
 on:
   push:
     paths:
       - 'mods/team-39/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Ambrose Minecraft'

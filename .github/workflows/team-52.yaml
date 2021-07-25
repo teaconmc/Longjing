@@ -1,8 +1,9 @@
-name: '天枢开发组'
+name: 'TeaCon2021 天枢开发组'
 on:
   push:
     paths:
       - 'mods/team-52/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 符·道'

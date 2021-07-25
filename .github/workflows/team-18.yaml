@@ -1,8 +1,9 @@
-name: 'CFPA'
+name: 'TeaCon2021 CFPA'
 on:
   push:
     paths:
       - 'mods/team-18/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 未曾设想的传送方式'

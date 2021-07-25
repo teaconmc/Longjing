@@ -1,8 +1,9 @@
-name: '萌娘游戏-查理九世制作组'
+name: 'TeaCon2021 萌娘游戏-查理九世制作组'
 on:
   push:
     paths:
       - 'mods/team-25/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 查理九世'

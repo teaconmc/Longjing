@@ -1,8 +1,9 @@
-name: '雏鹰展翅'
+name: 'TeaCon2021 雏鹰展翅'
 on:
   push:
     paths:
       - 'mods/team-58/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 荒野乱斗_武器库'

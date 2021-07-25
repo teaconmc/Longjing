@@ -1,8 +1,9 @@
-name: '玄学模组开发组'
+name: 'TeaCon2021 玄学模组开发组'
 on:
   push:
     paths:
       - 'mods/team-61/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Miyazaki World'

@@ -1,8 +1,9 @@
-name: 'M.F.R.F'
+name: 'TeaCon2021 M.F.R.F'
 on:
   push:
     paths:
       - 'mods/team-8/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Magic Circle'

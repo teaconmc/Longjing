@@ -1,8 +1,9 @@
-name: 'Reika考古小组'
+name: 'TeaCon2021 Reika考古小组'
 on:
   push:
     paths:
       - 'mods/team-55/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Rotarism Decorations'

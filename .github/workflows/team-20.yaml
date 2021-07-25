@@ -1,8 +1,9 @@
-name: 'MaxPixel Studios Development'
+name: 'TeaCon2021 MaxPixel Studios Development'
 on:
   push:
     paths:
       - 'mods/team-20/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build Flycycle'

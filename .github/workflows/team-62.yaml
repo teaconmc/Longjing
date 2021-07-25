@@ -1,8 +1,9 @@
-name: 'CFPAOrg'
+name: 'TeaCon2021 CFPAOrg'
 on:
   push:
     paths:
       - 'mods/team-62/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build 车万女仆'
