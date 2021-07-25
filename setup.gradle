@@ -63,8 +63,16 @@ afterProject { project ->
     // In ForgeGradle, the name of a reobf task starts with 'reobf', followed by the original task name 
     // but with first letter capitalized. This means 'jar' -> 'reobfJar', 'shadowJar' -> 'reobfShadowJar',
     // 'NonStandardJar' -> 'reobfNonStandardJar'.
-    def reobfTaskType = Class.forName('net.minecraftforge.gradle.userdev.tasks.RenameJarInPlace', true, project.buildscript.getClassLoader())
-    if (targetTask.is(project.jar)) {
+    def reobfTaskType = null
+    try {
+        reobfTaskType = Class.forName('net.minecraftforge.gradle.userdev.tasks.RenameJarInPlace', true, project.buildscript.getClassLoader())
+    } catch (Exception ignored) {
+    }
+    if (reobfTaskType == null) {
+        if (System.env.GITHUB_ACTIONS) {
+            println "::warning::This project doesn't seem to use ForgeGradle. Skip reobfuscation check for now. This is NOT an error"
+        }
+    } else if (targetTask.is(project.jar)) {
         // reobfJar task might have not been created at this stage.
         // We use a task creation listener to capture the task.
         project.tasks.whenTaskAdded { task ->
