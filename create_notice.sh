@@ -34,12 +34,7 @@ curl --silent -X PATCH -d \@payload.json \
   $CHECK_RUN
 
 cat > payload.json <<EOM
-{
-  "ref": "teacon2021",
-  "inputs": {
-    "team": "$TEAM_ID"
-  }
-}
+{"ref": "teacon2021"}
 EOM
 
 curl --silent -X POST -d \@payload.json \
