@@ -37,36 +37,37 @@ with open('workflow_template.yaml') as f:
 for team in team_list:
     print(f"Fetching information for team #{team['id']} ({team['name']}) from {team['repo']}")
 
+    skip = False
+
     if not team['repo']:
-        print(f"Team #{team['id']} ({team['name']}) doesn't seem to provide a valid git repo, skipping")
-        print(f"The repo URI is {team['repo']}")
+        print(f"Team #{team['id']} ({team['name']}) did not provide a git repo address, skipping")
         if os.getenv('GITHUB_ACTIONS', False):
-            print(f"::warning::Team #{team['id']} ({team['name']}) seems to have an invalid repo: {team['repo']}")
-        continue
+            print(f"::warning::Team #{team['id']} ({team['name']}) did not provide a git repo address.")
+        skip = True
     
     # Escape ' by doubling it. YAML decides to use this for single-quoted strings.
     team['name'] = team['name'].replace("'", "''")
     team['mod_name'] = team['mod_name'].replace("'", "''")
 
+    # Create workflow run, or force update it if already exist
+    with open(f".github/workflows/team-{team['id']}.yaml", 'w') as f:
+        f.write(workflow_template.substitute(team))
+
+    if skip:
+        continue
+
     # Each team gets their own directory to storing related information.
     # Internal team id is used because it is permenant.
     info_dir = f"./mods/team-{team['id']}"
-
     # New team is signalled as absence of their tracking info in our repo. 
     # If a new team is found, we then create a directory for them.
     if not os.path.exists(info_dir):
         # Create meta information directory
         os.makedirs(info_dir)
-
-    # Create workflow run, or force update it if already exist
-    with open(f".github/workflows/team-{team['id']}.yaml", 'w') as f:
-        f.write(workflow_template.substitute(team))
-    
     # Write repo address to $info_dir/remote
     # This is always done in case that a team updates their remote repo address.
     with open(f"{info_dir}/remote", 'w') as f:
         f.write(team['repo'])
-    
     # We use `git ls-remote $repo_url HEAD` to get the latest commit and use it to 
     # determine if we should trigger a build.
     # The sole criterion is "current HEAD commit hash is different from our recorded one".
