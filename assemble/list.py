@@ -55,6 +55,7 @@ with urllib.request.urlopen(wfs_req) as ws:
                             with urllib.request.urlopen(anno_req) as annos:
                                 for anno in json.load(annos):
                                     if anno['title'] == 'Download':
+                                        print(f"Using {workflow['path']} build #{latest_run_num}, maven coordinate {anno['raw_details']}")
                                         artifacts.append(anno['raw_details'])
 
 mod_list=[]
