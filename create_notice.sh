@@ -37,7 +37,7 @@ cat > payload.json <<EOM
 {
   "ref": "teaon2021",
   "inputs": {
-    "team": $TEAM_ID
+    "team": "$TEAM_ID"
   }
 }
 EOM
