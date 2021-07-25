@@ -1,8 +1,9 @@
-name: '$name'
+name: 'TeaCon2021 $name'
 on:
   push:
     paths:
       - 'mods/team-$id/HEAD'
+  workflow_dispatch:
 jobs:
   publish:
     name: 'Build $mod_name'
