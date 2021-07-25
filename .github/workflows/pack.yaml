@@ -7,6 +7,9 @@ on:
       - 'assemble/blacklist.json'
       - 'assemble/extra.json'
   workflow_dispatch:
+concurrency:
+  group: pack-update
+  cancel-in-progress: true
 jobs:
   assemble-mod-list:
     name: Assemble Mod List

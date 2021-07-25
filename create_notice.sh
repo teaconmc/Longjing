@@ -32,3 +32,17 @@ curl --silent -X PATCH -d \@payload.json \
   --header "authorization: Bearer $TOKEN" \
   --header 'accept: application/vnd.github.v3+json' \
   $CHECK_RUN
+
+cat > payload.json <<EOM
+{
+  "ref": "teaon2021",
+  "inputs": {
+    "team": $TEAM_ID
+  }
+}
+EOM
+
+curl --silent -X POST -d \@payload.json \
+  --header "authorization: Bearer $TOKEN" \
+  --header 'accept: application/vnd.github.v3+json' \
+  https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/pack.yaml/dispatches
