@@ -1,4 +1,4 @@
-name: 'TeaCon2021 混沌之门 Chaos Gate'
+name: 'TeaCon2021 混沌之门'
 on:
   push:
     paths:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build XXSRK'
+    name: 'Build XXSRK - 小心兽人控'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
