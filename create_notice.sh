@@ -32,8 +32,7 @@ curl $COMMON_OPTS https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$
   | jq -r .check_runs_url \
   | xargs curl $COMMON_OPTS \
   | jq -r '.check_runs[0].url' \
-  | xargs curl $COMMON_OPTS -X PATCH -d \@payload.json \
-    -H "authorization: Bearer $TOKEN" > /dev/null
+  | xargs curl $COMMON_OPTS -X PATCH -d \@payload.json -H "authorization: Bearer $TOKEN"
 
 curl $COMMON_OPTS -X POST -d '{"ref": "teacon2021"}' \
   --header "authorization: Bearer $TOKEN" \
