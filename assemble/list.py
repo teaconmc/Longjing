@@ -43,10 +43,12 @@ with urllib.request.urlopen(wfs_req) as ws:
                             latest_run=run
                             latest_run_num=run['run_number']
                 if not latest_run:
+                    print(f"No build selected for {workflow['path']} ({workflow['name']})")
                     continue
                 cs_req=urllib.request.Request(latest_run['check_suite_url'], headers = headers)
                 with urllib.request.urlopen(cs_req) as cs:
                     check_suite=json.load(cs)
+                    found=False
                     crs_req=urllib.request.Request(check_suite['check_runs_url'], headers = headers)
                     with urllib.request.urlopen(crs_req) as crs:
                         check_run=json.load(crs)['check_runs'][0]
@@ -57,6 +59,9 @@ with urllib.request.urlopen(wfs_req) as ws:
                                     if anno['title'] == 'Download':
                                         print(f"Using {workflow['path']} build #{latest_run_num}, maven coordinate {anno['raw_details']}")
                                         artifacts.append(anno['raw_details'])
+                                        found=True
+                    if not found:
+                        print(f"Did not find download link info under {workflow['path']} ({workflow['name']})#{run['run_number']}")
 
 mod_list=[]
 
