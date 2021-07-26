@@ -38,5 +38,15 @@
     "name": "xkdeco_0.2.0.jar",
     "file": "https://media.forgecdn.net/files/3398/181/xkdeco_0.2.0.jar",
     "sha256": "5e026e6872d833847a6cb3d893f3c933b2d63043b9ecf7a55a4602e69c4c4889"
+  },
+  {
+    "name": "kotlinforforge-1.14.0-obf.jar",
+    "file": "https://media.forgecdn.net/files/3387/639/kotlinforforge-1.14.0-obf.jar",
+    "sha256": "b914fb40528985f700fd74e0fca613cf463a8f088f52af2ffaf162717d59590a"
+  },
+  {
+    "name": "caelus-forge-1.16.5-2.1.3.0.jar",
+    "file": "https://media.forgecdn.net/files/3224/510/caelus-forge-1.16.5-2.1.3.0.jar",
+    "sha256": "284cb6d213f05b0d1d3e43ba5b79f77d33461e61b13a7c3282e5d7b4dd30324b"
   }
 ]
