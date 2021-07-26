@@ -61,6 +61,7 @@ jobs:
       - name: Add notice
         shell: bash
         env:
+          TOKEN: $${{ github.token }}
           TEAM_ID: $id
           APP_ID: $${{ secrets.TEACON_BOT_ID }}
           APP_PRIVATE_KEY: $${{ secrets.TEACON_BOT_PRIVATE_KEY }}

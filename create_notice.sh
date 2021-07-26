@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Auth as our GitHub App. Use `source` so we stay in the same shell.
-source auth.sh
-
 COMMON_OPTS="--silent -H 'accept: application/vnd.github.v3+json'"
 
 # Both $DOWNLOAD_LINK and $MAVEN_COORD are set via env var.
@@ -33,6 +30,10 @@ curl $COMMON_OPTS https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$
   | xargs curl $COMMON_OPTS \
   | jq -r '.check_runs[0].url' \
   | xargs curl $COMMON_OPTS -X PATCH -d \@payload.json -H "authorization: Bearer $TOKEN"
+
+# Auth as our GitHub App, so we can have a new $TOKEN with enough permission to trigger new run.
+# Use `source` so we stay in the same shell.
+source auth.sh
 
 curl $COMMON_OPTS -X POST -d '{"ref": "teacon2021"}' \
   --header "authorization: Bearer $TOKEN" \
