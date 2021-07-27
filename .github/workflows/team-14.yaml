@@ -1,4 +1,4 @@
-name: 'TeaCon2021 射命丸政的单人小组'
+name: 'TeaCon2021 中式剑开发小组'
 on:
   push:
     paths:
