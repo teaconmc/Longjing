@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMMON_OPTS="--silent -H 'accept: application/vnd.github.v3+json' -H 'authorization: Bearer $TOKEN'"
+COMMON_OPTS="--silent -H 'accept: application/vnd.github.v3+json'"
 
 # $DOWNLOAD_LINK is set via env var.
 cat > payload.json <<EOM
@@ -23,11 +23,11 @@ cat > payload.json <<EOM
 }
 EOM
 
-curl $COMMON_OPTS https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID \
+curl $COMMON_OPTS -H "authorization: Bearer $TOKEN" https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID \
   | jq -r .check_suite_url \
-  | xargs curl $COMMON_OPTS \
+  | xargs curl -H "authorization: Bearer $TOKEN" $COMMON_OPTS \
   | jq -r .check_runs_url \
-  | xargs curl $COMMON_OPTS \
+  | xargs curl -H "authorization: Bearer $TOKEN" $COMMON_OPTS \
   | jq -r '.check_runs[0].url' \
-  | xargs curl $COMMON_OPTS -X PATCH -d \@payload.json
+  | xargs curl $COMMON_OPTS -H "authorization: Bearer $TOKEN" -X PATCH -d \@payload.json
 

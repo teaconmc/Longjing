@@ -17,7 +17,7 @@ headers={
   'Authorization': f"token {os.getenv('AUTH_TOKEN')}"
 }
 
-mave_artifacts=[]
+maven_artifacts=[]
 mod_list=[]
 blacklist={}
 
@@ -62,7 +62,7 @@ with urllib.request.urlopen(wfs_req) as ws:
                                         found=True
                                     elif anno['title'] == 'Manual Download':
                                         print(f"Using {workflow['path']} build #{latest_run_num} with direct link")
-                                        build_info=anno['raw_details'].split(' '), maxsplit=1)
+                                        build_info=anno['raw_details'].split(' ', maxsplit=1)
                                         mod_list.append({
                                             'name': build_info[0],
                                             'file': build_info[1],
