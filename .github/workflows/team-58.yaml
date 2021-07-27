@@ -43,7 +43,7 @@ jobs:
         uses: gradle/wrapper-validation-action@v1
         with:
           min-wrapper-count: 1
-      - name: Build
+      - name: Build Artifact
         id: build
         shell: bash
         env:
