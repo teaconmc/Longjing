@@ -32,7 +32,7 @@ jobs:
       - name: Checkout mod repository
         shell: bash
         run: |
-          cd mods/team-12
+          cd build
           mkdir repo
           cd repo
           git init
@@ -43,28 +43,38 @@ jobs:
         uses: gradle/wrapper-validation-action@v1
         with:
           min-wrapper-count: 1
+      - name: Build
+        id: build
+        shell: bash
+        env:
+          LONGJING: "true"
+        run: |
+          cd build/repo
+          chmod +x ./gradlew
+          ./gradlew -I ../setup.gradle build
+      - name: Sign
+        id: sign
+        shell: bash
+        env:
+          ARTIFACT_NAME: ${{ steps.build.output.filename }}
+          ARTIFACT_PATH: ${{ steps.build.output.artifact }}
+          PGP_KEY: ${{ secrets.PGP_KEY }}
+          PGP_PWD: ${{ secrets.PGP_PWD }}
+        run: cd build && source sign.sh
       - name: Publish
         id: publish
         shell: bash
         env:
-          LONGJING: "true"
-          PGP_KEY: ${{ secrets.PGP_KEY }}
-          PGP_ID: ${{ secrets.PGP_ID }}
-          PGP_PWD: ${{ secrets.PGP_PWD }}
+          TEAM_ID: 12
+          ARTIFACT_NAME: ${{ steps.build.output.filename }}
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
-          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
-          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
-        run: |
-          cd mods/team-12/repo/
-          chmod +x ./gradlew
-          ./gradlew -Dorg.gradle.s3.endpoint=${S3_ENDPOINT} -I ../../../setup.gradle publishTeaconPublicationToTeaconRepository
+          AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
+        run: cd build && source publish.sh
       - name: Add notice
         shell: bash
         env:
           TOKEN: ${{ github.token }}
-          TEAM_ID: 12
-          APP_ID: ${{ secrets.TEACON_BOT_ID }}
-          APP_PRIVATE_KEY: ${{ secrets.TEACON_BOT_PRIVATE_KEY }}
-          MAVEN_COORD: ${{ steps.publish.outputs.maven }}
+          ARTIFACT_NAME: ${{ steps.build.output.filename }}
           DOWNLOAD_LINK: ${{ steps.publish.outputs.download  }}
-        run: source create_notice.sh
+        run: cd build && source finish.sh
