@@ -14,8 +14,8 @@ We leverage GitHub Actions to provide continuous integration and delivery of all
      对于已有信息的队伍，将会更新其在 `mods` 目录下的信息（Git Repo 地址、HEAD shasum 等）
   3. 将新建或更新的构建信息推送回本仓库，触发构建和发布。
      构建时，`setup.gradle` 会作为参赛项目的 [Init Script][ref-2] 注入到构建流程中。
-  4. 构建成功后，执行 `create_notice.sh` 将必要的信息注入到对应的 Workflow Run 的 Annotations 中。
-  5. 同时，另有一个每天运行一次的 Workflow `.github/workflows/pack.yaml` 负责将所有需要的 Mod 整理成符合
+  4. 构建成功后，执行 `finish.sh` 将必要的信息注入到对应的 Workflow Run 的 Annotations 中。
+  5. 每次构建成功都会触发另一个 Workflow `.github/workflows/pack.yaml`，用于将所有需要的 Mod 整理成符合
      [RemoteSync](https://github.com/teaconmc/RemoteSync) 格式的 Mod 列表，并上传至云端。
 
 [ref-2]: https://docs.gradle.org/current/userguide/init_scripts.html
