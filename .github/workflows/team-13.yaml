@@ -33,7 +33,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p build/repo
-          cd repo
+          cd build/repo
           git init
           git remote add origin `cat ../../mods/team-13/remote`
           git fetch --depth=1 origin `cat ../../mods/team-13../HEAD`
