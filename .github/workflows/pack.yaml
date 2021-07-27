@@ -5,6 +5,7 @@ on:
       - 'assemble/blacklist.json'
       - 'assemble/extra.json'
   workflow_run:
+    workflows: [ 'TeaCon2021*' ]
     branches: [ 'teacon2021' ]
     types: 
       - completed
