@@ -53,8 +53,8 @@ jobs:
         id: sign
         shell: bash
         env:
-          ARTIFACT_NAME: ${{ steps.building.output.filename }}
-          ARTIFACT_PATH: ${{ steps.building.output.artifact }}
+          ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
+          ARTIFACT_PATH: ${{ steps.building.outputs.artifact }}
           PGP_KEY: ${{ secrets.PGP_KEY }}
           PGP_PWD: ${{ secrets.PGP_PWD }}
         run: cd build && source sign.sh
@@ -63,7 +63,7 @@ jobs:
         shell: bash
         env:
           TEAM_ID: 26
-          ARTIFACT_NAME: ${{ steps.building.output.filename }}
+          ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
@@ -72,6 +72,6 @@ jobs:
         shell: bash
         env:
           TOKEN: ${{ github.token }}
-          ARTIFACT_NAME: ${{ steps.building.output.filename }}
+          ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
           DOWNLOAD_LINK: ${{ steps.publication.outputs.download  }}
         run: cd build && source finish.sh
