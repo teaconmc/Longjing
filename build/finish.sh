@@ -1,8 +1,8 @@
 #!/bin/bash
 
-COMMON_OPTS="--silent -H 'accept: application/vnd.github.v3+json'"
+COMMON_OPTS="--silent -H 'accept: application/vnd.github.v3+json' -H 'authorization: Bearer $TOKEN'"
 
-# Both $DOWNLOAD_LINK and $MAVEN_COORD are set via env var.
+# $DOWNLOAD_LINK is set via env var.
 cat > payload.json <<EOM
 {
   "output": {
@@ -15,8 +15,8 @@ cat > payload.json <<EOM
         "end_line": 1,
         "annotation_level": "notice",
         "message": "You may download the build result at: $DOWNLOAD_LINK",
-        "title": "Download",
-        "raw_details": "$MAVEN_COORD"
+        "title": "Manual Download",
+        "raw_details": "$ARTIFACT_NAME $DOWNLOAD_LINK"
       }
     ]
   }
@@ -29,12 +29,5 @@ curl $COMMON_OPTS https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$
   | jq -r .check_runs_url \
   | xargs curl $COMMON_OPTS \
   | jq -r '.check_runs[0].url' \
-  | xargs curl $COMMON_OPTS -X PATCH -d \@payload.json -H "authorization: Bearer $TOKEN"
+  | xargs curl $COMMON_OPTS -X PATCH -d \@payload.json
 
-# Auth as our GitHub App, so we can have a new $TOKEN with enough permission to trigger new run.
-# Use `source` so we stay in the same shell.
-source auth.sh
-
-curl $COMMON_OPTS -X POST -d '{"ref": "teacon2021"}' \
-  --header "authorization: Bearer $TOKEN" \
-  https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/pack.yaml/dispatches

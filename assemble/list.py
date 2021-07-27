@@ -17,8 +17,8 @@ headers={
   'Authorization': f"token {os.getenv('AUTH_TOKEN')}"
 }
 
-artifacts=[]
-
+mave_artifacts=[]
+mod_list=[]
 blacklist={}
 
 with open('blacklist.json') as f:
@@ -58,14 +58,21 @@ with urllib.request.urlopen(wfs_req) as ws:
                                 for anno in json.load(annos):
                                     if anno['title'] == 'Download':
                                         print(f"Using {workflow['path']} build #{latest_run_num}, maven coordinate {anno['raw_details']}")
-                                        artifacts.append(anno['raw_details'])
+                                        maven_artifacts.append(anno['raw_details'])
                                         found=True
+                                    elif anno['title'] == 'Manual Download':
+                                        print(f"Using {workflow['path']} build #{latest_run_num} with direct link")
+                                        build_info=anno['raw_details'].split(' '), maxsplit=1)
+                                        mod_list.append({
+                                            'name': build_info[0],
+                                            'file': build_info[1],
+                                            'sig': build_info[1] + '.asc'
+                                        })
                     if not found:
                         print(f"Did not find download link info under {workflow['path']} ({workflow['name']})#{run['run_number']}")
 
-mod_list=[]
-
-for artifact in artifacts:
+# TODO Merge into the loop above
+for artifact in maven_artifacts:
     info=artifact.split(':')
     file_name=f"{info[1]}-{info[2]}.jar"
     url=f"https://archive.teacon.cn/2021/ci/maven/{info[0].replace('.', '/')}/{info[1]}/{info[2]}/{file_name}"
