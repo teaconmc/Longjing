@@ -46,8 +46,6 @@ jobs:
       - name: Build Artifact
         id: build
         shell: bash
-        env:
-          LONGJING: "true"
         run: |
           cd build/repo
           chmod +x ./gradlew
@@ -62,7 +60,7 @@ jobs:
           PGP_PWD: $${{ secrets.PGP_PWD }}
         run: cd build && source sign.sh
       - name: Publish
-        id: publish
+        id: publication
         shell: bash
         env:
           TEAM_ID: $id
@@ -76,5 +74,5 @@ jobs:
         env:
           TOKEN: $${{ github.token }}
           ARTIFACT_NAME: $${{ steps.build.output.filename }}
-          DOWNLOAD_LINK: $${{ steps.publish.outputs.download  }}
+          DOWNLOAD_LINK: $${{ steps.publication.outputs.download  }}
         run: cd build && source finish.sh
