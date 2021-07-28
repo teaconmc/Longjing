@@ -44,7 +44,7 @@ jobs:
         env:
           AUTH_TOKEN: ${{ steps.auth-as-github-app.outputs.token }}
         run: |
-          git clone --depth=1 https://${AUTH_TOKEN}@github.com/teaconmc/DataPack.git datapack
+          git clone --depth=1 https://x-access-token:${AUTH_TOKEN}@github.com/teaconmc/DataPack.git datapack
           cp assemble/mod-list.json datapack/2021/mod-list-test.json
       - name: Push to DataPack Repo
         run: |
