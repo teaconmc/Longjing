@@ -44,8 +44,8 @@ jobs:
         run: |
           source commit_info.sh
           git clone --depth=1 https://github.com/teaconmc/DataPack.git datapack
-          cd datapack
           cp assemble/mod-list.json datapack/2021/mod-list.json
+          cd datapack
           git add 2021/mod-list.json
           git commit -m "`date -u`: add 2021 mod list" || true
           git push
