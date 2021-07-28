@@ -22,13 +22,6 @@ jobs:
     steps:
       - name: Checkout 
         uses: actions/checkout@v2
-      - name: Setup Python3
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
-          architecture: 'x64'
-      - name: Install dependencies
-        run: pip3 install boto3
       - name: Auth as Github App
         id: auth-as-github-app
         shell: bash
@@ -36,6 +29,13 @@ jobs:
           APP_ID: ${{ secrets.APP_ID }}
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
         run: bash auth.sh
+      - name: Setup Python3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+      - name: Install dependencies
+        run: pip3 install boto3
       - name: Assemble Mod List
         env:
           AUTH_TOKEN: ${{ github.token }}
@@ -44,8 +44,8 @@ jobs:
         run: |
           source commit_info.sh
           git clone --depth=1 https://github.com/teaconmc/DataPack.git datapack
-          cp mod-list.json datapack/2021/mod-list.json
           cd datapack
+          cp assemble/mod-list.json datapack/2021/mod-list.json
           git add 2021/mod-list.json
           git commit -m "`date -u`: add 2021 mod list" || true
           git push
