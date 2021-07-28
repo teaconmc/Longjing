@@ -1,8 +1,83 @@
 [
   {
+    "name": "AreaControl-Forge-1.16-0.2.3.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.16/0.2.3/AreaControl-Forge-1.16-0.2.3.jar",
+    "sha256": "de639d3c0596d04b1a10626be358de3696f7afdf29ee51331034ba1b09ae252d"
+  },
+  {
+    "name": "ChromeBall-Forge-1.16-0.3.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/ChromeBall-Forge-1.16/0.3.0/ChromeBall-Forge-1.16-0.3.0.jar",
+    "sha256": "58a40b4b6015db25b0dd30886d5932e5045d9900523324bdf2a94afe1ebde8bd"
+  },
+  {
+    "name": "Isle-Forge-1.16-0.3.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Isle-Forge-1.16/0.3.0/Isle-Forge-1.16-0.3.0.jar",
+    "sha256": "82a468786a45471ba5e59f8e21b0accf52444850249f2cd4f6c40051bf42b3fd"
+  },
+  {
+    "name": "Nickname-Forge-1.16-0.3.3.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Nickname-Forge-1.16/0.3.3/Nickname-Forge-1.16-0.3.3.jar",
+    "sha256": "9c1e11b851d8638203c15702579cfd6d8b3285cc6c6842bc553738d1db3a22f4"
+  },
+  {
+    "name": "ResourceSync-Forge-1.16-0.1.1.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/ResourceSync-Forge-1.16/0.1.1/ResourceSync-Forge-1.16-0.1.1.jar",
+    "sha256": "1a8fb799b9743ef9cd2d0f00485e233ca82c6fe0337ca7c0410cb6ac78cda7d3"
+  },
+  {
+    "name": "SignMeUp-Forge-1.16-0.1.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.16/0.1.0/SignMeUp-Forge-1.16-0.1.0.jar",
+    "sha256": "ca2d14638c6d856d75bf7d32d4887505d2e0709b33c51ea94d4ebfc29b076d3e"
+  },
+  {
+    "name": "SimplePermission-Forge-1.16-0.3.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.3.0/SimplePermission-Forge-1.16-0.3.0.jar",
+    "sha256": "2d56a19d660c6d8d6abd9a5f5c3812c4547d5b90c414886b0c1e12d878ae38f7"
+  },
+  {
+    "name": "SlideShow-Forge-1.16-0.4.3.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.4.3/SlideShow-Forge-1.16-0.4.3.jar",
+    "sha256": "b7a94b36b8a6104391f859e23854ee10ad2586008ddd4d64b2d2a19db0cde157"
+  },
+  {
+    "name": "VoteMe-Forge-1.16-0.1.2.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/VoteMe-Forge-1.16/0.1.2/VoteMe-Forge-1.16-0.1.2.jar",
+    "sha256": "76a3f19dfd268b120e1242e300f3067fd615ed4196204fa155ca5b4ab1344828"
+  },
+  {
+    "name": "ChineseWorkshop-1.16.3-3.2.1.jar",
+    "file": "https://media.forgecdn.net/files/3238/380/ChineseWorkshop-1.16.3-3.2.1.jar",
+    "sha256": "48a414546603baeea8e3107f1b220e06cf40e83c2d417b0f6678a8c5eac80fef"
+  },
+  {
+    "name", "chiselsandbits-0.3.4-RELEASE.jar",
+    "file": "https://media.forgecdn.net/files/3234/842/chiselsandbits-0.3.4-RELEASE.jar",
+    "sha256": "83d791021ff4b798c5cbd1b2f3ada3caf57b691e318345cb3c33c3e34bb44fb1"
+  },
+  {
+    "name": "ftb-backups-2.1.1.6.jar",
+    "file": "https://media.forgecdn.net/files/3038/811/ftb-backups-2.1.1.6.jar",
+    "sha256": "bd02b01c02d7f7f10a3b12b17e0807f94c5120f127a1222f7df9f22a34195415"
+  },
+  {
     "name": "jei-1.16.5-7.7.1.110.jar",
     "file": "https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar",
     "sha256": "2a7a61bc4feef8890116f5e340c0cd8b04623a6928a79e5ff488775be14e741c"
+  },
+  {
+    "name": "Kiwi-1.16.5-3.5.2.jar",
+    "file": "https://media.forgecdn.net/files/3377/53/Kiwi-1.16.5-3.5.2.jar",
+    "sha256": "1a175d5f6ca5329c5ef92c853b3112a6a4d4284b7896aeb4b60c21381f2c8caf"
+  },
+  {
+    "name": "StorageDrawers-1.16.3-8.3.0.jar",
+    "file": "https://media.forgecdn.net/files/3402/515/StorageDrawers-1.16.3-8.3.0.jar",
+    "sha256": "79ab53ab8d46aa517025fc4ecbb05b8492daff5f252aa4884ba46e8fefc3b794"
+  },
+  {
+    "name": "theoneprobe-1.16-3.1.4.jar",
+    "file": "https://media.forgecdn.net/files/3319/255/theoneprobe-1.16-3.1.4.jar",
+    "sha256": "f398d0ddce4f7dd4d77ec26cf5455c66152a9564541c0fbfbb77d7e1b370cb34"
   },
   {
     "name": "mmlib-1.0.2.jar",
