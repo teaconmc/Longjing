@@ -2,126 +2,151 @@
   {
     "name": "AreaControl-Forge-1.16-0.2.3.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.16/0.2.3/AreaControl-Forge-1.16-0.2.3.jar",
-    "sha256": "de639d3c0596d04b1a10626be358de3696f7afdf29ee51331034ba1b09ae252d"
+    "sha256": "de639d3c0596d04b1a10626be358de3696f7afdf29ee51331034ba1b09ae252d",
+    "mirror": false
   },
   {
     "name": "ChromeBall-Forge-1.16-0.3.0.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/ChromeBall-Forge-1.16/0.3.0/ChromeBall-Forge-1.16-0.3.0.jar",
-    "sha256": "58a40b4b6015db25b0dd30886d5932e5045d9900523324bdf2a94afe1ebde8bd"
+    "sha256": "58a40b4b6015db25b0dd30886d5932e5045d9900523324bdf2a94afe1ebde8bd",
+    "mirror": false
   },
   {
     "name": "Isle-Forge-1.16-0.3.0.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/Isle-Forge-1.16/0.3.0/Isle-Forge-1.16-0.3.0.jar",
-    "sha256": "82a468786a45471ba5e59f8e21b0accf52444850249f2cd4f6c40051bf42b3fd"
+    "sha256": "82a468786a45471ba5e59f8e21b0accf52444850249f2cd4f6c40051bf42b3fd",
+    "mirror": false
   },
   {
     "name": "Nickname-Forge-1.16-0.3.3.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/Nickname-Forge-1.16/0.3.3/Nickname-Forge-1.16-0.3.3.jar",
-    "sha256": "9c1e11b851d8638203c15702579cfd6d8b3285cc6c6842bc553738d1db3a22f4"
+    "sha256": "9c1e11b851d8638203c15702579cfd6d8b3285cc6c6842bc553738d1db3a22f4",
+    "mirror": false
   },
   {
     "name": "ResourceSync-Forge-1.16-0.1.1.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/ResourceSync-Forge-1.16/0.1.1/ResourceSync-Forge-1.16-0.1.1.jar",
-    "sha256": "1a8fb799b9743ef9cd2d0f00485e233ca82c6fe0337ca7c0410cb6ac78cda7d3"
+    "sha256": "1a8fb799b9743ef9cd2d0f00485e233ca82c6fe0337ca7c0410cb6ac78cda7d3",
+    "mirror": false
   },
   {
     "name": "SignMeUp-Forge-1.16-0.1.0.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.16/0.1.0/SignMeUp-Forge-1.16-0.1.0.jar",
-    "sha256": "ca2d14638c6d856d75bf7d32d4887505d2e0709b33c51ea94d4ebfc29b076d3e"
+    "sha256": "ca2d14638c6d856d75bf7d32d4887505d2e0709b33c51ea94d4ebfc29b076d3e",
+    "mirror": false
   },
   {
     "name": "SimplePermission-Forge-1.16-0.3.0.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.3.0/SimplePermission-Forge-1.16-0.3.0.jar",
-    "sha256": "2d56a19d660c6d8d6abd9a5f5c3812c4547d5b90c414886b0c1e12d878ae38f7"
+    "sha256": "2d56a19d660c6d8d6abd9a5f5c3812c4547d5b90c414886b0c1e12d878ae38f7",
+    "mirror": false
   },
   {
     "name": "SlideShow-Forge-1.16-0.4.3.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.4.3/SlideShow-Forge-1.16-0.4.3.jar",
-    "sha256": "b7a94b36b8a6104391f859e23854ee10ad2586008ddd4d64b2d2a19db0cde157"
+    "sha256": "b7a94b36b8a6104391f859e23854ee10ad2586008ddd4d64b2d2a19db0cde157",
+    "mirror": false
   },
   {
     "name": "VoteMe-Forge-1.16-0.1.2.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/VoteMe-Forge-1.16/0.1.2/VoteMe-Forge-1.16-0.1.2.jar",
-    "sha256": "76a3f19dfd268b120e1242e300f3067fd615ed4196204fa155ca5b4ab1344828"
+    "sha256": "76a3f19dfd268b120e1242e300f3067fd615ed4196204fa155ca5b4ab1344828",
+    "mirror": false
   },
   {
     "name": "ChineseWorkshop-1.16.3-3.2.1.jar",
     "file": "https://media.forgecdn.net/files/3238/380/ChineseWorkshop-1.16.3-3.2.1.jar",
-    "sha256": "48a414546603baeea8e3107f1b220e06cf40e83c2d417b0f6678a8c5eac80fef"
+    "sha256": "48a414546603baeea8e3107f1b220e06cf40e83c2d417b0f6678a8c5eac80fef",
+    "mirror": true
   },
   {
-    "name", "chiselsandbits-0.3.4-RELEASE.jar",
+    "name": "chiselsandbits-0.3.4-RELEASE.jar",
     "file": "https://media.forgecdn.net/files/3234/842/chiselsandbits-0.3.4-RELEASE.jar",
-    "sha256": "83d791021ff4b798c5cbd1b2f3ada3caf57b691e318345cb3c33c3e34bb44fb1"
+    "sha256": "83d791021ff4b798c5cbd1b2f3ada3caf57b691e318345cb3c33c3e34bb44fb1",
+    "mirror": true
   },
   {
     "name": "ftb-backups-2.1.1.6.jar",
     "file": "https://media.forgecdn.net/files/3038/811/ftb-backups-2.1.1.6.jar",
-    "sha256": "bd02b01c02d7f7f10a3b12b17e0807f94c5120f127a1222f7df9f22a34195415"
+    "sha256": "bd02b01c02d7f7f10a3b12b17e0807f94c5120f127a1222f7df9f22a34195415",
+    "mirror": true
   },
   {
     "name": "jei-1.16.5-7.7.1.110.jar",
     "file": "https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar",
-    "sha256": "2a7a61bc4feef8890116f5e340c0cd8b04623a6928a79e5ff488775be14e741c"
+    "sha256": "2a7a61bc4feef8890116f5e340c0cd8b04623a6928a79e5ff488775be14e741c",
+    "mirror": true
   },
   {
     "name": "Kiwi-1.16.5-3.5.2.jar",
     "file": "https://media.forgecdn.net/files/3377/53/Kiwi-1.16.5-3.5.2.jar",
-    "sha256": "1a175d5f6ca5329c5ef92c853b3112a6a4d4284b7896aeb4b60c21381f2c8caf"
+    "sha256": "1a175d5f6ca5329c5ef92c853b3112a6a4d4284b7896aeb4b60c21381f2c8caf",
+    "mirror": true
   },
   {
     "name": "StorageDrawers-1.16.3-8.3.0.jar",
     "file": "https://media.forgecdn.net/files/3402/515/StorageDrawers-1.16.3-8.3.0.jar",
-    "sha256": "79ab53ab8d46aa517025fc4ecbb05b8492daff5f252aa4884ba46e8fefc3b794"
+    "sha256": "79ab53ab8d46aa517025fc4ecbb05b8492daff5f252aa4884ba46e8fefc3b794",
+    "mirror": true
   },
   {
     "name": "theoneprobe-1.16-3.1.4.jar",
     "file": "https://media.forgecdn.net/files/3319/255/theoneprobe-1.16-3.1.4.jar",
-    "sha256": "f398d0ddce4f7dd4d77ec26cf5455c66152a9564541c0fbfbb77d7e1b370cb34"
+    "sha256": "f398d0ddce4f7dd4d77ec26cf5455c66152a9564541c0fbfbb77d7e1b370cb34",
+    "mirror": true
   },
   {
     "name": "mmlib-1.0.2.jar",
     "file": "https://media.forgecdn.net/files/3400/796/mmlib-1.0.2.jar",
-    "sha256": "0ea3158877b7fcb8099549763aa8c77a65fb5182170373219e9719d31202ae1f"
+    "sha256": "0ea3158877b7fcb8099549763aa8c77a65fb5182170373219e9719d31202ae1f",
+    "mirror": true
   },
   {
     "name": "curios-forge-1.16.5-4.0.5.2.jar",
     "file": "https://media.forgecdn.net/files/3343/65/curios-forge-1.16.5-4.0.5.2.jar",
-    "sha256": "08d7558df6c621fca29758c349b95b137d2977cf1f3f61323fff4d85630d0641"
+    "sha256": "08d7558df6c621fca29758c349b95b137d2977cf1f3f61323fff4d85630d0641",
+    "mirror": true
   },
   {
     "name": "geckolib-forge-1.16.5-3.0.41.jar",
     "file": "https://media.forgecdn.net/files/3344/733/geckolib-forge-1.16.5-3.0.41.jar",
-    "sha256": "a4fc2d446c64682b302b1a4bd7670767f1f913ebdd0b31a496c609fd48555251"
+    "sha256": "a4fc2d446c64682b302b1a4bd7670767f1f913ebdd0b31a496c609fd48555251",
+    "mirror": true
   },
   {
     "name": "Patchouli-1.16.4-53.1.jar",
     "file": "https://media.forgecdn.net/files/3374/63/Patchouli-1.16.4-53.1.jar",
-    "sha256": "c70100bfc79517ba6d71bf5ab5dab42e6138ace502f111c3e3114d82c66b4e34"
+    "sha256": "c70100bfc79517ba6d71bf5ab5dab42e6138ace502f111c3e3114d82c66b4e34",
+    "mirror": true
   },
   {
     "name": "fantasySoup-1.0.jar",
     "file": "https://github.com/zomb-676/fantasySoup/releases/download/0.1/fantasySoup-1.0.jar",
-    "sha256": "980447e6e28fc69ba6b0aee4db85b8985c520c94cf31c5d2696a10d8c3b9c90a"
+    "sha256": "980447e6e28fc69ba6b0aee4db85b8985c520c94cf31c5d2696a10d8c3b9c90a",
+    "mirror": true
   },
   {
     "name": "SilveroakOutpost-Forge-1.16.5-0.3.5-Beta.jar",
     "file": "https://maven.lemonslice.cloud/releases/cloud/lemonslice/silveroak/SilveroakOutpost-Forge-1.16.5/0.3.5-Beta/SilveroakOutpost-Forge-1.16.5-0.3.5-Beta.jar",
-    "sha256": "dfabe29c0f85506db565addca9b66b1c988d087fa14abd9608a9de491111d8fd"
+    "sha256": "dfabe29c0f85506db565addca9b66b1c988d087fa14abd9608a9de491111d8fd",
+    "mirror": true
   },
   {
     "name": "xkdeco_0.2.0.jar",
     "file": "https://media.forgecdn.net/files/3398/181/xkdeco_0.2.0.jar",
-    "sha256": "5e026e6872d833847a6cb3d893f3c933b2d63043b9ecf7a55a4602e69c4c4889"
+    "sha256": "5e026e6872d833847a6cb3d893f3c933b2d63043b9ecf7a55a4602e69c4c4889",
+    "mirror": true
   },
   {
     "name": "kotlinforforge-1.14.0-obf.jar",
     "file": "https://media.forgecdn.net/files/3387/639/kotlinforforge-1.14.0-obf.jar",
-    "sha256": "b914fb40528985f700fd74e0fca613cf463a8f088f52af2ffaf162717d59590a"
+    "sha256": "b914fb40528985f700fd74e0fca613cf463a8f088f52af2ffaf162717d59590a",
+    "mirror": true
   },
   {
     "name": "caelus-forge-1.16.5-2.1.3.0.jar",
     "file": "https://media.forgecdn.net/files/3224/510/caelus-forge-1.16.5-2.1.3.0.jar",
-    "sha256": "284cb6d213f05b0d1d3e43ba5b79f77d33461e61b13a7c3282e5d7b4dd30324b"
+    "sha256": "284cb6d213f05b0d1d3e43ba5b79f77d33461e61b13a7c3282e5d7b4dd30324b",
+    "mirror": true
   }
 ]

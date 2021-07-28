@@ -85,10 +85,11 @@ for artifact in maven_artifacts:
 
 with open('extra.json') as f:
     for entry in json.load(f):
+        mirror_link=f"https://archive.teacon.cn/2021/ci/extra/{entry['name']}"
         mod_list.append({
           'name': entry['name'],
-          'file': f"https://archive.teacon.cn/2021/ci/extra/{entry['name']}",
-          'sig': f"https://archive.teacon.cn/2021/ci/extra/{entry['name']}.asc"
+          'file': mirror_link if entry['mirror'] else entry['file'],
+          'sig': f"{mirror_link}.asc"
         })
 
 s3=boto3.client(
