@@ -92,25 +92,5 @@ with open('extra.json') as f:
           'sig': f"{mirror_link}.asc"
         })
 
-s3=boto3.client(
-    service_name='s3',
-    config=Config(s3={'addressing_style': 'virtual'}),
-    endpoint_url=os.getenv('S3_ENDPOINT'),
-    aws_access_key_id=os.getenv('S3_ACCESS_KEY'),
-    aws_secret_access_key=os.getenv('S3_SECRET_KEY')
-)
-
-with io.BytesIO() as buf:
-    wrapper=io.TextIOWrapper(buf, encoding='UTF-8')
-    json.dump(mod_list, wrapper)
-    wrapper.flush()
-    buf.seek(0)
-    try:
-        s3.upload_fileobj(buf, os.getenv('S3_BUCKET_NAME'), '2021/ci/mod-list.json', {
-            'CacheControl': 'no-cache',
-            'ContentType': 'application/json'
-        })
-    except ClientError as e:
-        print('Error occured while updating latest mod list.')
-        print(e)
-        exit(-1)
+with open('mod_list.json', 'w', encoding='utf-8') as f:
+    json.dump(mod_list, ensure_ascii=False, indent=2)
