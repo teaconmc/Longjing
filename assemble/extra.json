@@ -6,12 +6,6 @@
     "mirror": false
   },
   {
-    "name": "ChromeBall-Forge-1.16-0.3.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/ChromeBall-Forge-1.16/0.3.0/ChromeBall-Forge-1.16-0.3.0.jar",
-    "sha256": "3cd7197749db78dda2511ab3f1ed07e65b41aed3a0fe6a3c64fcb6b331629f75",
-    "mirror": false
-  },
-  {
     "name": "Isle-Forge-1.16-0.3.0.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/Isle-Forge-1.16/0.3.0/Isle-Forge-1.16-0.3.0.jar",
     "sha256": "82a468786a45471ba5e59f8e21b0accf52444850249f2cd4f6c40051bf42b3fd",
