@@ -36,7 +36,7 @@ jobs:
           cd build/repo
           git init
           git remote add origin `cat ../../mods/team-$id/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-$id../HEAD`
+          git fetch --depth=1 origin `cat ../../mods/team-$id/HEAD`
           git reset --hard `cat ../../mods/team-$id/HEAD`
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
