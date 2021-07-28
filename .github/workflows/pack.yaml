@@ -40,11 +40,11 @@ jobs:
         env:
           AUTH_TOKEN: ${{ github.token }}
         run: cd assemble && python3 list.py
-      - name: Clone teacon/DataPack and Copy Mod List
+      - name: Clone DataPack Repo and Copy Mod List
         run: |
           git clone --depth=1 https://github.com/teaconmc/DataPack.git datapack
           cp assemble/mod-list.json datapack/2021/mod-list-test.json
-      - name: Push to teacon/DataPack
+      - name: Push to DataPack Repo
         run: |
           cd datapack
           source ../commit_info.sh
