@@ -93,4 +93,4 @@ with open('extra.json') as f:
         })
 
 with open('mod-list.json', 'w', encoding='utf-8') as f:
-    json.dump(mod_list, ensure_ascii=False, indent=2)
+    json.dump(mod_list, f, ensure_ascii=False, indent=2)
