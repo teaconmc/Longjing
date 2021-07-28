@@ -92,5 +92,5 @@ with open('extra.json') as f:
           'sig': f"{mirror_link}.asc"
         })
 
-with open('mod_list.json', 'w', encoding='utf-8') as f:
+with open('mod-list.json', 'w', encoding='utf-8') as f:
     json.dump(mod_list, ensure_ascii=False, indent=2)
