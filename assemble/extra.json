@@ -42,9 +42,9 @@
     "mirror": false
   },
   {
-    "name": "VoteMe-Forge-1.16-0.2.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/VoteMe-Forge-1.16/0.2.0/VoteMe-Forge-1.16-0.2.0.jar",
-    "sha256": "382443fdccbf3b94a72c1462ceb6624ef1118ccbd6365eff54dd3445eccb7e24",
+    "name": "VoteMe-Forge-1.16-0.2.1.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/VoteMe-Forge-1.16/0.2.1/VoteMe-Forge-1.16-0.2.1.jar",
+    "sha256": "c1fd380e02bba650c2318fe5d45f94d34f80528bbfae2800feba96d4748c9a56",
     "mirror": false
   },
   {
