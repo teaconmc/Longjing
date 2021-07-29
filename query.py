@@ -64,6 +64,9 @@ for team in team_list:
     if not os.path.exists(info_dir):
         # Create meta information directory
         os.makedirs(info_dir)
+    if os.path.exists(f"{info_dir}/withdrawn"):
+        print(f"Team #{team['id']} ({team['name']}) has withdrawn, skipping")
+        continue
     # Write repo address to $info_dir/remote
     # This is always done in case that a team updates their remote repo address.
     with open(f"{info_dir}/remote", 'w') as f:
