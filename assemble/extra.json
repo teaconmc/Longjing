@@ -1,8 +1,8 @@
 [
   {
-    "name": "AreaControl-Forge-1.16-0.2.3.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.16/0.2.3/AreaControl-Forge-1.16-0.2.3.jar",
-    "sha256": "de639d3c0596d04b1a10626be358de3696f7afdf29ee51331034ba1b09ae252d",
+    "name": "AreaControl-Forge-1.16-0.2.4.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.16/0.2.4/AreaControl-Forge-1.16-0.2.4.jar",
+    "sha256": "5542f4c9b8478c40c401517db59b5617dc0c501b46e22ea60c1b7ab5e3cfa1c3",
     "mirror": false
   },
   {
@@ -81,6 +81,12 @@
     "name": "Kiwi-1.16.5-3.5.2.jar",
     "file": "https://media.forgecdn.net/files/3377/53/Kiwi-1.16.5-3.5.2.jar",
     "sha256": "1a175d5f6ca5329c5ef92c853b3112a6a4d4284b7896aeb4b60c21381f2c8caf",
+    "mirror": true
+  },
+  {
+    "name": "modnametooltip_1.16.2-1.15.0.jar",
+    "file": "https://media.forgecdn.net/files/3038/982/modnametooltip_1.16.2-1.15.0.jar",
+    "sha256": "dcb7a594527f4f9dae3ae51398dea92a24f1fb82b296193c987a8696d35886fa",
     "mirror": true
   },
   {
