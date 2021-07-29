@@ -24,12 +24,6 @@
     "mirror": false
   },
   {
-    "name": "ResourceSync-Forge-1.16-0.1.1.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/ResourceSync-Forge-1.16/0.1.1/ResourceSync-Forge-1.16-0.1.1.jar",
-    "sha256": "1a8fb799b9743ef9cd2d0f00485e233ca82c6fe0337ca7c0410cb6ac78cda7d3",
-    "mirror": false
-  },
-  {
     "name": "SignMeUp-Forge-1.16-0.1.3.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.16/0.1.3/SignMeUp-Forge-1.16-0.1.3.jar",
     "sha256": "e064cce2256de18eaa92708b476ccd0129b963fa2359cbe795d1dbb5106e704c",
