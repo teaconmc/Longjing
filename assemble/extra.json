@@ -30,9 +30,9 @@
     "mirror": false
   },
   {
-    "name": "SimplePermission-Forge-1.16-0.3.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.3.0/SimplePermission-Forge-1.16-0.3.0.jar",
-    "sha256": "2d56a19d660c6d8d6abd9a5f5c3812c4547d5b90c414886b0c1e12d878ae38f7",
+    "name": "SimplePermission-Forge-1.16-0.4.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.4.0/SimplePermission-Forge-1.16-0.4.0.jar",
+    "sha256": "317824d3432186d00845092d1293e509512638cc92b5e9101ef24ec186fb2c6d",
     "mirror": false
   },
   {
