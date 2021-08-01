@@ -24,15 +24,15 @@
     "mirror": false
   },
   {
-    "name": "SignMeUp-Forge-1.16-0.1.3.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.16/0.1.3/SignMeUp-Forge-1.16-0.1.3.jar",
-    "sha256": "e064cce2256de18eaa92708b476ccd0129b963fa2359cbe795d1dbb5106e704c",
+    "name": "SignMeUp-Forge-1.16-0.1.4.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.16/0.1.4/SignMeUp-Forge-1.16-0.1.4.jar",
+    "sha256": "6f59cd9b6e2e35ffa9f1113a707d09b4b9bb624940c105a4bab3f9ef0f00860a",
     "mirror": false
   },
   {
-    "name": "SimplePermission-Forge-1.16-0.4.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.4.0/SimplePermission-Forge-1.16-0.4.0.jar",
-    "sha256": "317824d3432186d00845092d1293e509512638cc92b5e9101ef24ec186fb2c6d",
+    "name": "SimplePermission-Forge-1.16-0.4.1.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.4.1/SimplePermission-Forge-1.16-0.4.1.jar",
+    "sha256": "3324f82bd7b391d15c416aef2239adb114abc37bc3579e27599589d7d679eb2e",
     "mirror": false
   },
   {
