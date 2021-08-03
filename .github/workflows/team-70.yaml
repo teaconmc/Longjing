@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build M1917美国制史密斯维森'
+    name: 'Build 梗系列Mod小合集'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
