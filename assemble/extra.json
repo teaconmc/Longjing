@@ -48,6 +48,12 @@
     "mirror": false
   },
   {
+    "name": "caelus-forge-1.16.5-2.1.3.0.jar",
+    "file": "https://media.forgecdn.net/files/3224/510/caelus-forge-1.16.5-2.1.3.0.jar",
+    "sha256": "284cb6d213f05b0d1d3e43ba5b79f77d33461e61b13a7c3282e5d7b4dd30324b",
+    "mirror": true
+  },
+  {
     "name": "ChineseWorkshop-1.16.3-3.2.1.jar",
     "file": "https://media.forgecdn.net/files/3238/380/ChineseWorkshop-1.16.3-3.2.1.jar",
     "sha256": "48a414546603baeea8e3107f1b220e06cf40e83c2d417b0f6678a8c5eac80fef",
@@ -60,9 +66,27 @@
     "mirror": true
   },
   {
+    "name": "curios-forge-1.16.5-4.0.5.2.jar",
+    "file": "https://media.forgecdn.net/files/3343/65/curios-forge-1.16.5-4.0.5.2.jar",
+    "sha256": "08d7558df6c621fca29758c349b95b137d2977cf1f3f61323fff4d85630d0641",
+    "mirror": true
+  },
+  {
+    "name": "fantasySoup-1.0.jar",
+    "file": "https://github.com/zomb-676/fantasySoup/releases/download/0.1/fantasySoup-1.0.jar",
+    "sha256": "980447e6e28fc69ba6b0aee4db85b8985c520c94cf31c5d2696a10d8c3b9c90a",
+    "mirror": true
+  },
+  {
     "name": "ftb-backups-2.1.1.6.jar",
     "file": "https://media.forgecdn.net/files/3038/811/ftb-backups-2.1.1.6.jar",
     "sha256": "bd02b01c02d7f7f10a3b12b17e0807f94c5120f127a1222f7df9f22a34195415",
+    "mirror": true
+  },
+  {
+    "name": "geckolib-forge-1.16.5-3.0.41.jar",
+    "file": "https://media.forgecdn.net/files/3344/733/geckolib-forge-1.16.5-3.0.41.jar",
+    "sha256": "a4fc2d446c64682b302b1a4bd7670767f1f913ebdd0b31a496c609fd48555251",
     "mirror": true
   },
   {
@@ -78,15 +102,9 @@
     "mirror": true
   },
   {
-    "name": "modnametooltip_1.16.2-1.15.0.jar",
-    "file": "https://media.forgecdn.net/files/3038/982/modnametooltip_1.16.2-1.15.0.jar",
-    "sha256": "dcb7a594527f4f9dae3ae51398dea92a24f1fb82b296193c987a8696d35886fa",
-    "mirror": true
-  },
-  {
-    "name": "StorageDrawers-1.16.3-8.3.0.jar",
-    "file": "https://media.forgecdn.net/files/3402/515/StorageDrawers-1.16.3-8.3.0.jar",
-    "sha256": "79ab53ab8d46aa517025fc4ecbb05b8492daff5f252aa4884ba46e8fefc3b794",
+    "name": "kotlinforforge-1.14.0-obf.jar",
+    "file": "https://media.forgecdn.net/files/3387/639/kotlinforforge-1.14.0-obf.jar",
+    "sha256": "b914fb40528985f700fd74e0fca613cf463a8f088f52af2ffaf162717d59590a",
     "mirror": true
   },
   {
@@ -96,15 +114,9 @@
     "mirror": true
   },
   {
-    "name": "curios-forge-1.16.5-4.0.5.2.jar",
-    "file": "https://media.forgecdn.net/files/3343/65/curios-forge-1.16.5-4.0.5.2.jar",
-    "sha256": "08d7558df6c621fca29758c349b95b137d2977cf1f3f61323fff4d85630d0641",
-    "mirror": true
-  },
-  {
-    "name": "geckolib-forge-1.16.5-3.0.41.jar",
-    "file": "https://media.forgecdn.net/files/3344/733/geckolib-forge-1.16.5-3.0.41.jar",
-    "sha256": "a4fc2d446c64682b302b1a4bd7670767f1f913ebdd0b31a496c609fd48555251",
+    "name": "modnametooltip_1.16.2-1.15.0.jar",
+    "file": "https://media.forgecdn.net/files/3038/982/modnametooltip_1.16.2-1.15.0.jar",
+    "sha256": "dcb7a594527f4f9dae3ae51398dea92a24f1fb82b296193c987a8696d35886fa",
     "mirror": true
   },
   {
@@ -114,33 +126,15 @@
     "mirror": true
   },
   {
-    "name": "fantasySoup-1.0.jar",
-    "file": "https://github.com/zomb-676/fantasySoup/releases/download/0.1/fantasySoup-1.0.jar",
-    "sha256": "980447e6e28fc69ba6b0aee4db85b8985c520c94cf31c5d2696a10d8c3b9c90a",
-    "mirror": true
-  },
-  {
     "name": "SilveroakOutpost-Forge-1.16.5-0.3.5-Beta.jar",
     "file": "https://maven.lemonslice.cloud/releases/cloud/lemonslice/silveroak/SilveroakOutpost-Forge-1.16.5/0.3.5-Beta/SilveroakOutpost-Forge-1.16.5-0.3.5-Beta.jar",
     "sha256": "dfabe29c0f85506db565addca9b66b1c988d087fa14abd9608a9de491111d8fd",
     "mirror": true
   },
   {
-    "name": "xkdeco_0.2.4.jar",
-    "file": "https://media.forgecdn.net/files/3406/131/xkdeco_0.2.4.jar",
-    "sha256": "70e330d1062fddba3dd993208f517437aabf150d68837711ca1ebc15393fe7d0",
-    "mirror": true
-  },
-  {
-    "name": "kotlinforforge-1.14.0-obf.jar",
-    "file": "https://media.forgecdn.net/files/3387/639/kotlinforforge-1.14.0-obf.jar",
-    "sha256": "b914fb40528985f700fd74e0fca613cf463a8f088f52af2ffaf162717d59590a",
-    "mirror": true
-  },
-  {
-    "name": "caelus-forge-1.16.5-2.1.3.0.jar",
-    "file": "https://media.forgecdn.net/files/3224/510/caelus-forge-1.16.5-2.1.3.0.jar",
-    "sha256": "284cb6d213f05b0d1d3e43ba5b79f77d33461e61b13a7c3282e5d7b4dd30324b",
+    "name": "StorageDrawers-1.16.3-8.3.0.jar",
+    "file": "https://media.forgecdn.net/files/3402/515/StorageDrawers-1.16.3-8.3.0.jar",
+    "sha256": "79ab53ab8d46aa517025fc4ecbb05b8492daff5f252aa4884ba46e8fefc3b794",
     "mirror": true
   },
   {
@@ -159,6 +153,12 @@
     "name": "weatherforecast-1.0.0.jar",
     "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.0.jar",
     "sha256": "431062d0a50af48df38495ddd67b61fe6ee5aecadb78f29dfb13335cea73494e",
+    "mirror": true
+  },
+  {
+    "name": "xkdeco_0.2.4.jar",
+    "file": "https://media.forgecdn.net/files/3406/131/xkdeco_0.2.4.jar",
+    "sha256": "70e330d1062fddba3dd993208f517437aabf150d68837711ca1ebc15393fe7d0",
     "mirror": true
   }
 ]
