@@ -160,5 +160,11 @@
     "file": "https://media.forgecdn.net/files/3350/866/useful_railroads-1.16.5-1.4.6.38.jar",
     "sha256": "bdf577cba7b207879234aa68c01fb3fd29b965694263b58b0e05e33d628da40d",
     "mirror": true
+  },
+  {
+    "name": "weatherforecast-1.0.0.jar",
+    "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.0.jar",
+    "sha256": "431062d0a50af48df38495ddd67b61fe6ee5aecadb78f29dfb13335cea73494e",
+    "mirror": true
   }
 ]
