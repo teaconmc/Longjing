@@ -90,9 +90,9 @@
     "mirror": true
   },
   {
-    "name": "jei-1.16.5-7.7.1.110.jar",
-    "file": "https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar",
-    "sha256": "2a7a61bc4feef8890116f5e340c0cd8b04623a6928a79e5ff488775be14e741c",
+    "name": "jei-1.16.5-7.7.1.118.jar",
+    "file": "https://media.forgecdn.net/files/3414/898/jei-1.16.5-7.7.1.118.jar",
+    "sha256": "78663dd3c2694b6861dace7383071412d6aafbd55af77422e810f7ca67ea78d9",
     "mirror": true
   },
   {
@@ -150,9 +150,9 @@
     "mirror": true
   },
   {
-    "name": "weatherforecast-1.0.0.jar",
-    "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.0.jar",
-    "sha256": "431062d0a50af48df38495ddd67b61fe6ee5aecadb78f29dfb13335cea73494e",
+    "name": "weatherforecast-1.0.1.jar",
+    "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.1.jar",
+    "sha256": "e8248af02137ad17503020dd5ce7abb823140d28cf57ab16a9b2abc3a85b1ac3",
     "mirror": true
   },
   {
