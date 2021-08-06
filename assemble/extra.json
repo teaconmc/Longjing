@@ -90,12 +90,6 @@
     "mirror": true
   },
   {
-    "name": "theoneprobe-1.16-3.1.4.jar",
-    "file": "https://media.forgecdn.net/files/3319/255/theoneprobe-1.16-3.1.4.jar",
-    "sha256": "f398d0ddce4f7dd4d77ec26cf5455c66152a9564541c0fbfbb77d7e1b370cb34",
-    "mirror": true
-  },
-  {
     "name": "mmlib-1.0.2.jar",
     "file": "https://media.forgecdn.net/files/3400/796/mmlib-1.0.2.jar",
     "sha256": "0ea3158877b7fcb8099549763aa8c77a65fb5182170373219e9719d31202ae1f",
