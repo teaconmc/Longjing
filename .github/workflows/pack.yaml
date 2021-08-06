@@ -36,6 +36,14 @@ jobs:
           architecture: 'x64'
       - name: Install dependencies
         run: pip3 install boto3
+      - name: Check Extras
+        env:
+          PGP_KEY: ${{ secrets.TEACON_SIGNING_KEY }}
+          PGP_PWD: ${{ secrets.TEACON_SIGNING_PWD }}
+          S3_ENDPOINT: ${{ secrets.TEACON_ARCHIVE_ENDPOINT }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.TEACON_ARCHIVE_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.TEACON_ARCHIVE_SECRET_KEY }}
+        run: cd assemble && bash update.sh
       - name: Assemble Mod List
         env:
           AUTH_TOKEN: ${{ github.token }}
