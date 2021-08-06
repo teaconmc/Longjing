@@ -30,15 +30,15 @@
     "mirror": false
   },
   {
-    "name": "SimplePermission-Forge-1.16-0.4.4.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.4.4/SimplePermission-Forge-1.16-0.4.4.jar",
-    "sha256": "6b979f00fc89628b16702331e59fbaeb71b35d7ef5c14fc515c526aa6bf6cc69",
+    "name": "SimplePermission-Forge-1.16-0.4.5.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.4.5/SimplePermission-Forge-1.16-0.4.5.jar",
+    "sha256": "901bb3d881bda3bc8e35a41aa0dd603762fe472b9738c7d60c9e0593120c180a",
     "mirror": false
   },
   {
-    "name": "SlideShow-Forge-1.16-0.4.5.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.4.5/SlideShow-Forge-1.16-0.4.5.jar",
-    "sha256": "363baf066771584dcdea57f226133e6d1d88ff584e66029e3b70b46fc646c503",
+    "name": "SlideShow-Forge-1.16-0.4.6.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.4.6/SlideShow-Forge-1.16-0.4.6.jar",
+    "sha256": "aaadaf618f74067f9b02f1a509c7fc8a5f7ed21f33de47c49e86dc6476ae72bc",
     "mirror": false
   },
   {
