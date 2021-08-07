@@ -36,9 +36,9 @@
     "mirror": false
   },
   {
-    "name": "SlideShow-Forge-1.16-0.4.7.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.4.7/SlideShow-Forge-1.16-0.4.7.jar",
-    "sha256": "e20d4eeb31832dbad9341b8357aa96801394dacb245f8a4fe14b359bb8a6d6f1",
+    "name": "SlideShow-Forge-1.16-0.4.8.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.4.8/SlideShow-Forge-1.16-0.4.8.jar",
+    "sha256": "304975693c14790b7443e1016c4696c8285f62b97d1a144a560aa91a20e1bb56",
     "mirror": false
   },
   {
@@ -150,9 +150,9 @@
     "mirror": true
   },
   {
-    "name": "weatherforecast-1.0.2.jar",
-    "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.2.jar",
-    "sha256": "7252052b6e00862f395c43da1600a7c7ed1a0114b069442729f356574490e878",
+    "name": "weatherforecast-1.0.3.jar",
+    "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.3.jar",
+    "sha256": "a717c97ff9341812e828e3c25fc6b69eb2f952d7053645926ba326b389a60b03",
     "mirror": true
   },
   {
