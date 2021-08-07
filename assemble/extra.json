@@ -150,9 +150,9 @@
     "mirror": true
   },
   {
-    "name": "weatherforecast-1.0.1.jar",
-    "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.1.jar",
-    "sha256": "e8248af02137ad17503020dd5ce7abb823140d28cf57ab16a9b2abc3a85b1ac3",
+    "name": "weatherforecast-1.0.2.jar",
+    "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.2.jar",
+    "sha256": "7252052b6e00862f395c43da1600a7c7ed1a0114b069442729f356574490e878",
     "mirror": true
   },
   {
