@@ -18,9 +18,9 @@
     "mirror": false
   },
   {
-    "name": "Nickname-Forge-1.16-0.3.3.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/Nickname-Forge-1.16/0.3.3/Nickname-Forge-1.16-0.3.3.jar",
-    "sha256": "9c1e11b851d8638203c15702579cfd6d8b3285cc6c6842bc553738d1db3a22f4",
+    "name": "Nickname-Forge-1.16-0.3.4.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Nickname-Forge-1.16/0.3.4/Nickname-Forge-1.16-0.3.4.jar",
+    "sha256": "9448b71c65aa885b281778cee4b066e0c89dd17a4478180b1fdeaf53e158b25a",
     "mirror": false
   },
   {
@@ -30,9 +30,9 @@
     "mirror": false
   },
   {
-    "name": "SimplePermission-Forge-1.16-0.4.5.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.4.5/SimplePermission-Forge-1.16-0.4.5.jar",
-    "sha256": "901bb3d881bda3bc8e35a41aa0dd603762fe472b9738c7d60c9e0593120c180a",
+    "name": "SimplePermission-Forge-1.16-0.4.6.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.4.6/SimplePermission-Forge-1.16-0.4.6.jar",
+    "sha256": "87c5ed1c7ff1fbec245daffe47bbb155068a0f13157bc0aa6d0dd3ce76b00f97",
     "mirror": false
   },
   {
