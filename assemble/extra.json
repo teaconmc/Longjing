@@ -36,9 +36,9 @@
     "mirror": false
   },
   {
-    "name": "SlideShow-Forge-1.16-0.5.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.5.0/SlideShow-Forge-1.16-0.5.0.jar",
-    "sha256": "5704087e55f6955db56b91d515edb6a67e44483b58a0aff093f55cbee7b69773",
+    "name": "SlideShow-Forge-1.16-0.5.2.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.5.2/SlideShow-Forge-1.16-0.5.2.jar",
+    "sha256": "97aac49a8af6193cdd818b32b2944b9eae6a54e7fd617ff449a1d14ac49897e0",
     "mirror": false
   },
   {
