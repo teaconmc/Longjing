@@ -18,9 +18,9 @@
     "mirror": false
   },
   {
-    "name": "Nickname-Forge-1.16-0.3.3.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/Nickname-Forge-1.16/0.3.3/Nickname-Forge-1.16-0.3.3.jar",
-    "sha256": "9c1e11b851d8638203c15702579cfd6d8b3285cc6c6842bc553738d1db3a22f4",
+    "name": "Nickname-Forge-1.16-0.3.6.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Nickname-Forge-1.16/0.3.6/Nickname-Forge-1.16-0.3.6.jar",
+    "sha256": "3865c17cfa795595227c873d2e5ce2bed63f72586049e39ec7e8c09204db4b17",
     "mirror": false
   },
   {
@@ -30,15 +30,15 @@
     "mirror": false
   },
   {
-    "name": "SimplePermission-Forge-1.16-0.4.5.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.4.5/SimplePermission-Forge-1.16-0.4.5.jar",
-    "sha256": "901bb3d881bda3bc8e35a41aa0dd603762fe472b9738c7d60c9e0593120c180a",
+    "name": "SimplePermission-Forge-1.16-0.4.8.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SimplePermission-Forge-1.16/0.4.8/SimplePermission-Forge-1.16-0.4.8.jar",
+    "sha256": "dc51210b1c2fdf162fd844b1fb70618f11efbfb13f3d9d1c8832bb831c769754",
     "mirror": false
   },
   {
-    "name": "SlideShow-Forge-1.16-0.4.6.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.4.6/SlideShow-Forge-1.16-0.4.6.jar",
-    "sha256": "aaadaf618f74067f9b02f1a509c7fc8a5f7ed21f33de47c49e86dc6476ae72bc",
+    "name": "SlideShow-Forge-1.16-0.5.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.16/0.5.0/SlideShow-Forge-1.16-0.5.0.jar",
+    "sha256": "5704087e55f6955db56b91d515edb6a67e44483b58a0aff093f55cbee7b69773",
     "mirror": false
   },
   {
@@ -150,9 +150,9 @@
     "mirror": true
   },
   {
-    "name": "weatherforecast-1.0.1.jar",
-    "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.1.jar",
-    "sha256": "e8248af02137ad17503020dd5ce7abb823140d28cf57ab16a9b2abc3a85b1ac3",
+    "name": "weatherforecast-1.0.3.jar",
+    "file": "https://archive.teacon.cn/2021/ci/extra/weatherforecast-1.0.3.jar",
+    "sha256": "a717c97ff9341812e828e3c25fc6b69eb2f952d7053645926ba326b389a60b03",
     "mirror": true
   },
   {
