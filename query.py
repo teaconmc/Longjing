@@ -67,6 +67,9 @@ for team in team_list:
     if os.path.exists(f"{info_dir}/withdrawn"):
         print(f"Team #{team['id']} ({team['name']}) has withdrawn, skipping")
         continue
+    if not os.path.exists(f"{info_dir}/update"):
+        print(f"Team #{team['id']} ({team['name']}) did not request for updating, skipping")
+        continue
     # Write repo address to $info_dir/remote
     # This is always done in case that a team updates their remote repo address.
     with open(f"{info_dir}/remote", 'w') as f:
