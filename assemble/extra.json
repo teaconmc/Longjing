@@ -24,9 +24,9 @@
     "mirror": false
   },
   {
-    "name": "SignMeUp-Forge-1.16-0.1.4.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.16/0.1.4/SignMeUp-Forge-1.16-0.1.4.jar",
-    "sha256": "6f59cd9b6e2e35ffa9f1113a707d09b4b9bb624940c105a4bab3f9ef0f00860a",
+    "name": "SignMeUp-Forge-1.16-0.1.5.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.16/0.1.5/SignMeUp-Forge-1.16-0.1.5.jar",
+    "sha256": "3d5ec7109e6e0bd638113ebbceb0c1e922ed3075c43aed33e3857bba081085e7",
     "mirror": false
   },
   {
@@ -42,9 +42,9 @@
     "mirror": false
   },
   {
-    "name": "VoteMe-Forge-1.16-0.3.3.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/VoteMe-Forge-1.16/0.3.3/VoteMe-Forge-1.16-0.3.3.jar",
-    "sha256": "dff9b0a1e936bf845c1883d311b9ae5ef7d788f12a748130f8f0f1db81b92c9e",
+    "name": "VoteMe-Forge-1.16-0.4.1.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/VoteMe-Forge-1.16/0.4.1/VoteMe-Forge-1.16-0.4.1.jar",
+    "sha256": "632debb65e1fda7d18a86d65890428061343c3429ea93fbc6e4f9afef302af64",
     "mirror": false
   },
   {
