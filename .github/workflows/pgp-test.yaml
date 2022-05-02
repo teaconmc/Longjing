@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: PGP Private Key Test
         env:
-          PGP_KEY: ${{ secrets.PGP_KEY }}
-          PGP_PWD: ${{ secrets.PGP_PWD }}
+          PGP_KEY: ${{ secrets.TEACON_SIGNING_KEY }}
+          PGP_PWD: ${{ secrets.TEACON_SIGNING_PWD }}
           GPG_OPTS: --homedir ./.gnupg --batch --pinentry-mode loopback --passphrase-fd 0 --quiet --armor
         run: |
           # write to file
