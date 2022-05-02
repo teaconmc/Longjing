@@ -7,22 +7,32 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: PGP Private Key Test
+      - name: Import PGP Private Key
         env:
           PGP_KEY: ${{ secrets.TEACON_SIGNING_KEY }}
           PGP_PWD: ${{ secrets.TEACON_SIGNING_PWD }}
           GPG_OPTS: --homedir ./.gnupg --batch --pinentry-mode loopback --passphrase-fd 0 --quiet --armor
         run: |
-          # write to file
           mkdir -pm 700 ./.gnupg
           cat > teacon.asc <<EOM
           $PGP_KEY
           EOM
-          # import the file
           gpg $GPG_OPTS --import teacon.asc <<EOM
           $PGP_PWD
           EOM
-          # sign a simple message
-          echo TeaCon | gpg --clearsign | tee teacon.sig
-          # verify the signature of the message
-          gpg --verify teacon.sig
+      - name: Sign a Simple Message
+        env:
+          PGP_PWD: ${{ secrets.TEACON_SIGNING_PWD }}
+          GPG_OPTS: --homedir ./.gnupg --batch --pinentry-mode loopback --passphrase-fd 0 --quiet --armor
+        run: |
+          echo TeaCon | gpg $GPG_OPTS --clearsign --output teacon.sig <<EOM
+          $PGP_PWD
+          EOM
+      - name: Verify the Signature
+        env:
+          GPG_OPTS: --homedir ./.gnupg --batch --pinentry-mode loopback --passphrase-fd 0 --quiet --armor
+        run: |
+          gpg $GPG_OPTS --verify teacon.sig
+      - name: Print the Signature
+        run: |
+          cat teacon.sig
