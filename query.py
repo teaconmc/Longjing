@@ -12,7 +12,7 @@ from typing import List, Optional, TypedDict, Literal
 
 # Print the fetch error message
 def fetch_error():
-    print('Error occured while fetching the contest')
+    print('Error occured while fetching the contest or participting team/mod list')
     if os.getenv('GITHUB_ACTIONS', False):
         print('::error::Error occured while fetching participting team/mod list, check log for details')
     print(sys.exc_info())
@@ -26,7 +26,7 @@ def get_contest_id(contest_name: str) -> int:
             contest_list = json.load(body)
             for contest in contest_list:
                 if contest['title'] == contest_name:
-                    return contest.id
+                    return contest['id']
                 
     except:
         fetch_error()
