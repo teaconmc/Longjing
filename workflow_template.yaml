@@ -55,8 +55,8 @@ jobs:
         env:
           ARTIFACT_NAME: $${{ steps.building.outputs.filename }}
           ARTIFACT_PATH: $${{ steps.building.outputs.artifact }}
-          PGP_KEY: $${{ secrets.PGP_KEY }}
-          PGP_PWD: $${{ secrets.PGP_PWD }}
+          PGP_KEY: $${{ secrets.TEACON_SIGNING_KEY }}
+          PGP_PWD: $${{ secrets.TEACON_SIGNING_PWD }}
         run: cd build && source sign.sh
       - name: Publish
         id: publication
