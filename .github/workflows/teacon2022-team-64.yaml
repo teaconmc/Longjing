@@ -2,7 +2,7 @@ name: 'TeaCon2022 NekoBucket'
 on:
   push:
     paths:
-      - 'mods/team-64/HEAD'
+      - 'mods/teacon2022-team-64/HEAD'
   workflow_dispatch:
 jobs:
   publish:
@@ -35,9 +35,9 @@ jobs:
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-64/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-64/HEAD`
-          git reset --hard `cat ../../mods/team-64/HEAD`
+          git remote add origin `cat ../../mods/teacon2022-team-64/remote`
+          git fetch --depth=1 origin `cat ../../mods/teacon2022-team-64/HEAD`
+          git reset --hard `cat ../../mods/teacon2022-team-64/HEAD`
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
         with:

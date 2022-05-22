@@ -2,7 +2,7 @@ name: 'TeaCon2022 新星先锋队'
 on:
   push:
     paths:
-      - 'mods/team-32/HEAD'
+      - 'mods/teacon2022-team-32/HEAD'
   workflow_dispatch:
 jobs:
   publish:
@@ -35,9 +35,9 @@ jobs:
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-32/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-32/HEAD`
-          git reset --hard `cat ../../mods/team-32/HEAD`
+          git remote add origin `cat ../../mods/teacon2022-team-32/remote`
+          git fetch --depth=1 origin `cat ../../mods/teacon2022-team-32/HEAD`
+          git reset --hard `cat ../../mods/teacon2022-team-32/HEAD`
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
         with:
