@@ -1,0 +1,63 @@
+name: Scheduled Testing Pack Update
+on:
+  #push:
+  #  paths:
+  #    - 'assemble/blacklist.json'
+  #    - 'assemble/extra.json'
+  #workflow_run:
+  #  workflows: [ 'TeaCon2022*' ]
+  #  branches: [ 'teacon2022' ]
+  #  types: 
+  #    - completed
+  workflow_dispatch:
+concurrency:
+  group: pack-update
+  cancel-in-progress: true
+jobs:
+  assemble-mod-list:
+    name: Assemble Mod List
+    environment: Assemble
+    runs-on: ubuntu-18.04
+    if: ${{ github.event.workflow_run == null || github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v2
+      - name: Auth as Github App
+        id: auth-as-github-app
+        shell: bash
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+        run: bash auth.sh
+      - name: Setup Python3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+      - name: Install dependencies
+        run: pip3 install boto3
+      - name: Check Extras
+        env:
+          PGP_KEY: ${{ secrets.TEACON_SIGNING_KEY }}
+          PGP_PWD: ${{ secrets.TEACON_SIGNING_PWD }}
+          S3_ENDPOINT: ${{ secrets.TEACON_ARCHIVE_ENDPOINT }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.TEACON_ARCHIVE_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.TEACON_ARCHIVE_SECRET_KEY }}
+        run: cd assemble && bash update.sh
+      - name: Assemble Mod List
+        env:
+          AUTH_TOKEN: ${{ github.token }}
+        run: cd assemble && python3 list.py
+      - name: Clone DataPack Repo and Copy Mod List
+        env:
+          AUTH_TOKEN: ${{ steps.auth-as-github-app.outputs.token }}
+        run: |
+          git clone --depth=1 https://x-access-token:${AUTH_TOKEN}@github.com/teaconmc/DataPack.git -b dev datapack
+          cp assemble/mod-list.json datapack/2022/mod-list-test.json
+      - name: Push to DataPack Repo
+        run: |
+          cd datapack
+          source ../commit_info.sh
+          git add 2022/mod-list-test.json
+          git commit -m "`date -u`: add 2022 mod list" || true
+          git push

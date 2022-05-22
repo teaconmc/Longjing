@@ -1,0 +1,44 @@
+name: Scheduled Polling
+on:
+  #schedule:
+  #  - cron: "0 */2 * * *"
+  #push:
+  #  paths:
+  #    - 'workflow_template.yaml'
+  workflow_dispatch:
+jobs:
+  fetch-update:
+    name: Fetch updates
+    environment: Polling
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v2
+      - name: Auth as Github App
+        id: auth-as-github-app
+        shell: bash
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+        run: bash auth.sh
+      - name: Re-Checkout
+        uses: actions/checkout@v2
+        with:
+          token: ${{ steps.auth-as-github-app.outputs.token }}
+      - name: Setup Python3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+      - name: Query updates
+        shell: bash
+        run: python3 query.py
+      - name: Commit changes
+        shell: bash
+        run: |
+          source commit_info.sh
+          git add .github/workflows
+          git commit -m "`date -u`: create/update new build workflow(s)" || true
+          git add mods
+          git commit -m "`date -u`: trigger new build(s)" || true
+          git push

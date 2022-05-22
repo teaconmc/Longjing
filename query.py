@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+
+import json
+import os
+import os.path
+import subprocess
+import sys
+from string import Template
+import urllib.request
+
+# Fetch latest team information from Biluochun (TeaCon Admission Portal) API
+# Remark: https://bugs.python.org/issue40321
+# See also https://github.com/python/cpython/pull/19588
+# That issue exists back when Biluochun was still built on Flask.
+team_list_url = 'https://biluochun.teacon.cn/api/v1/contest/teams?contest=1'
+team_list = []
+try:
+    print('Fetching team/mod list')
+    with urllib.request.urlopen(team_list_url, timeout = 15) as f:
+        team_list = json.load(f)
+except:
+    print('Error occured while fetching participting team/mod list')
+    if os.getenv('GITHUB_ACTIONS', False):
+        print('::error::Error occured while fetching participting team/mod list, check log for details')
+    print(sys.exc_info())
+    exit(-1)
+else:
+    print('Successfully fetched team/mod list')
+
+# Load GitHub Action Workflow template
+# As we only perform simple string subtitution, we uses the built-in string.Template
+workflow_template = None
+with open('workflow_template.yaml') as f:
+    workflow_template = Template(f.read())
+
+team_list.sort(key=lambda t: t['id'])
+
+# Check each team.
+for team in team_list:
+    print(f"Fetching information for team #{team['id']} ({team['name']}) from {team['repo']}")
+
+    skip = False
+
+    if not team['repo']:
+        print(f"Team #{team['id']} ({team['name']}) did not provide a git repo address, skipping")
+        if os.getenv('GITHUB_ACTIONS', False):
+            print(f"::warning::Team #{team['id']} ({team['name']}) did not provide a git repo address.")
+        skip = True
+    
+    # Escape ' by doubling it. YAML decides to use this for single-quoted strings.
+    team['name'] = team['name'].replace("'", "''")
+    team['work_name'] = team['work_name'].replace("'", "''")
+
+    # Create workflow run, or force update it if already exist
+    with open(f".github/workflows/teacon2022-team-{team['id']}.yaml", 'w') as f:
+        f.write(workflow_template.substitute(team))
+
+    if skip:
+        continue
+
+    # Each team gets their own directory to storing related information.
+    # Internal team id is used because it is permenant.
+    info_dir = f"./mods/teacon2022-team-{team['id']}"
+    # New team is signalled as absence of their tracking info in our repo. 
+    # If a new team is found, we then create a directory for them.
+    if not os.path.exists(info_dir):
+        # Create meta information directory
+        os.makedirs(info_dir)
+    # Skip teams that have declared withdrawal
+    #if os.path.exists(f"{info_dir}/withdrawn"):
+    if team['type'] == 2:
+        print(f"Team #{team['id']} ({team['name']}) has withdrawn, skipping")
+        continue
+    # Write repo address to $info_dir/remote
+    # This is always done in case that a team updates their remote repo address.
+    with open(f"{info_dir}/remote", 'w') as f:
+        f.write(team['repo'])
+    # We use `git ls-remote $repo_url HEAD` to get the latest commit and use it to 
+    # determine if we should trigger a build.
+    # The sole criterion is "current HEAD commit hash is different from our recorded one".
+    # We store the HEAD commit hash in `mods/team-${team_id}/HEAD`.
+    # A new build is triggered by updating that recorded commit hash.
+    previous_head = None
+    if os.path.exists(f"{info_dir}/HEAD"):
+        with open(f"{info_dir}/HEAD") as f:
+            previous_head = f.read()
+    head_ref = 'HEAD'
+    if os.path.exists(f"{info_dir}/ref"):
+        with open(f"{info_dir}/ref") as f:
+            head_ref = f.read()
+    try:
+        get_head_process = subprocess.run(['git', 'ls-remote', team['repo'], head_ref],
+            timeout = 10,
+            capture_output = True, 
+            text = True)
+    except subprocess.TimeoutExpired:
+        print(f"Timeout while fetching git repo information for team #{team['id']} (upstream {team['repo']})")
+        if os.getenv('GITHUB_ACTIONS', False):
+            print(f"::warning::Timeout while fetching {team['repo']} for team #{team['id']}. Information about this team will not be updated.")
+        continue
+    if get_head_process.returncode == 0:
+        current_head = None
+        if get_head_process.stdout:
+            current_head = get_head_process.stdout.split()[0]
+        if current_head != previous_head:
+            with open(f"{info_dir}/HEAD", "w") as f:
+                f.write(current_head)
+
+
+readme='''# TeaCon 2022 参赛团队列表
+
+|团队 ID|团队名 |作品名 |Mod ID|简介   |仓库地址|
+|:------|------:|:------|------|:------|------|
+'''
+
+readme+='\n'.join([ f"|{t['id']}|{t['name']}|{t['work_name']}|`{t['work_id']}`|" + t['work_description'].replace('\n', '<br />') + f"|{t['repo']}" for t in team_list ])
+
+with open('mods/README.md', 'w+') as f:
+    f.write(readme)
