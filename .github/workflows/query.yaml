@@ -1,10 +1,10 @@
 name: Scheduled Polling
 on:
-  #schedule:
-  #  - cron: "0 */2 * * *"
-  #push:
-  #  paths:
-  #    - 'workflow_template.yaml'
+  schedule:
+    - cron: "0 */2 * * *"
+  push:
+    paths:
+      - 'workflow_template.yaml'
   workflow_dispatch:
 jobs:
   fetch-update:
