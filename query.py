@@ -84,8 +84,7 @@ def write_team_info(team: Team, workflow_template: str) -> None:
     info_dir = f"mods/teacon2022/{team_ref_name}"
 
     # Create workflow run, or force update it if already exist
-    os.makedirs('.github/workflows/teacon2022', exist_ok=True)
-    with open(f".github/workflows/teacon2022/{team_ref_name}.yaml", 'w') as f:
+    with open(f".github/workflows/teacon2022-{team_ref_name}.yaml", 'w') as f:
         f.write(workflow_template.substitute(
             title=f"TeaCon 2022 | {team['work_name']} | {team['name']}",
             job_title=f"Build {team['work_name']}",
