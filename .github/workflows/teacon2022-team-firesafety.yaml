@@ -1,0 +1,77 @@
+name: 'TeaCon 2022 | 安全用火 | 新星先锋队'
+on:
+  push:
+    paths:
+      - 'mods/teacon2022/team-firesafety/HEAD'
+  workflow_dispatch:
+jobs:
+  publish:
+    name: 'Build 安全用火'
+    environment: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout build environment
+        uses: actions/checkout@v2
+      - name: Set up JDK 8
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Apply Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          restore-keys:
+            ${{ runner.os }}-gradle-
+      # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
+      # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
+      # sake of a faster build.
+      - name: Checkout mod repository
+        shell: bash
+        run: |
+          mkdir -p build/repo
+          cd build/repo
+          git init
+          git remote add origin `cat ../../mods/teacon2022/team-firesafety/remote`
+          git fetch --depth=1 origin `cat ../../mods/teacon2022/team-firesafety/HEAD`
+          git reset --hard `cat ../../mods/teacon2022/team-firesafety/HEAD`
+      - name: Validate Gradle Wrapper
+        uses: gradle/wrapper-validation-action@v1
+        with:
+          min-wrapper-count: 1
+      - name: Artifact building
+        id: building
+        shell: bash
+        run: |
+          cd build/repo
+          chmod +x ./gradlew
+          ./gradlew -I ../setup.gradle build
+      - name: Sign
+        id: sign
+        shell: bash
+        env:
+          ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
+          ARTIFACT_PATH: ${{ steps.building.outputs.artifact }}
+          PGP_KEY: ${{ secrets.TEACON_SIGNING_KEY }}
+          PGP_PWD: ${{ secrets.TEACON_SIGNING_PWD }}
+        run: cd build && source sign.sh
+      - name: Publish
+        id: publication
+        shell: bash
+        env:
+          TEAM_ID: firesafety
+          ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
+          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
+        run: cd build && source publish.sh
+      - name: Add notice
+        shell: bash
+        env:
+          TOKEN: ${{ github.token }}
+          ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
+          DOWNLOAD_LINK: ${{ steps.publication.outputs.download  }}
+        run: cd build && source finish.sh
