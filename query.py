@@ -89,6 +89,7 @@ def write_team_info(team: Team, workflow_template: str) -> None:
         f.write(workflow_template.substitute(
             title=f"TeaCon 2022 | {team['work_name']} | {team['name']}",
             job_title=f"Build {team['work_name']}",
+            work_id=team['work_id'],
             info_dir=info_dir))
 
     if skip:
