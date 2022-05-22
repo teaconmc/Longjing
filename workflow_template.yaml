@@ -1,12 +1,12 @@
-name: 'TeaCon2022 $name'
+name: '$title'
 on:
   push:
     paths:
-      - 'mods/teacon2022-team-$id/HEAD'
+      - '$info_dir/HEAD'
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build $work_name'
+    name: '$job_title'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
@@ -35,9 +35,9 @@ jobs:
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/teacon2022-team-$id/remote`
-          git fetch --depth=1 origin `cat ../../mods/teacon2022-team-$id/HEAD`
-          git reset --hard `cat ../../mods/teacon2022-team-$id/HEAD`
+          git remote add origin `cat ../../$info_dir/remote`
+          git fetch --depth=1 origin `cat ../../$info_dir/HEAD`
+          git reset --hard `cat ../../$info_dir/HEAD`
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
         with:
@@ -62,7 +62,7 @@ jobs:
         id: publication
         shell: bash
         env:
-          TEAM_ID: $id
+          TEAM_ID: $work_id
           ARTIFACT_NAME: $${{ steps.building.outputs.filename }}
           S3_ENDPOINT: $${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: $${{ secrets.S3_ACCESS_KEY }}

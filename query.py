@@ -79,17 +79,21 @@ def write_team_info(team: Team, workflow_template: str) -> None:
 
     team_ref_name = f"team-{team['work_id'].replace('_', '-')}"
 
+    # Each team gets their own directory to storing related information.
+    # Internal team id is used because it is permenant.
+    info_dir = f"mods/teacon2022/{team_ref_name}"
+
     # Create workflow run, or force update it if already exist
     os.makedirs('.github/workflows/teacon2022', exist_ok=True)
     with open(f".github/workflows/teacon2022/{team_ref_name}.yaml", 'w') as f:
-        f.write(workflow_template.substitute(team))
+        f.write(workflow_template.substitute(
+            title=f"TeaCon 2022 | {team['work_name']} | {team['name']}",
+            job_title=f"Build {team['work_name']}",
+            info_dir=info_dir))
 
     if skip:
         return
 
-    # Each team gets their own directory to storing related information.
-    # Internal team id is used because it is permenant.
-    info_dir = f"./mods/teacon2022/{team_ref_name}"
     # New team is signalled as absence of their tracking info in our repo. 
     # If a new team is found, we then create a directory for them.
     # Create meta information directory
@@ -147,8 +151,9 @@ def write_readme(team_list: List[Team]):
         f.write(readme)
 
 if __name__ == '__main__':
-    contest_id = get_contest_id()
+    workflow_template = load_workflow_template()
+    contest_id = get_contest_id('TeaCon 2022')
     team_list = get_teams(contest_id)
 
+    for team in team_list: write_team_info(team, workflow_template)
     write_readme(team_list)
-    for team in team_list: write_team_info(team)
