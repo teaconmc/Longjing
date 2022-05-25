@@ -50,3 +50,4 @@
 |106|Chlamydomonosia|火焰与腐败|`f_a_r`|Mod的主要玩法大概是创造了参照《艾尔登法环》中“猩红腐败”、其原型《风之谷》中“腐海”以及与之大概无关的《神秘时代4》中“腐化之地”的“腐败”，玩家需要发展各种与火焰有关的科技来消灭、控制、利用腐败。|https://github.com/Chlamydomonos/FireAndRot
 |107|xkball的团队|焰色反应|`flamereaction`|简介<br />实现类似化学中的焰色反应 同时收录一些脑洞|https://github.com/xkball/FlameReaction
 |108|With Bright Start|手工艺|`with_fire`|人们发现了火，火很危险，但是也能带来便利——有了火的帮助，加热食物与制作手工变的轻松起来，而先辈们在篝火旁研究的手工艺依然非常值得被传承。|https://github.com/AmarokIce/1.18.2-WithFire
+|109|Dovecot鸽舍|战术核显卡|`tactical_cards`|火箭推进榴弹被许多第三世界国家甚至西方国家的军队或者反政府武装都广泛使用。反坦克有一定实力，甚至被用于攻击低空目标。因此用其攻击航母亦是可行方案。由十万发火箭推进榴弹对航母进行饱和攻击即可击沉任何艘航母，且对其无有效拦截手段。特别是其搭载690战术核显卡的改进型号，一发即可击沉一个航母战斗群。|https://github.com/Arrokoth486958/Tactical-Graphic-cards
