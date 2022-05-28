@@ -1,4 +1,4 @@
-name: 'TeaCon 2022 | 机器不再单一 | LowDragMC'
+name: 'TeaCon 2022 | Multiblocked | LowDragMC'
 on:
   push:
     paths:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build 机器不再单一'
+    name: 'Build Multiblocked'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
