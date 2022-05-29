@@ -53,4 +53,5 @@
 |109|Dovecot鸽舍|战术核显卡|`tactical_cards`|火箭推进榴弹被许多第三世界国家甚至西方国家的军队或者反政府武装都广泛使用。反坦克有一定实力，甚至被用于攻击低空目标。因此用其攻击航母亦是可行方案。由十万发火箭推进榴弹对航母进行饱和攻击即可击沉任何艘航母，且对其无有效拦截手段。特别是其搭载690战术核显卡的改进型号，一发即可击沉一个航母战斗群。|https://github.com/DoveCotMC/Tactical-Graphic-cards
 |110|LowDragMC|Multiblocked|`multiblocked`|一个用来自定义多方块结构和机器的mod。<br />交互可视化编辑，整合包作者快速上手。<br />灵活的可扩展性，KJS脚本支持。<br />极致性能优化，服务器友好型。|https://github.com/Low-Drag-MC/Multiblocked
 |111|Renascence Studio|地狱迁跃堡（Nether Transition Remains）|`ntr`|帮助玩家更好的在地狱生存！<br />在地狱也能去往末地了！<br />也为喜爱探索的玩家准备了一个新的遗迹：地狱迁跃堡<br />更多的怪物，未知的陷阱，等你而来！|https://github.com/chemiofitor/Nethe-Transition-Remains
-|112|CFPAOrg|车万女仆|`touhou_little_maid`|为 Minecraft 添加一种名为“女仆”的生物，可以帮助玩家处理各种日常工作，支持自定义的模型包！|https://github.com/TartaricAcid/TouhouLittleMaid
+|118|CFPAOrg|车万女仆|`touhou_little_maid`|在 Minecraft 中添加了可爱的女仆，能辅助玩家完成许多工作！还支持自定义模型！|https://github.com/TartaricAcid/TouhouLittleMaid
+|119|KhjTechResearch|减速火把|`rtorch`|给你减减速|https://github.com/khjxiaogu/RetardTorch
