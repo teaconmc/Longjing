@@ -34,7 +34,7 @@ jobs:
         with:
           python-version: '3.9'
           architecture: 'x64'
-      - name: Install dependencies
+      - name: Install Dependencies
         run: pip3 install boto3
       - name: Check Extras
         env:

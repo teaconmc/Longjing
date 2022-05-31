@@ -30,10 +30,10 @@ jobs:
         with:
           python-version: '3.9'
           architecture: 'x64'
-      - name: Query updates
+      - name: Query Updates
         shell: bash
         run: python3 fetch/query.py
-      - name: Commit changes
+      - name: Commit Changes
         shell: bash
         run: |
           source fetch/commit_info.sh
