@@ -50,6 +50,12 @@ jobs:
           cd build/repo
           chmod +x ./gradlew
           ./gradlew -I ../setup.gradle build
+      - name: Extract Mod Description File
+        id: description
+        shell: bash
+        env:
+          ARTIFACT_PATH: $${{ steps.building.outputs.artifact }}
+        run: cd build && source ../fetch/mods_toml.sh
       - name: Sign
         id: sign
         shell: bash
@@ -59,12 +65,6 @@ jobs:
           PGP_KEY: $${{ secrets.TEACON_SIGNING_KEY }}
           PGP_PWD: $${{ secrets.TEACON_SIGNING_PWD }}
         run: cd build && source sign.sh
-      - name: Extract Mod Description File
-        id: description
-        shell: bash
-        env:
-          ARTIFACT_NAME: $${{ steps.building.outputs.filename }}
-        run: cd build && source mods_toml.sh
       - name: Publish
         id: publication
         shell: bash
