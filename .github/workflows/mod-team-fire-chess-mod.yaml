@@ -39,6 +39,8 @@ jobs:
           git remote add origin `cat ../../mods/team-fire-chess-mod/remote`
           git fetch --depth=1 origin `cat ../../mods/team-fire-chess-mod/HEAD`
           git reset --hard `cat ../../mods/team-fire-chess-mod/HEAD`
+          git submodule init
+          git submodule update
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
         with:
