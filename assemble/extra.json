@@ -70,5 +70,23 @@
     "file": "https://raw.githubusercontent.com/0999312/MMLib/master/mcmodsrepo/cn/mcmod_mmf/mmlib/MMLib/1.0.1-1.18.2/MMLib-1.0.1-1.18.2.jar",
     "sha256": "aef6a6bf42a591be1d57648fb1636cc703fc9a2e58c2846480ec7587248da96c",
     "mirror": true
+  },
+  {
+    "name": "FramedBlocks-5.2.0.jar",
+    "file": "https://media.forgecdn.net/files/3805/861/FramedBlocks-5.2.0.jar",
+    "sha256": "7ab2640d31161223442c1aab0742d8b034ccab967fc8a09416c7384904d06a86",
+    "mirror": true
+  },
+  {
+    "name": "jei-1.18.2-9.7.0.195.jar",
+    "file": "https://dvs1.progwml6.com/files/maven/mezz/jei/jei-1.18.2/9.7.0.195/jei-1.18.2-9.7.0.195.jar",
+    "sha256": "2a385da4c950cba00c25ff55b250cff5fa4f36fbc71d8d6cf737d26fdd1788bd",
+    "mirror": true
+  },
+  {
+    "name": "WaitingForServer-1.18-5.1.0-8.jar",
+    "file": "https://maven.k-4u.nl/mcjty/theoneprobe/theoneprobe/1.18-5.1.0-8/theoneprobe-1.18-5.1.0-8.jar",
+    "sha256": "46fd2def34a918fd283cb76918d92760c449b6c03de4a8a19d7a382505d076f9",
+    "mirror": true
   }
 ]
