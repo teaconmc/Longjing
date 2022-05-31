@@ -81,7 +81,7 @@ with urllib.request.urlopen(wfs_req) as ws:
                                                 f"({mod_file}) of {workflow['path']} build #{latest_run_num}, this is very likely to cause conflicts")
                                         if not any(mod.get('modId', '').replace('_', '-') == team_id for mod in mods):
                                             print(
-                                                f"::warning::The mod id list {[mod.get('modId', '') for mod in mods.get()]}",
+                                                f"::warning::The mod id list {[mod.get('modId', '') for mod in mods]}",
                                                 "defined in mods.toml does not contains any mod id matching the team id",
                                                 f"({team_id}) so {workflow['path']} build #{latest_run_num} will be skipped")
                                         else:
