@@ -4,7 +4,7 @@ on:
     - cron: "0 */2 * * *"
   push:
     paths:
-      - 'workflow_template.yaml'
+      - 'fetch/workflow_template.yaml'
   workflow_dispatch:
 jobs:
   fetch-update:
