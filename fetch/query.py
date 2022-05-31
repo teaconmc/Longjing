@@ -141,9 +141,18 @@ def write_team_info(team: Team, contest_name: str, workflow_template: str) -> No
                 f.write(current_head)
 
 def write_readme(team_list: List[Team]):
-    readme = '# TeaCon 2022 参赛团队列表\n\n|团队 ID|团队名|作品名|模组 ID|简介|仓库地址|\n|:------|------:|:------|------|:------|------|\n'
+    from html import escape
 
-    readme += '\n'.join([ f"|{t['id']}|{t['name']}|{t['work_name']}|`{t['work_id']}`|" + t['work_description'].replace('\n', '<br />') + f"|{t['repo']}|" for t in team_list ])
+    readme = '# TeaCon 2022 参赛团队列表\n\n|作品信息|作品简介|\n|:------------|:------------|\n'
+
+    for team in team_list:
+        readme += f"|{escape(team['work_name'])}<br />"
+        readme += f"<br />"
+        readme += f"队伍名：{escape(team['name'])}<br />"
+        readme += f"作品 ID：`{team['work_id']}`（模组 ID），`{team['id']}`（数字 ID）<br />"
+        readme += f"项目仓库：[{team['repo']}]({team['repo']})|"
+        readme += f"{'<br />'.join([escape(line) for line in team['work_description'].splitlines()])}|"
+        readme += '\n'
 
     with open('mods/README.md', 'w+') as f:
         f.write(readme)
@@ -153,5 +162,5 @@ if __name__ == '__main__':
     contest_id = get_contest_id('TeaCon 2022')
     team_list = get_teams(contest_id)
 
-    for team in team_list: write_team_info(team, 'TeaCon 2022', workflow_template)
+    # for team in team_list: write_team_info(team, 'TeaCon 2022', workflow_template)
     write_readme(team_list)
