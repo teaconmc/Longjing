@@ -141,7 +141,7 @@ def write_team_info(team: Team, contest_name: str, workflow_template: str) -> No
                 f.write(current_head)
 
 def write_readme(team_list: List[Team]):
-    readme = '# TeaCon 2022 参赛团队列表\n\n|团队 ID|团队名|作品名|模组 ID|简介|仓库地址|\n|:------|------:|:------|------|:------|------|'
+    readme = '# TeaCon 2022 参赛团队列表\n\n|团队 ID|团队名|作品名|模组 ID|简介|仓库地址|\n|:------|------:|:------|------|:------|------|\n'
 
     readme += '\n'.join([ f"|{t['id']}|{t['name']}|{t['work_name']}|`{t['work_id']}`|" + t['work_description'].replace('\n', '<br />') + f"|{t['repo']}|" for t in team_list ])
 

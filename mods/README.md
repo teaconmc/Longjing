@@ -1,7 +1,8 @@
 # TeaCon 2022 参赛团队列表
 
 |团队 ID|团队名|作品名|模组 ID|简介|仓库地址|
-|:------|------:|:------|------|:------|------||1|TeaCon|CannonFire|`cannon_fire`|A cannon which shoots player far away.<br /><br />TeaCon 2022 example mod based on Minecraft 1.18.x and Forge 40.x.|https://github.com/teaconmc/CannonFire|
+|:------|------:|:------|------|:------|------|
+|1|TeaCon|CannonFire|`cannon_fire`|A cannon which shoots player far away.<br /><br />TeaCon 2022 example mod based on Minecraft 1.18.x and Forge 40.x.|https://github.com/teaconmc/CannonFire|
 |2|TeaCon 建筑团队|TeaCon 建筑团队|`_`|TeaCon 2022 官方建筑团队|_|
 |4|纯白之门|野火麻将 Wildfire Mahjong|`wildfire_mahjong`|你的下一款麻将，何必在麻将桌上？|https://github.com/MarbleGateKeeper/WildfireMahjong|
 |5|天枢开发组|Torchikoma|`torchikoma`|发射火把，用于远程点亮地面或者击败怪物，并增加了更多火把，最后制造属于你的步行机甲，帮你插火把或者战斗。|https://github.com/Dubhe-Studio/Torchikoma|
