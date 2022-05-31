@@ -17,6 +17,7 @@
 |打火机<br /><br />队伍名：千年图书馆-打火机专项组<br />作品 ID：`lighterfe`（模组 ID），`25`（数字 ID）<br />项目仓库：[https://github.com/TT432/lighterfe](https://github.com/TT432/lighterfe)|使用 FE 驱动点火，摆脱传统打火机 “开启地狱门就掉一点耐久” 的尴尬局面。<br />致敏源注意：不包含咬打火机|
 |火狐装饰<br /><br />队伍名：WaitTime_404<br />作品 ID：`firefox`（模组 ID），`27`（数字 ID）<br />项目仓库：[https://github.com/Born-to-be-a-human-I-am-awesome/FireFoxMod](https://github.com/Born-to-be-a-human-I-am-awesome/FireFoxMod)|为MC增加了更多火元素的装饰物，方块物品之类的。|
 |胡萝卜厨房<br /><br />队伍名：踢炕食品供应商组<br />作品 ID：`kitchenkarrot`（模组 ID），`31`（数字 ID）<br />项目仓库：[https://github.com/TT432/kitchenkarrot](https://github.com/TT432/kitchenkarrot)|一个新诞生的MC美食模组，将重心放在了怎么吃得好上。具有可自定义鸡尾酒系统。|
+|安全用火<br /><br />队伍名：新星先锋队<br />作品 ID：`firesafety`（模组 ID），`32`（数字 ID）<br />项目仓库：[https://github.com/Nova-Committee/FireSafety](https://github.com/Nova-Committee/FireSafety)|天干物燥，小心火烛|
 |火焰弹工艺<br /><br />队伍名：压缩立方<br />作品 ID：`fireballgame`（模组 ID），`61`（数字 ID）<br />项目仓库：[https://gitee.com/sdfwss/fireballgame](https://gitee.com/sdfwss/fireballgame)|一个以火焰弹为开端的mod,加入了一些合成表和物品以及实体，改善前期的艰难与后期的枯燥。|
 |火枪<br /><br />队伍名：Étienne<br />作品 ID：`flintlock`（模组 ID），`62`（数字 ID）<br />项目仓库：[https://github.com/KevinLenzz/flintlock](https://github.com/KevinLenzz/flintlock)|火枪、街垒<br />灵感来源：《刺客信条：大革命》《悲惨世界》《三个火枪手》|
 |烈焰人伙伴<br /><br />队伍名：新星委员会<br />作品 ID：`friendblaze`（模组 ID），`63`（数字 ID）<br />项目仓库：[https://github.com/Nova-Committee/FriendlyBlaze](https://github.com/Nova-Committee/FriendlyBlaze)|捕捉一只野生的烈焰人，将她变成你的战斗好伙伴。她会帮你攻击，有等级系统，在达到一定等级后，会有不同的惊喜！|
