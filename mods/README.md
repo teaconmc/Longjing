@@ -55,3 +55,4 @@
 |111|Renascence Studio|地狱迁跃堡（Nether Transition Remains）|`ntr`|帮助玩家更好的在地狱生存！<br />在地狱也能去往末地了！<br />也为喜爱探索的玩家准备了一个新的遗迹：地狱迁跃堡<br />更多的怪物，未知的陷阱，等你而来！|https://github.com/chemiofitor/Nethe-Transition-Remains
 |118|CFPAOrg|车万女仆|`touhou_little_maid`|在 Minecraft 中添加了可爱的女仆，能辅助玩家完成许多工作！还支持自定义模型！|https://github.com/TartaricAcid/TouhouLittleMaid
 |119|KhjTechResearch|减速火把|`rtorch`|给你减减速|https://github.com/khjxiaogu/RetardTorch
+|120|GNR''s not RNG|心烛 InnerCandle|`innercandle`|点燃心里的蜡烛，感受云间庞大的天空王国的号召。在日月交辉，星汉灿烂处自由翱翔，以心为涯。开启这场独特绮丽的冒险。|https://github.com/Litt1eBai/InnerCandle
