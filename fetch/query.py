@@ -33,7 +33,8 @@ def get_contest_id(contest_name: str) -> int:
 
 class Team(TypedDict):
     id: int; name: str
-    type: Literal[0, 1, 2]; repo: Optional[str]
+    type: Literal[0, 1, 2]
+    repo: Optional[str]; branch: Optional[str]
     work_id: str; work_name: str; work_description: str
 
 # Fetch latest team information from Biluochun (TeaCon Admission Portal) API
@@ -63,7 +64,9 @@ def load_workflow_template() -> Optional[str]:
 
 # Write team informations including workflow files and git head references
 def write_team_info(team: Team, contest_name: str, workflow_template: str) -> None:
-    print(f"Fetching information for team #{team['id']} ({team['name']}) from {team['repo']}")
+    head_ref = 'HEAD' if team['branch'] is None else team['branch']
+    print("Fetching information for team",
+          f"#{team['id']} ({team['name']}) from {team['repo']} (ref {head_ref})")
 
     skip = False
 
@@ -118,7 +121,6 @@ def write_team_info(team: Team, contest_name: str, workflow_template: str) -> No
     if os.path.exists(f"{info_dir}/HEAD"):
         with open(f"{info_dir}/HEAD") as f:
             previous_head = f.read()
-    head_ref = 'HEAD'
     if os.path.exists(f"{info_dir}/ref"):
         with open(f"{info_dir}/ref") as f:
             head_ref = f.read()
@@ -130,7 +132,8 @@ def write_team_info(team: Team, contest_name: str, workflow_template: str) -> No
     except subprocess.TimeoutExpired:
         print(f"Timeout while fetching git repo information for team #{team['id']} (upstream {team['repo']})")
         if os.getenv('GITHUB_ACTIONS', False):
-            print(f"::warning::Timeout while fetching {team['repo']} for team #{team['id']}. Information about this team will not be updated.")
+            print(f"::warning::Timeout while fetching {team['repo']}",
+                  f"for team #{team['id']}. Information about this team will not be updated.")
         return
     if get_head_process.returncode == 0:
         current_head = None
