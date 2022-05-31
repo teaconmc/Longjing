@@ -8,6 +8,13 @@ afterProject { project ->
         return
     }
 
+    // Check if the project is still using default archivesBaseName.
+    // Emit an error if so.
+    if ("modid" == project.archivesBaseName) {
+        println "::error::Using default value ('modid') for archive base name; this is doomed to conflicts, and thus not allowed."
+        throw new RuntimeException("Using default archiveBaseName is not allowed, please edit your build.gradle!")
+    }
+
     // Try locating the task that produces production-ready artifact.
     // The precedence, from high to low, is as following:
     //   1. If `teaconArtifactTask' is defined in project extension, use the value specified there.
