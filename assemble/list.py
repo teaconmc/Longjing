@@ -75,10 +75,10 @@ with urllib.request.urlopen(wfs_req) as ws:
                                             f"Using {workflow['path']} build #{latest_run_num} with direct link")
                                         [team_id, mod_name, mod_file, mods_toml_b64] = anno['raw_details'].split(' ', maxsplit=3)
                                         mods = toml.loads(base64.b64decode(mods_toml_b64).decode('utf-8')).get('mods', [])
-                                        if team_id.lower().replace('-', '') not in mod_file.lower().replace('_', '').replace('-', ''):
+                                        if team_id.lower().replace('-', '') not in mod_name.lower().replace('_', '').replace('-', ''):
                                             print(
                                                 f"::warning::It is detected that the team id ({team_id}) is not included in the archive file name",
-                                                f"({mod_file}) of {workflow['path']} build #{latest_run_num}, this is very likely to cause conflicts")
+                                                f"({mod_name}) of {workflow['path']} build #{latest_run_num}, this is very likely to cause conflicts")
                                         if not any(mod.get('modId', '').replace('_', '-') == team_id for mod in mods):
                                             print(
                                                 f"::warning::The mod id list {[mod.get('modId', '') for mod in mods]}",
