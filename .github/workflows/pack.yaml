@@ -28,7 +28,7 @@ jobs:
         env:
           APP_ID: ${{ secrets.APP_ID }}
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
-        run: bash auth.sh
+        run: bash fetch/auth.sh
       - name: Setup Python3
         uses: actions/setup-python@v2
         with:
@@ -57,7 +57,7 @@ jobs:
       - name: Push to DataPack Repo
         run: |
           cd datapack
-          source ../commit_info.sh
+          source ../fetch/commit_info.sh
           git add 2022/mod-list-test.json
           git commit -m "`date -u`: add 2022 mod list" || true
           git push

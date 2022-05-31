@@ -57,12 +57,12 @@ def get_teams(contest_id: int) -> List[Team]:
 # As we only perform simple string subtitution, we uses the built-in string.Template
 def load_workflow_template() -> Optional[str]:
     workflow_template: Optional[str] = None
-    with open('workflow_template.yaml') as f:
+    with open('fetch/workflow_template.yaml') as f:
         workflow_template = Template(f.read())
     return workflow_template
 
 # Write team informations including workflow files and git head references
-def write_team_info(team: Team, workflow_template: str) -> None:
+def write_team_info(team: Team, contest_name: str, workflow_template: str) -> None:
     print(f"Fetching information for team #{team['id']} ({team['name']}) from {team['repo']}")
 
     skip = False
@@ -77,19 +77,21 @@ def write_team_info(team: Team, workflow_template: str) -> None:
     team['name'] = team['name'].replace("'", "''")
     team['work_name'] = team['work_name'].replace("'", "''")
 
-    team_ref_name = f"team-{team['work_id'].replace('_', '-')}"
+    team_id = team['work_id'].replace('_', '-')
 
     # Each team gets their own directory to storing related information.
     # Internal team id is used because it is permenant.
-    info_dir = f"mods/teacon2022/{team_ref_name}"
+    info_dir = f"mods/team-{team_id}"
 
     # Create workflow run, or force update it if already exist
-    with open(f".github/workflows/teacon2022-{team_ref_name}.yaml", 'w') as f:
+    workflow_file = f".github/workflows/mod-team-{team_id}.yaml"
+    with open(workflow_file, 'w') as f:
         f.write(workflow_template.substitute(
-            title=f"TeaCon 2022 | {team['work_name']} | {team['name']}",
+            title=f"{contest_name} | {team['work_name']} | {team['name']}",
             job_title=f"Build {team['work_name']}",
-            work_id=team['work_id'],
-            info_dir=info_dir))
+            workflow_file=workflow_file,
+            info_dir=info_dir,
+            team_id=team_id))
 
     if skip:
         return
@@ -145,7 +147,7 @@ def write_readme(team_list: List[Team]):
     |:------|------:|:------|------|:------|------|
     '''
 
-    readme+='\n'.join([ f"|{t['id']}|{t['name']}|{t['work_name']}|`{t['work_id']}`|" + t['work_description'].replace('\n', '<br />') + f"|{t['repo']}" for t in team_list ])
+    readme+='\n'.join([ f"|{t['id']}|{t['name']}|{t['work_name']}|`{t['work_id']}`|" + t['work_description'].replace('\n', '<br />') + f"|{t['repo']}|" for t in team_list ])
 
     with open('mods/README.md', 'w+') as f:
         f.write(readme)
@@ -155,5 +157,5 @@ if __name__ == '__main__':
     contest_id = get_contest_id('TeaCon 2022')
     team_list = get_teams(contest_id)
 
-    for team in team_list: write_team_info(team, workflow_template)
+    for team in team_list: write_team_info(team, 'TeaCon 2022', workflow_template)
     write_readme(team_list)

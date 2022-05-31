@@ -20,7 +20,7 @@ jobs:
         env:
           APP_ID: ${{ secrets.APP_ID }}
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
-        run: bash auth.sh
+        run: bash fetch/auth.sh
       - name: Re-Checkout
         uses: actions/checkout@v2
         with:
@@ -32,11 +32,11 @@ jobs:
           architecture: 'x64'
       - name: Query updates
         shell: bash
-        run: python3 query.py
+        run: python3 fetch/query.py
       - name: Commit changes
         shell: bash
         run: |
-          source commit_info.sh
+          source fetch/commit_info.sh
           git add .github/workflows
           git commit -m "`date -u`: create/update new build workflow(s)" || true
           git add mods

@@ -22,13 +22,13 @@ We leverage GitHub Actions to provide continuous integration and delivery of all
 
 ## 项目结构 Structure
 
-### `query.py`
+### `fetch/query.py`
 
 轮询脚本的主体。
 
 Main/entry script of the scheduled query.
 
-### `workflow_template.yaml`
+### `fetch/workflow_template.yaml`
 
 轮询时自动创建的新 GitHub Action Workflow 的模板，基于 Python 的 [`string.Template`][ref-3]。
 
@@ -37,7 +37,7 @@ Based on Python's [`string.Template`][ref-3].
 
 [ref-3]: https://docs.python.org/3/library/string.html#string.Template
 
-### `auth.sh`
+### `fetch/auth.sh`
 
 用于 GitHub App 的 Authentication。
 在 GitHub Action 中，为防止意外触发无限递归的 Workflow Run，GitHub 默认提供的 `${{ github.TOKEN }}` 不能用于创建新的 Workflow
@@ -50,7 +50,7 @@ In GitHub Action, the default, GitHub-provided `${{ github.TOKEN }}` cannot be u
 To automatically create new workflows, we need to autheticate as other identities; here, we authenticate as 
 our GitHub App.
 
-### `commit_info.sh`
+### `fetch/commit_info.sh`
 
 设定创建并推送新提交时所用的作者信息。
 

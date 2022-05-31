@@ -1,12 +1,13 @@
-name: 'TeaCon 2022 | 三体工业：空天科技 | 斌政工作室'
+name: '$title'
 on:
   push:
     paths:
-      - 'mods/teacon2022/team-spaceplane/HEAD'
+      - '$workflow_file'
+      - '$info_dir/HEAD'
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build 三体工业：空天科技'
+    name: '$job_title'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
@@ -23,9 +24,9 @@ jobs:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          key: $${{ runner.os }}-gradle-$${{ hashFiles('**/*.gradle*') }}
           restore-keys:
-            ${{ runner.os }}-gradle-
+            $${{ runner.os }}-gradle-
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
@@ -35,9 +36,9 @@ jobs:
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/teacon2022/team-spaceplane/remote`
-          git fetch --depth=1 origin `cat ../../mods/teacon2022/team-spaceplane/HEAD`
-          git reset --hard `cat ../../mods/teacon2022/team-spaceplane/HEAD`
+          git remote add origin `cat ../../$info_dir/remote`
+          git fetch --depth=1 origin `cat ../../$info_dir/HEAD`
+          git reset --hard `cat ../../$info_dir/HEAD`
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
         with:
@@ -53,25 +54,25 @@ jobs:
         id: sign
         shell: bash
         env:
-          ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
-          ARTIFACT_PATH: ${{ steps.building.outputs.artifact }}
-          PGP_KEY: ${{ secrets.TEACON_SIGNING_KEY }}
-          PGP_PWD: ${{ secrets.TEACON_SIGNING_PWD }}
+          ARTIFACT_NAME: $${{ steps.building.outputs.filename }}
+          ARTIFACT_PATH: $${{ steps.building.outputs.artifact }}
+          PGP_KEY: $${{ secrets.TEACON_SIGNING_KEY }}
+          PGP_PWD: $${{ secrets.TEACON_SIGNING_PWD }}
         run: cd build && source sign.sh
       - name: Publish
         id: publication
         shell: bash
         env:
-          TEAM_ID: spaceplane
-          ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
-          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
+          TEAM_ID: $team_id
+          ARTIFACT_NAME: $${{ steps.building.outputs.filename }}
+          S3_ENDPOINT: $${{ secrets.S3_ENDPOINT }}
+          AWS_ACCESS_KEY_ID: $${{ secrets.S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: $${{ secrets.S3_SECRET_KEY }}
         run: cd build && source publish.sh
       - name: Add notice
         shell: bash
         env:
-          TOKEN: ${{ github.token }}
-          ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
-          DOWNLOAD_LINK: ${{ steps.publication.outputs.download  }}
+          TOKEN: $${{ github.token }}
+          ARTIFACT_NAME: $${{ steps.building.outputs.filename }}
+          DOWNLOAD_LINK: $${{ steps.publication.outputs.download  }}
         run: cd build && source finish.sh
