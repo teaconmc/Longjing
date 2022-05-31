@@ -1,2 +1,74 @@
 [
+  {
+    "name": "AreaControl-Forge-1.18-0.4.1.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.4.1/AreaControl-Forge-1.18-0.4.1.jar",
+    "sha256": "5d0c14ac979cebd429f3f9ad89d7ffb0833568342ada23f57f1c8a15c6e41854",
+    "mirror": false
+  },
+  {
+    "name": "ChromeBall-Forge-1.18-0.4.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/ChromeBall-Forge-1.18/0.4.0/ChromeBall-Forge-1.18-0.4.0.jar",
+    "sha256": "0a8532f6f850806d73c43fe68fc0772d0789c9ba0243b402e95d0ffd4762cc18",
+    "mirror": false
+  },
+  {
+    "name": "SlideShow-Forge-1.18-0.6.2-rc.2.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.18/0.6.2-rc.2/SlideShow-Forge-1.18-0.6.2-rc.2.jar",
+    "sha256": "0a8532f6f850806d73c43fe68fc0772d0789c9ba0243b402e95d0ffd4762cc18",
+    "mirror": false
+  },
+  {
+    "name": "Xibao-Forge-1.18-1.0.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Xibao-Forge-1.18/1.0.0/Xibao-Forge-1.18-1.0.0.jar",
+    "sha256": "e7cf173ca0c5f4108360d87b5001f8da6aac1790977afc2f9f56eb1b1095e35d",
+    "mirror": false
+  },
+  {
+    "name": "geckolib-1.18-forge-3.0.18.jar",
+    "file": "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/software/bernie/geckolib/geckolib-1.18-forge/3.0.18/geckolib-1.18-forge-3.0.18.jar",
+    "sha256": "e5ec95f149abdc78d94db6e2167bb84fa239b165bd983aa94078cf09d570ab0b",
+    "mirror": true
+  },
+  {
+    "name": "SinoCore-1.1.1.jar",
+    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.1.1/SinoCore-1.1.1.jar",
+    "sha256": "540e7fc7ad1411fa8ac756df045db809ea24bb35dcac8672d5e47f0fd6bc841e",
+    "mirror": true
+  },
+  {
+    "name": "Patchouli-1.18.2-69.jar",
+    "file": "https://maven.blamejared.com/vazkii/patchouli/Patchouli/1.18.2-69/Patchouli-1.18.2-69.jar",
+    "sha256": "dbbb1e208c90c60c4af41eca95c5afc34d0ddf42212f747368a7f7f174033c64",
+    "mirror": true
+  },
+  {
+    "name": "curios-forge-1.18.2-5.0.7.0.jar",
+    "file": "https://maven.theillusivec4.top/top/theillusivec4/curios/curios-forge/1.18.2-5.0.7.0/curios-forge-1.18.2-5.0.7.0.jar",
+    "sha256": "28bf666fba52ee89aed32420c1430320aad9bdedbfee675c2dde4f2b50804a67",
+    "mirror": true
+  },
+  {
+    "name": "kotlinforforge-3.1.0.jar",
+    "file": "https://thedarkcolour.github.io/KotlinForForge/thedarkcolour/kotlinforforge/3.1.0/kotlinforforge-3.1.0.jar",
+    "sha256": "f29def38d046a6ca360fb92def12e2043b9fc0dca885b1bd535a03674afbc216",
+    "mirror": true
+  },
+  {
+    "name": "MTR-forge-1.18.2-3.0.0.jar",
+    "file": "https://media.forgecdn.net/files/3769/151/MTR-forge-1.18.2-3.0.0.jar",
+    "sha256": "5bf9ad3d0ae463f55746764b42a7364899ef2e6c64e5422a9bdf39d0f7e543c7",
+    "mirror": true
+  },
+  {
+    "name": "LibX-1.18.2-3.2.15.jar",
+    "file": "https://maven.melanx.de/io/github/noeppi_noeppi/mods/LibX/1.18.2-3.2.15/LibX-1.18.2-3.2.15.jar",
+    "sha256": "aef6a6bf42a591be1d57648fb1636cc703fc9a2e58c2846480ec7587248da96c",
+    "mirror": true
+  },
+  {
+    "name": "MMLib-1.0.1-1.18.2.jar",
+    "file": "https://raw.githubusercontent.com/0999312/MMLib/master/mcmodsrepo/cn/mcmod_mmf/mmlib/MMLib/1.0.1-1.18.2/MMLib-1.0.1-1.18.2.jar",
+    "sha256": "aef6a6bf42a591be1d57648fb1636cc703fc9a2e58c2846480ec7587248da96c",
+    "mirror": true
+  }
 ]

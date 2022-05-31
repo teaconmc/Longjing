@@ -1,14 +1,14 @@
 name: Scheduled Testing Pack Update
 on:
-  #push:
-  #  paths:
-  #    - 'assemble/blacklist.json'
-  #    - 'assemble/extra.json'
-  #workflow_run:
-  #  workflows: [ 'TeaCon2022*' ]
-  #  branches: [ 'teacon2022' ]
-  #  types: 
-  #    - completed
+  push:
+   paths:
+     - 'assemble/blacklist.json'
+     - 'assemble/extra.json'
+  workflow_run:
+   workflows: [ 'TeaCon 2022 | *' ]
+   branches: [ 'teacon2022' ]
+   types: 
+     - completed
   workflow_dispatch:
 concurrency:
   group: pack-update
