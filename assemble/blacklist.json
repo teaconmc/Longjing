@@ -1,5 +1,6 @@
 {
   ".github/workflows/mod-team-firesafety.yaml": [ 1, 2, 7, 8 ],
   ".github/workflows/mod-team-fire-protection-equipment.yaml": [ 1, 2, 7, 8 ],
+  ".github/workflows/mod-team-blaze-reborn.yaml": [ 1, 2, 7 ],
   "__comment": "Longjing blacklist"
 }
