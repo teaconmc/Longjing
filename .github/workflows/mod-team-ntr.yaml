@@ -30,7 +30,7 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: Checkout Repository of TeaCon 2022 | 地狱迁跃堡（Nether Transition Remains） | Renascence Studio
+      - name: 'Checkout Repository of Build 地狱迁跃堡（Nether Transition Remains）'
         shell: bash
         run: |
           mkdir -p build/repo
@@ -63,7 +63,7 @@ jobs:
         id: publication
         shell: bash
         env:
-          TEAM_ID: ntr
+          TEAM_ID: 'ntr'
           ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
