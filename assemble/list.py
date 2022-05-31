@@ -92,7 +92,7 @@ with urllib.request.urlopen(wfs_req) as ws:
                                             })
                     if not found:
                         print(
-                            f"::warning::Did not find download link info under {workflow['path']} ({workflow['name']})#{run['run_number']}")
+                            f"Did not find download link info under {workflow['path']} ({workflow['name']})#{run['run_number']}")
 
 # TODO Merge into the loop above
 for artifact in maven_artifacts:
