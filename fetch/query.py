@@ -149,7 +149,10 @@ def write_readme(team_list: List[Team]):
     readme = '# TeaCon 2022 参赛团队列表\n\n|作品信息|作品简介|\n|:------------|:------------|\n'
 
     for team in team_list:
+        workflow_name=f"mod-team-{team['work_id'].replace('_', '-')}.yaml"
+        badge=f"![{team['work_id']}](https://github.com/teaconmc/Longjing/actions/workflows/{workflow_name}/badge.svg)"
         readme += f"|{escape(team['work_name'])}<br />"
+        readme += f"{badge}<br />"
         readme += f"<br />"
         readme += f"队伍名：{escape(team['name'])}<br />"
         readme += f"作品 ID：`{team['work_id']}`（模组 ID），`{team['id']}`（数字 ID）<br />"
