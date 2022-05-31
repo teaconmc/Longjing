@@ -98,7 +98,7 @@ with urllib.request.urlopen(wfs_req) as ws:
 for artifact in maven_artifacts:
     info = artifact.split(':')
     file_name = f"{info[1]}-{info[2]}.jar"
-    url = f"https://archive.teacon.cn/2021/ci/maven/{info[0].replace('.', '/')}/{info[1]}/{info[2]}/{file_name}"
+    url = f"https://archive.teacon.cn/2022/ci/maven/{info[0].replace('.', '/')}/{info[1]}/{info[2]}/{file_name}"
     sig_url = f"{url}.asc"
     mod_list.append({
         'name': file_name,
@@ -108,7 +108,7 @@ for artifact in maven_artifacts:
 
 with open('extra.json') as f:
     for entry in json.load(f):
-        mirror_link = f"https://archive.teacon.cn/2021/ci/extra/{entry['name']}"
+        mirror_link = f"https://archive.teacon.cn/2022/ci/extra/{entry['name']}"
         mod_list.append({
             'name': entry['name'],
             'file': mirror_link if entry['mirror'] else entry['file'],
