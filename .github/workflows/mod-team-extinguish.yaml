@@ -50,6 +50,12 @@ jobs:
           cd build/repo
           chmod +x ./gradlew
           ./gradlew -I ../setup.gradle build
+      - name: Extract Mod Description File
+        id: description
+        shell: bash
+        env:
+          ARTIFACT_PATH: ${{ steps.building.outputs.artifact }}
+        run: cd build && source ../fetch/mods_toml.sh
       - name: Sign
         id: sign
         shell: bash
@@ -72,7 +78,9 @@ jobs:
       - name: Add Notice
         shell: bash
         env:
+          TEAM_ID: 'extinguish'
           TOKEN: ${{ github.token }}
           ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
-          DOWNLOAD_LINK: ${{ steps.publication.outputs.download  }}
+          DOWNLOAD_LINK: ${{ steps.publication.outputs.download }}
+          MOD_DESCIPTION_BASE64: ${{ steps.description.outputs.base64 }}
         run: cd build && source finish.sh
