@@ -29,7 +29,7 @@ afterProject { project ->
 
     // Check if the artifact id contains space. If so, replace it with hyphen.
     // Regex [A-Za-z0-9_\-.]+ shall match all valid artifactId.
-    if (!(project.archivesBaseName ==~ /[A-Za-z0-9_-.]+/)) {
+    if (!(project.archivesBaseName ==~ /[A-Za-z0-9_-\.]+/)) {
         println '::warning::Using whitespace in archivesBaseName is not recommended. Replacing it with hyphen. ' + 
                 'It is recommended to make your archivesBaseName comply with the following RegEx: [A-Za-z0-9_\\-.]+'
         // This `tr` method works in a similar fashion as of that Unix utility with the same name.
