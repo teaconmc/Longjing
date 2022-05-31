@@ -72,6 +72,12 @@
     "mirror": true
   },
   {
+    "name": "architectury-4.4.68.jar",
+    "file": "https://media.forgecdn.net/files/3807/924/architectury-4.4.68.jar",
+    "sha256": "e794724d7b80bd94c90772673630e5a8235461b06161664a0e49ed94247bc131",
+    "mirror": true
+  },
+  {
     "name": "FramedBlocks-5.2.0.jar",
     "file": "https://media.forgecdn.net/files/3805/861/FramedBlocks-5.2.0.jar",
     "sha256": "7ab2640d31161223442c1aab0742d8b034ccab967fc8a09416c7384904d06a86",
