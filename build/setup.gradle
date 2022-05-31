@@ -27,16 +27,9 @@ afterProject { project ->
     }
     assert targetTask instanceof AbstractArchiveTask
 
-    // Check if the project is still using default archivesBaseName.
-    // Emit warning if so.
-    if ("modid" == project.archivesBaseName) {
-        println "::warning::Using default value ('modid') for archive base name; this is very likely to cause conflicts"
-    }
-
     // Check if the artifact id contains space. If so, replace it with hyphen.
     // Regex [A-Za-z0-9_\-.]+ shall match all valid artifactId.
-    // TODO Deal with other characters
-    if (project.archivesBaseName.contains(' ')) {
+    if (!(project.archivesBaseName ==~ /[A-Za-z0-9_-.]+/)) {
         println '::warning::Using whitespace in archivesBaseName is not recommended. Replacing it with hyphen. ' + 
                 'It is recommended to make your archivesBaseName comply with the following RegEx: [A-Za-z0-9_\\-.]+'
         // This `tr` method works in a similar fashion as of that Unix utility with the same name.

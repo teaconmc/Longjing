@@ -16,7 +16,7 @@ cat > payload.json <<EOM
         "annotation_level": "notice",
         "message": "You may download the build result at: $DOWNLOAD_LINK",
         "title": "Manual Download",
-        "raw_details": "$ARTIFACT_NAME $DOWNLOAD_LINK"
+        "raw_details": "$TEAM_ID $ARTIFACT_NAME $DOWNLOAD_LINK $MOD_DESCIPTION_BASE64"
       }
     ]
   }

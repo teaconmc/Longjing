@@ -35,7 +35,9 @@ jobs:
           python-version: '3.9'
           architecture: 'x64'
       - name: Install Dependencies
-        run: pip3 install boto3
+        run: |
+          pip3 install toml
+          pip3 install boto3
       - name: Check Extras
         env:
           PGP_KEY: ${{ secrets.TEACON_SIGNING_KEY }}

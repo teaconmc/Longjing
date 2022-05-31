@@ -4,12 +4,13 @@
 # Get it via pip:
 #   pip3 install boto3
 
+import base64
 import boto3
 from botocore.client import Config
 from botocore.exceptions import ClientError
-import io
 import json
 import os
+import toml
 import urllib.request
 
 headers = {
@@ -47,7 +48,7 @@ with urllib.request.urlopen(wfs_req) as ws:
                             latest_run_num = run['run_number']
                 if not latest_run:
                     print(
-                        f"No build selected for {workflow['path']} ({workflow['name']})")
+                        f"::warning::No build selected for {workflow['path']} ({workflow['name']})")
                     continue
                 cs_req = urllib.request.Request(
                     latest_run['check_suite_url'], headers=headers)
@@ -72,16 +73,22 @@ with urllib.request.urlopen(wfs_req) as ws:
                                     elif anno['title'] == 'Manual Download':
                                         print(
                                             f"Using {workflow['path']} build #{latest_run_num} with direct link")
-                                        build_info = anno['raw_details'].split(
-                                            ' ', maxsplit=1)
-                                        mod_list.append({
-                                            'name': build_info[0],
-                                            'file': build_info[1],
-                                            'sig': build_info[1] + '.asc'
-                                        })
+                                        [team_id, mod_name, mod_file, mods_toml_b64] = anno['raw_details'].split(' ', maxsplit=3)
+                                        mods = toml.loads(base64.b64decode(mods_toml_b64).decode('utf-8')).get('mods', [])
+                                        if not any(mod.get('modId', '').replace('_', '-') == team_id for mod in mods):
+                                            print(
+                                                f"::warning::The mod id list {[mod.get('modId', '') for mod in mods.get()]}",
+                                                "defined in mods.toml does not contains any mod id matching the team id",
+                                                f"{team_id} and it will be skipped for packing this mod")
+                                        else:
+                                            mod_list.append({
+                                                'name': mod_name,
+                                                'file': mod_file,
+                                                'sig': mod_file + '.asc'
+                                            })
                     if not found:
                         print(
-                            f"Did not find download link info under {workflow['path']} ({workflow['name']})#{run['run_number']}")
+                            f"::warning::Did not find download link info under {workflow['path']} ({workflow['name']})#{run['run_number']}")
 
 # TODO Merge into the loop above
 for artifact in maven_artifacts:
