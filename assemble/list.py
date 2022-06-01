@@ -42,13 +42,13 @@ with urllib.request.urlopen(wfs_req) as ws:
                     if run['status'] == 'completed' and run['conclusion'] == 'success' and run['run_number'] > latest_run_num:
                         if run['run_number'] in faulty_builds:
                             print(
-                                f"Skipping faulty builds {workflow['path']}#{run['run_number']}")
+                                f"Skipping faulty builds {workflow['path']}#{run['run_number']}", flush=True)
                         else:
                             latest_run = run
                             latest_run_num = run['run_number']
                 if not latest_run:
                     print(
-                        f"::warning::No build selected for {workflow['path']} ({workflow['name']})")
+                        f"::warning::No build selected for {workflow['path']} ({workflow['name']})", flush=True)
                     continue
                 cs_req = urllib.request.Request(
                     latest_run['check_suite_url'], headers=headers)
@@ -66,29 +66,29 @@ with urllib.request.urlopen(wfs_req) as ws:
                                 for anno in json.load(annos):
                                     if anno['title'] == 'Download':
                                         print(
-                                            f"Using {workflow['path']} build #{latest_run_num}, maven coordinate {anno['raw_details']}")
+                                            f"Using {workflow['path']} build #{latest_run_num}, maven coordinate {anno['raw_details']}", flush=True)
                                         maven_artifacts.append(
                                             anno['raw_details'])
                                         found = True
                                     elif anno['title'] == 'Manual Download':
                                         print(
-                                            f"Using {workflow['path']} build #{latest_run_num} with direct link")
+                                            f"Using {workflow['path']} build #{latest_run_num} with direct link", flush=True)
                                         [team_id, mod_name, mod_file, mods_toml_b64] = anno['raw_details'].split(' ', maxsplit=3)
                                         mods = []
                                         try:
                                             mods = toml.loads(base64.b64decode(mods_toml_b64).decode('utf-8') + '\n').get('mods', [])
                                         except Exception as e:
                                             print(
-                                                f"::warning::Parse error on ({mod_name}) of {workflow['path']} build #{latest_run_num}: {e}")
+                                                f"::warning::Parse error on ({mod_name}) of {workflow['path']} build #{latest_run_num}: {e}", flush=True)
                                         if team_id.lower().replace('-', '') not in mod_name.lower().replace('_', '').replace('-', ''):
                                             print(
                                                 f"::warning::It is detected that the team id ({team_id}) is not included in the archive file name",
-                                                f"({mod_name}) of {workflow['path']} build #{latest_run_num}, this is very likely to cause conflicts")
+                                                f"({mod_name}) of {workflow['path']} build #{latest_run_num}, this is very likely to cause conflicts", flush=True)
                                         if not any(mod.get('modId', '').replace('_', '-') == team_id for mod in mods):
                                             print(
                                                 f"::warning::The mod id list {[mod.get('modId', '') for mod in mods]}",
                                                 "defined in mods.toml does not contains any mod id matching the team id",
-                                                f"({team_id}) so {workflow['path']} build #{latest_run_num} will be skipped")
+                                                f"({team_id}) so {workflow['path']} build #{latest_run_num} will be skipped", flush=True)
                                         else:
                                             mod_list.append({
                                                 'name': mod_name,
@@ -97,7 +97,7 @@ with urllib.request.urlopen(wfs_req) as ws:
                                             })
                     if not found:
                         print(
-                            f"Did not find download link info under {workflow['path']} ({workflow['name']})#{run['run_number']}")
+                            f"Did not find download link info under {workflow['path']} ({workflow['name']})#{run['run_number']}", flush=True)
 
 # TODO Merge into the loop above
 for artifact in maven_artifacts:
