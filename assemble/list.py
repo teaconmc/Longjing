@@ -74,7 +74,12 @@ with urllib.request.urlopen(wfs_req) as ws:
                                         print(
                                             f"Using {workflow['path']} build #{latest_run_num} with direct link")
                                         [team_id, mod_name, mod_file, mods_toml_b64] = anno['raw_details'].split(' ', maxsplit=3)
-                                        mods = toml.loads(base64.b64decode(mods_toml_b64).decode('utf-8')).get('mods', [])
+                                        mods = []
+                                        try:
+                                            mods = toml.loads(base64.b64decode(mods_toml_b64).decode('utf-8') + '\n').get('mods', [])
+                                        except Exception as e:
+                                            print(
+                                                f"::warning::Parse error on ({mod_name}) of {workflow['path']} build #{latest_run_num}: {e}")
                                         if team_id.lower().replace('-', '') not in mod_name.lower().replace('_', '').replace('-', ''):
                                             print(
                                                 f"::warning::It is detected that the team id ({team_id}) is not included in the archive file name",
