@@ -1,5 +1,5 @@
 {
-  ".github/workflows/mod-team-firesafety.yaml": [ 1, 2, 7, 8, 9, 10 ],
+  ".github/workflows/mod-team-firesafety.yaml": [ 1, 2, 7, 8, 9, 10, 11 ],
   ".github/workflows/mod-team-fire-protection-equipment.yaml": [ 1, 2, 7, 8, 9, 10, 11 ],
   ".github/workflows/mod-team-blaze-reborn.yaml": [ 1, 2, 7, 8, 9 ],
   ".github/workflows/mod-team-metallurgy.yaml": [ 1, 2, 7, 8, 9 ],
