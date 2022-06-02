@@ -96,6 +96,12 @@
     "mirror": true
   },
   {
+    "name": "lightfall-client-1.18-2.jar",
+    "file": "https://github.com/ArclightPowered/lightfall/releases/download/1.18-2/lightfall.jar",
+    "sha256": "867115103c3e91d3284a031f67d9613482d4c9a49a258c441f78a34b8d36477c",
+    "mirror": true
+  },
+  {
     "name": "WaitingForServer-1.18-5.1.0-8.jar",
     "file": "https://maven.k-4u.nl/mcjty/theoneprobe/theoneprobe/1.18-5.1.0-8/theoneprobe-1.18-5.1.0-8.jar",
     "sha256": "46fd2def34a918fd283cb76918d92760c449b6c03de4a8a19d7a382505d076f9",
