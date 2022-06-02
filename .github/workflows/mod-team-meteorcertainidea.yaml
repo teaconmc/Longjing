@@ -61,6 +61,12 @@ jobs:
             echo '::warning::Gradle wrapper does not seem to exist, this setup is not recommended. Using system-level gradle instead.'
             gradle -I ../setup.gradle build
           fi
+      - name: Dedicated Server Launching Test
+        id: dedicated_server_launching
+        uses: teaconmc/dedicated-launch-test@1.18
+        with:
+          extra: assemble/extra.json
+          mod: ${{ steps.building.outputs.artifact }}
       - name: Extract Mod Description File
         id: description
         shell: bash
