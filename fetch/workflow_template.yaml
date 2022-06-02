@@ -101,3 +101,4 @@ jobs:
           DOWNLOAD_LINK: $${{ steps.publication.outputs.download }}
           MOD_DESCIPTION_BASE64: $${{ steps.description.outputs.base64 }}
         run: cd build && source finish.sh
+# Change this counter to trigger all mod rebuild
