@@ -1,13 +1,13 @@
-name: 'TeaCon 2022 | 华夏飨宴 | 华夏系列项目组'
+name: 'TeaCon 2022 | 苇原 | Kogasa Studio-苇原'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-sinofeast.yaml'
-      - 'mods/team-sinofeast/HEAD'
+      - '.github/workflows/mod-team-ashihara.yaml'
+      - 'mods/team-ashihara/HEAD'
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build 华夏飨宴'
+    name: 'Build 苇原'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
@@ -30,15 +30,15 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository of Build 华夏飨宴'
+      - name: 'Checkout Repository of Build 苇原'
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-sinofeast/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-sinofeast/HEAD`
-          git reset --hard `cat ../../mods/team-sinofeast/HEAD`
+          git remote add origin `cat ../../mods/team-ashihara/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-ashihara/HEAD`
+          git reset --hard `cat ../../mods/team-ashihara/HEAD`
           git submodule init
           git submodule update
       - name: Validate Gradle Wrapper
@@ -86,7 +86,7 @@ jobs:
         id: publication
         shell: bash
         env:
-          TEAM_ID: 'sinofeast'
+          TEAM_ID: 'ashihara'
           ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
@@ -95,7 +95,7 @@ jobs:
       - name: Add Notice
         shell: bash
         env:
-          TEAM_ID: 'sinofeast'
+          TEAM_ID: 'ashihara'
           TOKEN: ${{ github.token }}
           ARTIFACT_NAME: ${{ steps.building.outputs.filename }}
           DOWNLOAD_LINK: ${{ steps.publication.outputs.download }}
