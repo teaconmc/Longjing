@@ -42,7 +42,7 @@ for e in `jq -c '.[]' extra.json`; do
 
   # Download the missing mod for later use.
   URI=`jq -r .file tmp.json`
-  curl -s "$URI" -o "$NAME"
+  curl -q -O "$NAME" "$URI"
 
   # If the file itself doesn't exist, try verify the checksum and upload it.
   if [[ ! $EXISTED ]]; then
