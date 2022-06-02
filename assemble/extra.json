@@ -115,8 +115,8 @@
   },
   {
     "name": "TerraBlender-forge-1.18.2-1.1.0.101.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/TerraBlender-forge-1.18.2-1.1.0.101.jar",
+    "file": "https://media.forgecdn.net/files/3801/33/TerraBlender-forge-1.18.2-1.1.0.101.jar",
     "sha256": "caae05348601a1d8ee029870821a8cf6ab165458f04e2b6fa5b364c5b1b97744",
-    "mirror": false
+    "mirror": true
   }
 ]
