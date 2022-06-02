@@ -112,5 +112,11 @@
     "file": "https://maven.k-4u.nl/mcjty/theoneprobe/theoneprobe/1.18-5.1.0-8/theoneprobe-1.18-5.1.0-8.jar",
     "sha256": "46fd2def34a918fd283cb76918d92760c449b6c03de4a8a19d7a382505d076f9",
     "mirror": true
+  },
+  {
+    "name": "TerraBlender-forge-1.18.2-1.1.0.101.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/TerraBlender-forge-1.18.2-1.1.0.101.jar",
+    "sha256": "caae05348601a1d8ee029870821a8cf6ab165458f04e2b6fa5b364c5b1b97744",
+    "mirror": false
   }
 ]
