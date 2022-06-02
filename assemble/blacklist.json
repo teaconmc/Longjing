@@ -4,5 +4,6 @@
   ".github/workflows/mod-team-blaze-reborn.yaml": [ 1, 2, 7, 8, 9 ],
   ".github/workflows/mod-team-metallurgy.yaml": [ 1, 2, 7, 8, 9 ],
   ".github/workflows/mod-team-firewood.yaml": [ 1, 2, 7, 8, 9 ],
+  ".github/workflows/mod-team-beacons.yaml": [ 4, 9 ],
   "__comment": "Longjing blacklist"
 }
