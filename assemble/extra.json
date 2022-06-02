@@ -96,6 +96,12 @@
     "mirror": true
   },
   {
+    "name": "lightfall-client-1.18-2.jar",
+    "file": "https://github.com/ArclightPowered/lightfall/releases/download/1.18-2/lightfall.jar",
+    "sha256": "867115103c3e91d3284a031f67d9613482d4c9a49a258c441f78a34b8d36477c",
+    "mirror": true
+  },
+  {
     "name": "decal-1.18.2-5c41e9f3a3.jar",
     "file": "https://jitpack.io/com/github/IzzelAliz/decal/5c41e9f3a3/decal-5c41e9f3a3.jar",
     "sha256": "6b5e84b2079619be69a6535ba5fc5099595f70d5babac50217083c3607f601e5",
