@@ -102,6 +102,12 @@
     "mirror": true
   },
   {
+    "name": "decal-1.18.2-5c41e9f3a3.jar",
+    "file": "https://jitpack.io/com/github/IzzelAliz/decal/5c41e9f3a3/decal-5c41e9f3a3.jar",
+    "sha256": "6b5e84b2079619be69a6535ba5fc5099595f70d5babac50217083c3607f601e5",
+    "mirror": true
+  },
+  {
     "name": "WaitingForServer-1.18-5.1.0-8.jar",
     "file": "https://maven.k-4u.nl/mcjty/theoneprobe/theoneprobe/1.18-5.1.0-8/theoneprobe-1.18-5.1.0-8.jar",
     "sha256": "46fd2def34a918fd283cb76918d92760c449b6c03de4a8a19d7a382505d076f9",
