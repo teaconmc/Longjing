@@ -96,9 +96,9 @@
     "mirror": true
   },
   {
-    "name": "lightfall-client-1.18.2-1.0.1.jar",
-    "file": "https://github.com/ArclightPowered/lightfall-client/releases/download/1.18-2/lightfallclient-1.0.1.jar",
-    "sha256": "879d02b04bf9c031578f82e1ecf67990cfd7e7169ecd80abf1f85ca242be06a8",
+    "name": "lightfall-client-1.18.2-1.0.2.jar",
+    "file": "https://github.com/ArclightPowered/lightfall-client/releases/download/1.18-3/lightfallclient-1.0.2.jar",
+    "sha256": "b44b5854cde1176018fdc24170db3ceb90613e60015cb1be2b9fe3c9aa2eb32b",
     "mirror": true
   },
   {
