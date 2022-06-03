@@ -169,7 +169,7 @@ if __name__ == '__main__':
     team_list = get_teams(contest_id)
 
     for team in team_list:
-        if !team['ready']:
+        if not team['ready']:
             print("Skipping " + team['name'] + " as it is not marked ready")
             continue
         write_team_info(team, 'TeaCon 2022', workflow_template)
