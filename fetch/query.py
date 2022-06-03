@@ -121,7 +121,9 @@ def write_team_info(team: Team, contest_name: str, workflow_template: str) -> No
     if os.path.exists(f"{info_dir}/HEAD"):
         with open(f"{info_dir}/HEAD") as f:
             previous_head = f.read()
-    if os.path.exists(f"{info_dir}/ref"):
+    if 'branch' in team and team['branch']:
+        head_ref = f.read()
+    elif os.path.exists(f"{info_dir}/ref"):
         with open(f"{info_dir}/ref") as f:
             head_ref = f.read()
     try:
