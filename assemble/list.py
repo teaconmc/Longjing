@@ -5,7 +5,6 @@
 #   pip3 install boto3
 
 import base64
-import io
 import json
 import os
 import tomlpython
@@ -74,7 +73,7 @@ with urllib.request.urlopen(wfs_req) as ws:
                                         [team_id, mod_name, mod_file, mods_toml_b64] = anno['raw_details'].split(' ', maxsplit=3)
                                         mods = []
                                         try:
-                                            mods = tomlpython.parse(io.BytesIO(base64.b64decode(mods_toml_b64))).get('mods', [])
+                                            mods = tomlpython.parse(base64.b64decode(mods_toml_b64).decode('utf-8')).get('mods', [])
                                         except Exception as e:
                                             print(
                                                 f"::warning::Parse error on ({mod_name}) of {workflow['path']} build #{latest_run_num}: {e}", flush=True)
