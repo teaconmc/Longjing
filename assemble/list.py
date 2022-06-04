@@ -7,7 +7,7 @@
 import base64
 import json
 import os
-import tomlpython
+import toml
 import urllib.request
 
 headers = {
@@ -73,7 +73,7 @@ with urllib.request.urlopen(wfs_req) as ws:
                                         [team_id, mod_name, mod_file, mods_toml_b64] = anno['raw_details'].split(' ', maxsplit=3)
                                         mods = []
                                         try:
-                                            mods = tomlpython.parse(base64.b64decode(mods_toml_b64).decode('utf-8')).get('mods', [])
+                                            mods = toml.loads(base64.b64decode(mods_toml_b64).decode('utf-8') + '\n').get('mods', [])
                                         except Exception as e:
                                             print(
                                                 f"::warning::Parse error on ({mod_name}) of {workflow['path']} build #{latest_run_num}: {e}", flush=True)
