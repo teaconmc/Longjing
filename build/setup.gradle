@@ -23,13 +23,27 @@ afterProject { project ->
     //   4. Use `jar`, failing if not found.
     // The task is expected to have type of org.gradle.api.tasks.bundling.AbstractArchiveTask.
     def targetTask = project.jar
+    def reobfSetup = project.tasks.findByName('configureReobfTaskForReobfJar')
+    if (reobfSetup != null) {
+        // Discussed with ZekerZhayard, our conclusion is that when Kotlin support is
+        // present in the build script, the task order will be scrambled to a state
+        // where reobf setup will run too early.
+        // Possibly related to https://github.com/SpongePowered/MixinGradle/issues/9
+        // Here we try our best to fix this.
+        reobfSetup.mustRunAfter(targetTask)
+    }
     if (project.pluginManager.hasPlugin("com.github.johnrengelman.shadow")) {
         targetTask = project.tasks.shadowJar
+        reobfSetup = project.tasks.findByName('configureReobfTaskForReobfShadowJar')
+        if (reobfSetup != null) {
+            reobfSetup.mustRunAfter(targetTask)
+        }
     }
     if (project.tasks.findByName('remapJar')) {
         targetTask = project.tasks.remapJar
     }
-    if (project.ext.has("teaconArtifactTask")) {
+    if (project.ext.has("teaconArtifactTask")) { 
+        // TODO Deprecate this, nobody uses this so far.
         targetTask = project.ext.teaconArtifactTask
     }
     assert targetTask instanceof AbstractArchiveTask
