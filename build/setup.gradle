@@ -30,7 +30,10 @@ afterProject { project ->
         // where reobf setup will run too early.
         // Possibly related to https://github.com/SpongePowered/MixinGradle/issues/9
         // Here we try our best to fix this.
+        println "Longjing tried locating the configureReobfTaskForReobfJar task and found it. Applying a workaround now..."
         reobfSetup.mustRunAfter(targetTask)
+    } else {
+        println "Longjing tried locating the configureReobfTaskForReobfJar task but found nothing. Proceed with caution."
     }
     if (project.pluginManager.hasPlugin("com.github.johnrengelman.shadow")) {
         targetTask = project.tasks.shadowJar
