@@ -52,14 +52,15 @@ jobs:
         shell: bash
         env:
           GRADLE_WRAPPER_CHECK: $${{ steps.gradle_wrapper_check.outcome == 'success' }}
+        # --max-workers=1 is here to workaround an recurring issue regarding reobf failure.
         run: |
           cd build/repo
           chmod +x ./gradlew
           if [ "$$GRADLE_WRAPPER_CHECK" = 'true' ]; then
-            ./gradlew -I ../setup.gradle build
+            ./gradlew -I ../setup.gradle --max-workers=1 build
           else
             echo '::warning::Gradle wrapper does not seem to exist, this setup is not recommended. Using system-level gradle instead.'
-            gradle -I ../setup.gradle build
+            gradle -I ../setup.gradle --max-workers=1 build
           fi
       - name: Dedicated Server Launching Test
         id: dedicated_server_launching
