@@ -48,12 +48,6 @@
     "mirror": true
   },
   {
-    "name": "kotlinforforge-3.3.2-obf.jar",
-    "file": "https://media.forgecdn.net/files/3768/446/kotlinforforge-3.3.2-obf.jar",
-    "sha256": "5ab949b582dd97b6b11bd76187f65a40aad7fd3d4cf0e89017f1410162eb65d6",
-    "mirror": true
-  },
-  {
     "name": "MTR-forge-1.18.2-3.0.0.jar",
     "file": "https://media.forgecdn.net/files/3769/151/MTR-forge-1.18.2-3.0.0.jar",
     "sha256": "5bf9ad3d0ae463f55746764b42a7364899ef2e6c64e5422a9bdf39d0f7e543c7",
