@@ -56,10 +56,10 @@ jobs:
           cd build/repo
           chmod +x ./gradlew
           if [ "$$GRADLE_WRAPPER_CHECK" = 'true' ]; then
-            ./gradlew -I ../setup.gradle build
+            ./gradlew -I ../setup.gradle build --max-workers=1
           else
             echo '::warning::Gradle wrapper does not seem to exist, this setup is not recommended. Using system-level gradle instead.'
-            gradle -I ../setup.gradle build
+            gradle -I ../setup.gradle build --max-workers=1
           fi
       - name: Dedicated Server Launching Test
         id: dedicated_server_launching
