@@ -10,8 +10,18 @@ ARTIFACT_PATH="2022/ci/build/team-$TEAM_ID/build-$GITHUB_RUN_NUMBER/$ARTIFACT_NA
 zip -T $ARTIFACT_NAME || { echo "Integrity check failed for $ARTIFACT_NAME, not a valid zip file"; exit 1; }
 
 # Do the actual upload
-aws s3 cp $COMMON_OPTS $ARTIFACT_NAME s3://$ARTIFACT_PATH
-aws s3 cp $COMMON_OPTS $ARTIFACT_NAME.asc s3://$ARTIFACT_PATH.asc
+RETRY='0'
+while [ $RETRY -lt 5 ]; do
+  aws s3 cp $COMMON_OPTS $ARTIFACT_NAME s3://$ARTIFACT_PATH && break
+  RETRY=$[$RETRY+1]
+  echo "Retry $RETRY time(s)..."
+done
+RETRY='0'
+while [ $RETRY -lt 5 ]; do
+  aws s3 cp $COMMON_OPTS $ARTIFACT_NAME.asc s3://$ARTIFACT_PATH.asc && break
+  RETRY=$[$RETRY+1]
+  echo "Retry $RETRY time(s)..."
+done
 
 # Pass out the escaped URL for other steps in the workflow to use
 ARTIFACT_PATH_ESCAPED=`python3 -c "import urllib.parse; print(urllib.parse.quote('''$ARTIFACT_PATH'''))"`
