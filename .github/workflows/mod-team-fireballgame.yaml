@@ -1,4 +1,4 @@
-name: 'TeaCon 2022 | 火焰弹工艺 | 压缩立方'
+name: 'TeaCon 2022 | 火焰弹魔法 | 压缩立方'
 on:
   push:
     paths:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build 火焰弹工艺'
+    name: 'Build 火焰弹魔法'
     environment: Build
     runs-on: ubuntu-18.04
     steps:
@@ -30,7 +30,7 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository of Build 火焰弹工艺'
+      - name: 'Checkout Repository of Build 火焰弹魔法'
         shell: bash
         run: |
           mkdir -p build/repo
