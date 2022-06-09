@@ -96,12 +96,6 @@
     "mirror": true
   },
   {
-    "name": "LuckPerms-Forge-5.4.25.jar",
-    "file": "https://download.luckperms.net/1433/forge/loader/LuckPerms-Forge-5.4.25.jar",
-    "sha256": "5686238c43b5e0f677305a079c143dbed41a0a2608943395d528449530c6ab10",
-    "mirror": true
-  },
-  {
     "name": "decal-1.18.2-c7f5b97caf.jar",
     "file": "https://jitpack.io/com/github/IzzelAliz/decal/c7f5b97caf/decal-c7f5b97caf.jar",
     "sha256": "2727f20748d13e06cc61329676567baefab0af67402721a60301b4e803bba8d1",
