@@ -55,7 +55,7 @@ jobs:
         # --max-workers=1 is here to workaround an recurring issue regarding reobf failure.
         run: |
           cd build/repo
-          if [ "$GRADLE_WRAPPER_CHECK" = 'true' ]; then
+          if [ "$GRADLE_WRAPPER_CHECK" = 'true' ] && [ -f './gradlew' ]; then
             chmod +x ./gradlew
             ./gradlew -I ../setup.gradle --max-workers=1 build
           else
