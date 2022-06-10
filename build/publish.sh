@@ -11,17 +11,25 @@ zip -T $ARTIFACT_NAME || { echo "Integrity check failed for $ARTIFACT_NAME, not 
 
 # Do the actual upload
 RETRY='0'
+SUCCESS=''
 while [ $RETRY -lt 5 ]; do
-  aws s3 cp $COMMON_OPTS $ARTIFACT_NAME s3://$ARTIFACT_PATH && break
+  aws s3 cp $COMMON_OPTS $ARTIFACT_NAME s3://$ARTIFACT_PATH && { SUCCESS='yes'; break; }
   RETRY=$[$RETRY+1]
   echo "Retry $RETRY time(s)..."
 done
+if [ -z "$SUCCESS" ]; then
+  aws s3 cp $COMMON_OPTS $ARTIFACT_NAME s3://$ARTIFACT_PATH
+fi
 RETRY='0'
+SUCCESS=''
 while [ $RETRY -lt 5 ]; do
-  aws s3 cp $COMMON_OPTS $ARTIFACT_NAME.asc s3://$ARTIFACT_PATH.asc && break
+  aws s3 cp $COMMON_OPTS $ARTIFACT_NAME.asc s3://$ARTIFACT_PATH.asc && { SUCCESS='yes'; break; }
   RETRY=$[$RETRY+1]
   echo "Retry $RETRY time(s)..."
 done
+if [ -z "$SUCCESS" ]; then
+  aws s3 cp $COMMON_OPTS $ARTIFACT_NAME.asc s3://$ARTIFACT_PATH.asc
+fi
 
 # Pass out the escaped URL for other steps in the workflow to use
 ARTIFACT_PATH_ESCAPED=`python3 -c "import urllib.parse; print(urllib.parse.quote('''$ARTIFACT_PATH'''))"`
