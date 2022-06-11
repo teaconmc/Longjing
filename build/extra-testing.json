@@ -1,0 +1,128 @@
+[
+  {
+    "name": "AreaControl-Forge-1.18-0.4.1.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.4.1/AreaControl-Forge-1.18-0.4.1.jar",
+    "sha256": "5d0c14ac979cebd429f3f9ad89d7ffb0833568342ada23f57f1c8a15c6e41854",
+    "mirror": false
+  },
+  {
+    "name": "ChromeBall-Forge-1.18-0.4.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/ChromeBall-Forge-1.18/0.4.0/ChromeBall-Forge-1.18-0.4.0.jar",
+    "sha256": "0a8532f6f850806d73c43fe68fc0772d0789c9ba0243b402e95d0ffd4762cc18",
+    "mirror": false
+  },
+  {
+    "name": "SlideShow-Forge-1.18-0.6.2-rc.2.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.18/0.6.2-rc.2/SlideShow-Forge-1.18-0.6.2-rc.2.jar",
+    "sha256": "0a8532f6f850806d73c43fe68fc0772d0789c9ba0243b402e95d0ffd4762cc18",
+    "mirror": false
+  },
+  {
+    "name": "Xibao-Forge-1.18-1.0.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Xibao-Forge-1.18/1.0.0/Xibao-Forge-1.18-1.0.0.jar",
+    "sha256": "e7cf173ca0c5f4108360d87b5001f8da6aac1790977afc2f9f56eb1b1095e35d",
+    "mirror": false
+  },
+  {
+    "name": "geckolib-1.18-forge-3.0.18.jar",
+    "file": "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/software/bernie/geckolib/geckolib-1.18-forge/3.0.18/geckolib-1.18-forge-3.0.18.jar",
+    "sha256": "e5ec95f149abdc78d94db6e2167bb84fa239b165bd983aa94078cf09d570ab0b",
+    "mirror": true
+  },
+  {
+    "name": "SinoCore-1.1.1.jar",
+    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.1.1/SinoCore-1.1.1.jar",
+    "sha256": "540e7fc7ad1411fa8ac756df045db809ea24bb35dcac8672d5e47f0fd6bc841e",
+    "mirror": true
+  },
+  {
+    "name": "Patchouli-1.18.2-69.jar",
+    "file": "https://maven.blamejared.com/vazkii/patchouli/Patchouli/1.18.2-69/Patchouli-1.18.2-69.jar",
+    "sha256": "dbbb1e208c90c60c4af41eca95c5afc34d0ddf42212f747368a7f7f174033c64",
+    "mirror": true
+  },
+  {
+    "name": "kotlinforforge-3.4.0-obf.jar",
+    "file": "https://media.forgecdn.net/files/3820/307/kotlinforforge-3.4.0-obf.jar",
+    "sha256": "d6074c8634fd06dedc1b5faf2abeb6517099d2aadbf62923f6a216db0b01c2a8",
+    "mirror": true
+  },
+  {
+    "name": "curios-forge-1.18.2-5.0.7.0.jar",
+    "file": "https://maven.theillusivec4.top/top/theillusivec4/curios/curios-forge/1.18.2-5.0.7.0/curios-forge-1.18.2-5.0.7.0.jar",
+    "sha256": "28bf666fba52ee89aed32420c1430320aad9bdedbfee675c2dde4f2b50804a67",
+    "mirror": true
+  },
+  {
+    "name": "MTR-forge-1.18.2-3.0.0.jar",
+    "file": "https://media.forgecdn.net/files/3769/151/MTR-forge-1.18.2-3.0.0.jar",
+    "sha256": "5bf9ad3d0ae463f55746764b42a7364899ef2e6c64e5422a9bdf39d0f7e543c7",
+    "mirror": true
+  },
+  {
+    "name": "LibX-1.18.2-3.2.15.jar",
+    "file": "https://maven.melanx.de/io/github/noeppi_noeppi/mods/LibX/1.18.2-3.2.15/LibX-1.18.2-3.2.15.jar",
+    "sha256": "aef6a6bf42a591be1d57648fb1636cc703fc9a2e58c2846480ec7587248da96c",
+    "mirror": true
+  },
+  {
+    "name": "MMLib-1.0.1-1.18.2.jar",
+    "file": "https://raw.githubusercontent.com/0999312/MMLib/master/mcmodsrepo/cn/mcmod_mmf/mmlib/MMLib/1.0.1-1.18.2/MMLib-1.0.1-1.18.2.jar",
+    "sha256": "aef6a6bf42a591be1d57648fb1636cc703fc9a2e58c2846480ec7587248da96c",
+    "mirror": true
+  },
+  {
+    "name": "architectury-4.4.68.jar",
+    "file": "https://media.forgecdn.net/files/3807/924/architectury-4.4.68.jar",
+    "sha256": "e794724d7b80bd94c90772673630e5a8235461b06161664a0e49ed94247bc131",
+    "mirror": true
+  },
+  {
+    "name": "FramedBlocks-5.2.0.jar",
+    "file": "https://media.forgecdn.net/files/3805/861/FramedBlocks-5.2.0.jar",
+    "sha256": "7ab2640d31161223442c1aab0742d8b034ccab967fc8a09416c7384904d06a86",
+    "mirror": true
+  },
+  {
+    "name": "jei-1.18.2-9.7.0.195.jar",
+    "file": "https://dvs1.progwml6.com/files/maven/mezz/jei/jei-1.18.2/9.7.0.195/jei-1.18.2-9.7.0.195.jar",
+    "sha256": "2a385da4c950cba00c25ff55b250cff5fa4f36fbc71d8d6cf737d26fdd1788bd",
+    "mirror": true
+  },
+  {
+    "name": "LowDragLib-1.18.2-0.2.jar",
+    "file": "https://media.forgecdn.net/files/3808/831/LowDragLib-1.18.2-0.2.jar",
+    "sha256": "23afb20181ad406775e1457b65082566cad8356e2971053f6a229670d73d0645",
+    "mirror": true
+  },
+  {
+    "name": "LuckPerms-Forge-5.4.26.jar",
+    "file": "https://download.luckperms.net/1434/forge/loader/LuckPerms-Forge-5.4.26.jar",
+    "sha256": "728d9774a60b4d431839ec646f2be5d122f4101320600c576a8c9abbc2e20d07",
+    "mirror": true
+  },
+  {
+    "name": "lightfall-client-1.18.2-1.0.2.jar",
+    "file": "https://github.com/ArclightPowered/lightfall-client/releases/download/1.18-3/lightfallclient-1.0.2.jar",
+    "sha256": "b44b5854cde1176018fdc24170db3ceb90613e60015cb1be2b9fe3c9aa2eb32b",
+    "mirror": true
+  },
+  {
+    "name": "decal-1.18.2-c7f5b97caf.jar",
+    "file": "https://jitpack.io/com/github/IzzelAliz/decal/c7f5b97caf/decal-c7f5b97caf.jar",
+    "sha256": "2727f20748d13e06cc61329676567baefab0af67402721a60301b4e803bba8d1",
+    "mirror": true
+  },
+  {
+    "name": "WaitingForServer-1.18-5.1.0-8.jar",
+    "file": "https://maven.k-4u.nl/mcjty/theoneprobe/theoneprobe/1.18-5.1.0-8/theoneprobe-1.18-5.1.0-8.jar",
+    "sha256": "46fd2def34a918fd283cb76918d92760c449b6c03de4a8a19d7a382505d076f9",
+    "mirror": true
+  },
+  {
+    "name": "TerraBlender-forge-1.18.2-1.1.0.101.jar",
+    "file": "https://media.forgecdn.net/files/3801/33/TerraBlender-forge-1.18.2-1.1.0.101.jar",
+    "sha256": "caae05348601a1d8ee029870821a8cf6ab165458f04e2b6fa5b364c5b1b97744",
+    "mirror": true
+  }
+]
