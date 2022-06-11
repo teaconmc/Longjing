@@ -66,7 +66,7 @@ jobs:
         id: dedicated_server_launching
         uses: teaconmc/dedicated-launch-test@1.18
         with:
-          extra: assemble/extra.json
+          extra: build/extra-testing.json
           mod: $${{ steps.building.outputs.artifact }}
       - name: Extract Mod Description File
         id: description
