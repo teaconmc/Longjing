@@ -32,6 +32,8 @@ jobs:
           architecture: 'x64'
       - name: Query Updates
         shell: bash
+        env:
+          GITHUB_TOKEN: ${{ steps.auth-as-github-app.outputs.token }}
         run: python3 fetch/query.py
       - name: Commit Changes
         shell: bash

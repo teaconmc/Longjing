@@ -7,7 +7,8 @@ import subprocess
 import sys
 
 from string import Template
-from urllib.request import urlopen
+from urllib.error import HTTPError
+from urllib.request import Request, urlopen
 from typing import List, Optional, TypedDict, Literal
 
 # Print the fetch error message
@@ -62,6 +63,26 @@ def load_workflow_template() -> Optional[str]:
         workflow_template = Template(f.read())
     return workflow_template
 
+def disable_workflow(team_id: str):
+    req=Request(f"https://api.github.com/repos/teaconmc/Longjing/actions/workflows/mod-team-{team_id}.yaml/disable", method='PUT', 
+        headers={ 'Accept': 'application/vnd.github.v3+json', 'Authorization': 'token ' + os.environ['GITHUB_TOKEN'] })
+    try:
+        with urlopen(req):
+            print(f"Disabled workflow mod-team-{team_id}.yaml")
+    except HTTPError as resp:
+        if resp.code != 404:
+            details=json.load(resp)
+            print(f"Error occured while disabling workflow mod-team-{team_id}.yaml (status {resp.code}): {details['message']}")
+
+def enable_workflow(team_id: str):
+    req=Request(f"https://api.github.com/repos/teaconmc/Longjing/actions/workflows/mod-team-{team_id}.yaml/enable", method='PUT', 
+        headers={ 'Accept': 'application/vnd.github.v3+json', 'Authorization': 'token ' + os.environ['GITHUB_TOKEN'] })
+    try:
+        with urlopen(req):
+            print(f"Enabled workflow mod-team-{team_id}.yaml")
+    except HTTPError as resp:
+        pass # Ignore all the possible errors during workflow enabling
+
 # Write team informations including workflow files and git head references
 def write_team_info(team: Team, contest_name: str, workflow_template: str) -> None:
     head_ref = 'HEAD' if team['branch'] is None else team['branch']
@@ -99,6 +120,8 @@ def write_team_info(team: Team, contest_name: str, workflow_template: str) -> No
     if skip:
         return
 
+    # Enable their workflow
+    enable_workflow(team_id)
     # New team is signalled as absence of their tracking info in our repo. 
     # If a new team is found, we then create a directory for them.
     # Create meta information directory
@@ -174,6 +197,7 @@ if __name__ == '__main__':
     for team in team_list:
         if not team['ready']:
             print("Skipping " + team['name'] + " as it is not marked ready")
+            disable_workflow(team['work_id'].replace('_', '-'))
             continue
         write_team_info(team, 'TeaCon 2022', workflow_template)
     write_readme(team_list)
