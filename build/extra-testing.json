@@ -48,6 +48,12 @@
     "mirror": true
   },
   {
+    "name": "ScalableCatsForce-2.13.8-build-4-with-library.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3759/354/ScalableCatsForce-2.13.8-build-4-with-library.jar",
+    "sha256": "30433bd4e12594fcd6cc57c2fbe114d264d339e26c694c2c6ef27da409636771",
+    "mirror": true
+  },
+  {
     "name": "curios-forge-1.18.2-5.0.7.0.jar",
     "file": "https://maven.theillusivec4.top/top/theillusivec4/curios/curios-forge/1.18.2-5.0.7.0/curios-forge-1.18.2-5.0.7.0.jar",
     "sha256": "28bf666fba52ee89aed32420c1430320aad9bdedbfee675c2dde4f2b50804a67",
