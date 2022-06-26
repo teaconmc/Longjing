@@ -60,9 +60,9 @@
     "mirror": true
   },
   {
-    "name": "MMLib-1.0.1-1.18.2.jar",
-    "file": "https://raw.githubusercontent.com/0999312/MMLib/master/mcmodsrepo/cn/mcmod_mmf/mmlib/MMLib/1.0.1-1.18.2/MMLib-1.0.1-1.18.2.jar",
-    "sha256": "aef6a6bf42a591be1d57648fb1636cc703fc9a2e58c2846480ec7587248da96c",
+    "name": "mmlib-1.0.3-1.18.2.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3847/5/mmlib-1.0.3-1.18.2.jar",
+    "sha256": "9448e860ce9c4791ea14324a8bbe1544372e66bfd65697519a3cca8d171cfcbf",
     "mirror": true
   },
   {
