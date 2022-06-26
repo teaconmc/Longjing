@@ -45,6 +45,8 @@ jobs:
           S3_ENDPOINT: ${{ secrets.TEACON_ARCHIVE_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.TEACON_ARCHIVE_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.TEACON_ARCHIVE_SECRET_KEY }}
+          # https://github.com/aws/aws-cli/issues/5623
+          AWS_EC2_METADATA_DISABLED: 'true'
         run: cd assemble && bash update.sh
       - name: Assemble Mod List
         env:
