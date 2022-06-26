@@ -96,9 +96,9 @@
     "mirror": true
   },
   {
-    "name": "LowDragLib-1.18.2-0.2.jar",
-    "file": "https://media.forgecdn.net/files/3808/831/LowDragLib-1.18.2-0.2.jar",
-    "sha256": "23afb20181ad406775e1457b65082566cad8356e2971053f6a229670d73d0645",
+    "name": "LowDragLib-1.18.2-0.6.1.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3846/19/LowDragLib-1.18.2-0.6.1.jar",
+    "sha256": "d6dd401987aaab9be884090ae3467bff12ae46ae293960d9e0da070bafd45e4f",
     "mirror": true
   },
   {
