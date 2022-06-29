@@ -52,20 +52,21 @@ jobs:
         shell: bash
         env:
           GRADLE_WRAPPER_CHECK: ${{ steps.gradle_wrapper_check.outcome == 'success' }}
+        # --max-workers=1 is here to workaround an recurring issue regarding reobf failure.
         run: |
           cd build/repo
-          chmod +x ./gradlew
-          if [ "$GRADLE_WRAPPER_CHECK" = 'true' ]; then
-            ./gradlew -I ../setup.gradle build
+          if [ "$GRADLE_WRAPPER_CHECK" = 'true' ] && [ -f './gradlew' ]; then
+            chmod +x ./gradlew
+            ./gradlew -I ../setup.gradle --max-workers=1 build
           else
             echo '::warning::Gradle wrapper does not seem to exist, this setup is not recommended. Using system-level gradle instead.'
-            gradle -I ../setup.gradle build
+            gradle -I ../setup.gradle --max-workers=1 build
           fi
       - name: Dedicated Server Launching Test
         id: dedicated_server_launching
         uses: teaconmc/dedicated-launch-test@1.18
         with:
-          extra: assemble/extra.json
+          extra: build/extra-testing.json
           mod: ${{ steps.building.outputs.artifact }}
       - name: Extract Mod Description File
         id: description
@@ -91,6 +92,8 @@ jobs:
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
+          # https://github.com/aws/aws-cli/issues/5623
+          AWS_EC2_METADATA_DISABLED: 'true'
         run: cd build && source publish.sh
       - name: Add Notice
         shell: bash
