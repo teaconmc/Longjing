@@ -18,9 +18,9 @@
     "mirror": false
   },
   {
-    "name": "Isle-Forge-1.18-0.4.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/Isle-Forge-1.18/0.4.0/Isle-Forge-1.18-0.4.0.jar",
-    "sha256": "9c5291574f00b4e40c2e5da52fe9ac4618e09e93b1c5cce1e2fbd1b6a0e795dd",
+    "name": "Isle-Forge-1.18-0.4.1.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Isle-Forge-1.18/0.4.1/Isle-Forge-1.18-0.4.1.jar",
+    "sha256": "f3facd9ba4c7de37729999e0f05d9e3d7d940d1227026cc45473e9189ee565ce",
     "mirror": false
   },
   {
@@ -36,9 +36,9 @@
     "mirror": true
   },
   {
-    "name": "SinoCore-1.2.0-dev.jar",
-    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.2.0/SinoCore-1.2.0-dev.jar",
-    "sha256": "00130f63b95c0036642ebb6acf535c4b8e216c3074ff7f5d7015c3c278e60e32",
+    "name": "SinoCore-1.2.1.jar",
+    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.2.1/SinoCore-1.2.1.jar",
+    "sha256": "1ba54086aac7aa73aa871319265f5bef2ee3f19131ca71c6e6cc9b623b006674",
     "mirror": true
   },
   {
