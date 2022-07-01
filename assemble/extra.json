@@ -36,9 +36,9 @@
     "mirror": true
   },
   {
-    "name": "SinoCore-1.1.1.jar",
-    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.1.1/SinoCore-1.1.1.jar",
-    "sha256": "540e7fc7ad1411fa8ac756df045db809ea24bb35dcac8672d5e47f0fd6bc841e",
+    "name": "SinoCore-main-de9fa70d8a-1.jar",
+    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/main-de9fa70d8a-1/SinoCore-main-de9fa70d8a-1.jar",
+    "sha256": "bbc9d1a1a6894e74e333bef5066cf8ce826f044f3e532e84128261827f1cac9f",
     "mirror": true
   },
   {
@@ -93,6 +93,12 @@
     "name": "LowDragLib-1.18.2-0.6.1.jar",
     "file": "https://mediafiles.forgecdn.net/files/3846/19/LowDragLib-1.18.2-0.6.1.jar",
     "sha256": "d6dd401987aaab9be884090ae3467bff12ae46ae293960d9e0da070bafd45e4f",
+    "mirror": true
+  },
+  {
+    "name": "lucent-1.18.2-1.2.2.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3776/959/lucent-1.18.2-1.2.2.jar",
+    "sha256": "461d7ea2e9d3174c2e86777c69b7631b8fd3fa31720f151efd563ffaf3f073b2",
     "mirror": true
   },
   {

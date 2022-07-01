@@ -36,9 +36,9 @@
     "mirror": true
   },
   {
-    "name": "SinoCore-1.1.1.jar",
-    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.1.1/SinoCore-1.1.1.jar",
-    "sha256": "540e7fc7ad1411fa8ac756df045db809ea24bb35dcac8672d5e47f0fd6bc841e",
+    "name": "SinoCore-main-de9fa70d8a-1.jar",
+    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/main-de9fa70d8a-1/SinoCore-main-de9fa70d8a-1.jar",
+    "sha256": "bbc9d1a1a6894e74e333bef5066cf8ce826f044f3e532e84128261827f1cac9f",
     "mirror": true
   },
   {
@@ -111,6 +111,12 @@
     "name": "LuckPerms-Forge-5.4.26.jar",
     "file": "https://download.luckperms.net/1434/forge/loader/LuckPerms-Forge-5.4.26.jar",
     "sha256": "728d9774a60b4d431839ec646f2be5d122f4101320600c576a8c9abbc2e20d07",
+    "mirror": true
+  },
+  {
+    "name": "lucent-1.18.2-1.2.2.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3776/959/lucent-1.18.2-1.2.2.jar",
+    "sha256": "461d7ea2e9d3174c2e86777c69b7631b8fd3fa31720f151efd563ffaf3f073b2",
     "mirror": true
   },
   {
