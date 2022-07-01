@@ -18,6 +18,12 @@
     "mirror": false
   },
   {
+    "name": "Isle-Forge-1.18-0.4.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Isle-Forge-1.18/0.4.0/Isle-Forge-1.18-0.4.0.jar",
+    "sha256": "9c5291574f00b4e40c2e5da52fe9ac4618e09e93b1c5cce1e2fbd1b6a0e795dd",
+    "mirror": false
+  },
+  {
     "name": "Xibao-Forge-1.18-1.0.0.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/Xibao-Forge-1.18/1.0.0/Xibao-Forge-1.18-1.0.0.jar",
     "sha256": "e7cf173ca0c5f4108360d87b5001f8da6aac1790977afc2f9f56eb1b1095e35d",
