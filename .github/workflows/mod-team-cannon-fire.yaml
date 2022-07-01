@@ -67,6 +67,7 @@ jobs:
         uses: teaconmc/dedicated-launch-test@1.18
         with:
           extra: build/extra-testing.json
+          extra1: mods/team-cannon-fire/deps.json
           mod: ${{ steps.building.outputs.artifact }}
       - name: Extract Mod Description File
         id: description
