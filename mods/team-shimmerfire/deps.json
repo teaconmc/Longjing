@@ -1,0 +1,9 @@
+[
+  {
+    "__comment": "Manually added to satify dependency requirements",
+    "name": "Multiblocked-1.18.2-0.9.3-30.jar",
+    "file": "https://archive.teacon.cn/2022/ci/build/team-multiblocked/build-30/Multiblocked-1.18.2-0.9.3-30.jar",
+    "sha256": "f6f74d928dc072919e9aa1980e03030dad086d0c2e335c8a1f44405b5c995792",
+    "mirror": false
+  }
+]
