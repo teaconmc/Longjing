@@ -102,12 +102,6 @@
     "mirror": true
   },
   {
-    "name": "Shimmer-forge-1.18.2-0.1.2.jar",
-    "file": "https://mediafiles.forgecdn.net/files/3848/704/Shimmer-forge-1.18.2-0.1.2.jar",
-    "sha256": "64fa4c402a7024dad35fde38c1a5077f740d4307927bfadc659622753ab63f21",
-    "mirror": true
-  },
-  {
     "name": "lightfall-client-1.18.2-1.0.2.jar",
     "file": "https://github.com/ArclightPowered/lightfall-client/releases/download/1.18-3/lightfallclient-1.0.2.jar",
     "sha256": "b44b5854cde1176018fdc24170db3ceb90613e60015cb1be2b9fe3c9aa2eb32b",
