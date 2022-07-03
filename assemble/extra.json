@@ -30,6 +30,12 @@
     "mirror": false
   },
   {
+    "name": "XKDeco-Forge-1.18-0.3.0-SNAPSHOT+6fdaa4d.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/XKDeco-Forge-1.18-0.3.0-SNAPSHOT%2B6fdaa4d.jar",
+    "sha256": "acd57487fc8e9a70d6b60d21b0e6ba080bfce73a053499fcb39e33208a8a4e2d",
+    "mirror": false
+  },
+  {
     "name": "geckolib-1.18-forge-3.0.18.jar",
     "file": "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/software/bernie/geckolib/geckolib-1.18-forge/3.0.18/geckolib-1.18-forge-3.0.18.jar",
     "sha256": "e5ec95f149abdc78d94db6e2167bb84fa239b165bd983aa94078cf09d570ab0b",
