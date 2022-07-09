@@ -36,45 +36,51 @@
     "mirror": false
   },
   {
-    "name": "geckolib-1.18-forge-3.0.18.jar",
-    "file": "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/software/bernie/geckolib/geckolib-1.18-forge/3.0.18/geckolib-1.18-forge-3.0.18.jar",
-    "sha256": "e5ec95f149abdc78d94db6e2167bb84fa239b165bd983aa94078cf09d570ab0b",
+    "name": "geckolib-forge-1.18-3.0.28.jar",
+    "file": "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/software/bernie/geckolib/geckolib-forge-1.18/3.0.28/geckolib-forge-1.18-3.0.28.jar",
+    "sha256": "ce0164b5e9c20c5d5ffda896cd247f39eb7e8bd69c743693845d2ca0d9ffb475",
     "mirror": true
   },
   {
-    "name": "SinoCore-1.2.1.jar",
-    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.2.1/SinoCore-1.2.1.jar",
-    "sha256": "1ba54086aac7aa73aa871319265f5bef2ee3f19131ca71c6e6cc9b623b006674",
+    "name": "SinoCore-1.2.2.jar",
+    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.2.2/SinoCore-1.2.2.jar",
+    "sha256": "542c56a969f6a41301065944f4737b416e56257e03b7b8cf75c6849c407c986d",
     "mirror": true
   },
   {
-    "name": "Patchouli-1.18.2-69.jar",
-    "file": "https://maven.blamejared.com/vazkii/patchouli/Patchouli/1.18.2-69/Patchouli-1.18.2-69.jar",
-    "sha256": "dbbb1e208c90c60c4af41eca95c5afc34d0ddf42212f747368a7f7f174033c64",
+    "name": "Patchouli-1.18.2-71.1.jar",
+    "file": "https://maven.blamejared.com/vazkii/patchouli/Patchouli/1.18.2-71.1/Patchouli-1.18.2-71.1.jar",
+    "sha256": "1bcd352f81124b24832b536b62c138663682527886d4aaced595e7baa50e3ebb",
     "mirror": true
   },
   {
-    "name": "curios-forge-1.18.2-5.0.7.0.jar",
-    "file": "https://maven.theillusivec4.top/top/theillusivec4/curios/curios-forge/1.18.2-5.0.7.0/curios-forge-1.18.2-5.0.7.0.jar",
-    "sha256": "28bf666fba52ee89aed32420c1430320aad9bdedbfee675c2dde4f2b50804a67",
+    "name": "curios-forge-1.18.2-5.0.7.1.jar",
+    "file": "https://maven.theillusivec4.top/top/theillusivec4/curios/curios-forge/1.18.2-5.0.7.1/curios-forge-1.18.2-5.0.7.1.jar",
+    "sha256": "dba32dc8e069c624b75a74e48670e4460a0f7d30e00fffae249afd9ba2f3d06a",
     "mirror": true
   },
   {
-    "name": "MTR-forge-1.18.2-3.0.0.jar",
-    "file": "https://media.forgecdn.net/files/3769/151/MTR-forge-1.18.2-3.0.0.jar",
-    "sha256": "5bf9ad3d0ae463f55746764b42a7364899ef2e6c64e5422a9bdf39d0f7e543c7",
+    "name": "LibX-1.18.2-3.2.18.jar",
+    "file": "https://maven.melanx.de/io/github/noeppi_noeppi/mods/LibX/1.18.2-3.2.18/LibX-1.18.2-3.2.18.jar",
+    "sha256": "c03e54973a81f48aa4d2b24c20083fd7808b547b7826afdd98254fe2c43cc873",
     "mirror": true
   },
   {
-    "name": "LibX-1.18.2-3.2.15.jar",
-    "file": "https://maven.melanx.de/io/github/noeppi_noeppi/mods/LibX/1.18.2-3.2.15/LibX-1.18.2-3.2.15.jar",
-    "sha256": "aef6a6bf42a591be1d57648fb1636cc703fc9a2e58c2846480ec7587248da96c",
+    "name": "mmlib-1.0.5-1.18.2.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3857/113/mmlib-1.0.5-1.18.2.jar",
+    "sha256": "24736eab07baae67ff99472d7ceadaf290c632568f6c602bb5815f3d93e50162",
     "mirror": true
   },
   {
-    "name": "mmlib-1.0.3-1.18.2.jar",
-    "file": "https://mediafiles.forgecdn.net/files/3847/5/mmlib-1.0.3-1.18.2.jar",
-    "sha256": "9448e860ce9c4791ea14324a8bbe1544372e66bfd65697519a3cca8d171cfcbf",
+    "name": "TerraBlender-forge-1.18.2-1.1.0.102.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3816/497/TerraBlender-forge-1.18.2-1.1.0.102.jar",
+    "sha256": "fffbf004f8d153b74e6191e7c95f3f19a24bce06f1fa75626ff251f67e6e5739",
+    "mirror": true
+  },
+  {
+    "name": "ModernUI-1.18.2-3.4.7.108-universal.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3837/312/ModernUI-1.18.2-3.4.7.108-universal.jar",
+    "sha256": "6f8899f0de0672b1c98f5b19dbd471db22a492e7f41fae2351fcfc1ddcb5f04a",
     "mirror": true
   },
   {
@@ -123,12 +129,6 @@
     "name": "WaitingForServer-1.18-5.1.0-8.jar",
     "file": "https://maven.k-4u.nl/mcjty/theoneprobe/theoneprobe/1.18-5.1.0-8/theoneprobe-1.18-5.1.0-8.jar",
     "sha256": "46fd2def34a918fd283cb76918d92760c449b6c03de4a8a19d7a382505d076f9",
-    "mirror": true
-  },
-  {
-    "name": "TerraBlender-forge-1.18.2-1.1.0.101.jar",
-    "file": "https://media.forgecdn.net/files/3801/33/TerraBlender-forge-1.18.2-1.1.0.101.jar",
-    "sha256": "caae05348601a1d8ee029870821a8cf6ab165458f04e2b6fa5b364c5b1b97744",
     "mirror": true
   }
 ]
