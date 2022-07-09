@@ -54,9 +54,9 @@
     "mirror": true
   },
   {
-    "name": "Patchouli-1.18.2-71.1.jar",
-    "file": "https://maven.blamejared.com/vazkii/patchouli/Patchouli/1.18.2-71.1/Patchouli-1.18.2-71.1.jar",
-    "sha256": "1bcd352f81124b24832b536b62c138663682527886d4aaced595e7baa50e3ebb",
+    "name": "Patchouli-1.18.2-70.jar",
+    "file": "https://maven.blamejared.com/vazkii/patchouli/Patchouli/1.18.2-70/Patchouli-1.18.2-70.jar",
+    "sha256": "44bb3451ead3e3ecf5836521fa3c457efb0d74520a059e12b57159c7b62c0df5",
     "mirror": true
   },
   {
