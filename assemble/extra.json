@@ -12,15 +12,21 @@
     "mirror": false
   },
   {
-    "name": "SlideShow-Forge-1.18-0.6.2-rc.2.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.18/0.6.2-rc.2/SlideShow-Forge-1.18-0.6.2-rc.2.jar",
-    "sha256": "0a8532f6f850806d73c43fe68fc0772d0789c9ba0243b402e95d0ffd4762cc18",
+    "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+9d0bdb5.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2B9d0bdb5.jar",
+    "sha256": "db1d4a1274d81aa07bb466e7ed6caaad31863c7b60af65bedb4db7376c5889ce",
     "mirror": false
   },
   {
-    "name": "Isle-Forge-1.18-0.4.1.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/Isle-Forge-1.18/0.4.1/Isle-Forge-1.18-0.4.1.jar",
-    "sha256": "f3facd9ba4c7de37729999e0f05d9e3d7d940d1227026cc45473e9189ee565ce",
+    "name": "SlideShow-Forge-1.18-0.6.2-rc.4.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.18/0.6.2-rc.4/SlideShow-Forge-1.18-0.6.2-rc.4.jar",
+    "sha256": "d7b0efee8c6aafd02ca332699a2b76e43b384604c4fd7e281cb797c67a4d8bd7",
+    "mirror": false
+  },
+  {
+    "name": "Isle-Forge-1.18-0.4.2.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Isle-Forge-1.18/0.4.2/Isle-Forge-1.18-0.4.2.jar",
+    "sha256": "d478510cf20482ba4263013593fe2a723ec4f45a5e92170e165f96854f692990",
     "mirror": false
   },
   {
