@@ -12,9 +12,9 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+9d0bdb5.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2B9d0bdb5.jar",
-    "sha256": "db1d4a1274d81aa07bb466e7ed6caaad31863c7b60af65bedb4db7376c5889ce",
+    "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+1d6c9a6.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2B1d6c9a6.jar",
+    "sha256": "25a86d765e436ad2086a986bd9037793588f7cae6281f18fc1dbc968c67c5d30",
     "mirror": false
   },
   {
@@ -108,6 +108,12 @@
     "mirror": true
   },
   {
+    "name": "decal-1.18.2-c7f5b97caf.jar",
+    "file": "https://jitpack.io/com/github/IzzelAliz/decal/c7f5b97caf/decal-c7f5b97caf.jar",
+    "sha256": "2727f20748d13e06cc61329676567baefab0af67402721a60301b4e803bba8d1",
+    "mirror": true
+  },
+  {
     "name": "FramedBlocks-5.2.0.jar",
     "file": "https://media.forgecdn.net/files/3805/861/FramedBlocks-5.2.0.jar",
     "sha256": "7ab2640d31161223442c1aab0742d8b034ccab967fc8a09416c7384904d06a86",
@@ -117,6 +123,12 @@
     "name": "jei-1.18.2-9.7.0.195.jar",
     "file": "https://dvs1.progwml6.com/files/maven/mezz/jei/jei-1.18.2/9.7.0.195/jei-1.18.2-9.7.0.195.jar",
     "sha256": "2a385da4c950cba00c25ff55b250cff5fa4f36fbc71d8d6cf737d26fdd1788bd",
+    "mirror": true
+  },
+  {
+    "name": "lightfall-client-1.18.2-1.0.2.jar",
+    "file": "https://github.com/ArclightPowered/lightfall-client/releases/download/1.18-3/lightfallclient-1.0.2.jar",
+    "sha256": "b44b5854cde1176018fdc24170db3ceb90613e60015cb1be2b9fe3c9aa2eb32b",
     "mirror": true
   },
   {
@@ -135,18 +147,6 @@
     "name": "lucent-1.18.2-1.2.2.jar",
     "file": "https://mediafiles.forgecdn.net/files/3776/959/lucent-1.18.2-1.2.2.jar",
     "sha256": "461d7ea2e9d3174c2e86777c69b7631b8fd3fa31720f151efd563ffaf3f073b2",
-    "mirror": true
-  },
-  {
-    "name": "lightfall-client-1.18.2-1.0.2.jar",
-    "file": "https://github.com/ArclightPowered/lightfall-client/releases/download/1.18-3/lightfallclient-1.0.2.jar",
-    "sha256": "b44b5854cde1176018fdc24170db3ceb90613e60015cb1be2b9fe3c9aa2eb32b",
-    "mirror": true
-  },
-  {
-    "name": "decal-1.18.2-c7f5b97caf.jar",
-    "file": "https://jitpack.io/com/github/IzzelAliz/decal/c7f5b97caf/decal-c7f5b97caf.jar",
-    "sha256": "2727f20748d13e06cc61329676567baefab0af67402721a60301b4e803bba8d1",
     "mirror": true
   },
   {
