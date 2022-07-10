@@ -150,6 +150,12 @@
     "mirror": true
   },
   {
+    "name": "Shimmer-forge-1.18.2-0.1.6.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3866/613/Shimmer-forge-1.18.2-0.1.6.jar",
+    "sha256": "0577c4e19c54ba9d5b619ae4af6ec48322fa27ac2d847c9a5ef6b2c986dba5ff",
+    "mirror": true
+  },
+  {
     "name": "WaitingForServer-1.18-5.1.0-8.jar",
     "file": "https://maven.k-4u.nl/mcjty/theoneprobe/theoneprobe/1.18-5.1.0-8/theoneprobe-1.18-5.1.0-8.jar",
     "sha256": "46fd2def34a918fd283cb76918d92760c449b6c03de4a8a19d7a382505d076f9",
