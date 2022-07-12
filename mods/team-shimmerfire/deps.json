@@ -1,8 +1,8 @@
 [
   {
-    "name": "Multiblocked-1.18.2-0.9.3-30.jar",
-    "file": "https://archive.teacon.cn/2022/ci/build/team-multiblocked/build-30/Multiblocked-1.18.2-0.9.3-30.jar",
-    "sha256": "f6f74d928dc072919e9aa1980e03030dad086d0c2e335c8a1f44405b5c995792",
+    "name": "Multiblocked-1.18.2-0.9.6-33.jar",
+    "file": "https://archive.teacon.cn/2022/ci/build/team-multiblocked/build-33/Multiblocked-1.18.2-0.9.6-33.jar",
+    "sha256": "f7a2e3a69677dead32ca43aaf8260ffba25f9f295c5cb9dd7c359df0c0220a27",
     "mirror": false
   }
 ]
