@@ -12,9 +12,9 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+1d6c9a6.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2B1d6c9a6.jar",
-    "sha256": "25a86d765e436ad2086a986bd9037793588f7cae6281f18fc1dbc968c67c5d30",
+    "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+6aa79da.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2B6aa79da.jar",
+    "sha256": "8f345571787d96b7fb484f84fc3b293defc3e261e8bb99edf4a6da3dfcbe048f",
     "mirror": false
   },
   {
@@ -108,9 +108,9 @@
     "mirror": true
   },
   {
-    "name": "decal-1.18.2-c7f5b97caf.jar",
-    "file": "https://jitpack.io/com/github/IzzelAliz/decal/c7f5b97caf/decal-c7f5b97caf.jar",
-    "sha256": "2727f20748d13e06cc61329676567baefab0af67402721a60301b4e803bba8d1",
+    "name": "decal-1.18.2-a0a3b5dfe8.jar",
+    "file": "https://jitpack.io/com/github/IzzelAliz/decal/a0a3b5dfe8/decal-a0a3b5dfe8.jar",
+    "sha256": "668c9324a2013cd50e21de9cb0f99d3b77cc2267c50c3e6d3e67e04876374a88",
     "mirror": true
   },
   {
