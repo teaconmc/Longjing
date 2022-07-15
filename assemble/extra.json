@@ -108,6 +108,12 @@
     "mirror": true
   },
   {
+    "name": "ftbbackups2-forge-1.18.2-1.0.11.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3831/822/ftbbackups2-forge-1.18.2-1.0.11.jar",
+    "sha256": "946acaf5bd7fa242e19f8b6cf39eed08617f4c4b3c17539c8edbb87b28d7ebaa",
+    "mirror": true
+  },
+  {
     "name": "jei-1.18.2-9.7.0.195.jar",
     "file": "https://dvs1.progwml6.com/files/maven/mezz/jei/jei-1.18.2/9.7.0.195/jei-1.18.2-9.7.0.195.jar",
     "sha256": "2a385da4c950cba00c25ff55b250cff5fa4f36fbc71d8d6cf737d26fdd1788bd",
