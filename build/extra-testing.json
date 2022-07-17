@@ -102,6 +102,12 @@
     "mirror": true
   },
   {
+    "name": "Millennium-master-f7abe5eac2-1.jar",
+    "file": "https://jitpack.io/com/github/MillenniumLibrary/Millennium/master-f7abe5eac2-1/Millennium-master-f7abe5eac2-1.jar",
+    "sha256": "92c59b89027221bbfbc8192208f829c890b05ab39dfa7bb712097eff103228c0",
+    "mirror": true
+  },
+  {
     "name": "architectury-4.4.68.jar",
     "file": "https://media.forgecdn.net/files/3807/924/architectury-4.4.68.jar",
     "sha256": "e794724d7b80bd94c90772673630e5a8235461b06161664a0e49ed94247bc131",
