@@ -10,5 +10,6 @@
   ".github/workflows/mod-team-firestealer.yaml": [ 1, 2, 7, 8, 9, 16, 17, 18 ],
   ".github/workflows/mod-team-mtrsteamloco.yaml": [ 29, 30, 31, 32 ],
   ".github/workflows/mod-team-xdi8.yaml": [ 9 ],
+  ".github/workflows/mod-team-civilization-fire.yaml": [ 7 ],
   "__comment": "Longjing blacklist"
 }
