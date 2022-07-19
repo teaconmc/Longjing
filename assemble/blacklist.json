@@ -13,6 +13,7 @@
   ".github/workflows/mod-team-kitchenkarrot.yaml": [ 69 ],
   ".github/workflows/mod-team-cc2001-floo-powder.yaml": [ 44, 45, 46 ],
   ".github/workflows/mod-team-ashihara.yaml": [ 22, 23, 24, 25 ],
+  ".github/workflows/mod-team-caupona.yaml": [ 35, 36, 37, 38 ],
 
   "__comment": "Longjing blacklist"
 }
