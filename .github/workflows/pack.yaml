@@ -50,7 +50,7 @@ jobs:
         run: cd assemble && bash update.sh
       - name: Assemble Mod List
         env:
-          AUTH_TOKEN: ${{ github.token }}
+          AUTH_TOKEN: ${{ steps.auth-as-github-app.outputs.token }}
         run: cd assemble && python3 list.py
       - name: Clone DataPack Repo and Copy Mod List
         env:
