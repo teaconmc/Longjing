@@ -10,7 +10,7 @@
   ".github/workflows/mod-team-firestealer.yaml": [ 1, 2, 7, 8, 9, 16, 17, 18 ],
   ".github/workflows/mod-team-mtrsteamloco.yaml": [ 29, 30, 31, 32 ],
 
-  ".github/workflows/mod-team-kitchenkarrot.yaml": [ 69 ],
+  ".github/workflows/mod-team-cc2001-floo-powder.yaml": [ 44, 45, 46 ],
 
   "__comment": "Longjing blacklist"
 }
