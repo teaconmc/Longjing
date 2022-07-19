@@ -12,6 +12,7 @@
 
   ".github/workflows/mod-team-xdi8.yaml": [ 9 ],
   ".github/workflows/mod-team-civilization-fire.yaml": [ 7 ],
+  ".github/workflows/mod-team-fluxnetworks.yaml": [ 3, 4, 5, 6 ],
 
   "__comment": "Longjing blacklist"
 }
