@@ -12,6 +12,12 @@
     "mirror": false
   },
   {
+    "name": "PowerTool-Forge-1.18-1.0.0-SNAPSHOT+5ae51a4.jar",
+    "file": "https://github.com/teaconmc/PowerTool/releases/download/1.0.0/PowerTool-Forge-1.18-1.0.0-SNAPSHOT+5ae51a4.jar",
+    "sha256": "66dfa3ae597352da9de93586c932c9a24fc688ac1b2108a5b69720aebb99e38a",
+    "mirror": true
+  },
+  {
     "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+cfa955f.jar",
     "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2Bcfa955f.jar",
     "sha256": "3d111fdeb286e5ed48361833ffe7f5dc01343ab11b7b31e2f6e19caef62c5493",
