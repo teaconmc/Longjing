@@ -18,12 +18,6 @@
     "mirror": false
   },
   {
-    "name": "PowerTool-Forge-1.18-1.0.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.0.0/PowerTool-Forge-1.18-1.0.0.jar",
-    "sha256": "4c363e445366d681ea53e7e76f0abcc2ff61fceb51ebae1c86826651353dff8b",
-    "mirror": false
-  },
-  {
     "name": "SignMeUp-Forge-1.18-0.2.0.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.18/0.2.0/SignMeUp-Forge-1.18-0.2.0.jar",
     "sha256": "e03ebe26bfb0f0bf53bf2b97aed089878e791fcb27e39641f1504cba53647097",
