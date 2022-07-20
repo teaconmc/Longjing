@@ -1,8 +1,8 @@
 [
   {
-    "name": "AreaControl-Forge-1.18-0.5.4.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.4/AreaControl-Forge-1.18-0.5.4.jar",
-    "sha256": "ca148197d91eb90c97fd9a25989d50029981f89faf9572b65ba04cce56105dec",
+    "name": "AreaControl-Forge-1.18-0.5.16.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.16/AreaControl-Forge-1.18-0.5.16.jar",
+    "sha256": "b5b6af3ba249d0fd71ae914ac260b848befa4a20bc0ba3c2b6193d804e8ba6f1",
     "mirror": false
   },
   {
@@ -12,9 +12,21 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+cfa955f.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2Bcfa955f.jar",
-    "sha256": "3d111fdeb286e5ed48361833ffe7f5dc01343ab11b7b31e2f6e19caef62c5493",
+    "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+81826d3.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2B81826d3.jar",
+    "sha256": "e3f8f0d456349afd042e7d913f3d6c6c7df036e1e677f86829b89e5a6ef2e66b",
+    "mirror": false
+  },
+  {
+    "name": "PowerTool-Forge-1.18-1.0.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.0.0/PowerTool-Forge-1.18-1.0.0.jar",
+    "sha256": "4c363e445366d681ea53e7e76f0abcc2ff61fceb51ebae1c86826651353dff8b",
+    "mirror": false
+  },
+  {
+    "name": "SignMeUp-Forge-1.18-0.2.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.18/0.2.0/SignMeUp-Forge-1.18-0.2.0.jar",
+    "sha256": "e03ebe26bfb0f0bf53bf2b97aed089878e791fcb27e39641f1504cba53647097",
     "mirror": false
   },
   {
@@ -36,9 +48,9 @@
     "mirror": false
   },
   {
-    "name": "XKDeco-Forge-1.18-0.3.0-SNAPSHOT+43fc8cb.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/XKDeco-Forge-1.18-0.3.0-SNAPSHOT%2B43fc8cb.jar",
-    "sha256": "42af849efbab5df5e5481d708f9aabeb7b8bda280b19e9098c59136c3946b7b2",
+    "name": "XKDeco-Forge-1.18-0.3.0-SNAPSHOT+a8ab91a.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/XKDeco-Forge-1.18-0.3.0-SNAPSHOT%2Ba8ab91a.jar",
+    "sha256": "7f58d37b5e4ccaa9478cdb0c2b9a044bbb60346d84d8f3e19a5e9f5400d7dac1",
     "mirror": false
   },
   {
