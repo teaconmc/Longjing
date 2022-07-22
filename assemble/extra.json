@@ -1,8 +1,8 @@
 [
   {
-    "name": "AreaControl-Forge-1.18-0.5.20.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.20/AreaControl-Forge-1.18-0.5.20.jar",
-    "sha256": "b107f31ec47d1d6df36ec7e17b3370d6d8580529b82ba61fc1c09e3831bcca10",
+    "name": "AreaControl-Forge-1.18-0.5.21.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.21/AreaControl-Forge-1.18-0.5.21.jar",
+    "sha256": "7fca8ba77dd98592a2e398fb6738200c077727d4164f7b22e504214f7cd38db3",
     "mirror": false
   },
   {
@@ -30,9 +30,9 @@
     "mirror": false
   },
   {
-    "name": "ExhibitionToolkit-Forge-1.18-0.1.1.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/ExhibitionToolkit-Forge-1.18/0.1.1/ExhibitionToolkit-Forge-1.18-0.1.1.jar",
-    "sha256": "5e2fb2c509720a24fbba215ca913def0e9600c0f9234d7775afebfb60efc7fc4",
+    "name": "ExhibitionToolkit-Forge-1.18-0.1.2.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/ExhibitionToolkit-Forge-1.18/0.1.2/ExhibitionToolkit-Forge-1.18-0.1.2.jar",
+    "sha256": "26a351dee65a6aa3fc1d162e9d35c907f9329abc90397c3fc26a93d0e7db9519",
     "mirror": false
   },
   {
