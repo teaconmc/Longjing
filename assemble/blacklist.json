@@ -9,7 +9,7 @@
   ".github/workflows/mod-team-yu.yaml": [ 11, 12, 13, 14, 15, 22, 23, 25, 26, 27, 28, 58, 59, 60, 61, 62, 63, 64, 65, 66 ],
   ".github/workflows/mod-team-firestealer.yaml": [ 1, 2, 7, 8, 9, 16, 17, 18 ],
   ".github/workflows/mod-team-mtrsteamloco.yaml": [ 29, 30, 31, 32 ],
-  ".github/workflows/mod-team-boomood.yaml": [ 23, 24, 25 ],
+  ".github/workflows/mod-team-boomood.yaml": [ 23, 24, 25, 32 ],
   ".github/workflows/mod-team-meteorcertainidea.yaml": [ 20, 21, 22 ],
   ".github/workflows/mod-team-funken5p7uhen.yaml": [ 7 ],
 
