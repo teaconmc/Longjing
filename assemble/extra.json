@@ -1,8 +1,8 @@
 [
   {
-    "name": "AreaControl-Forge-1.18-0.5.19.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.19/AreaControl-Forge-1.18-0.5.19.jar",
-    "sha256": "37047d3356f1b5495867a7fc133f0211fcfc3f24c01dbcfdb74600ecf7749575",
+    "name": "AreaControl-Forge-1.18-0.5.20.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.20/AreaControl-Forge-1.18-0.5.20.jar",
+    "sha256": "b107f31ec47d1d6df36ec7e17b3370d6d8580529b82ba61fc1c09e3831bcca10",
     "mirror": false
   },
   {
@@ -27,6 +27,12 @@
     "name": "SignMeUp-Forge-1.18-0.2.0.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.18/0.2.0/SignMeUp-Forge-1.18-0.2.0.jar",
     "sha256": "e03ebe26bfb0f0bf53bf2b97aed089878e791fcb27e39641f1504cba53647097",
+    "mirror": false
+  },
+  {
+    "name": "ExhibitionToolkit-Forge-1.18-0.1.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/ExhibitionToolkit-Forge-1.18/0.1.0/ExhibitionToolkit-Forge-1.18-0.1.0.jar",
+    "sha256": "058d16e355e19a845c94e0381c8ca8a70053ddd763820f79fed81641a89fb5f3",
     "mirror": false
   },
   {
@@ -135,6 +141,12 @@
     "name": "jei-1.18.2-9.7.0.195.jar",
     "file": "https://dvs1.progwml6.com/files/maven/mezz/jei/jei-1.18.2/9.7.0.195/jei-1.18.2-9.7.0.195.jar",
     "sha256": "2a385da4c950cba00c25ff55b250cff5fa4f36fbc71d8d6cf737d26fdd1788bd",
+    "mirror": true
+  },
+  {
+    "name": "curious-armor-stands-1.18.1-4.0.0.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3579/775/curious-armor-stands-1.18.1-4.0.0.jar",
+    "sha256": "9419018e233f2920ba3dcbc572f7863d17ebf148ada5aa1929f22704a2ce0b0c",
     "mirror": true
   },
   {
