@@ -30,9 +30,9 @@
     "mirror": false
   },
   {
-    "name": "ExhibitionToolkit-Forge-1.18-0.1.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/ExhibitionToolkit-Forge-1.18/0.1.0/ExhibitionToolkit-Forge-1.18-0.1.0.jar",
-    "sha256": "058d16e355e19a845c94e0381c8ca8a70053ddd763820f79fed81641a89fb5f3",
+    "name": "ExhibitionToolkit-Forge-1.18-0.1.1.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/ExhibitionToolkit-Forge-1.18/0.1.1/ExhibitionToolkit-Forge-1.18-0.1.1.jar",
+    "sha256": "5e2fb2c509720a24fbba215ca913def0e9600c0f9234d7775afebfb60efc7fc4",
     "mirror": false
   },
   {
