@@ -12,9 +12,9 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+81826d3.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2B81826d3.jar",
-    "sha256": "e3f8f0d456349afd042e7d913f3d6c6c7df036e1e677f86829b89e5a6ef2e66b",
+    "name": "Garlic-Forge-1.18-1.1.0-SNAPSHOT+0413440.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2B0413440.jar",
+    "sha256": "1c3237d17b60368102e86354d319229e81175ce3547739e485ee8ebfa8b922c9",
     "mirror": false
   },
   {
@@ -66,9 +66,9 @@
     "mirror": true
   },
   {
-    "name": "SinoCore-1.2.2.jar",
-    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.2.2/SinoCore-1.2.2.jar",
-    "sha256": "542c56a969f6a41301065944f4737b416e56257e03b7b8cf75c6849c407c986d",
+    "name": "SinoCore-1.2.3.jar",
+    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.2.3/SinoCore-1.2.3.jar",
+    "sha256": "186fab29abc5670762597ded00685805ded019bb8bc3e6196f590bda41c57893",
     "mirror": true
   },
   {
