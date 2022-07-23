@@ -18,21 +18,15 @@
     "mirror": false
   },
   {
-    "name": "PowerTool-Forge-1.18-1.0.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.0.0/PowerTool-Forge-1.18-1.0.0.jar",
-    "sha256": "4c363e445366d681ea53e7e76f0abcc2ff61fceb51ebae1c86826651353dff8b",
+    "name": "PowerTool-Forge-1.18-1.1.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.1.0/PowerTool-Forge-1.18-1.1.0.jar",
+    "sha256": "aa7182e4e26bcf322f294c0ce47e97023b00e21eaf8cda63c898740e8a4eb6a7",
     "mirror": false
   },
   {
     "name": "SignMeUp-Forge-1.18-0.2.0.jar",
     "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.18/0.2.0/SignMeUp-Forge-1.18-0.2.0.jar",
     "sha256": "e03ebe26bfb0f0bf53bf2b97aed089878e791fcb27e39641f1504cba53647097",
-    "mirror": false
-  },
-  {
-    "name": "ExhibitionToolkit-Forge-1.18-0.1.2.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/ExhibitionToolkit-Forge-1.18/0.1.2/ExhibitionToolkit-Forge-1.18-0.1.2.jar",
-    "sha256": "26a351dee65a6aa3fc1d162e9d35c907f9329abc90397c3fc26a93d0e7db9519",
     "mirror": false
   },
   {
