@@ -18,9 +18,9 @@
     "mirror": false
   },
   {
-    "name": "PowerTool-Forge-1.18-1.1.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.1.0/PowerTool-Forge-1.18-1.1.0.jar",
-    "sha256": "aa7182e4e26bcf322f294c0ce47e97023b00e21eaf8cda63c898740e8a4eb6a7",
+    "name": "PowerTool-Forge-1.18-1.1.1.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.1.1/PowerTool-Forge-1.18-1.1.1.jar",
+    "sha256": "fe7aa092d7d631587a16359b71b1cea65f7c7c73dda2e4b7656fe9316b1e50de",
     "mirror": false
   },
   {
