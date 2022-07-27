@@ -12,9 +12,9 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.0.0-SNAPSHOT+81826d3.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.0.0-SNAPSHOT%2B81826d3.jar",
-    "sha256": "e3f8f0d456349afd042e7d913f3d6c6c7df036e1e677f86829b89e5a6ef2e66b",
+    "name": "Garlic-Forge-1.18-1.1.1-SNAPSHOT+447d720.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.1.1-SNAPSHOT%2B447d720.jar",
+    "sha256": "8082230b5ed820af934163d87d1b081b2629b698040826257f7a1ab33d8154a4",
     "mirror": false
   },
   {
@@ -30,9 +30,9 @@
     "mirror": false
   },
   {
-    "name": "SlideShow-Forge-1.18-0.6.2-rc.4.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.18/0.6.2-rc.4/SlideShow-Forge-1.18-0.6.2-rc.4.jar",
-    "sha256": "d7b0efee8c6aafd02ca332699a2b76e43b384604c4fd7e281cb797c67a4d8bd7",
+    "name": "SlideShow-Forge-1.18-0.6.2.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.18/0.6.2/SlideShow-Forge-1.18-0.6.2.jar",
+    "sha256": "6376bbaf39c51ea25d4819a92704cdbedc564faffd1350d33b7cd247fb88a4ae",
     "mirror": false
   },
   {
@@ -108,9 +108,9 @@
     "mirror": true
   },
   {
-    "name": "ModernUI-1.18.2-3.5.0.109-universal.jar",
-    "file": "https://mediafiles.forgecdn.net/files/3871/758/ModernUI-1.18.2-3.5.0.109-universal.jar",
-    "sha256": "5d1b1c9e4a0c8f15d67640369f5f2bb3ddc770f8eaefd6e47e2aa7bc4d8f2bcd",
+    "name": "ModernUI-1.18.2-3.5.2.111-universal.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3902/80/ModernUI-1.18.2-3.5.2.111-universal.jar",
+    "sha256": "daae13c5fe776d30f10b04d06f6b5f0c689ebe2763b90d93cbde529962edba79",
     "mirror": true
   },
   {

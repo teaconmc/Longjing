@@ -30,9 +30,9 @@
     "mirror": false
   },
   {
-    "name": "SlideShow-Forge-1.18-0.6.2-rc.5.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.18/0.6.2-rc.5/SlideShow-Forge-1.18-0.6.2-rc.5.jar",
-    "sha256": "d73c0575d1582dc75c40355b4a5a62ed9b57bc3fed4f79a928e289706e80892d",
+    "name": "SlideShow-Forge-1.18-0.6.2.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SlideShow-Forge-1.18/0.6.2/SlideShow-Forge-1.18-0.6.2.jar",
+    "sha256": "6376bbaf39c51ea25d4819a92704cdbedc564faffd1350d33b7cd247fb88a4ae",
     "mirror": false
   },
   {
@@ -96,9 +96,9 @@
     "mirror": true
   },
   {
-    "name": "ModernUI-1.18.2-3.5.1.110-universal.jar",
-    "file": "https://mediafiles.forgecdn.net/files/3886/165/ModernUI-1.18.2-3.5.1.110-universal.jar",
-    "sha256": "5df257b8e4a41a658a1c1445752a4753be985c90e8676b1873f173f92130c390",
+    "name": "ModernUI-1.18.2-3.5.2.111-universal.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3902/80/ModernUI-1.18.2-3.5.2.111-universal.jar",
+    "sha256": "daae13c5fe776d30f10b04d06f6b5f0c689ebe2763b90d93cbde529962edba79",
     "mirror": true
   },
   {
