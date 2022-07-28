@@ -150,6 +150,12 @@
     "mirror": true
   },
   {
+    "name": "lazydfu-0.1.2.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3209/972/lazydfu-0.1.2.jar",
+    "sha256": "e78eb1492e20bcd8c998d4142dd437c2517393c5d02f582204ad8a38341e75e8",
+    "mirror": true
+  },
+  {
     "name": "lightfall-client-1.18.2-1.0.3.jar",
     "file": "https://github.com/ArclightPowered/lightfall-client/releases/download/1.18-4/lightfallclient-1.0.3.jar",
     "sha256": "20312e3883c5490bc7ed82c80c26c658fbbaabedc3e9cd3ac7900a2185df0ade",
