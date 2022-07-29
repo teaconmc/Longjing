@@ -1,8 +1,8 @@
 [
   {
-    "name": "AreaControl-Forge-1.18-0.5.27.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.27/AreaControl-Forge-1.18-0.5.27.jar",
-    "sha256": "417e04f7496d642ec609e7c2148dbe41a8ade5ca0f11f22d9ba06f1e21f46f6e",
+    "name": "AreaControl-Forge-1.18-0.5.28.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.28/AreaControl-Forge-1.18-0.5.28.jar",
+    "sha256": "dbadb48d8581f3f613baed005ad71a5687172122d0786639bf7467aa7603666b",
     "mirror": false
   },
   {
@@ -12,15 +12,15 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.1.1-SNAPSHOT+447d720.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.1.1-SNAPSHOT%2B447d720.jar",
-    "sha256": "8082230b5ed820af934163d87d1b081b2629b698040826257f7a1ab33d8154a4",
+    "name": "Garlic-Forge-1.18-1.1.1-SNAPSHOT+e59fcda.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.1.1-SNAPSHOT%2Be59fcda.jar",
+    "sha256": "52cce97ea521b80649ae41bb9e4c9fc7fd319f6e0af7b16a323007b6c793e4ea",
     "mirror": false
   },
   {
-    "name": "PowerTool-Forge-1.18-1.1.4.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.1.4/PowerTool-Forge-1.18-1.1.4.jar",
-    "sha256": "496d6c86459cb29930c45a7150c5ef267c2c85ffe7cb0c5a933303e94b85cca5",
+    "name": "PowerTool-Forge-1.18-1.1.5.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.1.5/PowerTool-Forge-1.18-1.1.5.jar",
+    "sha256": "2e95d05adf7164f3ae35a2c92a443a9e3a67f548e957c3d62ccde301f58425a2",
     "mirror": false
   },
   {
