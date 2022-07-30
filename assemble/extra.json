@@ -150,9 +150,9 @@
     "mirror": true
   },
   {
-    "name": "lazydfu-0.1.2.jar",
-    "file": "https://mediafiles.forgecdn.net/files/3209/972/lazydfu-0.1.2.jar",
-    "sha256": "e78eb1492e20bcd8c998d4142dd437c2517393c5d02f582204ad8a38341e75e8",
+    "name": "lazydfu-1.0-1.18+.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3544/496/lazydfu-1.0-1.18%2B.jar",
+    "sha256": "0f2cd2caba33e696fd810c8ea1c27c2e0a651bbeec54c7ac971840f238e40513",
     "mirror": true
   },
   {
