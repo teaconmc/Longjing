@@ -168,12 +168,6 @@
     "mirror": true
   },
   {
-    "name": "lucent-1.18.2-1.2.2.jar",
-    "file": "https://mediafiles.forgecdn.net/files/3776/959/lucent-1.18.2-1.2.2.jar",
-    "sha256": "461d7ea2e9d3174c2e86777c69b7631b8fd3fa31720f151efd563ffaf3f073b2",
-    "mirror": true
-  },
-  {
     "name": "Shimmer-forge-1.18.2-0.1.10.jar",
     "file": "https://mediafiles.forgecdn.net/files/3898/521/Shimmer-forge-1.18.2-0.1.10.jar",
     "sha256": "325d4d97fca9267377d1b89f3c4c8c29aa00cf164d0be94aab8dd4a4c656a3da",
