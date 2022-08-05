@@ -12,9 +12,9 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.1.2-SNAPSHOT+5ea5c5d.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.1.2-SNAPSHOT%2B5ea5c5d.jar",
-    "sha256": "013c6674c90de556b2282c35407f116a5e6d09aaa20f6957aaf19e174c4dcffe",
+    "name": "Garlic-Forge-1.18-1.1.2-SNAPSHOT+bc5282d.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.1.2-SNAPSHOT%2Bbc5282d.jar",
+    "sha256": "0aeb7d186660dd675f1497b2a9e8f699bedb66457aaa64472efaee99bb448a98",
     "mirror": false
   },
   {
@@ -54,9 +54,9 @@
     "mirror": false
   },
   {
-    "name": "XKDeco-Forge-1.18-0.3.0-SNAPSHOT+eb88724.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/XKDeco-Forge-1.18-0.3.0-SNAPSHOT%2Beb88724.jar",
-    "sha256": "786f0c0bc87b2c437f062eab7c7eb9cd0af875197491f95267536fdbef85d5e4",
+    "name": "XKDeco-Forge-1.18-0.3.0-SNAPSHOT+4b582c8.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/XKDeco-Forge-1.18-0.3.0-SNAPSHOT%2B4b582c8.jar",
+    "sha256": "5ad2557bb30810b0a19d84511668bdf442265b7fe5609e4b4586384afc7140dd",
     "mirror": false
   },
   {
