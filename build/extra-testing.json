@@ -180,9 +180,9 @@
     "mirror": true
   },
   {
-    "name": "LuckPerms-Forge-5.4.30.jar",
-    "file": "https://download.luckperms.net/1438/forge/loader/LuckPerms-Forge-5.4.30.jar",
-    "sha256": "97b962f25a772c3fc740390d7935ff238054bc9716840399d0ff3b86697c726d",
+    "name": "LuckPerms-Forge-5.4.35.jar",
+    "file": "https://download.luckperms.net/1443/forge/loader/LuckPerms-Forge-5.4.35.jar",
+    "sha256": "5c1ffb3c25b96d53ac0065c62ca4761584baed9b486ff4f9b0973bff538331e9",
     "mirror": true
   },
   {
