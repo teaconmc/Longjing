@@ -96,6 +96,12 @@
     "mirror": true
   },
   {
+    "name": "dynview-1.18.2-2.8.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3814/624/dynview-1.18.2-2.8.jar",
+    "sha256": "fab2ed3425a9293dee1116eecb388ffdd7f9ff353e15841f243e54368521d31b",
+    "mirror": true
+  },
+  {
     "name": "LibX-1.18.2-3.2.18.jar",
     "file": "https://maven.melanx.de/io/github/noeppi_noeppi/mods/LibX/1.18.2-3.2.18/LibX-1.18.2-3.2.18.jar",
     "sha256": "c03e54973a81f48aa4d2b24c20083fd7808b547b7826afdd98254fe2c43cc873",

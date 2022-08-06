@@ -150,6 +150,12 @@
     "mirror": true
   },
   {
+    "name": "dynview-1.18.2-2.8.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3814/624/dynview-1.18.2-2.8.jar",
+    "sha256": "fab2ed3425a9293dee1116eecb388ffdd7f9ff353e15841f243e54368521d31b",
+    "mirror": true
+  },
+  {
     "name": "lazydfu-1.0-1.18+.jar",
     "file": "https://mediafiles.forgecdn.net/files/3544/496/lazydfu-1.0-1.18%2B.jar",
     "sha256": "0f2cd2caba33e696fd810c8ea1c27c2e0a651bbeec54c7ac971840f238e40513",
