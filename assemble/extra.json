@@ -1,8 +1,8 @@
 [
   {
-    "name": "AreaControl-Forge-1.18-0.5.31.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.31/AreaControl-Forge-1.18-0.5.31.jar",
-    "sha256": "22cc7f77ff4ae57309f808e230c7f55bf3e7e17940c7f7db4e84cda181449a14",
+    "name": "AreaControl-Forge-1.18-0.5.32.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.32/AreaControl-Forge-1.18-0.5.32.jar",
+    "sha256": "2dfe608c8dcfc807e22b4d7e9f9a7383784e79686c199765e0f0e399f4bbd419",
     "mirror": false
   },
   {
@@ -12,9 +12,9 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.1.2-SNAPSHOT+bc5282d.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.1.2-SNAPSHOT%2Bbc5282d.jar",
-    "sha256": "0aeb7d186660dd675f1497b2a9e8f699bedb66457aaa64472efaee99bb448a98",
+    "name": "Garlic-Forge-1.18-1.2.0-SNAPSHOT+016d9cf.jar ",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.2.0-SNAPSHOT%2B016d9cf.jar",
+    "sha256": "051782fc14845ee7ee0b07689927018b561cc380da66f5c671aff616f854a144",
     "mirror": false
   },
   {
@@ -54,9 +54,9 @@
     "mirror": false
   },
   {
-    "name": "XKDeco-Forge-1.18-0.3.0-SNAPSHOT+4b582c8.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/XKDeco-Forge-1.18-0.3.0-SNAPSHOT%2B4b582c8.jar",
-    "sha256": "5ad2557bb30810b0a19d84511668bdf442265b7fe5609e4b4586384afc7140dd",
+    "name": "XKDeco-Forge-1.18-0.3.0-SNAPSHOT+88a827a.jar ",
+    "file": "https://archive.teacon.cn/2022/ci/extra/XKDeco-Forge-1.18-0.3.0-SNAPSHOT%2B88a827a.jar",
+    "sha256": "79a4955dca90b65cbfa955ec65fab6133006a28baf54b960d1b5f47851711cf4",
     "mirror": false
   },
   {
