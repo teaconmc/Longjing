@@ -144,9 +144,9 @@
     "mirror": true
   },
   {
-    "name": "curious-armor-stands-1.18.1-4.0.0.jar",
-    "file": "https://mediafiles.forgecdn.net/files/3579/775/curious-armor-stands-1.18.1-4.0.0.jar",
-    "sha256": "9419018e233f2920ba3dcbc572f7863d17ebf148ada5aa1929f22704a2ce0b0c",
+    "name": "curious-armor-stands-1.18.1-4.0.1-teacon.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/curious-armor-stands-1.18.1-4.0.1-teacon.jar",
+    "sha256": "d537f0fc1780d0666ffc6e1fd3aa8db2dd7c06a562ed4afb7789055feb5865c7",
     "mirror": true
   },
   {
