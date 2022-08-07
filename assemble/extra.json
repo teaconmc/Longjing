@@ -18,9 +18,9 @@
     "mirror": false
   },
   {
-    "name": "PowerTool-Forge-1.18-1.1.6.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.1.6/PowerTool-Forge-1.18-1.1.6.jar",
-    "sha256": "6a03365458d02daa0087ffe70ed99a8acbc8595113037af5f12c6e7dd2907927",
+    "name": "PowerTool-Forge-1.18-1.2.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.2.0/PowerTool-Forge-1.18-1.2.0.jar",
+    "sha256": "20719b2dd3173937af7b405a7b4b3ec8b14514404514ef1e8ca9ebfb8f13685f",
     "mirror": false
   },
   {
@@ -54,9 +54,9 @@
     "mirror": false
   },
   {
-    "name": "XKDeco-Forge-1.18-0.3.0-SNAPSHOT+88a827a.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/XKDeco-Forge-1.18-0.3.0-SNAPSHOT%2B88a827a.jar",
-    "sha256": "79a4955dca90b65cbfa955ec65fab6133006a28baf54b960d1b5f47851711cf4",
+    "name": "XKDeco-Forge-1.18-0.3.0-SNAPSHOT+e990ea7.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/XKDeco-Forge-1.18-0.3.0-SNAPSHOT%2Be990ea7.jar",
+    "sha256": "39195c0110774e6ae9a79ae9aba8c73b16c5c1ed3bd8e3a3a5a79ba53fcf0f96",
     "mirror": false
   },
   {
