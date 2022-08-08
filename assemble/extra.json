@@ -18,9 +18,9 @@
     "mirror": false
   },
   {
-    "name": "PowerTool-Forge-1.18-1.2.3.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.2.3/PowerTool-Forge-1.18-1.2.3.jar",
-    "sha256": "f681861527442541a03f32076d28cc61131452cd7d8eb3e4d8a775aac5c830b1",
+    "name": "PowerTool-Forge-1.18-1.2.4.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.2.4/PowerTool-Forge-1.18-1.2.4.jar",
+    "sha256": "caad55f8fced4544b8e38280a6feffb045146a0854ce9199155cc75e94f46921",
     "mirror": false
   },
   {
@@ -189,6 +189,12 @@
     "name": "WaitingForServer-1.18-5.1.0-8.jar",
     "file": "https://maven.k-4u.nl/mcjty/theoneprobe/theoneprobe/1.18-5.1.0-8/theoneprobe-1.18-5.1.0-8.jar",
     "sha256": "46fd2def34a918fd283cb76918d92760c449b6c03de4a8a19d7a382505d076f9",
+    "mirror": true
+  },
+  {
+    "name": "ferritecore-4.2.1-forge.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3767/288/ferritecore-4.2.1-forge.jar",
+    "sha256": "3d5c82ceaf96292b320e040061b1e07cb12dfee735595078c5e1b7189dc6d01e",
     "mirror": true
   }
 ]
