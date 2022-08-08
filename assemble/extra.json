@@ -12,15 +12,15 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.2.0-SNAPSHOT+016d9cf.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.2.0-SNAPSHOT%2B016d9cf.jar",
-    "sha256": "051782fc14845ee7ee0b07689927018b561cc380da66f5c671aff616f854a144",
+    "name": "Garlic-Forge-1.18-1.2.0-SNAPSHOT+369e833.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.2.0-SNAPSHOT%2B369e833.jar",
+    "sha256": "147d1a253a9ec86900729132fb29b77776a27b43c9a4935133b5c7016cd63811",
     "mirror": false
   },
   {
-    "name": "PowerTool-Forge-1.18-1.2.2.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.2.2/PowerTool-Forge-1.18-1.2.2.jar",
-    "sha256": "c8345ed05f0f411a8cc164e6591952b837efa08db95da616c5b2b8eadf94f97b",
+    "name": "PowerTool-Forge-1.18-1.2.3.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.2.3/PowerTool-Forge-1.18-1.2.3.jar",
+    "sha256": "f681861527442541a03f32076d28cc61131452cd7d8eb3e4d8a775aac5c830b1",
     "mirror": false
   },
   {
