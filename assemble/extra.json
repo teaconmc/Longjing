@@ -138,6 +138,12 @@
     "mirror": true
   },
   {
+    "name": "fμnken5p7ühen-forge-0.1.0-alpha.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/f%CE%BCnken5p7%C3%BChen-forge-0.1.0-alpha.jar",
+    "sha256": "1fd7bc85ace65f056ffd6f375b358a856c44aa01a2dc1a13ffebcd5fa1f56158",
+    "mirror": false
+  },
+  {
     "name": "jei-1.18.2-9.7.0.195.jar",
     "file": "https://dvs1.progwml6.com/files/maven/mezz/jei/jei-1.18.2/9.7.0.195/jei-1.18.2-9.7.0.195.jar",
     "sha256": "2a385da4c950cba00c25ff55b250cff5fa4f36fbc71d8d6cf737d26fdd1788bd",
