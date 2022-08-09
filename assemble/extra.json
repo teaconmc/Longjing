@@ -1,8 +1,8 @@
 [
   {
-    "name": "AreaControl-Forge-1.18-0.5.33.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.5.33/AreaControl-Forge-1.18-0.5.33.jar",
-    "sha256": "089752127612d9516861c270c98316c43dac1963b9b2d0438ffe5d41cc27fc02",
+    "name": "AreaControl-Forge-1.18-0.6.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.6.0/AreaControl-Forge-1.18-0.6.0.jar",
+    "sha256": "0dd6e26feb40bb08b0899db312a70e158b14765ca52261bf3dd5dd5929996f7e",
     "mirror": false
   },
   {
