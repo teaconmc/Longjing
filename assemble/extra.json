@@ -12,9 +12,9 @@
     "mirror": false
   },
   {
-    "name": "Garlic-Forge-1.18-1.2.1-SNAPSHOT+b21b7af.jar",
-    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.2.1-SNAPSHOT%2Bb21b7af.jar",
-    "sha256": "951ca2dc81877aa667786f6ab1c745e946292d3a528295988360e44777bef24e",
+    "name": "Garlic-Forge-1.18-1.2.2-SNAPSHOT+e7ea711.jar",
+    "file": "https://archive.teacon.cn/2022/ci/extra/Garlic-Forge-1.18-1.2.2-SNAPSHOT%2Be7ea711.jar",
+    "sha256": "35c8b423b83ae654fbac6919d412772cc42b4bcd0b931ea7c224288305854ba9",
     "mirror": false
   },
   {
