@@ -48,9 +48,9 @@
     "mirror": false
   },
   {
-    "name": "Xibao-Forge-1.18-1.0.0.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/Xibao-Forge-1.18/1.0.0/Xibao-Forge-1.18-1.0.0.jar",
-    "sha256": "e7cf173ca0c5f4108360d87b5001f8da6aac1790977afc2f9f56eb1b1095e35d",
+    "name": "Xibao-Forge-1.18-1.1.0.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/Xibao-Forge-1.18/1.1.0/Xibao-Forge-1.18-1.1.0.jar",
+    "sha256": "d66baa416a5aaf0642ba0e781fd66b7be63e1c8b99e2594f50e8af5d7fc49774",
     "mirror": false
   },
   {
