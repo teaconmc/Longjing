@@ -66,9 +66,9 @@
     "mirror": true
   },
   {
-    "name": "SinoCore-dev-4dae5b1f7c-1.jar",
-    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/dev-4dae5b1f7c-1/SinoCore-dev-4dae5b1f7c-1.jar",
-    "sha256": "ff0a0738f4a688266286c9f89f06e949f196b5287ff788b1e5c7499166618067",
+    "name": "SinoCore-1.2.15.jar",
+    "file": "https://jitpack.io/com/github/SinoCraftProject/SinoCore/1.2.15/SinoCore-1.2.15.jar",
+    "sha256": "3200e5de490e7d9f03d995d5de09eaa3077f370ea175b75f27a23ee9c0ab5c96",
     "mirror": true
   },
   {
