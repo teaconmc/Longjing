@@ -1,8 +1,8 @@
 [
   {
-    "name": "AreaControl-Forge-1.18-0.6.5.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.6.5/AreaControl-Forge-1.18-0.6.5.jar",
-    "sha256": "847562219a91f76e3b08406f214cb1ce61ca63f5b9e79fc335b2231fafe979f4",
+    "name": "AreaControl-Forge-1.18-0.6.6.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/AreaControl-Forge-1.18/0.6.6/AreaControl-Forge-1.18-0.6.6.jar",
+    "sha256": "c4766bf16e1844068ec8755e57dabe9dd19be722a219aa4b78fb556c7fc6a0b3",
     "mirror": false
   },
   {
@@ -18,9 +18,9 @@
     "mirror": false
   },
   {
-    "name": "PowerTool-Forge-1.18-1.2.7.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.2.7/PowerTool-Forge-1.18-1.2.7.jar",
-    "sha256": "279b078d1dac81798608c9bbd03feafa4040b948dedf63ae53b5ce959ccfa536",
+    "name": "PowerTool-Forge-1.18-1.2.8.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/PowerTool-Forge-1.18/1.2.8/PowerTool-Forge-1.18-1.2.8.jar",
+    "sha256": "63fe44481f8ec868fd47ff0c55af9d1fed21062cfc0a9048b50ba00e1b02dc8d",
     "mirror": false
   },
   {
