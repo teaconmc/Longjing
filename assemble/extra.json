@@ -24,9 +24,9 @@
     "mirror": false
   },
   {
-    "name": "SignMeUp-Forge-1.18-0.3.1.jar",
-    "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.18/0.3.1/SignMeUp-Forge-1.18-0.3.1.jar",
-    "sha256": "cb74f9c512460099c18075190063967e49717d0bbed4d56d44394373fe96ed7b",
+    "name": "SignMeUp-Forge-1.18-0.3.2.jar",
+    "file": "https://archive.teacon.cn/maven/org/teacon/SignMeUp-Forge-1.18/0.3.2/SignMeUp-Forge-1.18-0.3.2.jar",
+    "sha256": "f15df88ad39514b54e95b6b6bfb610a9e8a8a80bc5c7b42e1c2cbcc47a7c8735",
     "mirror": false
   },
   {
