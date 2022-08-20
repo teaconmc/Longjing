@@ -196,5 +196,17 @@
     "file": "https://mediafiles.forgecdn.net/files/3767/288/ferritecore-4.2.1-forge.jar",
     "sha256": "3d5c82ceaf96292b320e040061b1e07cb12dfee735595078c5e1b7189dc6d01e",
     "mirror": true
+  },
+  {
+    "name": "balm-3.2.0+0.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3914/491/balm-3.2.0%2B0.jar",
+    "sha256": "6ce9d23cf4ddc676799b3273a0a3608b4485edcaeb9be8a93d6f7c5c82dbdc48",
+    "mirror": true
+  },
+  {
+    "name": "trashslot-forge-1.18.1-11.0.2.jar",
+    "file": "https://mediafiles.forgecdn.net/files/3658/64/trashslot-forge-1.18.1-11.0.2.jar",
+    "sha256": "4354d287d3cbd7b522e1569e2ece059f1b2127a78d3e58dfe5e8ddc89c60fc5f",
+    "mirror": true
   }
 ]
