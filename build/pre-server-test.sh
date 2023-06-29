@@ -9,5 +9,7 @@
 #   - select(.type != 1) selects non-client-only dependency (i.e. common and server-only)
 #   - { name: ..., file: ... } transforms input JSON object into the needed format
 #   - The enclosing [] collects everything into an JSON array 
-curl -s 'https://biluochun.teacon.cn/api/v1/contest/1/deps' \
+#
+# TODO[3TUSK]: You see, there is this hard-coded contest ID inside URL... you shouldn't hardcode it.
+curl -s 'https://biluochun.teacon.cn/api/v1/contest/2/deps' \
   | jq -M '[ .[] | select(.review_status == 1) | select(.type != 1) | { name: .filename, file: .download_url } ]' > main-deps.json
