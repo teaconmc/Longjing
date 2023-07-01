@@ -13,3 +13,19 @@
 # TODO[3TUSK]: You see, there is this hard-coded contest ID inside URL... you shouldn't hardcode it.
 curl -s 'https://biluochun.teacon.cn/api/v1/contest/2/deps' \
   | jq -M '[ .[] | select(.review_status == 1) | select(.type != 1) | { name: .filename, file: .download_url } ]' > main-deps.json
+
+# If requested (see build.sh, line 38), fetch the list of all submitted works from Biluochun, 
+# pick all submitted works with successful builds, then assemble the mod list to be read by 
+# the dedicated-launch-test action.
+# If not requested, we use an empty JSON array as a placeholder.
+if [ -n "$LONGJING_REQUIRE_OTHER_WORKS" ]; then
+  curl -s https://biluochun.teacon.cn/api/v1/contest/2/teams \
+    | jq -M '[ .[] | select( .test_version != null ) | { mod_id: .work_id, build: .test_version.longjing_number, filename: .test_version.longjing_artifact_name }]' \
+    | jq -M '[ .[] | { name: .filename, file: "https://archive.teacon.cn/2023/ci/build/team-\(.mod_id)/\(.mod_id)-\(.build).jar" } ]' > extra-deps.json
+else
+  echo '[]' > extra-deps.json
+fi
+
+# Merge two JSON array into one.
+# Ref: https://stackoverflow.com/questions/42011086/merge-arrays-of-json
+jq '.[]' main-deps.json extra-deps.json | jq -s > all-deps.json

@@ -34,6 +34,7 @@ if [ -z "$OUTPUT_JAR_TASK" ] || [ "$OUTPUT_JAR_TASK" = 'null' ]; then
 fi
 echo Target output jar task will be: $OUTPUT_JAR_TASK
 
+# Let later steps know if they need all other submitted works in order to run dedicated server test
 echo "LONGJING_REQUIRE_OTHER_WORKS=$(jq -rM .require_other_works ./longjing-config.json)" >> $GITHUB_ENV
 
 cd repo
