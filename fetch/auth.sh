@@ -41,5 +41,5 @@ TOKEN=`curl --silent -X POST -H "Authorization: Bearer $JWT" -H "Accept: applica
 if [ $GITHUB_ACTIONS ]
 then
   echo "::add-mask::$TOKEN"
-  echo "::set-output name=token::$TOKEN"
+  echo "token=$TOKEN" >> $GITHUB_OUTPUT
 fi
