@@ -74,7 +74,7 @@ jobs:
         id: dedicated_server_launching
         uses: teaconmc/dedicated-launch-test@1.20.1
         with:
-          extra: build/main-deps.json
+          extra: build/all-deps.json
           mod: ${{ steps.building.outputs.artifact }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish
