@@ -2,7 +2,7 @@
 
 |作品信息|作品简介|
 |:------------|:------------|
-|末影龙舟<br /><br />队伍名：TeaCon<br />作品 ID：`loongboat`（模组 ID），`164`（数字 ID）<br />项目仓库：[https://github.com/teaconmc/LoongBoat.git](https://github.com/teaconmc/LoongBoat.git)|TeaCon 2023 示例模组：把末地城的龙首拿去做龙舟划|
+|末影龙舟<br />![loongboat](https://github.com/teaconmc/Longjing/actions/workflows/mod-team-loongboat.yaml/badge.svg)<br /><br />队伍名：TeaCon<br />作品 ID：`loongboat`（模组 ID），`164`（数字 ID）<br />项目仓库：[https://github.com/teaconmc/LoongBoat.git](https://github.com/teaconmc/LoongBoat.git)|TeaCon 2023 示例模组：把末地城的龙首拿去做龙舟划|
 |华夏丹青<br />![sinocalligraphy](https://github.com/teaconmc/Longjing/actions/workflows/mod-team-sinocalligraphy.yaml/badge.svg)<br /><br />队伍名：华夏系列项目组<br />作品 ID：`sinocalligraphy`（模组 ID），`167`（数字 ID）<br />项目仓库：[https://github.com/SinoCraftProject/SinoSeries](https://github.com/SinoCraftProject/SinoSeries)|丹青描绘浮生，云墨书尽芳华——在 Minecraft 中使用毛笔作画。<br /><br />**画大饼！**<br />在新修复的陶罐上作画！|
 |华夏九筮<br />![sinodivination](https://github.com/teaconmc/Longjing/actions/workflows/mod-team-sinodivination.yaml/badge.svg)<br /><br />队伍名：华夏系列项目组<br />作品 ID：`sinodivination`（模组 ID），`169`（数字 ID）<br />项目仓库：[https://github.com/SinoCraftProject/SinoSeries](https://github.com/SinoCraftProject/SinoSeries)|敬天地，尚鬼神——关于上古时代祭祀的 Minecraft 模组。|
 |傀儡装配(Modular Golems)<br />![modulargolems](https://github.com/teaconmc/Longjing/actions/workflows/mod-team-modulargolems.yaml/badge.svg)<br /><br />队伍名：Light Land<br />作品 ID：`modulargolems`（模组 ID），`170`（数字 ID）<br />项目仓库：[https://github.com/Minecraft-LightLand/ModularGolems](https://github.com/Minecraft-LightLand/ModularGolems)|傀儡装配(Modular Golems)，直译模块化傀儡，这是一个以创造傀儡为主题的模组，本模组增加了许多不同金属类型的傀儡部件，您可以在切石机制作所需要的傀儡部件后经过铁砧变成金属傀儡部件再于工作台上进行傀儡自定义组装。<br />您所制造的傀儡是您的好帮手，它们会跟随玩家并主动攻击敌对生物或是对它们的创造者产生威胁的生物。|
