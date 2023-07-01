@@ -92,5 +92,15 @@ jobs:
           # https://github.com/aws/aws-cli/issues/5623
           AWS_EC2_METADATA_DISABLED: 'true'
         run: cd build && ./publish.sh
+      - name: Failure notification
+        id: failure_notification
+        if: failure()
+        shell: bash
+        env: 
+          BILUOCHUN_URL: https://biluochun.teacon.cn
+          BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
+          TEAM_ID: 'gravity-generator'
+          TEAM_SEQ: '187'
+        run: cd build && ./failure-callback.sh
 # Change this counter to trigger all mod rebuild
 #
