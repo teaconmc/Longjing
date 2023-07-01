@@ -6,6 +6,9 @@ on:
     paths:
       - 'fetch/workflow_template.yaml'
   workflow_dispatch:
+concurrency:
+  group: polling
+  cancel-in-progress: true
 jobs:
   fetch-update:
     name: Fetch updates
