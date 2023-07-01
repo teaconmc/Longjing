@@ -35,6 +35,9 @@ afterProject { project ->
             def targetProjectPath = targetTaskName.substring(0, splitPoint)
             targetProject = project.findProject(targetProjectPath)
             targetTaskName = targetTaskName.substring(splitPoint + 1)
+            if (targetProject == null) {
+                println "::error title=Invalid TEACON_ARTIFACT_TASK Detected!::你所指定的输出任务中包含有 Gradle 子项目名 $targetProjectPath，但该子项目实际并不存在！"
+            }
         }
         targetTask = targetProject.tasks.named(targetTaskName)
     } else if (project.pluginManager.hasPlugin("com.github.johnrengelman.shadow")) {
