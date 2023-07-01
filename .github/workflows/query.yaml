@@ -6,6 +6,11 @@ on:
     paths:
       - 'fetch/workflow_template.yaml'
   workflow_dispatch:
+    inputs:
+      origin:
+        description: 'The entity that dispatches this event'
+        required: false
+        type: string
 concurrency:
   group: polling
   cancel-in-progress: true
