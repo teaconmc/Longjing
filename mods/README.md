@@ -43,3 +43,4 @@
 |世野之炊<br /><br />队伍名：蛋花开发组<br />作品 ID：`potw`（模组 ID），`233`（数字 ID）<br />项目仓库：[https://github.com/SimpleLey/POTW.git](https://github.com/SimpleLey/POTW.git)|异世界构想的奇幻模组|
 |FacePop<br />![facepop](https://github.com/teaconmc/Longjing/actions/workflows/mod-team-facepop.yaml/badge.svg)<br /><br />队伍名：pop pop<br />作品 ID：`facepop`（模组 ID），`234`（数字 ID）<br />项目仓库：[https://github.com/TT432/FacePop](https://github.com/TT432/FacePop)|快捷表情气泡|
 |热力图与环境<br />![heatmap](https://github.com/teaconmc/Longjing/actions/workflows/mod-team-heatmap.yaml/badge.svg)<br /><br />队伍名：Zbx1425<br />作品 ID：`heatmap`（模组 ID），`235`（数字 ID）<br />项目仓库：[https://github.com/zbx1425/heatmap-ambience](https://github.com/zbx1425/heatmap-ambience)|哪边最热闹捏？|
+|苇原<br /><br />队伍名：Kogasa Studio<br />作品 ID：`ashihara`（模组 ID），`237`（数字 ID）<br />项目仓库：[https://github.com/Kogasa-Studio/Ashihara](https://github.com/Kogasa-Studio/Ashihara)|稻米，樱花，灯火，祭典，极东之地的古老幻想|
