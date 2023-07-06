@@ -52,7 +52,7 @@ jobs:
         shell: bash
         env:
           BILUOCHUN_URL: https://biluochun.teacon.cn
-          TEAM_ID: 238
+          TEAM_ID: 239
           GRADLE_WRAPPER_CHECK: ${{ steps.gradle_wrapper_check.outcome == 'success' }}
         run: cd build && ./build.sh
       # We need at least Python 3.11 to ensure existence of tomllib (see PEP 680)
@@ -84,7 +84,7 @@ jobs:
           BILUOCHUN_URL: https://biluochun.teacon.cn
           CONTEST_ID: 2023
           TEAM_ID: 'crockpot'
-          TEAM_SEQ: '238'
+          TEAM_SEQ: '239'
           BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
@@ -100,6 +100,6 @@ jobs:
           BILUOCHUN_URL: https://biluochun.teacon.cn
           BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
           TEAM_ID: 'crockpot'
-          TEAM_SEQ: '238'
+          TEAM_SEQ: '239'
         run: cd build && ./failure-callback.sh
 # Change this counter to trigger all mod rebuild
