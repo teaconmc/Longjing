@@ -48,3 +48,4 @@
 |端午复兴<br /><br />队伍名：阳电子工作室<br />作品 ID：`duanwure`（模组 ID），`244`（数字 ID）<br />项目仓库：[https://github.com/PositiveEStudio/duanwu-re](https://github.com/PositiveEStudio/duanwu-re)|过个热闹的端午节|
 |闪光日<br />![flashdays](https://github.com/teaconmc/Longjing/actions/workflows/mod-team-flashdays.yaml/badge.svg)<br /><br />队伍名：煜火<br />作品 ID：`flashdays`（模组 ID），`245`（数字 ID）<br />项目仓库：[https://gitee.com/uicdb/flashdays](https://gitee.com/uicdb/flashdays)|震惊！某史蒂夫做了它，竟然......<br /><br />和你的小伙伴一起打怪升级吧！|
 |更好的打雪仗3<br /><br />队伍名：打雪仗工具批发商<br />作品 ID：`bsf`（模组 ID），`249`（数字 ID）<br />项目仓库：[ https://github.com/linngdu664/Better-Snowball-Fight3-mod]( https://github.com/linngdu664/Better-Snowball-Fight3-mod)|此mod添加了很多打雪仗相关的雪球，工具，装备，武器，雪人。适合作为多人pvp/pve小游戏游玩，也适合日常欢乐向玩耍用。|
+|纸带八音盒<br /><br />队伍名：CC<br />作品 ID：`cc_mb`（模组 ID），`253`（数字 ID）<br />项目仓库：[https://github.com/C20C01/MusicBox](https://github.com/C20C01/MusicBox)|添加了按照打孔纸带演奏音乐的八音盒|
