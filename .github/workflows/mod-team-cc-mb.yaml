@@ -1,13 +1,13 @@
-name: 'TeaCon 2023 | Vida | how to be partyParr0t v.19.999099979'
+name: 'TeaCon 2023 | 纸带八音盒 | CC'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-vida-reforged.yaml'
-      - 'mods/team-vida-reforged/HEAD'
+      - '.github/workflows/mod-team-cc-mb.yaml'
+      - 'mods/team-cc-mb/HEAD'
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build Vida'
+    name: 'Build 纸带八音盒'
     environment: Build
     runs-on: ubuntu-22.04
     steps:
@@ -30,15 +30,15 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository of Build Vida'
+      - name: 'Checkout Repository of Build 纸带八音盒'
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-vida-reforged/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-vida-reforged/HEAD`
-          git reset --hard `cat ../../mods/team-vida-reforged/HEAD`
+          git remote add origin `cat ../../mods/team-cc-mb/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-cc-mb/HEAD`
+          git reset --hard `cat ../../mods/team-cc-mb/HEAD`
           git submodule init
           git submodule update
       - name: Validate Gradle Wrapper
@@ -52,7 +52,7 @@ jobs:
         shell: bash
         env:
           BILUOCHUN_URL: https://biluochun.teacon.cn
-          TEAM_ID: 254
+          TEAM_ID: 253
           GRADLE_WRAPPER_CHECK: ${{ steps.gradle_wrapper_check.outcome == 'success' }}
         run: cd build && ./build.sh
       # We need at least Python 3.11 to ensure existence of tomllib (see PEP 680)
@@ -64,7 +64,7 @@ jobs:
         id: description
         shell: bash
         env:
-          TEAM_ID: vida-reforged
+          TEAM_ID: cc-mb
         run: ./build/mods_toml.py
       - name: Prepare for Dedicated Server Launching Test
         id: dedicated_server_launching_setup
@@ -83,8 +83,8 @@ jobs:
         env:
           BILUOCHUN_URL: https://biluochun.teacon.cn
           CONTEST_ID: 2023
-          TEAM_ID: 'vida-reforged'
-          TEAM_SEQ: '254'
+          TEAM_ID: 'cc-mb'
+          TEAM_SEQ: '253'
           BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
@@ -99,7 +99,7 @@ jobs:
         env: 
           BILUOCHUN_URL: https://biluochun.teacon.cn
           BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
-          TEAM_ID: 'vida-reforged'
-          TEAM_SEQ: '254'
+          TEAM_ID: 'cc-mb'
+          TEAM_SEQ: '253'
         run: cd build && ./failure-callback.sh
 # Change this counter to trigger all mod rebuild
