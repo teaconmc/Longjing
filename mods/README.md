@@ -53,3 +53,4 @@
 |奶油大战<br /><br />队伍名：GDE<br />作品 ID：`creamywar`（模组 ID），`259`（数字 ID）<br />项目仓库：[https://github.com/Litt1eBai/creamywar](https://github.com/Litt1eBai/creamywar)|在派对正热闹的时候把奶油抹在他们的脸上|
 |缤纷弹幕<br /><br />队伍名：Crystal1921<br />作品 ID：`lively_danmaku`（模组 ID），`260`（数字 ID）<br />项目仓库：[https://github.com/Crystal1921/LivelyDanmaku](https://github.com/Crystal1921/LivelyDanmaku)|弹幕对战肯定很热闹awa|
 |食堂<br /><br />队伍名：YY餐饮<br />作品 ID：`dininghall`（模组 ID），`261`（数字 ID）<br />项目仓库：[https://github.com/heipiao233/dininghall](https://github.com/heipiao233/dininghall)|挤|
+|召唤扩展 - Summoning Extensions<br /><br />队伍名：Lych<br />作品 ID：`summoningex`（模组 ID），`266`（数字 ID）<br />项目仓库：[https://github.com/Gravelord-Lych/SummoningExtensions.git](https://github.com/Gravelord-Lych/SummoningExtensions.git)|召唤扩展Mod提供了一个召唤区域系统，使玩家可以在世界中定义召唤区域，并使用召唤区域批量召唤实体。<br />召唤大量生物，让世界热闹起来吧！<br />MCBBS发布页：https://www.mcbbs.net/thread-1456196-1-1.html|
