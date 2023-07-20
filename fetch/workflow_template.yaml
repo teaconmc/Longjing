@@ -76,7 +76,6 @@ jobs:
         with:
           extra: build/all-deps.json
           mod: $${{ steps.building.outputs.artifact }}
-          github_token: $${{ secrets.GITHUB_TOKEN }}
       - name: Publish
         id: publication
         shell: bash
