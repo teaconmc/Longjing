@@ -30,7 +30,7 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository of Build 服务端弹幕姬'
+      - name: 'Checkout Repository for Build 服务端弹幕姬'
         shell: bash
         run: |
           mkdir -p build/repo
