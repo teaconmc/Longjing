@@ -177,11 +177,14 @@ def write_team_info(team: Team, contest_name: str, contest_slug: str, workflow_t
         current_head = None
         if get_head_process.stdout:
             current_head = get_head_process.stdout.split()[0]
-        if current_head and current_head != previous_head:
-            with open(f"{info_dir}/HEAD", "w") as f:
-                f.write(current_head)
+        if current_head:
+            if current_head != previous_head:
+                with open(f"{info_dir}/HEAD", "w") as f:
+                    f.write(current_head)
+            else:
+                print(f"Team #{team['id']}'s repo is up-to-date.")
         else:
-            print(f"::warning::Unexpected git-ls-remote output for team #{team['id']}: \n{str(get_head_process.stdout)}")
+            print(f"::warning::Unexpected git-ls-remote output for team #{team['id']}: {str(get_head_process.stdout)}")
 
 def write_readme(team_list: List[Team]):
     from html import escape
