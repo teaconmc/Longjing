@@ -75,3 +75,6 @@
 |岩浆钓鱼<br /><br />队伍名：夕阳红<br />作品 ID：`lavafishing`（模组 ID），`293`（数字 ID）<br />项目仓库：[https://github.com/dsx137/LavaFishing](https://github.com/dsx137/LavaFishing)|一个可以让你在岩浆中钓鱼的小模组。|
 |DiscJockey<br /><br />队伍名：夕阳红<br />作品 ID：`discjockey`（模组 ID），`294`（数字 ID）<br />项目仓库：[https://github.com/dsx137/DiscJockey](https://github.com/dsx137/DiscJockey)|让你可以在Minecraft中打碟！|
 |桌游工艺<br /><br />队伍名：MC桌游社<br />作品 ID：`table_game`（模组 ID），`295`（数字 ID）<br />项目仓库：[https://github.com/bugloader/table-game-mod-1.20](https://github.com/bugloader/table-game-mod-1.20)|一个可玩的多人桌游模组|
+|派对结构<br /><br />队伍名：JinQi的mod<br />作品 ID：`partystructures`（模组 ID），`299`（数字 ID）<br />项目仓库：[https://github.com/JinQiXiong/PartyStructures](https://github.com/JinQiXiong/PartyStructures)|在很久以前，有一群热爱派对的矮人……|
+|华夏八音<br /><br />队伍名：华夏系列-华夏八音项目组<br />作品 ID：`sinomusical`（模组 ID），`300`（数字 ID）<br />项目仓库：[https://github.com/SinoCraftProject/SinoSeries](https://github.com/SinoCraftProject/SinoSeries)|Todo.|
+|音律狂人<br /><br />队伍名：The 3-●-④<br />作品 ID：`music_mania`（模组 ID），`301`（数字 ID）<br />项目仓库：[https://github.com/Dasffafa/MusicMania](https://github.com/Dasffafa/MusicMania)|该作品围绕音乐狂人添加了一系列NPC角色和物品,来营造一场Music Party！保证热闹！|
