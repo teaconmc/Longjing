@@ -22,6 +22,10 @@ if [ "$LONGJING_REQUIRE_OTHER_WORKS" = "true" ]; then
   curl -s https://biluochun.teacon.cn/api/v1/contest/2/teams \
     | jq -M '[ .[] | select( .test_version != null ) | { mod_id: ( .work_id | gsub("_"; "-") ), build: .test_version.longjing_number, filename: .test_version.longjing_artifact_name }]' \
     | jq -M '[ .[] | { name: .filename, file: "https://archive.teacon.cn/2023/ci/build/team-\(.mod_id)/\(.mod_id)-\(.build).jar" } ]' > extra-deps.json
+elif [ "$HOTFIX" = "true" ]; then # 传统艺能：硬编码修问题
+  curl -s https://biluochun.teacon.cn/api/v1/contest/2/teams \
+    | jq -M '[ .[] | select( .test_version != null ) | select( .work_id == "sinofoundation" ) | { mod_id: ( .work_id | gsub("_"; "-") ), build: .test_version.longjing_number, filename: .test_version.longjing_artifact_name }]' \
+    | jq -M '[ .[] | { name: .filename, file: "https://archive.teacon.cn/2023/ci/build/team-\(.mod_id)/\(.mod_id)-\(.build).jar" } ]' > extra-deps.json
 else
   echo '[]' > extra-deps.json
 fi

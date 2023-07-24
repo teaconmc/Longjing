@@ -69,6 +69,8 @@ jobs:
       - name: Prepare for Dedicated Server Launching Test
         id: dedicated_server_launching_setup
         shell: bash
+        env:
+          HOTFIX: true
         run: cd build && ./pre-server-test.sh
       - name: Dedicated Server Launching Test
         id: dedicated_server_launching
