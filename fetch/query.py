@@ -183,6 +183,8 @@ def write_team_info(team: Team, contest_name: str, contest_slug: str, workflow_t
                 print(f"Team #{team['id']}'s repo is up-to-date.")
         else:
             print(f"::warning::Unexpected git-ls-remote output for team #{team['id']}: {str(get_head_process.stdout)}")
+    else:
+        print(f"::warning::Error occured while fetching git repo information for team #{team['id']}: {str(get_head_process.stdout)}")
 
 def write_readme(team_list: List[Team]):
     from html import escape
