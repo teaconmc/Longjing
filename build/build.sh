@@ -50,4 +50,4 @@ fi
 # Here used to be --max-workers=1 to workaround an recurring issue regarding reobf failure.
 # However, according to https://github.com/MinecraftForge/ForgeGradle/pull/755, the issue should have been fixed. 
 # If we observe anything similar to theMinecraftForge/ForgeGradle#697 again, add it back.
-TEACON_ARTIFACT_TASK=$OUTPUT_JAR_TASK $GRADLE_EXEC --stacktrace -I ../setup.gradle "${BUILD_COMMAND[@]}" teaconLongjingProcessing
+TEACON_ARTIFACT_TASK=$OUTPUT_JAR_TASK $GRADLE_EXEC -Dsocks.proxyHost= -Dhttp.proxyHost= -Dhttps.proxyHost= --stacktrace -I ../setup.gradle "${BUILD_COMMAND[@]}" teaconLongjingProcessing
