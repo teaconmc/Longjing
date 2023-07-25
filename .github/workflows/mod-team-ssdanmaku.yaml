@@ -101,4 +101,4 @@ jobs:
           TEAM_ID: 'ssdanmaku'
           TEAM_SEQ: '250'
         run: cd build && ./failure-callback.sh
-# Change this counter to trigger all mod rebuild
+# Change this counter to trigger all mod rebuild 
