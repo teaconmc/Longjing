@@ -158,7 +158,11 @@ def write_team_info(team: Team, contest_name: str, contest_slug: str, workflow_t
         with open(f"{info_dir}/HEAD") as f:
             previous_head = f.read()
     try:
-        get_head_process = subprocess.run(['git', 'ls-remote', team['repo'], head_ref],
+        # 感谢 TeaCon 2023 的理想境一号组和打雪仗工具批发商，让我再次想起了这里不是 shell，这里是 exec
+        # 如果 URL 前后有空格，那这空格会作为 URL 的一部分给送进 git-ls-remote(1) 里，
+        # 进而导致拉不到任何数据。
+        # Strip all possible whitespace char from the repo URL to avoid error.
+        get_head_process = subprocess.run(['git', 'ls-remote', team['repo'].strip(), head_ref],
             timeout = 10,
             capture_output = True, 
             text = True)
