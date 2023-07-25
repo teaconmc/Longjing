@@ -199,7 +199,8 @@ def write_readme(team_list: List[Team]):
         workflow_name=f"mod-team-{team['work_id'].replace('_', '-')}.yaml"
         readme += f"|{escape(team['work_name'])}<br />"
         if team['ready']:
-            badge=f"![{team['work_id']}](https://github.com/teaconmc/Longjing/actions/workflows/{workflow_name}/badge.svg)"
+            workflow_url=f"https://github.com/teaconmc/Longjing/actions/workflows/{workflow_name}"
+            badge=f"[![{team['work_id']}]({workflow_url}/badge.svg)]({workflow_url})"
             readme += f"{badge}<br />"
         readme += f"<br />"
         readme += f"队伍名：{escape(team['name'])}<br />"
