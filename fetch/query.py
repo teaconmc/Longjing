@@ -176,7 +176,10 @@ def write_team_info(team: Team, contest_name: str, contest_slug: str, workflow_t
     if get_head_process.returncode == 0:
         current_head = None
         if get_head_process.stdout:
+            print("git ls-remote result: " + get_head_process.stdout)
             current_head = get_head_process.stdout.split()[0]
+        else:
+            print(f"::warning::git ls-remote result is empty for team #{team['id']}, which is not good!")
         if current_head:
             if current_head != previous_head:
                 with open(f"{info_dir}/HEAD", "w") as f:
