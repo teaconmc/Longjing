@@ -4,7 +4,7 @@ We leverage GitHub Actions to provide continuous integration and delivery of all
 
 ## 工作流程 Workflow
 
-  1. 使用 GitHub Action 的 Cron Trigger，每隔 1 小时触发一次轮询。
+  1. 使用 GitHub Action 的 Cron Trigger，每半小时触发一次轮询。
      轮询的 Workflow 由 `.github/workflows/query.yaml` 描述。
   2. 轮询的过程为访问碧螺春的 API，获取当前有效报名的列表。
      通过 API 拿到报名信息中的队伍名、模组名和 Git Repo 地址，生成对应的信息。
@@ -12,11 +12,16 @@ We leverage GitHub Actions to provide continuous integration and delivery of all
      对于已有信息的队伍，将会更新其在 `mods` 目录下的信息（Git Repo 地址、HEAD shasum 等）
   3. 将新建或更新的构建信息推送回本仓库，触发构建和发布。
      构建时，`setup.gradle` 会作为参赛项目的 [Init Script][ref-2] 注入到构建流程中。
-  4. 构建成功后，执行 `finish.sh` 将必要的信息注入到对应的 Workflow Run 的 Annotations 中。
-  5. 每次构建成功都会触发另一个 Workflow `.github/workflows/pack.yaml`，用于将所有需要的 Mod 整理成符合
-     [RemoteSync](https://github.com/teaconmc/RemoteSync) 格式的 Mod 列表，并上传至云端。
+  4. 构建成功后，龙井会找出正确的构建产物，并从碧螺春获取 Mod 前置，并将这些模组一并传入 
+     [Dedicated Server Launch Test][ref-3]（下简称 DSLT）中，在 CI 环境下启动一次服务器，
+     以确认其可正常在服务器环境中启动。
+  5. 通过 DSLT 测试后，龙井会执行 `publish.sh` 脚本，将构建产物上传至 TeaCon 归档服务，
+     并通知碧螺春有新构建产生。
+  6. 对于未能完整通过构建的模组，龙井会执行 `failure-callback.sh` 脚本，透过碧螺春向对应报名队伍的队长发送电邮通知，
+     告知其构建失败。
 
 [ref-2]: https://docs.gradle.org/current/userguide/init_scripts.html
+[ref-3]: https://github.com/teaconmc/dedicated-server-launch-test
 
 ## 项目结构 Structure
 
@@ -54,72 +59,61 @@ our GitHub App.
 
 Set author info used for creating and pushing new commits.
 
-### `mods/teacon2022-[team-id]/remote`
+### `mods/teacon2023-[team-id]/remote`
 
 指定队伍的 Git 仓库的地址。
 
 Address (URI) pointed to the git repo of the designated team.
 
-### `mods/teacon2022-[team-id]/HEAD`
+### `mods/teacon2023-[team-id]/HEAD`
 
 指定队伍的 Git 仓库的最新提交的校验和。
 
 Checksum of the git repo of the designated team.
 
-### `mods/teacon2022-[team-id]/ref`
+### `build/build.sh`
 
-（可选）轮询指定队伍的 Git repo 时使用的目标分支的 ref 名。当指定队伍因技术原因不能更改默认分支时可以使用此文件指定其他分支，甚至是标签。
+启动 Gradle 构建所需的核心脚本。
 
-(Optional) The ref name of the branch to query when querying the designated team for updates.
-Useful when the designated team cannot switch the default branch for technical reasons.
-Can also specify a tag ref here.
+Core script used for authoring a Gradle build.
 
-### `setup.gradle`
+### `build/setup.gradle`
 
-构建参赛项目时使用的 [Gradle Init Script][ref-2]，用于自动排查潜在问题、配置（Maven）发布信息等。
+构建参赛项目时使用的 [Gradle Init Script][ref-2]，用于：
 
-[Gradle Init Script][ref-2] used for building participating projects, capable of detecting potential issues
-and configuring (maven) publication information.
+  - 确定输出任务
+  - 检查输出文件尺寸是否合规
 
-### `create_notice.sh`
+[Gradle Init Script][ref-2] used for:
 
-参赛项目构建成功后使用的脚本，用于将下载链接展示在 Workflow Run 中的 Annotation 中方便有兴趣的玩家下载试玩。
+  - Locating the output task
+  - Validate that built artifact size is in compliance.
 
-Script used after successfully building participating projects, capable of displaying download link as an
-annotation in the corresponding workflow run, for those who are interested.
+### `build/mods_toml.py`
 
-### `assemble/list.py`
+检查构建产物的 Mod ID 是否与碧螺春中登记的一致的脚本。
 
-组装 Mod 列表使用的脚本。
+Script that checks whether the mod ID extracted from build artifact is the same as what we record in Biluochun.
 
-Script used for assembling the final mod list.
+### `build/pre-server-test.sh`
 
-### `assemble/blacklist.json`
+在 DSLT 启动之前的脚本，用于下载所有必须前置模组。
 
-已知会导致严重问题的构建列表，结构为一个 JSON Object，键为目标项目对应的 Workflow 文件位置，值为所有有问题的构建编号的数组。
+Script run before DSLT, for fetching necessary dependencies.
 
-List of builds that are known to cause critical failures (e.g. crashes).
-It is a JSON Object: key is the path to the corresponding workflow file, value is an array of build numbers that are known to cause issues.
+### `build/publish.sh`
 
-### `assemble/extra.json`
+参赛项目构建成功后使用的脚本，用于：
 
-额外需要追加的 Mod 列表，主要用于提供参赛作品的依赖项目和其他基础 Mod。
-结构为一个 JSON Array，每一个元素均如下列格式：
+  - 上传构建产物至 TeaCon 归档服务
+  - 通知碧螺春新构建已上传
+  - 将下载链接展示在 Workflow Run 中的 Annotation 中方便有兴趣的玩家下载试玩。
 
-List of extra mods to append, used for providing dependencies and other essential mods.
-It is a JSON Array whose elements are in the following format:
+Script used after successfully building participating projects. It is responible of 
 
-```json
-{
-  "name": "文件名 / Filename",
-  "file": "下载地址（直链） / Download URL (direct)",
-  "sha256": "SHA-256 校验和 / SHA-256 checksum"
-}
-```
-
-对于来自 CurseForge 上的 Mod，请使用基于 `https://media.forgecdn.net/` 的下载地址。
-
-For mods from CurseForge, make sure to use URLs starts with `https://media.forgecdn.net/`.
+  - Upload build artifact to TeaCon Archive Service
+  - Notify Biluochun that new build is available
+  - Displaying download link as an annotation in the corresponding workflow run, for those who are interested.
 
 ## 问题反馈 Reporting issue
 
