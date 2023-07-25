@@ -157,11 +157,6 @@ def write_team_info(team: Team, contest_name: str, contest_slug: str, workflow_t
     if os.path.exists(f"{info_dir}/HEAD"):
         with open(f"{info_dir}/HEAD") as f:
             previous_head = f.read()
-    if 'branch' in team and team['branch']:
-        head_ref = team['branch']
-    elif os.path.exists(f"{info_dir}/ref"):
-        with open(f"{info_dir}/ref") as f:
-            head_ref = f.read()
     try:
         get_head_process = subprocess.run(['git', 'ls-remote', team['repo'], head_ref],
             timeout = 10,
