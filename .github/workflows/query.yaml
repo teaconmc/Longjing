@@ -20,6 +20,10 @@ jobs:
     environment: Polling
     runs-on: ubuntu-22.04
     steps:
+      - name: Log initiator
+        shell: bash
+        run: |
+          echo ::notice::This polling is started by ${{ inputs.origin }} on behalf of ${{ github.triggering_actor }}
       - name: Checkout 
         uses: actions/checkout@v3
       - name: Auth as Github App
