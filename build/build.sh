@@ -15,7 +15,7 @@ CURL_OPTIONS=( --no-progress-meter -S -f -o ./longjing-config.json )
 
 curl ${CURL_OPTIONS[@]} $LONGJING_CONFIG_URL || die Fail to fetch Longjing cnofig
 
-which -s jq || die Cannot find program jq, build process cannot continue
+which jq >/dev/null || die Cannot find program jq, build process cannot continue
 
 # Retrieve special build command, fallback to 'build' if not specified
 BUILD_COMMAND=$(jq -rM .build_command ./longjing-config.json)
