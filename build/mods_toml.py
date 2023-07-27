@@ -25,6 +25,11 @@ with zipfile.ZipFile(os.environ['ARTIFACT_LOCAL_PATH']) as z:
                 "defined in mods.toml does not contains any mod id matching the team id",
                 f"({team_id}) so this build will fail", flush=True)
             exit(-1)
+        license=metadata.get('license', None)
+        if license:
+            print(f"::notice::This jar declared the following license: {license}")
+        else:
+            print(f"::error::This jar either did not declare license, or declared empty string as license. This will likely to fail in runtime!")
 
 file_size=os.path.getsize(os.environ['ARTIFACT_LOCAL_PATH'])
 if file_size > 10 * 1024 * 1024: # 10485760 bytes, aka 10MiB
