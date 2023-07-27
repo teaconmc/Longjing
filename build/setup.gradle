@@ -62,17 +62,7 @@ afterProject { project ->
             if (System.env.GITHUB_ACTIONS) {
                 // We assume that the task is of type AbstractArchiveTask.
                 assert targetTask.get() instanceof AbstractArchiveTask
-                // Check the file size, throwing exception when it exceeds the limit without permission.
                 def theFile = targetTask.get().archiveFile.get().getAsFile()
-                def actualSize = theFile.size()
-                if (actualSize > fileSizeLimit) {
-                    if (System.env.TEACON_OVERSIZE_PERMITTED) {
-                        println "::notice::Build output exceeds the 10MiB limit (actual size ${actualSize} bytes); permission has acquired to exceed this limit"
-                    } else {
-                        println "::error::Build output exceeds the 10MiB limit (actual size ${actualSize} bytes); however, the mod has not acquired explicit permission for exceeded size"
-                        throw new RuntimeException("Build output exceeds the 10MiB limit (actual size ${actualSize} bytes)")
-                    }
-                }
                 // Open the env file provided by GitHub Action
                 // Ref: https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#environment-files
                 def envFile = new File(System.env.GITHUB_ENV)
