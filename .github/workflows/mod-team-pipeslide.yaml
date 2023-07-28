@@ -1,4 +1,4 @@
-name: 'TeaCon 2023 | PipeSlide 管道滑行 | 今年实在没时间写模组参赛了只能把这个放上来了'
+name: 'TeaCon 2023 | PipeSlide 管道速滑 | 今年实在没时间写模组参赛了只能把这个放上来了'
 on:
   push:
     paths:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build PipeSlide 管道滑行'
+    name: 'Build PipeSlide 管道速滑'
     environment: Build
     runs-on: ubuntu-22.04
     steps:
@@ -30,7 +30,7 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build PipeSlide 管道滑行'
+      - name: 'Checkout Repository for Build PipeSlide 管道速滑'
         shell: bash
         run: |
           mkdir -p build/repo
