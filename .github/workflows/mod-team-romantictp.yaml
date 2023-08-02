@@ -54,6 +54,7 @@ jobs:
           BILUOCHUN_URL: https://biluochun.teacon.cn
           TEAM_ID: 265
           GRADLE_WRAPPER_CHECK: ${{ steps.gradle_wrapper_check.outcome == 'success' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: cd build && ./build.sh
       # We need at least Python 3.11 to ensure existence of tomllib (see PEP 680)
       - name: Setup Python
