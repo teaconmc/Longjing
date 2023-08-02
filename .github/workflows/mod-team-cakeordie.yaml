@@ -41,7 +41,7 @@ jobs:
           git reset --hard `cat ../../mods/team-cakeordie/HEAD`
           git submodule init
           git submodule update
-          [ -f build.gradle ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit 1; }
+          [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit 1; }
       - name: Validate Gradle Wrapper
         id: gradle_wrapper_check
         continue-on-error: true
