@@ -41,6 +41,7 @@ jobs:
           git reset --hard `cat ../../mods/team-table-game/HEAD`
           git submodule init
           git submodule update
+          [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit 1; }
       - name: Validate Gradle Wrapper
         id: gradle_wrapper_check
         continue-on-error: true
@@ -54,6 +55,7 @@ jobs:
           BILUOCHUN_URL: https://biluochun.teacon.cn
           TEAM_ID: 295
           GRADLE_WRAPPER_CHECK: ${{ steps.gradle_wrapper_check.outcome == 'success' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: cd build && ./build.sh
       # We need at least Python 3.11 to ensure existence of tomllib (see PEP 680)
       - name: Setup Python
