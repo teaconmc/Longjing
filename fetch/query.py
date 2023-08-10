@@ -193,7 +193,7 @@ def write_team_info(team: Team, contest_name: str, contest_slug: str, workflow_t
 def write_readme(team_list: List[Team]):
     from html import escape
 
-    readme = '# TeaCon 2023 参赛团队列表\n\n|作品信息|作品简介|\n|:------------|:------------|\n'
+    readme = '# TeaCon 2023 参赛团队列表\n\n|作品信息|作品简介|注意事项|\n|:------------|:------------|:------------|\n'
 
     for team in team_list:
         workflow_name=f"mod-team-{team['work_id'].replace('_', '-')}.yaml"
@@ -207,6 +207,7 @@ def write_readme(team_list: List[Team]):
         readme += f"作品 ID：`{team['work_id']}`（模组 ID），`{team['id']}`（数字 ID）<br />"
         readme += f"项目仓库：[{team['repo']}]({team['repo']})|"
         readme += f"{'<br />'.join([escape(line) for line in team['work_description'].splitlines()])}|"
+        readme += f"{'<br />'.join([escape(line) for line in team['notice'].splitlines()])}|"
         readme += '\n'
 
     with open('mods/README.md', 'w+') as f:
