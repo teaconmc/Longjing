@@ -45,7 +45,7 @@ jq -n \
 # Do upload, retry 5 times.
 try_upload latest.json s3://2023/ci/build/team-$TEAM_ID/latest.json
 
-curl -s -X POST -d @latest.json -H "Authorization: Bearer $BILUOCHUN_TOKEN" $BILUOCHUN_URL/api/v2/teams/$CONTEST_ID/$TEAM_SEQ/version
+curl -s -X POST -d @latest.json -H "Authorization: Bearer $BILUOCHUN_TOKEN" $BILUOCHUN_URL/api/v2/teams/$CONTEST_ID/$TEAM_SEQ/version/dev
 
 # Pass out the escaped URL for other steps in the workflow to use
 ARTIFACT_PATH_ESCAPED=$(python3 -c 'import urllib.parse; print(urllib.parse.quote(input()))' <<< $ARTIFACT_PATH)
