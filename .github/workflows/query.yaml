@@ -25,7 +25,7 @@ jobs:
         run: |
           echo ::notice::This polling is started by ${{ inputs.origin }} on behalf of ${{ github.triggering_actor }}
       - name: Checkout 
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Auth as Github App
         id: auth-as-github-app
         shell: bash
@@ -34,13 +34,13 @@ jobs:
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
         run: bash fetch/auth.sh
       - name: Re-Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ steps.auth-as-github-app.outputs.token }}
       - name: Setup Python3
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.11'
           architecture: 'x64'
       - name: Query Updates
         shell: bash
