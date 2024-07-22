@@ -25,10 +25,10 @@ abstract class TeaConLongjingProcessing extends DefaultTask {
             def newLine = System.getProperty('line.separator')
             // Write out new env variable for later usage
             envFile << newLine << "ARTIFACT_NAME=${targetFileName.get()}"
-            envFile << newLine << "ARTIFACT_LOCAL_PATH=${targetFile.absolutePath}"
+            envFile << newLine << "ARTIFACT_LOCAL_PATH=${targetFile.get().absolutePath}"
             // Similarly, we write artifact path to action output
             def actionOutputFile = new File(System.env.GITHUB_OUTPUT)
-            actionOutputFile << newLine << "artifact=${targetFile.absolutePath}"
+            actionOutputFile << newLine << "artifact=${targetFile.get().absolutePath}"
         }
     }
 }
