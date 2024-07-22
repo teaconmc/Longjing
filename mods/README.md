@@ -18,3 +18,5 @@
 |打铁匠人(Ding Mod)<br /><br />队伍名：NitianStudio<br />作品 ID：`ding`（模组 ID），`329`（数字 ID）<br />项目仓库：[https://github.com/NitianStudio/DingMod](https://github.com/NitianStudio/DingMod)|在遥远遥远的时候，有一批打铁匠人，他们打造的铁器会附带灵魂，会遭到天妒(雷劫)。<br />让我们通过路过他们的成长之路，成为——打铁匠人吧！！！||
 |分茶<br /><br />队伍名：IEEM Trivium Society<br />作品 ID：`caupona`（模组 ID），`330`（数字 ID）<br />项目仓库：[https://github.com/TeamMoegMC/Caupona](https://github.com/TeamMoegMC/Caupona)|在餐馆中大摆宴席，款待宾客、或是与三两个朋友撑台脚，一锅好料，总能让人距离拉近很多。、||
 |会饮<br /><br />队伍名：IEEM Trivium Society<br />作品 ID：`convivium`（模组 ID），`331`（数字 ID）<br />项目仓库：[https://github.com/khjxiaogu/Convivium](https://github.com/khjxiaogu/Convivium)|朋友聚会除了吃饭，总会需要一些娱乐和饮品，才能把聚会推向更高。<br />会饮提供了果盘、酒水等聚会宴席用品，可以在分茶的基础上提高聚会的乐趣。||
+|MadParticle<br /><br />队伍名：Yosemite<br />作品 ID：`madparticle`（模组 ID），`333`（数字 ID）<br />项目仓库：[https://github.com/USS-Shenzhou/MadParticle](https://github.com/USS-Shenzhou/MadParticle)|大概就是比去年更多的粒子。Party time！||
+|Guide Me To<br /><br />队伍名：To boldly go<br />作品 ID：`guide_me_to`（模组 ID），`334`（数字 ID）<br />项目仓库：[https://github.com/USS-Shenzhou/GuideMeTo](https://github.com/USS-Shenzhou/GuideMeTo)|勿在场馆中乱跑。||
