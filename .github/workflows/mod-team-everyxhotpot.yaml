@@ -1,13 +1,13 @@
-name: 'TeaCon 甲辰 | Farm Away | HO-Artisan'
+name: 'TeaCon 甲辰 |  EveryXHotpot一起火锅 | AR的糖果小作坊'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-farm-away.yaml'
-      - 'mods/team-farm-away/HEAD'
+      - '.github/workflows/mod-team-everyxhotpot.yaml'
+      - 'mods/team-everyxhotpot/HEAD'
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build Farm Away'
+    name: 'Build  EveryXHotpot一起火锅'
     environment: Build
     runs-on: ubuntu-22.04
     steps:
@@ -31,15 +31,15 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build Farm Away'
+      - name: 'Checkout Repository for Build  EveryXHotpot一起火锅'
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-farm-away/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-farm-away/HEAD`
-          git reset --hard `cat ../../mods/team-farm-away/HEAD`
+          git remote add origin `cat ../../mods/team-everyxhotpot/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-everyxhotpot/HEAD`
+          git reset --hard `cat ../../mods/team-everyxhotpot/HEAD`
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit 1; }
@@ -54,7 +54,7 @@ jobs:
         shell: bash
         env:
           BILUOCHUN_URL: https://biluochun.teacon.cn
-          TEAM_ID: 328
+          TEAM_ID: 335
           GRADLE_WRAPPER_CHECK: ${{ steps.gradle_wrapper_check.outcome == 'success' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: cd build && ./build.sh
@@ -67,7 +67,7 @@ jobs:
         id: description
         shell: bash
         env:
-          TEAM_ID: farm-away
+          TEAM_ID: everyxhotpot
         run: ./build/mods_toml.py
       - name: Prepare for Dedicated Server Launching Test
         id: dedicated_server_launching_setup
@@ -85,8 +85,8 @@ jobs:
         env:
           BILUOCHUN_URL: https://biluochun.teacon.cn
           CONTEST_ID: JC
-          TEAM_ID: 'farm-away'
-          TEAM_SEQ: '328'
+          TEAM_ID: 'everyxhotpot'
+          TEAM_SEQ: '335'
           BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
@@ -101,7 +101,7 @@ jobs:
         env: 
           BILUOCHUN_URL: https://biluochun.teacon.cn
           BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
-          TEAM_ID: 'farm-away'
-          TEAM_SEQ: '328'
+          TEAM_ID: 'everyxhotpot'
+          TEAM_SEQ: '335'
         run: cd build && ./failure-callback.sh
 # Change this counter to trigger all mod rebuild 
