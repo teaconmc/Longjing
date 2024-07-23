@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 
 '''
-Validation sub-routine extracted from assemble/list.py of TeaCon 甲辰.
+This simple sub-routine will do basic check against build artifact to make sure
+
+1. The Mod ID declared in the mod manifest file matches the one we have in Biluochun.
+2. The mod size is within the limit, or is allowed to exceed the limit.
 '''
 
 import os
