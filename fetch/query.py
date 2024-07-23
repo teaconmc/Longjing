@@ -222,7 +222,7 @@ if __name__ == '__main__':
     # Filter is a comma-separated list of numeric team IDs.
     teams_filter = set()
     if len(sys.argv) > 0:
-        teams_filter = { t for t in sys.argv[0].split(',') if t.isdigit() }
+        teams_filter = { int(t) for t in sys.argv[0].split(',') if t.isdigit() }
 
     for team in team_list:
         if teams_filter and team['id'] not in teams_filter:
