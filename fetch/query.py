@@ -20,14 +20,12 @@ def fetch_error():
     exit(-1)
 
 # Get the contest id
-def get_contest_id(contest_name: str) -> Tuple[int, str]:
+def get_contest_id() -> Tuple[int, str, str]:
     try:
-        url = 'https://biluochun.teacon.cn/api/v1/contest'
+        url = 'https://biluochun.teacon.cn/api/v1/contest/current'
         with urlopen(url, timeout=15) as body:
-            contest_list = json.load(body)
-            for contest in contest_list:
-                if contest['title'] == contest_name:
-                    return contest['id'], contest['teekie_domain']
+            contest = json.load(body)
+            return contest['id'], contest['teekie_domain'], contest['title']    
     except:
         fetch_error()
 
@@ -190,10 +188,10 @@ def write_team_info(team: Team, contest_name: str, contest_slug: str, workflow_t
     else:
         print(f"::warning::Error occured while fetching git repo information for team #{team['id']}: {str(get_head_process.stdout)}")
 
-def write_readme(team_list: List[Team]):
+def write_readme(contest_title: str, team_list: List[Team]):
     from html import escape
 
-    readme = '# TeaCon 甲辰 参赛团队列表\n\n|作品信息|作品简介|注意事项|\n|:------------|:------------|:------------|\n'
+    readme = f'# 「{contest_title}」参赛团队列表\n\n|作品信息|作品简介|注意事项|\n|:------------|:------------|:------------|\n'
 
     for team in team_list:
         workflow_name=f"mod-team-{team['work_id'].replace('_', '-')}.yaml"
@@ -215,7 +213,7 @@ def write_readme(team_list: List[Team]):
 
 if __name__ == '__main__':
     workflow_template = load_workflow_template()
-    contest_id, contest_slug = get_contest_id('TeaCon 甲辰')
+    contest_id, contest_slug, contest_title = get_contest_id()
     team_list = get_teams(contest_id)
 
     for team in team_list:
@@ -223,5 +221,5 @@ if __name__ == '__main__':
             print("Skipping " + team['name'] + " as it is not marked ready")
             disable_workflow(team['work_id'].replace('_', '-'))
             continue
-        write_team_info(team, 'TeaCon 甲辰', contest_slug, workflow_template)
-    write_readme(team_list)
+        write_team_info(team, contest_title, contest_slug, workflow_template)
+    write_readme(team_list, contest_title)
