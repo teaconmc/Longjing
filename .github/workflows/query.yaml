@@ -11,6 +11,10 @@ on:
         description: 'The entity that dispatches this event'
         required: false
         type: string
+      teams:
+        description: 'Comma-separated numeric team IDs of which will be queried. Default to empty, meaning querying all team updates.'
+        reuqired: false
+        type: string
 concurrency:
   group: polling
   cancel-in-progress: true
@@ -46,7 +50,7 @@ jobs:
         shell: bash
         env:
           GITHUB_TOKEN: ${{ steps.auth-as-github-app.outputs.token }}
-        run: python3 fetch/query.py
+        run: python3 fetch/query.py ${{ inputs.teams }}
       - name: Commit Changes
         shell: bash
         run: |
