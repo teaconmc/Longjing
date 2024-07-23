@@ -13,6 +13,7 @@ jobs:
     env:
       BILUOCHUN_URL: https://biluochun.teacon.cn
       CONTEST_SEQ: '$contest_seq'
+      CONTEST_TITLE: '$contest_title'
       TEAM_ID: '$team_id'
       TEAM_SEQ: '$team_seq'
     steps:

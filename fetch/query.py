@@ -123,6 +123,7 @@ def write_team_info(team: Team, contest_seq: int, contest_name: str, contest_slu
             title=f"{contest_name} | {team['work_name']} | {team['name']}",
             contest_seq=contest_seq,
             contest_slug=contest_slug,
+            contest_title=contest_name,
             job_title=f"Build {team['work_name']}",
             workflow_file=workflow_file,
             info_dir=info_dir,
