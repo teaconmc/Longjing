@@ -222,4 +222,4 @@ if __name__ == '__main__':
             disable_workflow(team['work_id'].replace('_', '-'))
             continue
         write_team_info(team, contest_title, contest_slug, workflow_template)
-    write_readme(team_list, contest_title)
+    write_readme(contest_title, team_list)
