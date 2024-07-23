@@ -10,6 +10,10 @@ jobs:
     name: '$job_title'
     environment: Build
     runs-on: ubuntu-22.04
+    env:
+      BILUOCHUN_URL: https://biluochun.teacon.cn
+      TEAM_ID: '$team_id'
+      TEAM_SEQ: '$team_seq'
     steps:
       - name: Checkout Build Environment
         uses: actions/checkout@v4
@@ -53,8 +57,6 @@ jobs:
         id: building
         shell: bash
         env:
-          BILUOCHUN_URL: https://biluochun.teacon.cn
-          TEAM_ID: $team_seq
           GRADLE_WRAPPER_CHECK: $${{ steps.gradle_wrapper_check.outcome == 'success' }}
           GITHUB_TOKEN: $${{ secrets.GITHUB_TOKEN }}
         run: cd build && ./build.sh
@@ -66,8 +68,6 @@ jobs:
       - name: Mod Description File Validation
         id: description
         shell: bash
-        env:
-          TEAM_ID: $team_id
         run: ./build/mods_toml.py
       - name: Prepare for Dedicated Server Launching Test
         id: dedicated_server_launching_setup
@@ -83,10 +83,7 @@ jobs:
         id: publication
         shell: bash
         env:
-          BILUOCHUN_URL: https://biluochun.teacon.cn
           CONTEST_ID: $contest_slug
-          TEAM_ID: '$team_id'
-          TEAM_SEQ: '$team_seq'
           BILUOCHUN_TOKEN: $${{ secrets.BILUOCHUN_TOKEN }}
           S3_ENDPOINT: $${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: $${{ secrets.S3_ACCESS_KEY }}
@@ -99,9 +96,6 @@ jobs:
         if: failure()
         shell: bash
         env: 
-          BILUOCHUN_URL: https://biluochun.teacon.cn
           BILUOCHUN_TOKEN: $${{ secrets.BILUOCHUN_TOKEN }}
-          TEAM_ID: '$team_id'
-          TEAM_SEQ: '$team_seq'
         run: cd build && ./failure-callback.sh
 # Change this counter to trigger all mod rebuild 

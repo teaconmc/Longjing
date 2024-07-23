@@ -5,7 +5,7 @@ die() {
     exit -1
 }
 
-LONGJING_CONFIG_URL="$BILUOCHUN_URL/api/v1/team/$TEAM_ID/longjing"
+LONGJING_CONFIG_URL="$BILUOCHUN_URL/api/v1/team/$TEAM_SEQ/longjing"
 
 # -H specifies header
 # -S suppress non-error log
