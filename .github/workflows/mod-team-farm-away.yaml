@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-22.04
     env:
       BILUOCHUN_URL: https://biluochun.teacon.cn
+      CONTEST_SEQ: '3'
       TEAM_ID: 'farm-away'
       TEAM_SEQ: '328'
     steps:
