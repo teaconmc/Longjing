@@ -221,15 +221,15 @@ if __name__ == '__main__':
     # If a teams filter is present, try parsing the filter.
     # Filter is a comma-separated list of numeric team IDs.
     teams_filter = set()
-    if len(sys.argv) > 0:
-        teams_filter = { int(t) for t in sys.argv[0].split(',') if t.isdigit() }
+    if len(sys.argv) > 1:
+        teams_filter = { int(t) for t in sys.argv[1].split(',') if t.isdigit() }
 
     for team in team_list:
         if teams_filter and team['id'] not in teams_filter:
-            print("Skpping " + team['name'] + " based on filter")
+            print("Skpping " + team['work_id'] + " based on filter")
             continue
         if not team['ready']:
-            print("Skipping " + team['name'] + " as it is not marked ready")
+            print("Skipping " + team['work_id'] + " as it is not marked ready")
             disable_workflow(team['work_id'].replace('_', '-'))
             continue
         write_team_info(team, contest_id, contest_title, contest_slug, workflow_template)
