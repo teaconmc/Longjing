@@ -50,6 +50,12 @@ fi
 # Here used to be --max-workers=1 to workaround an recurring issue regarding reobf failure.
 # However, according to https://github.com/MinecraftForge/ForgeGradle/pull/755, the issue should have been fixed. 
 # If we observe anything similar to theMinecraftForge/ForgeGradle#697 again, add it back.
+#
 # We add empty socks.proxyHost, http.proxyHost and https.proxyHost system properties, so that any pre-existing 
 # proxy configurations are void in CI environment. We do not need any proxy on GitHub Action.
-TEACON_ARTIFACT_TASK=$OUTPUT_JAR_TASK $GRADLE_EXEC -Dsocks.proxyHost= -Dhttp.proxyHost= -Dhttps.proxyHost= --stacktrace -I ../setup.gradle "${BUILD_COMMAND[@]}" teaconLongjingProcessing
+#
+# We add USERNAME and TOKEN environmental variables for those who use GitHub Package Registry.
+# For more information, see the below doc page on GitHub docs:
+# https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry
+TEACON_ARTIFACT_TASK=$OUTPUT_JAR_TASK USERNAME=$GITHUB_USERNAME TOKEN=$GITHUB_TOKEN \
+  $GRADLE_EXEC -Dsocks.proxyHost= -Dhttp.proxyHost= -Dhttps.proxyHost= --stacktrace -I ../setup.gradle "${BUILD_COMMAND[@]}" teaconLongjingProcessing

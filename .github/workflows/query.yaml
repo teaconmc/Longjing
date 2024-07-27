@@ -12,7 +12,7 @@ on:
         required: false
         type: string
       teams:
-        description: 'Comma-separated numeric team IDs of which will be queried. Default to empty, meaning querying all team updates.'
+        description: 'Comma-separated numeric team IDs to update. Default to empty, meaning updating all teams.'
         reuqired: false
         type: string
 concurrency:
