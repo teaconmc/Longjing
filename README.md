@@ -1,4 +1,4 @@
-# ⚠️⚠️⚠️ WIP 警告：甲辰龙井施工中 WIP ⚠️⚠️⚠️
+# ⚠️ WIP 甲辰龙井试运行中 WIP ⚠️
 
 ------
 # TeaCon Longjing
