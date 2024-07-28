@@ -1,7 +1,7 @@
 name: Scheduled Polling
 on:
-  #schedule:
-  #  - cron: "*/30 * * * *"
+  schedule:
+    - cron: "*/30 * * * *"
   push:
     paths:
       - 'fetch/workflow_template.yaml'
@@ -13,7 +13,7 @@ on:
         type: string
       teams:
         description: 'Comma-separated numeric team IDs to update. Default to empty, meaning updating all teams.'
-        reuqired: false
+        required: false
         type: string
 concurrency:
   group: polling
