@@ -90,6 +90,7 @@ afterProject { project ->
 
     project.tasks.register('teaconLongjingProcessing', TeaConLongjingProcessing) {
         it.dependsOn targetTask
+        it.mustRunAfter targetTask
         it.getTargetFileName().set(targetTask.flatMap({ it.archiveFileName }))
         it.getTargetFile().set(targetTask.flatMap({ it.archiveFile }))
     }
