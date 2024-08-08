@@ -9,7 +9,7 @@ try_upload() {
     echo "Retry $RETRY time(s)..."
   done
   if [ -z "$SUCCESS" ]; then
-    aws s3 cp --endpoint-url "$S3_ENDPOINT" $1 $2
+    aws s3 cp --endpoint-url "$S3_ENDPOINT" $1 $2 || { echo 'Failed to upload file to TeaCon Archive Service'; exit -1; }
   fi
 }
 
