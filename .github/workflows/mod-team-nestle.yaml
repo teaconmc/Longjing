@@ -1,4 +1,4 @@
-name: 'TeaCon 甲辰 | Nestle | 冰鱼塘贴贴爱好者'
+name: 'TeaCon 甲辰 | 贴贴 | 冰鱼塘贴贴爱好者'
 on:
   push:
     paths:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 jobs:
   publish:
-    name: 'Build Nestle'
+    name: 'Build 贴贴'
     environment: Build
     runs-on: ubuntu-22.04
     env:
@@ -37,7 +37,7 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build Nestle'
+      - name: 'Checkout Repository for Build 贴贴'
         shell: bash
         run: |
           mkdir -p build/repo
