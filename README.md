@@ -1,7 +1,4 @@
-# ⚠️ WIP 甲辰龙井试运行中 WIP ⚠️
-
-------
-# TeaCon Longjing
+# 龙井 - TeaCon Continuous Delivery Service
 
 We leverage GitHub Actions to provide continuous integration and delivery of all TeaCon Jiachen participant mods.
 
