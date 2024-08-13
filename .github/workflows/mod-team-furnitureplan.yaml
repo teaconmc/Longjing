@@ -15,7 +15,7 @@ jobs:
       CONTEST_SEQ: '3'
       CONTEST_TITLE: 'TeaCon 甲辰'
       TEAM_ID: 'furnitureplan'
-      TEAM_SEQ: '352'
+      TEAM_SEQ: '378'
     steps:
       - name: Checkout Build Environment
         uses: actions/checkout@v4
