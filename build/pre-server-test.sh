@@ -15,7 +15,7 @@ die() {
     exit -1
 }
 
-curl -so 'raw-deps.json' -H "Authorization: Bearer $BILUOCHUN_TOKEN" $BILUOCHUN_URL/api/v2/contest/$CONTEST_SLUG/$TEAM_ID/deps
+curl -so 'raw-deps.json' -H "Authorization: Bearer $BILUOCHUN_TOKEN" "$BILUOCHUN_URL/api/v2/teams/$CONTEST_SLUG/$TEAM_SEQ/deps"
 
 # Check if any dependencies are rejected / under review.
 # If so, the build cannot continue and we have to stop early. 
