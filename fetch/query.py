@@ -53,6 +53,16 @@ def get_teams(contest_id: int) -> List[Team]:
     except:
         fetch_error()
 
+def get_team_dependencies(contest_slug: str, team_id: int):
+    try:
+        req = Request(f'https://biluochun.teacon.cn/api/v2/teams/{contest_slug}/{team_id}/deps',
+            headers = { 'Authorization': f'Bearer {os.environ["BILUOCHUN_TOKEN"]}' })
+        with urlopen(req, timeout = 15) as f:
+            deps = json.load(f)
+            return deps
+    except:
+        fetch_error()
+
 # Load GitHub Action Workflow template
 # As we only perform simple string subtitution, we uses the built-in string.Template
 def load_workflow_template() -> Optional[str]:
@@ -230,6 +240,15 @@ if __name__ == '__main__':
             continue
         if not team['ready']:
             print("Skipping " + team['work_id'] + " as it is not marked ready")
+            disable_workflow(team['work_id'].replace('_', '-'))
+            continue
+        deps = get_team_dependencies(contest_slug, team['id'])
+        depends_on_pending_dep = False
+        for dep in deps:
+            if dep['review_status'] != 1:
+                print(f"Mod '{team['work_name']}' (mod ID '{team['work_id']}', from team '{team['name']}') depends on pending/rejected dependency {dep['name']} (mod id {dep['mod_id']})")
+                depends_on_pending_dep = True
+        if depends_on_pending_dep:
             disable_workflow(team['work_id'].replace('_', '-'))
             continue
         write_team_info(team, contest_id, contest_title, contest_slug, workflow_template)

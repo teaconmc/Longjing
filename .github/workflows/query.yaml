@@ -50,6 +50,7 @@ jobs:
         shell: bash
         env:
           GITHUB_TOKEN: ${{ steps.auth-as-github-app.outputs.token }}
+          BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
         run: python3 fetch/query.py ${{ inputs.teams }}
       - name: Commit Changes
         shell: bash
