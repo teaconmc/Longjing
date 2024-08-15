@@ -5,6 +5,11 @@ on:
       - '.github/workflows/mod-team-industrybase.yaml'
       - 'mods/team-industrybase/HEAD'
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit hash you wish to build.'
+        required: false
+        type: string
 jobs:
   publish:
     name: 'Build 工业基石'

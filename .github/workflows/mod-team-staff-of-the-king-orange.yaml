@@ -5,6 +5,11 @@ on:
       - '.github/workflows/mod-team-staff-of-the-king-orange.yaml'
       - 'mods/team-staff-of-the-king-orange/HEAD'
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit hash you wish to build.'
+        required: false
+        type: string
 jobs:
   publish:
     name: 'Build 橙王的权杖'

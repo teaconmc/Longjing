@@ -5,6 +5,11 @@ on:
       - '.github/workflows/mod-team-glimmeringtales.yaml'
       - 'mods/team-glimmeringtales/HEAD'
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit hash you wish to build.'
+        required: false
+        type: string
 jobs:
   publish:
     name: 'Build 微光纪事(GlimmeringTales)'

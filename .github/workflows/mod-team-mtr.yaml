@@ -5,6 +5,11 @@ on:
       - '.github/workflows/mod-team-mtr.yaml'
       - 'mods/team-mtr/HEAD'
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit hash you wish to build.'
+        required: false
+        type: string
 jobs:
   publish:
     name: 'Build NeoMTR 纸板箱特色我的世界铁路'

@@ -5,6 +5,11 @@ on:
       - '.github/workflows/mod-team-cuisinedelight.yaml'
       - 'mods/team-cuisinedelight/HEAD'
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit hash you wish to build.'
+        required: false
+        type: string
 jobs:
   publish:
     name: 'Build 料理乐事(Cuisine-Delight)'

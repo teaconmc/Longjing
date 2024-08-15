@@ -5,6 +5,11 @@ on:
       - '.github/workflows/mod-team-inkraft.yaml'
       - 'mods/team-inkraft/HEAD'
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit hash you wish to build.'
+        required: false
+        type: string
 jobs:
   publish:
     name: 'Build 墨迹工艺'

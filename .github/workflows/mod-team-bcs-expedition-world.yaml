@@ -5,6 +5,11 @@ on:
       - '.github/workflows/mod-team-bcs-expedition-world.yaml'
       - 'mods/team-bcs-expedition-world/HEAD'
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit hash you wish to build.'
+        required: false
+        type: string
 jobs:
   publish:
     name: 'Build BC的远征物语'

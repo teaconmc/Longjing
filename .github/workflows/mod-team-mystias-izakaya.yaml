@@ -5,6 +5,11 @@ on:
       - '.github/workflows/mod-team-mystias-izakaya.yaml'
       - 'mods/team-mystias-izakaya/HEAD'
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit hash you wish to build.'
+        required: false
+        type: string
 jobs:
   publish:
     name: 'Build 夜雀乐事Mystias Izakaya'
