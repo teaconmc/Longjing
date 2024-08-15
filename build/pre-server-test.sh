@@ -11,20 +11,24 @@
 #   - The enclosing [] collects everything into an JSON array 
 #
 
-curl -s $BILUOCHUN_URL/api/v1/contest/$CONTEST_SEQ/deps \
-  | jq -M '[ .[] | select(.review_status == 1) | select(.type != 1) | { name: .filename, file: .download_url } ]' > main-deps.json
+curl -so 'raw-deps.json' -H "Authorization: Bearer $BILUOCHUN_TOKEN" $BILUOCHUN_URL/api/v2/contest/$CONTEST_SLUG/$TEAM_ID/deps
+
+# Check if any dependencies are rejected / under review.
+# If so, the build cannot continue and we have to stop early. 
+jq '[ .[] | select(.review_status != 1) ] | length | if . != 0 then halt_error(1) else "All dependencies are approved" end' raw-deps.json || { echo '::error::发现仍在审核或已拒绝的前置库，构建无法继续'; exit -1 }
+
+jq -M '[ .[] | select(.type != 1) | { name: .filename, file: .download_url } ]' raw-deps.json > main-deps.json
 
 # If requested (see build.sh, line 38), fetch the list of all submitted works from Biluochun, 
 # pick all submitted works with successful builds, then assemble the mod list to be read by 
 # the dedicated-launch-test action.
 # If not requested, we use an empty JSON array as a placeholder.
 if [ "$LONGJING_REQUIRE_OTHER_WORKS" = "true" ]; then
+  # We also need to download all dependencies in this case.
+  curl -s $BILUOCHUN_URL/api/v1/contest/$CONTEST_SEQ/deps \
+    | jq -M '[ .[] | select(.review_status == 1) | select(.type != 1) | { name: .filename, file: .download_url } ]' > main-deps.json
   curl -s $BILUOCHUN_URL/api/v1/contest/$CONTEST_SEQ/teams \
     | jq -M '[ .[] | select( .test_version != null ) | select( .ready ) | { mod_id: ( .work_id | gsub("_"; "-") ), build: .test_version.longjing_number, filename: .test_version.longjing_artifact_name }]' \
-    | jq -M '[ .[] | { name: .filename, file: "https://archive.teacon.cn/jiachen/ci/build/team-\(.mod_id)/\(.mod_id)-\(.build).jar" } ]' > extra-deps.json
-elif [ "$HOTFIX" = "true" ]; then # 传统艺能：硬编码修问题
-  curl -s $BILUOCHUN_URL/api/v1/contest/$CONTEST_SEQ/teams \
-    | jq -M '[ .[] | select( .test_version != null ) | select( .work_id == "sinofoundation" ) | { mod_id: ( .work_id | gsub("_"; "-") ), build: .test_version.longjing_number, filename: .test_version.longjing_artifact_name }]' \
     | jq -M '[ .[] | { name: .filename, file: "https://archive.teacon.cn/jiachen/ci/build/team-\(.mod_id)/\(.mod_id)-\(.build).jar" } ]' > extra-deps.json
 else
   echo '[]' > extra-deps.json

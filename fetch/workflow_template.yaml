@@ -13,6 +13,7 @@ jobs:
     env:
       BILUOCHUN_URL: https://biluochun.teacon.cn
       CONTEST_SEQ: '$contest_seq'
+      CONTEST_SLUG: $contest_slug
       CONTEST_TITLE: '$contest_title'
       TEAM_ID: '$team_id'
       TEAM_SEQ: '$team_seq'
@@ -75,6 +76,7 @@ jobs:
       - name: Prepare for Dedicated Server Launching Test
         id: dedicated_server_launching_setup
         shell: bash
+          BILUOCHUN_TOKEN: $${{ secrets.BILUOCHUN_TOKEN }}
         run: cd build && ./pre-server-test.sh
       - name: Dedicated Server Launching Test
         id: dedicated_server_launching
