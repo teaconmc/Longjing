@@ -9,13 +9,17 @@
 #   - select(.type != 1) selects non-client-only dependency (i.e. common and server-only)
 #   - { name: ..., file: ... } transforms input JSON object into the needed format
 #   - The enclosing [] collects everything into an JSON array 
-#
+
+die() {
+    echo "::error::$*"
+    exit -1
+}
 
 curl -so 'raw-deps.json' -H "Authorization: Bearer $BILUOCHUN_TOKEN" $BILUOCHUN_URL/api/v2/contest/$CONTEST_SLUG/$TEAM_ID/deps
 
 # Check if any dependencies are rejected / under review.
 # If so, the build cannot continue and we have to stop early. 
-jq '[ .[] | select(.review_status != 1) ] | length | if . != 0 then halt_error(1) else "All dependencies are approved" end' raw-deps.json || { echo '::error::发现仍在审核或已拒绝的前置库，构建无法继续'; exit -1 }
+jq '[ .[] | select(.review_status != 1) ] | length | if . != 0 then halt_error(1) else "All dependencies are approved" end' raw-deps.json || die '发现仍在审核或已拒绝的前置库，构建无法继续'
 
 jq -M '[ .[] | select(.type != 1) | { name: .filename, file: .download_url } ]' raw-deps.json > main-deps.json
 
