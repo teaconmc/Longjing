@@ -76,6 +76,7 @@ jobs:
       - name: Prepare for Dedicated Server Launching Test
         id: dedicated_server_launching_setup
         shell: bash
+        env:
           BILUOCHUN_TOKEN: $${{ secrets.BILUOCHUN_TOKEN }}
         run: cd build && ./pre-server-test.sh
       - name: Dedicated Server Launching Test
