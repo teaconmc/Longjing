@@ -5,6 +5,11 @@ on:
       - '$workflow_file'
       - '$info_dir/HEAD'
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit hash you wish to build.'
+        required: false
+        type: string
 jobs:
   publish:
     name: '$job_title'
