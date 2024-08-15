@@ -19,7 +19,7 @@ curl -so 'raw-deps.json' -H "Authorization: Bearer $BILUOCHUN_TOKEN" "$BILUOCHUN
 
 # Check if any dependencies are rejected / under review.
 # If so, the build cannot continue and we have to stop early. 
-jq '[ .[] | select(.review_status != 1) ] | length | if . != 0 then halt_error(1) else "All dependencies are approved" end' raw-deps.json || die '发现仍在审核或已拒绝的前置库，构建无法继续'
+jq -r '[ .[] | select(.review_status != 1) ] | length | if . != 0 then halt_error(1) else "All dependencies are approved" end' raw-deps.json || die '发现仍在审核或已拒绝的前置库，构建无法继续'
 
 jq -M '[ .[] | select(.type != 1) | { name: .filename, file: .download_url } ]' raw-deps.json > main-deps.json
 
