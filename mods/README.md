@@ -66,3 +66,4 @@
 |伊卡洛斯之翼<br /><br />队伍名：Azure Fleet<br />作品 ID：`locusazzurro_icaruswings`（模组 ID），`385`（数字 ID）<br />项目仓库：[https://github.com/LocusAzzurro/IcarusWings](https://github.com/LocusAzzurro/IcarusWings)|A story about bees, feather and the sky. A testament to human ingenuity.||
 |茶风纪事<br /><br />队伍名：TeamTea-2024<br />作品 ID：`teastory`（模组 ID），`386`（数字 ID）<br />项目仓库：[https://github.com/joe-vettek/Tea-the-Story](https://github.com/joe-vettek/Tea-the-Story)|本模组移植自茶风纪事Teacon2021版本，获得了作者的授权许可和支持。<br /><br /><br /><br />||
 |异常乐事<br /><br />队伍名：Foundation<br />作品 ID：`anomaly_delight`（模组 ID），`387`（数字 ID）<br />项目仓库：[https://github.com/USS-Shenzhou/AnomalyDelight](https://github.com/USS-Shenzhou/AnomalyDelight)|超自然之力当然也算自然之力。||
+|自由相机API<br /><br />队伍名：瓶装史莱姆<br />作品 ID：`freecameraapi`（模组 ID），`388`（数字 ID）<br />项目仓库：[https://gitee.com/anecansaitin/FreeCameraAPI](https://gitee.com/anecansaitin/FreeCameraAPI)|在代码中轻松修改玩家的相机||
