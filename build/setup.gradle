@@ -34,9 +34,53 @@ abstract class TeaConLongjingProcessing extends DefaultTask {
 }
 
 afterProject { project ->
-    // Only do this on root project for now. 
-    // We are not sure about multi-project builds - we will come back later.
-    if (project != rootProject) {
+    // Skip buildSrc. We do not want to config that one.
+    // Today I learnt that init script is also run against buildSrc...
+    if (project.name == 'buildSrc') {
+        return
+    }
+
+    // Yuushya 方块小镇 gives me some new insights on how init script works...
+    // Init script is run on every single sub-project, in an undefined order.
+    // My own test shows that the order is somewhat a breath-first search.
+    // Yuushya has an intriguting setup: their `build.gradle` in root project does not have any Minecraft-related 
+    // gradle plugins! They are in 1st level sub-projects' `build.gradle`.
+    // i.e. 1.21.0/build.gradle, 1.20.1/build.gradle, etc
+    // Combining two points above together, we will run into this situation: when we run init script for root project,
+    // all sub projects are not configured with necessary gradle plugins yet, and the task we need is not there.
+    // Which will lead to error.
+    if (System.env.TEACON_ARTIFACT_TASK) {
+        // If TEACON_ARTIFACT_TASK is present, attempt to retrieve the project name at which the task locates.
+        String targetTaskName = System.env.TEACON_ARTIFACT_TASK
+        String targetProjectPath = null
+        int splitPoint = targetTaskName.lastIndexOf(Project.PATH_SEPARATOR)
+        if (splitPoint > 0) {
+            targetProjectPath = targetTaskName.substring(0, splitPoint)
+        }
+        
+        // If targetProjectPath is null, it means that the task locates in root project.
+        if (!targetProjectPath) {
+            // In this case, we want to process in rootProject.
+            if (project != rootProject) {
+                return
+            }
+        } else {
+            // Otherwise, we want to process AFTER the specified subproject is initialized.
+            // We need to reconstruct the full subproject name, and compare with that.
+            String projectFullName = project.name
+            def parent = project.parent
+            while (parent && parent != rootProject) {
+                projectFullName = parent.name + Project.PATH_SEPARATOR + projectFullName
+                parent = parent.parent
+            }
+            projectFullName = Project.PATH_SEPARATOR + projectFullName
+            // Compare. Return early if not the project we are looking for.
+            if (projectFullName != targetProjectPath) {
+                return
+            }
+        }
+    } else if (project != rootProject) {
+        // If no TEACON_ARTIFACT_TASK specified, assume that we are in a single-project build.
         return
     }
 
@@ -88,7 +132,8 @@ afterProject { project ->
         } 
     }
 
-    project.tasks.register('teaconLongjingProcessing', TeaConLongjingProcessing) {
+    // Register the info-dumping task to root project.`
+    rootProject.tasks.register('teaconLongjingProcessing', TeaConLongjingProcessing) {
         it.dependsOn targetTask
         it.mustRunAfter targetTask
         it.getTargetFileName().set(targetTask.flatMap({ it.archiveFileName }))
