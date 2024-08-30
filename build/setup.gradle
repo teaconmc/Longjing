@@ -57,6 +57,12 @@ afterProject { project ->
         if (splitPoint > 0) {
             targetProjectPath = targetTaskName.substring(0, splitPoint)
         }
+        // Apparently, you can get a subproject by using a name that does not start with ':'.
+        // i.e. rootProject.findProject('1.21.0:neoforge') will give you result (provided that you do have this directory structure)
+        // For consistency, we always prepend a ':' at the beginning.
+        if (!targetProjectPath.startsWith(':') {
+            targetProjectPath = ':' + targetProjectPath
+        }
         
         // If targetProjectPath is null, it means that the task locates in root project.
         if (!targetProjectPath) {
