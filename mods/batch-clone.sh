@@ -221,3 +221,12 @@ git clone https://github.com/Amotassic/DabaoSword-NeoForge dabaosword
 # Clone Mino++ (modid = minopp) 
 git clone https://github.com/zbx1425/Minopp minopp
 
+# Clone 道家真气 (modid = taoist_magic) 
+git clone https://github.com/lcyzsdh/TaoistMagic taoist_magic
+
+# Clone 料理工艺：传承 (modid = cuisine) 
+git clone https://github.com/joe-vettek/Cuisine cuisine
+
+# Clone 方块建模 (modid = yuushya_modelling) 
+git clone https://gitee.com/yuushyatownscape/yuushya-modelling yuushya_modelling
+
