@@ -223,6 +223,13 @@ def write_readme(contest_title: str, team_list: List[Team]):
     with open('mods/README.md', 'w+') as f:
         f.write(readme)
 
+def write_batch_git_clone(contest_title: str, team_list: List[Team]):
+    script = f'#!/bin/bash\n\n# 「{contest_title}」 submission repositories batch clone script\n\n'
+    for team in team_list:
+        script += f"# Clone {team['work_name']} (modid = team['work_id']) \ngit clone {team['repo']} {team['work_id']}\n\n"
+    with open('mods/batch-clone.sh', 'w+') as f:
+        f.write(script)
+
 if __name__ == '__main__':
     workflow_template = load_workflow_template()
     contest_id, contest_slug, contest_title = get_contest_id()
@@ -253,3 +260,4 @@ if __name__ == '__main__':
             continue
         write_team_info(team, contest_id, contest_title, contest_slug, workflow_template)
     write_readme(contest_title, team_list)
+    write_batch_git_clone(contest_title, team_list)
