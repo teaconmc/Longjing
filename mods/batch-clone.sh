@@ -167,9 +167,6 @@ git clone https://github.com/HiedaCamellia/MystiasIzakaya mystias_izakaya
 # Clone Furniture Plan (modid = furnitureplan) 
 git clone https://github.com/MakerTechno/Forge-FurniturePlan/ furnitureplan
 
-# Clone 储液抽屉：遗产 (modid = fluiddrawerslegacy) 
-git clone https://github.com/joe-vettek/Fluid-Drawers-Legacy fluiddrawerslegacy
-
 # Clone 更好的单方块 (modid = oneblock) 
 git clone https://github.com/joe-vettek/One-Block oneblock
 
