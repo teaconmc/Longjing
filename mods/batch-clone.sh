@@ -215,9 +215,6 @@ git clone https://github.com/haohao-0407/double_the_happiness.git double_the_hap
 # Clone LoveMod:Furina (modid = lovemod) 
 git clone https://github.com/Bread-NiceCat/LoveModFurina lovemod
 
-# Clone 漆MOD-1.21 (modid = urushi) 
-git clone https://github.com/HiedaCamellia/Urushi-MOD-1.21 urushi
-
 # Clone 方块小镇 (modid = yuushya) 
 git clone https://gitee.com/yuushyatownscape/yuushya-townscape yuushya
 
