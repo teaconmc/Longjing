@@ -226,7 +226,7 @@ def write_readme(contest_title: str, team_list: List[Team]):
 def write_batch_git_clone(contest_title: str, team_list: List[Team]):
     script = f'#!/bin/bash\n\n# 「{contest_title}」 submission repositories batch clone script\n\n'
     for team in team_list:
-        script += f"# Clone {team['work_name']} (modid = team['work_id']) \ngit clone {team['repo']} {team['work_id']}\n\n"
+        script += f"# Clone {team['work_name']} (modid = {team['work_id']}) \ngit clone {team['repo']} {team['work_id']}\n\n"
     with open('mods/batch-clone.sh', 'w+') as f:
         f.write(script)
 
