@@ -62,9 +62,6 @@ git clone https://github.com/MarbleGateKeeper/PipeSlide-the-First-Heavenly-Stem-
 # Clone 随想自然 (modid = randomsonnature) 
 git clone https://github.com/XiaoPangxie732/RandomsOnNature randomsonnature
 
-# Clone 明日之花 (modid = higanbana) 
-git clone https://github.com/qyl27/Higanbana.git higanbana
-
 # Clone 工业基石 (modid = industrybase) 
 git clone https://github.com/BinZhengStudio/IndustryBase industrybase
 
