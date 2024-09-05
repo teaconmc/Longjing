@@ -62,9 +62,6 @@ git clone https://github.com/MarbleGateKeeper/PipeSlide-the-First-Heavenly-Stem-
 # Clone 随想自然 (modid = randomsonnature) 
 git clone https://github.com/XiaoPangxie732/RandomsOnNature randomsonnature
 
-# Clone 工业基石 (modid = industrybase) 
-git clone https://github.com/BinZhengStudio/IndustryBase industrybase
-
 # Clone 流年年的无想 (modid = meteornoidea) 
 git clone gitee.com/openharmony meteornoidea
 
