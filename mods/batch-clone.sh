@@ -68,9 +68,6 @@ git clone gitee.com/openharmony meteornoidea
 # Clone 享尝 (modid = doutdes) 
 git clone https://github.com/khjxiaogu/Doutdes doutdes
 
-# Clone 旋律魔法 (modid = melodymagic) 
-git clone https://github.com/StrangeSmell/MelodyMagic melodymagic
-
 # Clone 菌丝工艺(HyphaCraft) (modid = hyphacraft) 
 git clone https://github.com/Chlamydomonos/HyphaCraft hyphacraft
 
@@ -166,9 +163,6 @@ git clone https://github.com/FengMingMC/CleanEnergy.git cleanenergy
 
 # Clone 更好的派对 (modid = betterparty) 
 git clone https://gitee.com/WangLa0Sh1/BetterParty betterparty
-
-# Clone ThatSkyInteractions (modid = thatskyinteractions) 
-git clone https://github.com/LouisQuepierts/ThatSkyInteractions thatskyinteractions
 
 # Clone 抱我！(HugMe!) (modid = hugme) 
 git clone https://github.com/TunYuntuwuQWQ/HugMe hugme
