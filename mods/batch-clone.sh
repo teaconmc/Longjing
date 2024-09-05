@@ -140,9 +140,6 @@ git clone https://github.com/ALittleBot/GrassCraft grass_craft
 # Clone 土豆力量 (modid = potatopower) 
 git clone https://github.com/langxsy/potatopower potatopower
 
-# Clone 对决 (modid = cardduel) 
-git clone https://github.com/mcczai/neoforge-1.21-board_games cardduel
-
 # Clone 傀儡装配(Modular Golems) (modid = modulargolems) 
 git clone https://github.com/Minecraft-LightLand/ModularGolems modulargolems
 
