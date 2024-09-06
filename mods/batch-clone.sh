@@ -62,11 +62,17 @@ git clone https://github.com/MarbleGateKeeper/PipeSlide-the-First-Heavenly-Stem-
 # Clone 随想自然 (modid = randomsonnature) 
 git clone https://github.com/XiaoPangxie732/RandomsOnNature randomsonnature
 
+# Clone 工业基石 (modid = industrybase) 
+git clone https://github.com/BinZhengStudio/IndustryBase industrybase
+
 # Clone 流年年的无想 (modid = meteornoidea) 
 git clone gitee.com/openharmony meteornoidea
 
 # Clone 享尝 (modid = doutdes) 
 git clone https://github.com/khjxiaogu/Doutdes doutdes
+
+# Clone 旋律魔法 (modid = melodymagic) 
+git clone https://github.com/StrangeSmell/MelodyMagic melodymagic
 
 # Clone 菌丝工艺(HyphaCraft) (modid = hyphacraft) 
 git clone https://github.com/Chlamydomonos/HyphaCraft hyphacraft
@@ -134,6 +140,9 @@ git clone https://github.com/ALittleBot/GrassCraft grass_craft
 # Clone 土豆力量 (modid = potatopower) 
 git clone https://github.com/langxsy/potatopower potatopower
 
+# Clone 我的回合！ (modid = cardduel) 
+git clone https://github.com/mcczai/neoforge-1.21-board_games cardduel
+
 # Clone 傀儡装配(Modular Golems) (modid = modulargolems) 
 git clone https://github.com/Minecraft-LightLand/ModularGolems modulargolems
 
@@ -163,6 +172,9 @@ git clone https://github.com/FengMingMC/CleanEnergy.git cleanenergy
 
 # Clone 更好的派对 (modid = betterparty) 
 git clone https://gitee.com/WangLa0Sh1/BetterParty betterparty
+
+# Clone ThatSkyInteractions (modid = thatskyinteractions) 
+git clone https://github.com/LouisQuepierts/ThatSkyInteractions thatskyinteractions
 
 # Clone 抱我！(HugMe!) (modid = hugme) 
 git clone https://github.com/TunYuntuwuQWQ/HugMe hugme
