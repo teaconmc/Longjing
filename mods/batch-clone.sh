@@ -56,9 +56,6 @@ git clone https://github.com/Minecraft-LightLand/GlimmeringTales glimmeringtales
 # Clone 料理乐事(Cuisine-Delight) (modid = cuisinedelight) 
 git clone https://github.com/Minecraft-LightLand/Cuisine-Delight cuisinedelight
 
-# Clone 爽滑满天：甲辰版 PipeSlide - the First Heavenly Stem and the Fifth Earthly Branch in the Chinese Sexagenary Cycle Edition (modid = pipeslide) 
-git clone https://github.com/MarbleGateKeeper/PipeSlide-the-First-Heavenly-Stem-and-the-Fifth-Earthly-Branch-in-the-Chinese-Sexagenary-Cycle-ed. pipeslide
-
 # Clone 随想自然 (modid = randomsonnature) 
 git clone https://github.com/XiaoPangxie732/RandomsOnNature randomsonnature
 
