@@ -20,9 +20,6 @@ git clone https://github.com/zbx1425/world-comment worldcomment
 # Clone CrystalDream (modid = crystaldream) 
 git clone https://github.com/AmarokIce/CrystalDream-NeoForge crystaldream
 
-# Clone 贴贴 (modid = nestle) 
-git clone https://github.com/KunoSayo/Nestle nestle
-
 # Clone Crock Pot (modid = crockpot) 
 git clone https://github.com/SihenZhang/CrockPot crockpot
 
