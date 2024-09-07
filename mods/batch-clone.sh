@@ -224,9 +224,6 @@ git clone https://github.com/joe-vettek/Cuisine cuisine
 # Clone 方块建模 (modid = yuushya_modelling) 
 git clone https://gitee.com/yuushyatownscape/yuushya-modelling yuushya_modelling
 
-# Clone 可栓的玩家 (modid = leashedplayer) 
-git clone https://github.com/3944Realms/R39_Whimsy_NeoForgeModProject_Sub leashedplayer
-
 # Clone 烟花苦力怕Next (modid = cfn) 
 git clone https://github.com/MarbleGateKeeper/CreeperFireworkNext cfn
 
