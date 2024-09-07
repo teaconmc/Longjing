@@ -1,4 +1,4 @@
-name: 'TeaCon 甲辰 | 可栓的玩家 | 叁玖领域'
+name: 'TeaCon 甲辰 | 可拴的玩家 | 叁玖领域'
 on:
   push:
     paths:
@@ -12,7 +12,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build 可栓的玩家'
+    name: 'Build 可拴的玩家'
     environment: Build
     runs-on: ubuntu-22.04
     env:
@@ -43,7 +43,7 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build 可栓的玩家'
+      - name: 'Checkout Repository for Build 可拴的玩家'
         shell: bash
         run: |
           mkdir -p build/repo
