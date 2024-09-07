@@ -5,9 +5,6 @@
 # Clone 友谊徽章 (modid = friendship_bracelet) 
 git clone https://github.com/teaconmc/FriendshipBracelet.git friendship_bracelet
 
-# Clone 苇原 (modid = ashihara) 
-git clone https://github.com/Kogasa-Studio/Ashihara ashihara
-
 # Clone 马儿蹦跳 (modid = umapyoi) 
 git clone https://github.com/0999312/umapyoi umapyoi
 
