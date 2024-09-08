@@ -5,6 +5,9 @@
 # Clone 友谊徽章 (modid = friendship_bracelet) 
 git clone https://github.com/teaconmc/FriendshipBracelet.git friendship_bracelet
 
+# Clone 苇原 (modid = ashihara) 
+git clone https://github.com/Kogasa-Studio/Ashihara ashihara
+
 # Clone 马儿蹦跳 (modid = umapyoi) 
 git clone https://github.com/0999312/umapyoi umapyoi
 
@@ -232,4 +235,10 @@ git clone https://github.com/xkball/TerrainTectonicTrilithic terrain_tectonic_tr
 
 # Clone TheSage (modid = thesage) 
 git clone https://github.com/NotYourD3/TheSage thesage
+
+# Clone 洄时之雨 (modid = retrorain) 
+git clone https://github.com/LNatit/RetroRain retrorain
+
+# Clone 特雷森乐事 (modid = tracen_delight) 
+git clone https://github.com/0999312/Tracen-Delight tracen_delight
 
