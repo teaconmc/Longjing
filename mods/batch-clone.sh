@@ -242,3 +242,15 @@ git clone https://github.com/LNatit/RetroRain retrorain
 # Clone 特雷森乐事 (modid = tracen_delight) 
 git clone https://github.com/0999312/Tracen-Delight tracen_delight
 
+# Clone 通量网络 (modid = fluxnetworks) 
+git clone https://github.com/SonarSonic/Flux-Networks fluxnetworks
+
+# Clone Lightening Power (modid = aim) 
+git clone https://github.com/VoodooSP/aim-modern aim
+
+# Clone 铁砧工艺：重力科技 (modid = anvilcraft) 
+git clone https://github.com/Anvil-Dev/AnvilCraft anvilcraft
+
+# Clone 吾有一术 (modid = wenyan_nature) 
+git clone https://github.com/gyxx-xc/WenyanNature wenyan_nature
+
