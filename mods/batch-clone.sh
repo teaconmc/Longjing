@@ -68,9 +68,6 @@ git clone gitee.com/openharmony meteornoidea
 # Clone 享尝 (modid = doutdes) 
 git clone https://github.com/khjxiaogu/Doutdes doutdes
 
-# Clone 旋律魔法 (modid = melodymagic) 
-git clone https://github.com/StrangeSmell/MelodyMagic melodymagic
-
 # Clone 菌丝工艺(HyphaCraft) (modid = hyphacraft) 
 git clone https://github.com/Chlamydomonos/HyphaCraft hyphacraft
 
