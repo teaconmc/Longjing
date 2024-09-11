@@ -68,6 +68,9 @@ git clone gitee.com/openharmony meteornoidea
 # Clone 享尝 (modid = doutdes) 
 git clone https://github.com/khjxiaogu/Doutdes doutdes
 
+# Clone 旋律魔法 (modid = melodymagic) 
+git clone https://github.com/StrangeSmell/MelodyMagic melodymagic
+
 # Clone 菌丝工艺(HyphaCraft) (modid = hyphacraft) 
 git clone https://github.com/Chlamydomonos/HyphaCraft hyphacraft
 
@@ -242,9 +245,15 @@ git clone https://github.com/0999312/Tracen-Delight tracen_delight
 # Clone 通量网络 (modid = fluxnetworks) 
 git clone https://github.com/SonarSonic/Flux-Networks fluxnetworks
 
+# Clone Lightening Power (modid = aim) 
+git clone https://github.com/VoodooSP/aim-modern aim
+
 # Clone 铁砧工艺：重力科技 (modid = anvilcraft) 
 git clone https://github.com/Anvil-Dev/AnvilCraft anvilcraft
 
 # Clone 吾有一术 (modid = wenyan_nature) 
 git clone https://github.com/gyxx-xc/WenyanNature wenyan_nature
+
+# Clone 锡茶科技 Tin Tea Tech (modid = tin_tea_tech) 
+git clone https://github.com/xkball/TinTeaTech tin_tea_tech
 
