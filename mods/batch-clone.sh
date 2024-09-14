@@ -29,6 +29,9 @@ git clone https://github.com/SihenZhang/CrockPot crockpot
 # Clone 真正的和平模式 (modid = real_peaceful_mode) 
 git clone https://github.com/Viola-Siemens/Real-Peaceful-Mode real_peaceful_mode
 
+# Clone 打铁匠人(Ding Mod) (modid = ding) 
+git clone https://github.com/NitianStudio/DingMod ding
+
 # Clone 分茶 (modid = caupona) 
 git clone https://github.com/TeamMoegMC/Caupona caupona
 
