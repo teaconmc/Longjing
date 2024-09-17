@@ -1,9 +1,9 @@
-name: 'TeaCon 甲辰 | 土豆力量 | 驶dead少年团'
+name: 'TeaCon 甲辰 | 真正的和平模式 | 孤独的玩家不止你一个委员会'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-potatopower.yaml'
-      - 'mods/team-potatopower/HEAD'
+      - '.github/workflows/mod-team-real-peaceful-mode.yaml'
+      - 'mods/team-real-peaceful-mode/HEAD'
   workflow_dispatch:
     inputs:
       commit:
@@ -12,7 +12,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build 土豆力量'
+    name: 'Build 真正的和平模式'
     environment: Build
     runs-on: ubuntu-22.04
     env:
@@ -20,8 +20,8 @@ jobs:
       CONTEST_SEQ: '3'
       CONTEST_SLUG: JC
       CONTEST_TITLE: 'TeaCon 甲辰'
-      TEAM_ID: 'potatopower'
-      TEAM_SEQ: '370'
+      TEAM_ID: 'real-peaceful-mode'
+      TEAM_SEQ: '324'
     steps:
       - name: Checkout Build Environment
         uses: actions/checkout@v4
@@ -43,15 +43,15 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build 土豆力量'
+      - name: 'Checkout Repository for Build 真正的和平模式'
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-potatopower/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-potatopower/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
-          git reset --hard `cat ../../mods/team-potatopower/HEAD`
+          git remote add origin `cat ../../mods/team-real-peaceful-mode/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-real-peaceful-mode/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
+          git reset --hard `cat ../../mods/team-real-peaceful-mode/HEAD`
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
