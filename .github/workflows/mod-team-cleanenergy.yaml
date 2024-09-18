@@ -86,6 +86,7 @@ jobs:
         run: cd build && ./pre-server-test.sh
       - name: Dedicated Server Launching Test
         id: dedicated_server_launching
+        timeout-minutes: 10
         uses: teaconmc/dedicated-launch-test@1.21-neoforge
         with:
           extra: build/all-deps.json
