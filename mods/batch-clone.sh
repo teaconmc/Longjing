@@ -32,9 +32,6 @@ git clone https://github.com/Viola-Siemens/Real-Peaceful-Mode real_peaceful_mode
 # Clone 地火 (modid = undergroundfire) 
 git clone https://github.com/PositiveEStudio/NeoUGF undergroundfire
 
-# Clone 打铁匠人(Ding Mod) (modid = ding) 
-git clone https://github.com/NitianStudio/DingMod ding
-
 # Clone 分茶 (modid = caupona) 
 git clone https://github.com/TeamMoegMC/Caupona caupona
 
