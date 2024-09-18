@@ -158,9 +158,6 @@ git clone https://github.com/MakerTechno/Forge-FurniturePlan/ furnitureplan
 # Clone 更好的单方块 (modid = oneblock) 
 git clone https://github.com/joe-vettek/One-Block oneblock
 
-# Clone 清洁能源 (modid = cleanenergy) 
-git clone https://github.com/FengMingMC/CleanEnergy.git cleanenergy
-
 # Clone 更好的派对 (modid = betterparty) 
 git clone https://gitee.com/WangLa0Sh1/BetterParty betterparty
 
