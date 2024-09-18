@@ -32,6 +32,9 @@ git clone https://github.com/Viola-Siemens/Real-Peaceful-Mode real_peaceful_mode
 # Clone 地火 (modid = undergroundfire) 
 git clone https://github.com/PositiveEStudio/NeoUGF undergroundfire
 
+# Clone 打铁匠人(Ding Mod) (modid = ding) 
+git clone https://github.com/NitianStudio/DingMod ding
+
 # Clone 分茶 (modid = caupona) 
 git clone https://github.com/TeamMoegMC/Caupona caupona
 
@@ -158,6 +161,9 @@ git clone https://github.com/MakerTechno/Forge-FurniturePlan/ furnitureplan
 # Clone 更好的单方块 (modid = oneblock) 
 git clone https://github.com/joe-vettek/One-Block oneblock
 
+# Clone 清洁能源 (modid = cleanenergy) 
+git clone https://github.com/FengMingMC/CleanEnergy.git cleanenergy
+
 # Clone 更好的派对 (modid = betterparty) 
 git clone https://gitee.com/WangLa0Sh1/BetterParty betterparty
 
@@ -229,6 +235,9 @@ git clone https://github.com/0999312/Tracen-Delight tracen_delight
 
 # Clone 通量网络 (modid = fluxnetworks) 
 git clone https://github.com/SonarSonic/Flux-Networks fluxnetworks
+
+# Clone Lightening Power (modid = aim) 
+git clone https://github.com/VoodooSP/aim-modern aim
 
 # Clone 铁砧工艺：重力科技 (modid = anvilcraft) 
 git clone https://github.com/Anvil-Dev/AnvilCraft anvilcraft
