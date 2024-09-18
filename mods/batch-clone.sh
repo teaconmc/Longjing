@@ -221,9 +221,6 @@ git clone https://github.com/3944Realms/R39_Whimsy_NeoForgeModProject_Sub leashe
 # Clone 自然矿物/TerrainTectonicTrilithic (modid = terrain_tectonic_trilithic) 
 git clone https://github.com/xkball/TerrainTectonicTrilithic terrain_tectonic_trilithic
 
-# Clone TheSage (modid = thesage) 
-git clone https://github.com/NotYourD3/TheSage thesage
-
 # Clone 洄时之雨 (modid = retrorain) 
 git clone https://github.com/LNatit/RetroRain retrorain
 
