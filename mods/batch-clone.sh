@@ -191,6 +191,9 @@ git clone https://github.com/TartaricAcid/TouhouLittleMaid touhou_little_maid
 # Clone 极光幽境2 (modid = theaurorian) 
 git clone https://github.com/TeamPancakeMC/TheAurorian theaurorian
 
+# Clone 岩浆钓鱼 (modid = lavafishing) 
+git clone https://github.com/TeamSunset/LavaFishing lavafishing
+
 # Clone 网络音乐机 (modid = netmusic) 
 git clone https://github.com/TartaricAcid/NetMusic netmusic
 
