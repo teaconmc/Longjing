@@ -91,6 +91,9 @@ jobs:
         with:
           extra: build/all-deps.json
           mod: ${{ steps.building.outputs.artifact }}
+      - name: Debug
+        if: failure()
+        uses: fawazahmed0/action-debug-vscode@main
       - name: Publish
         id: publication
         shell: bash
