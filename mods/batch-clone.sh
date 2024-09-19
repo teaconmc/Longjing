@@ -155,6 +155,9 @@ git clone https://github.com/Zoshsgahdnkc/kitchenkarrot/ kitchenkarrot
 # Clone 夜雀乐事Mystias Izakaya (modid = mystias_izakaya) 
 git clone https://github.com/HiedaCamellia/MystiasIzakaya mystias_izakaya
 
+# Clone Furniture Plan (modid = furnitureplan) 
+git clone https://github.com/MakerTechno/Forge-FurniturePlan/ furnitureplan
+
 # Clone 更好的单方块 (modid = oneblock) 
 git clone https://github.com/joe-vettek/One-Block oneblock
 
