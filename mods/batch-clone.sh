@@ -221,9 +221,6 @@ git clone https://github.com/joe-vettek/Cuisine cuisine
 # Clone 方块建模 (modid = yuushya_modelling) 
 git clone https://gitee.com/yuushyatownscape/yuushya-modelling yuushya_modelling
 
-# Clone 可拴的玩家 (modid = leashedplayer) 
-git clone https://github.com/3944Realms/R39_Whimsy_NeoForgeModProject_Sub leashedplayer
-
 # Clone 自然矿物/TerrainTectonicTrilithic (modid = terrain_tectonic_trilithic) 
 git clone https://github.com/xkball/TerrainTectonicTrilithic terrain_tectonic_trilithic
 
