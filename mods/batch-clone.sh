@@ -71,9 +71,6 @@ git clone https://github.com/StrangeSmell/MelodyMagic melodymagic
 # Clone 菌丝工艺(HyphaCraft) (modid = hyphacraft) 
 git clone https://github.com/Chlamydomonos/HyphaCraft hyphacraft
 
-# Clone 永远的朋友 / Friendship Forever (modid = friendship_forever) 
-git clone https://github.com/LucunJi/friendship-forever friendship_forever
-
 # Clone NeoMTR 纸板箱特色我的世界铁路 (modid = mtr) 
 git clone https://github.com/zbx1425/Minecraft-Transit-Railway mtr
 
