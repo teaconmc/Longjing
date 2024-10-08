@@ -128,9 +128,6 @@ git clone https://github.com/qyl27/Inkraft.git inkraft
 # Clone 草工艺 (modid = grass_craft) 
 git clone https://github.com/ALittleBot/GrassCraft grass_craft
 
-# Clone 土豆力量 (modid = potatopower) 
-git clone https://github.com/langxsy/potatopower potatopower
-
 # Clone 我的回合！ (modid = cardduel) 
 git clone https://github.com/mcczai/neoforge-1.21-board_games cardduel
 
