@@ -62,9 +62,6 @@ git clone https://github.com/XiaoPangxie732/RandomsOnNature randomsonnature
 # Clone 工业基石 (modid = industrybase) 
 git clone https://github.com/BinZhengStudio/IndustryBase industrybase
 
-# Clone 流年年的无想 (modid = meteornoidea) 
-git clone gitee.com/openharmony meteornoidea
-
 # Clone 旋律魔法 (modid = melodymagic) 
 git clone https://github.com/StrangeSmell/MelodyMagic melodymagic
 
