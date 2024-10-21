@@ -95,9 +95,6 @@ git clone https://github.com/XiaoHuNao/MineTeam mine_team
 # Clone 百般武艺 (modid = assorted_armaments) 
 git clone https://github.com/LeoMinecraftModding/assorted-armaments assorted_armaments
 
-# Clone 元素论 (modid = elemental_theory) 
-git clone https://gitee.com/uicdb/ElementalTheory2 elemental_theory
-
 # Clone BC的远征物语 (modid = bcs_expedition_world) 
 git clone https://github.com/LeoLezury/bcs-expedition-world bcs_expedition_world
 
