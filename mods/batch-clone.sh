@@ -170,6 +170,9 @@ git clone https://github.com/joe-vettek/Tea-the-Story teastory
 # Clone 异常乐事 (modid = anomaly_delight) 
 git clone https://github.com/USS-Shenzhou/AnomalyDelight anomaly_delight
 
+# Clone 自由相机API (modid = freecameraapi) 
+git clone https://gitee.com/anecansaitin/FreeCameraAPI.git freecameraapi
+
 # Clone 车万女仆 (modid = touhou_little_maid) 
 git clone https://github.com/TartaricAcid/TouhouLittleMaid touhou_little_maid
 
