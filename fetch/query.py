@@ -96,7 +96,7 @@ def enable_workflow(team_id: str):
         pass # Ignore all the possible errors during workflow enabling
 
 # Write team informations including workflow files and git head references
-def write_team_info(team: Team, contest_seq: int, contest_name: str, contest_slug: str, workflow_template: str) -> None:
+def write_team_info(team: Team, contest_seq: int, contest_name: str, contest_slug: str, workflow_template: str, force_update: bool = False) -> None:
     # Skip the process entirely if team['ready'] == False
     if not team['ready']:
         print(f"Team #{team['id']} ({team['name']}) is not ready for Longjing build, skipping")
@@ -258,6 +258,6 @@ if __name__ == '__main__':
         if depends_on_pending_dep:
             disable_workflow(team['work_id'].replace('_', '-'))
             continue
-        write_team_info(team, contest_id, contest_title, contest_slug, workflow_template)
+        write_team_info(team, contest_id, contest_title, contest_slug, workflow_template, team_filter and team['id'] in team_filter)
     write_readme(contest_title, team_list)
     write_batch_git_clone(contest_title, team_list)
