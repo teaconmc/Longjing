@@ -24,15 +24,15 @@ jobs:
       TEAM_SEQ: '494'
     steps:
       - name: Checkout Build Environment
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       # Setup Microsoft JDK build. This should be the one used by official Minecraft Launcher.
       - name: Setup JDK 25
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: 'microsoft'
           java-version: '25'
       - name: Apply Cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             ~/.gradle/caches
@@ -71,7 +71,7 @@ jobs:
         run: cd build && ./build.sh
       # We need at least Python 3.11 to ensure existence of tomllib (see PEP 680)
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11' 
       - name: Mod Description File Validation
@@ -87,7 +87,7 @@ jobs:
       - name: Dedicated Server Launching Test
         id: dedicated_server_launching
         timeout-minutes: 10
-        uses: teaconmc/dedicated-launch-test@1.21-neoforge
+        uses: teaconmc/dedicated-launch-test@26.1-neoforge
         with:
           extra: build/all-deps.json
           mod: ${{ steps.building.outputs.artifact }}

@@ -1,9 +1,9 @@
-name: 'TeaCon 2026 | 贴贴 | 鱼塘贴贴爱好者'
+name: 'TeaCon 2026 | 蜂会 | IEEM Trivium Society'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-nestle.yaml'
-      - 'mods/team-nestle/HEAD'
+      - '.github/workflows/mod-team-beecrasy.yaml'
+      - 'mods/team-beecrasy/HEAD'
   workflow_dispatch:
     inputs:
       commit:
@@ -12,7 +12,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build 贴贴'
+    name: 'Build 蜂会'
     environment: Build
     runs-on: ubuntu-latest
     env:
@@ -20,8 +20,8 @@ jobs:
       CONTEST_SEQ: '4'
       CONTEST_SLUG: 2026
       CONTEST_TITLE: 'TeaCon 2026'
-      TEAM_ID: 'nestle'
-      TEAM_SEQ: '417'
+      TEAM_ID: 'beecrasy'
+      TEAM_SEQ: '432'
     steps:
       - name: Checkout Build Environment
         uses: actions/checkout@v6
@@ -43,15 +43,15 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build 贴贴'
+      - name: 'Checkout Repository for Build 蜂会'
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-nestle/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-nestle/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
-          git reset --hard `cat ../../mods/team-nestle/HEAD`
+          git remote add origin `cat ../../mods/team-beecrasy/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-beecrasy/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
+          git reset --hard `cat ../../mods/team-beecrasy/HEAD`
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
