@@ -29,7 +29,7 @@ jobs:
         run: |
           echo ::notice::This polling is started by ${{ inputs.origin }} on behalf of ${{ github.triggering_actor }}
       - name: Checkout 
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Auth as Github App
         id: auth-as-github-app
         shell: bash
@@ -42,7 +42,7 @@ jobs:
         with:
           token: ${{ steps.auth-as-github-app.outputs.token }}
       - name: Setup Python3
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           architecture: 'x64'
