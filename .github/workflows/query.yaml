@@ -38,7 +38,7 @@ jobs:
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
         run: bash fetch/auth.sh
       - name: Re-Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           token: ${{ steps.auth-as-github-app.outputs.token }}
       - name: Setup Python3
