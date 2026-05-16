@@ -2,8 +2,8 @@
 
 # 「TeaCon 2026」 submission repositories batch clone script
 
-# Clone 交换玩偶（Swap A Doll） (modid = swapadoll) 
-git clone https://github.com/teaconmc/SwapADoll.git swapadoll
+# Clone 展示玩偶（Display Doll） (modid = swapadoll) 
+git clone https://github.com/teaconmc/DisplayDoll.git swapadoll
 
 # Clone 贴贴 (modid = nestle) 
 git clone https://github.com/KunoSayo/nestle nestle
@@ -59,6 +59,9 @@ git clone https://github.com/Kogasa-Studio/Ashihara ashihara
 # Clone 袖里舆图 (modid = aleeve_atlas) 
 git clone https://github.com/Gu-ZT/aleeve-atlas aleeve_atlas
 
+# Clone 树脂枪 (modid = resin_gun) 
+git clone https://github.com/Creative-Raft/resin_gun resin_gun
+
 # Clone 铁砧工艺：猪+ (modid = anvilcraft_pigsplus) 
 git clone https://github.com/TBPig/AnvilCraft-PigsPlus anvilcraft_pigsplus
 
@@ -97,9 +100,6 @@ git clone https://github.com/PickAID/VernalEcho vernalecho
 
 # Clone 我的肉鸽 (modid = beyond) 
 git clone https://github.com/Ver-shift/SubModulesGeneHunter beyond
-
-# Clone 他们喊着友情啊羁绊啊未来啊什么的就冲上来了 Power of Friendship (modid = power_of_friendship) 
-git clone https://github.com/MarbleGateKeeper/PowerOfFriendship power_of_friendship
 
 # Clone 圣脾 (modid = shengpi) 
 git clone https://github.com/TT432/shengpi shengpi
@@ -152,9 +152,6 @@ git clone https://github.com/Chlamydomonos/Cartridge cartridge
 # Clone Programmable Magic (modid = programmable_magic) 
 git clone https://github.com/creepebucket/programmable_magic programmable_magic
 
-# Clone 回声透镜 Echo Lens (modid = echolens) 
-git clone https://github.com/MarbleGateKeeper/VibeModding2026May echolens
-
 # Clone 我们意念合一 (modid = ourthoughtsareone) 
 git clone https://github.com/WhiseNT/OurThoughtsAreOne.git ourthoughtsareone
 
@@ -164,6 +161,81 @@ git clone https://github.com/LNatit/KORD kord
 # Clone Anesthesia (modid = anesthesia) 
 git clone https://github.com/CNDRU/Anesthesia.git anesthesia
 
+# Clone 春有约麻将 (modid = springmahjong) 
+git clone https://github.com/Tower-of-Sighs/SpringMahjong springmahjong
+
 # Clone 群青 (modid = ultramarine) 
 git clone https://github.com/LocusAzzurro/Ultramarine ultramarine
+
+# Clone 吾有一術 (modid = wenyan_programming) 
+git clone https://github.com/gyxx-xc/WenyanNature wenyan_programming
+
+# Clone 方块小镇 (modid = yuushya) 
+git clone https://gitee.com/yuushyatownscape/yuushya-townscape/ yuushya
+
+# Clone NetMusic 网络音乐机 (modid = netmusic) 
+git clone https://github.com/TartaricAcid/NetMusic netmusic
+
+# Clone Re-Connection Chat (modid = reconnectionchat) 
+git clone https://github.com/0x724a/ReConnectionChat reconnectionchat
+
+# Clone 简单路径查找器 (modid = simple_path_finder) 
+git clone https://github.com/KunoSayo/SimplePathFinder/tree/26.1.2 simple_path_finder
+
+# Clone 万物皆可绳 (modid = super_lead) 
+git clone https://github.com/zhongbai2333/Super-Lead super_lead
+
+# Clone 织影落花 (modid = shadowsandpetals) 
+git clone https://github.com/SShakusora/ShadowsAndPetals shadowsandpetals
+
+# Clone 拾穗的贸易台 (modid = trading_table) 
+git clone https://github.com/HaooooZhang/HarvistaTradingTable trading_table
+
+# Clone Shake n Stir (modid = shakenstir) 
+git clone https://github.com/hawahz/Shake-n-Stir shakenstir
+
+# Clone 超级管道速滑 SuperPipeSlide (modid = superpipeslide) 
+git clone https://github.com/MarbleGateKeeper/SuperPipeSlide superpipeslide
+
+# Clone TemplateTransformer (modid = templatetransformer) 
+git clone https://github.com/dbydd/TemplateTransformer templatetransformer
+
+# Clone 本机正常 (modid = womm) 
+git clone https://github.com/LNatit/WorksOnMyMachine womm
+
+# Clone 书信，信号，电话 (modid = letter_signal_phone) 
+git clone https://github.com/roylinglrl/letter-signal-phone letter_signal_phone
+
+# Clone 更多交互 (modid = extra_interaction) 
+git clone https://github.com/Amotassic/Extra-Interaction extra_interaction
+
+# Clone 深岩银河激光指示器 (modid = drglaserpointer) 
+git clone https://github.com/linngdu664/DRG-Laser-Pointer-Mod drglaserpointer
+
+# Clone 我的尖塔 (modid = minethespire) 
+git clone https://github.com/PajangForever/Mine-the-Spire minethespire
+
+# Clone 卫戍工艺【Garrison Craft】 (modid = garrison_craft) 
+git clone https://github.com/kanyBD1/garrison_craft garrison_craft
+
+# Clone 旧炉映花 (modid = siedeflora) 
+git clone https://github.com/Signifier-Dollhouse/Siedeflora siedeflora
+
+# Clone 多彩水晶 (modid = colorful_crystals) 
+git clone https://github.com/MercuryGryph/ColorfulCrystals colorful_crystals
+
+# Clone chatbox (modid = chatbox) 
+git clone https://github.com/zhenshiz/chatbox chatbox
+
+# Clone 更好的打雪仗3：精简版 (modid = bsf3lite) 
+git clone https://github.com/zx1316/better-snowball-fight-3-lite bsf3lite
+
+# Clone 无穷桌游 (modid = infinite_board_games) 
+git clone https://github.com/XiaoPangxie732/InfiniteBoardGames infinite_board_games
+
+# Clone 可穿戴Emoji (modid = wearingemoji) 
+git clone https://github.com/Andrewgutv/WearingEmoji/ wearingemoji
+
+# Clone 墨迹工艺 (modid = inkraft) 
+git clone https://github.com/s5lc/Inkraft.git inkraft
 
