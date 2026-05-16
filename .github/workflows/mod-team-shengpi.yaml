@@ -1,9 +1,9 @@
-name: 'TeaCon 2026 | 有借无还 | 叁玖领域'
+name: 'TeaCon 2026 | 圣脾 | 蜂鸣器'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-lendandregret.yaml'
-      - 'mods/team-lendandregret/HEAD'
+      - '.github/workflows/mod-team-shengpi.yaml'
+      - 'mods/team-shengpi/HEAD'
   workflow_dispatch:
     inputs:
       commit:
@@ -12,7 +12,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build 有借无还'
+    name: 'Build 圣脾'
     environment: Build
     runs-on: ubuntu-latest
     env:
@@ -20,8 +20,8 @@ jobs:
       CONTEST_SEQ: '4'
       CONTEST_SLUG: 2026
       CONTEST_TITLE: 'TeaCon 2026'
-      TEAM_ID: 'lendandregret'
-      TEAM_SEQ: '420'
+      TEAM_ID: 'shengpi'
+      TEAM_SEQ: '461'
     steps:
       - name: Checkout Build Environment
         uses: actions/checkout@v4
@@ -43,15 +43,15 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build 有借无还'
+      - name: 'Checkout Repository for Build 圣脾'
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-lendandregret/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-lendandregret/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
-          git reset --hard `cat ../../mods/team-lendandregret/HEAD`
+          git remote add origin `cat ../../mods/team-shengpi/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-shengpi/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
+          git reset --hard `cat ../../mods/team-shengpi/HEAD`
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
