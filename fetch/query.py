@@ -258,6 +258,6 @@ if __name__ == '__main__':
         if depends_on_pending_dep:
             disable_workflow(team['work_id'].replace('_', '-'))
             continue
-        write_team_info(team, contest_id, contest_title, contest_slug, workflow_template, team_filter and team['id'] in team_filter)
+        write_team_info(team, contest_id, contest_title, contest_slug, workflow_template, teams_filter and team['id'] in teams_filter)
     write_readme(contest_title, team_list)
     write_batch_git_clone(contest_title, team_list)
