@@ -59,7 +59,7 @@ jobs:
       - name: Validate Gradle Wrapper
         id: gradle_wrapper_check
         continue-on-error: true
-        uses: gradle/actions/wrapper-validation@v3
+        uses: gradle/actions/wrapper-validation@v6
         with:
           min-wrapper-count: 1
       - name: Artifact Building
@@ -103,7 +103,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: $${{ secrets.S3_SECRET_KEY }}
           # https://github.com/aws/aws-cli/issues/5623
           AWS_EC2_METADATA_DISABLED: 'true'
-          # 第三方实现的 S3 协议可能会与下述两个事关文件完整性校验。
+          # 第三方实现的 S3 协议可能会不兼容下述两个事关文件完整性校验的选项。
           # 在此，根据 AWS SDK 文档禁用此检查，这样我们还能接着让 AWS CLI 用在第三方 S3 实现上。
           # https://github.com/aws/aws-sdk-go-v2/discussions/2960
           # https://github.com/siyuan-note/siyuan/issues/14053
