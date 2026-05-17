@@ -4,6 +4,7 @@ on:
     paths:
       - '.github/workflows/mod-team-nestle.yaml'
       - 'mods/team-nestle/HEAD'
+      - 'mods/team-nestle/sentinel'
   workflow_dispatch:
     inputs:
       commit:
