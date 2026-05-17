@@ -1,10 +1,10 @@
-name: 'TeaCon 2026 | Channel | 真是炕炕又踢踢啊'
+name: 'TeaCon 2026 | 本机正常 | 核马先生'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-channel.yaml'
-      - 'mods/team-channel/HEAD'
-      - 'mods/team-channel/sentinel'
+      - '.github/workflows/mod-team-womm.yaml'
+      - 'mods/team-womm/HEAD'
+      - 'mods/team-womm/sentinel'
   workflow_dispatch:
     inputs:
       commit:
@@ -13,7 +13,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build Channel'
+    name: 'Build 本机正常'
     environment: Build
     runs-on: ubuntu-latest
     env:
@@ -21,8 +21,8 @@ jobs:
       CONTEST_SEQ: '4'
       CONTEST_SLUG: 2026
       CONTEST_TITLE: 'TeaCon 2026'
-      TEAM_ID: 'channel'
-      TEAM_SEQ: '429'
+      TEAM_ID: 'womm'
+      TEAM_SEQ: '503'
     steps:
       - name: Checkout Build Environment
         uses: actions/checkout@v6
@@ -44,15 +44,15 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build Channel'
+      - name: 'Checkout Repository for Build 本机正常'
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-channel/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-channel/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
-          git reset --hard `cat ../../mods/team-channel/HEAD`
+          git remote add origin `cat ../../mods/team-womm/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-womm/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
+          git reset --hard `cat ../../mods/team-womm/HEAD`
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
