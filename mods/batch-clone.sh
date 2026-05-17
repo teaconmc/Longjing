@@ -8,6 +8,9 @@ git clone https://github.com/teaconmc/DisplayDoll.git swapadoll
 # Clone 贴贴 (modid = nestle) 
 git clone https://github.com/KunoSayo/nestle nestle
 
+# Clone 工业基石 (modid = industrybase) 
+git clone https://github.com/BinZhengStudio/IndustryBase industrybase
+
 # Clone AAA Particles: World (modid = aaa_particles_world) 
 git clone https://github.com/ChloePrime/AAA-Particles-World aaa_particles_world
 
@@ -173,6 +176,9 @@ git clone https://github.com/TartaricAcid/NetMusic netmusic
 # Clone Re-Connection Chat (modid = reconnectionchat) 
 git clone https://github.com/0x724a/ReConnectionChat reconnectionchat
 
+# Clone 简单路径查找器 (modid = simple_path_finder) 
+git clone https://github.com/KunoSayo/simplepathfinder simple_path_finder
+
 # Clone 万物皆可绳 (modid = super_lead) 
 git clone https://github.com/zhongbai2333/Super-Lead super_lead
 
@@ -223,4 +229,13 @@ git clone https://github.com/XiaoPangxie732/InfiniteBoardGames infinite_board_ga
 
 # Clone 墨迹工艺 (modid = inkraft) 
 git clone https://github.com/s5lc/Inkraft.git inkraft
+
+# Clone 时间胶囊（Time Capsule） (modid = time_capsule) 
+git clone https://github.com/mrqx0195/Time-Capsule time_capsule
+
+# Clone 叁玖库 (modid = lib39) 
+git clone https://gitea.bot.leisuretimedock.top/R3944Realms/lib39 lib39
+
+# Clone 森罗物语：酒馆 (modid = kaleidoscope_tavern) 
+git clone https://github.com/KaleidoscopeMods/KaleidoscopeTavern.git kaleidoscope_tavern
 
