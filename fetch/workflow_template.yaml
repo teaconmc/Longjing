@@ -4,6 +4,7 @@ on:
     paths:
       - '$workflow_file'
       - '$info_dir/HEAD'
+      - '$info_dir/sentinel'
   workflow_dispatch:
     inputs:
       commit:

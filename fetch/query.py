@@ -5,6 +5,7 @@ import os
 import os.path
 import subprocess
 import sys
+import uuid
 
 from string import Template
 from urllib.error import HTTPError
@@ -158,6 +159,12 @@ def write_team_info(team: Team, contest_seq: int, contest_name: str, contest_slu
     # This is always done in case that a team updates their remote repo address.
     with open(f"{info_dir}/remote", 'w') as f:
         f.write(team['repo'])
+
+    # If force_update is set, write a random UUID to the sentinel file to trigger a new update.
+    if force_update:
+        with open(f"{info_dir}/sentinel", 'w') as f:
+            f.write(uuid.uuid4())
+    
     # We use `git ls-remote $repo_url HEAD` to get the latest commit and use it to 
     # determine if we should trigger a build.
     # The sole criterion is "current HEAD commit hash is different from our recorded one".
