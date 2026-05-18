@@ -233,6 +233,9 @@ git clone https://github.com/zx1316/better-snowball-fight-3-lite bsf3lite
 # Clone 无穷桌游 (modid = infinite_board_games) 
 git clone https://github.com/XiaoPangxie732/InfiniteBoardGames infinite_board_games
 
+# Clone 可穿戴Emoji (modid = wearingemoji) 
+git clone https://github.com/Andrewgutv/WearingEmoji/ wearingemoji
+
 # Clone 墨迹工艺 (modid = inkraft) 
 git clone https://github.com/s5lc/Inkraft.git inkraft
 
@@ -247,4 +250,10 @@ git clone https://gitea.bot.leisuretimedock.top/R3944Realms/lib39 lib39
 
 # Clone 森罗物语：酒馆 (modid = kaleidoscope_tavern) 
 git clone https://github.com/KaleidoscopeMods/KaleidoscopeTavern.git kaleidoscope_tavern
+
+# Clone Bakeries (modid = bakeries) 
+git clone https://github.com/Renyigesai/Bakeries-26.1.2 bakeries
+
+# Clone 联界门 (modid = link_portals) 
+git clone https://github.com/haohao-0407/Link-Portals link_portals
 
