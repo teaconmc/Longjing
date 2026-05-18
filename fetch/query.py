@@ -13,10 +13,11 @@ from urllib.request import Request, urlopen
 from typing import List, Optional, TypedDict, Literal, Tuple
 
 # Print the fetch error message
-def fetch_error():
-    print('Error occured while fetching the contest or participting team/mod list')
+def fetch_error(msg: str):
     if os.getenv('GITHUB_ACTIONS', False):
-        print('::error::Error occured while fetching participting team/mod list, check log for details')
+        print(f'::error::{msg} Check log for details')
+    else:
+        print(msg)
     print(sys.exc_info())
     exit(-1)
 
@@ -28,7 +29,7 @@ def get_contest_id() -> Tuple[int, str, str]:
             contest = json.load(body)
             return contest['id'], contest['teekie_domain'], contest['title']    
     except:
-        fetch_error()
+        fetch_error("Error occurred while fetching current event information.")
 
 class Team(TypedDict):
     id: int; name: str
@@ -52,7 +53,7 @@ def get_teams(contest_id: int) -> List[Team]:
             print('Successfully fetched team/mod list')
             return team_list
     except:
-        fetch_error()
+        fetch_error('Error occured while fetching participting team list.')
 
 def get_team_dependencies(contest_slug: str, team_id: int):
     try:
@@ -62,7 +63,7 @@ def get_team_dependencies(contest_slug: str, team_id: int):
             deps = json.load(f)
             return deps
     except:
-        fetch_error()
+        fetch_error(f'Error occured while fetching dependencies of team#{team_id} (event "{contest_slug}").')
 
 # Load GitHub Action Workflow template
 # As we only perform simple string subtitution, we uses the built-in string.Template
