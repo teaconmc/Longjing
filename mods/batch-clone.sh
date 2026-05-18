@@ -77,6 +77,9 @@ git clone https://github.com/theabab23333/HarvestHeritage harvestheritage
 # Clone NeoMystiasIzakaya (modid = neo_mystias_izakaya) 
 git clone https://github.com/Crystal1921/NeoMystiasIzakaya neo_mystias_izakaya
 
+# Clone Mekanism:More Machine (modid = mekmm) 
+git clone https://github.com/lostmyself8/Mekanism-MoreMachine mekmm
+
 # Clone 八角 (modid = anisum) 
 git clone https://github.com/Anvil-Dev/Anisum anisum
 
@@ -218,6 +221,9 @@ git clone https://github.com/kanyBD1/garrison_craft garrison_craft
 # Clone 旧炉映花 (modid = siedeflora) 
 git clone https://github.com/Signifier-Dollhouse/Siedeflora siedeflora
 
+# Clone 多彩水晶 (modid = colorful_crystals) 
+git clone https://github.com/MercuryGryph/ColorfulCrystals colorful_crystals
+
 # Clone chatbox (modid = chatbox) 
 git clone https://github.com/zhenshiz/chatbox chatbox
 
@@ -229,6 +235,9 @@ git clone https://github.com/XiaoPangxie732/InfiniteBoardGames infinite_board_ga
 
 # Clone 墨迹工艺 (modid = inkraft) 
 git clone https://github.com/s5lc/Inkraft.git inkraft
+
+# Clone MDT-Companion (modid = mdt_companion) 
+git clone https://github.com/XiaoHuNao/MDT-Companion mdt_companion
 
 # Clone 时间胶囊（Time Capsule） (modid = time_capsule) 
 git clone https://github.com/mrqx0195/Time-Capsule time_capsule
