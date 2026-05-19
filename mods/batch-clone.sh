@@ -257,3 +257,6 @@ git clone https://github.com/Renyigesai/Bakeries-26.1.2 bakeries
 # Clone 联界门 (modid = link_portals) 
 git clone https://github.com/haohao-0407/Link-Portals link_portals
 
+# Clone 吉星工艺（Astral Craft） (modid = astral_craft) 
+git clone https://github.com/Glyceryl6/AstralCraft-26.1.2 astral_craft
+
