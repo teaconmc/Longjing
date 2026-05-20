@@ -13,13 +13,14 @@ from urllib.request import Request, urlopen
 from typing import List, Optional, TypedDict, Literal, Tuple
 
 # Print the fetch error message
-def fetch_error(msg: str):
+def fetch_error(msg: str, force_exit: bool = True):
     if os.getenv('GITHUB_ACTIONS', False):
         print(f'::error::{msg} Check log for details')
     else:
         print(msg)
     print(sys.exc_info())
-    exit(-1)
+    if force_exit:
+        exit(-1)
 
 # Get the contest id
 def get_contest_id() -> Tuple[int, str, str]:
@@ -61,9 +62,10 @@ def get_team_dependencies(contest_slug: str, team_id: int):
             headers = { 'Authorization': f'Bearer {os.environ["BILUOCHUN_TOKEN"]}' })
         with urlopen(req, timeout = 15) as f:
             deps = json.load(f)
-            return deps
+            return deps, True
     except:
-        fetch_error(f'Error occured while fetching dependencies of team#{team_id} (event "{contest_slug}").')
+        fetch_error(f'Error occured while fetching dependencies of team#{team_id} (event "{contest_slug}").', force_exit = False)
+        return [], False
 
 # Load GitHub Action Workflow template
 # As we only perform simple string subtitution, we uses the built-in string.Template
@@ -257,7 +259,12 @@ if __name__ == '__main__':
             print("Skipping " + team['work_id'] + " as it is not marked ready")
             disable_workflow(team['work_id'].replace('_', '-'))
             continue
-        deps = get_team_dependencies(contest_slug, team['id'])
+        deps, dep_ok = get_team_dependencies(contest_slug, team['id'])
+        # TeaCon 2026：可能是因为 CDN 问题，GitHub Action Runner 访问碧螺春超时的频率有点高。
+        # 为避免一个炸全部炸，这里暂时先跳过无法获取前置信息的作品。
+        if not dep_ok:
+            print(f"Skipping {team['work_id']} because there was an error while fetching its dependency")
+            continue
         depends_on_pending_dep = False
         for dep in deps:
             if dep['review_status'] != 1:
