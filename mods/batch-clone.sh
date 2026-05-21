@@ -260,3 +260,9 @@ git clone https://github.com/Glyceryl6/AstralCraft-26.1.2 astral_craft
 # Clone 相对工艺 (modid = relativity_craft) 
 git clone https://github.com/Polari-Stars-MC/Relativity-Craft relativity_craft
 
+# Clone 节气 (modid = eclipticseasons) 
+git clone https://github.com/TeamTeaMC/Ecliptic-Seasons eclipticseasons
+
+# Clone 更好的单方块 (modid = oneblock) 
+git clone https://github.com/TeamTeaMC-Misc/One-Block oneblock
+
