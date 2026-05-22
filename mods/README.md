@@ -90,3 +90,4 @@
 |相对工艺<br /><br />队伍名：北极星工作室<br />作品 ID：`relativity_craft`（模组 ID），`529`（数字 ID）<br />项目仓库：[https://github.com/Polari-Stars-MC/Relativity-Craft](https://github.com/Polari-Stars-MC/Relativity-Craft)|牛顿的棺材板成功的压住了。<br />在相对工艺中引入了物理学，空气动力学，流体力学，遇事不决学。||
 |节气<br /><br />队伍名：节气开发组<br />作品 ID：`eclipticseasons`（模组 ID），`531`（数字 ID）<br />项目仓库：[https://github.com/TeamTeaMC/Ecliptic-Seasons](https://github.com/TeamTeaMC/Ecliptic-Seasons)|季节模组节气，TeaCon甲辰参赛模组。||
 |更好的单方块<br /><br />队伍名：更好的单方块开发组<br />作品 ID：`oneblock`（模组 ID），`532`（数字 ID）<br />项目仓库：[https://github.com/TeamTeaMC-Misc/One-Block](https://github.com/TeamTeaMC-Misc/One-Block)|一个单方块空岛生存模组，在TeaCon甲辰参展过。||
+|车万女仆<br /><br />队伍名：车万女仆制作委员会<br />作品 ID：`touhou_little_maid`（模组 ID），`533`（数字 ID）<br />项目仓库：[https://github.com/TouhouLittleMaid/TouhouLittleMaid-26.1.git](https://github.com/TouhouLittleMaid/TouhouLittleMaid-26.1.git)|为游戏添加了可爱而又全能的酒狐女仆，让你的游戏增加更多缤纷色彩！||

@@ -266,3 +266,6 @@ git clone https://github.com/TeamTeaMC/Ecliptic-Seasons eclipticseasons
 # Clone 更好的单方块 (modid = oneblock) 
 git clone https://github.com/TeamTeaMC-Misc/One-Block oneblock
 
+# Clone 车万女仆 (modid = touhou_little_maid) 
+git clone https://github.com/TouhouLittleMaid/TouhouLittleMaid-26.1.git touhou_little_maid
+
