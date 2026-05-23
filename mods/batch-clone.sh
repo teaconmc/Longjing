@@ -272,3 +272,9 @@ git clone https://github.com/TouhouLittleMaid/TouhouLittleMaid-26.1.git touhou_l
 # Clone 超级管道速滑 SuperPipeSlide (modid = superpipeslide) 
 git clone https://github.com/MarbleGateKeeper/SuperPipeSlide superpipeslide
 
+# Clone A Better Foods (modid = a_better_foods) 
+git clone https://github.com/xiaomian124/A-Better-Foods a_better_foods
+
+# Clone 铁砧工艺：额外电力 | Anvilcraft-ExtraPower (modid = anvilcraftextrapower) 
+git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower anvilcraftextrapower
+
