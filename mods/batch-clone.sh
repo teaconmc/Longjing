@@ -269,3 +269,6 @@ git clone https://github.com/TeamTeaMC-Misc/One-Block oneblock
 # Clone 车万女仆 (modid = touhou_little_maid) 
 git clone https://github.com/TouhouLittleMaid/TouhouLittleMaid-26.1.git touhou_little_maid
 
+# Clone 超级管道速滑 SuperPipeSlide (modid = superpipeslide) 
+git clone https://github.com/MarbleGateKeeper/SuperPipeSlide superpipeslide
+
