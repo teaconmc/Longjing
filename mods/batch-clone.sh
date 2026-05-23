@@ -149,6 +149,9 @@ git clone https://github.com/FantasyIT-Projects/ether-craft-neo/settings ether_c
 # Clone 来自深渊：弹药包 (modid = cartridge) 
 git clone https://github.com/Chlamydomonos/Cartridge cartridge
 
+# Clone Programmable Magic (modid = programmable_magic) 
+git clone https://github.com/creepebucket/programmable_magic programmable_magic
+
 # Clone 我们意念合一 (modid = ourthoughtsareone) 
 git clone https://github.com/WhiseNT/OurThoughtsAreOne.git ourthoughtsareone
 
