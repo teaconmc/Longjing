@@ -194,9 +194,6 @@ git clone https://github.com/HaooooZhang/HarvistaTradingTable trading_table
 # Clone Shake n Stir (modid = shakenstir) 
 git clone https://github.com/hawahz/Shake-n-Stir shakenstir
 
-# Clone 超级管道速滑 SuperPipeSlide (modid = superpipeslide) 
-git clone https://github.com/MarbleGateKeeper/SuperPipeSlide superpipeslide
-
 # Clone TemplateTransformer (modid = templatetransformer) 
 git clone https://github.com/dbydd/TemplateTransformer templatetransformer
 
