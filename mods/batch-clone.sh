@@ -182,9 +182,6 @@ git clone https://github.com/KunoSayo/simplepathfinder simple_path_finder
 # Clone 万物皆可绳 (modid = super_lead) 
 git clone https://github.com/zhongbai2333/Super-Lead super_lead
 
-# Clone 织影落花 (modid = shadowsandpetals) 
-git clone https://github.com/SShakusora/ShadowsAndPetals shadowsandpetals
-
 # Clone 拾穗的贸易台 (modid = trading_table) 
 git clone https://github.com/HaooooZhang/HarvistaTradingTable trading_table
 
