@@ -2,8 +2,8 @@
 
 # 「TeaCon 2026」 submission repositories batch clone script
 
-# Clone 展示玩偶（Display Doll） (modid = swapadoll) 
-git clone https://github.com/teaconmc/DisplayDoll.git swapadoll
+# Clone 展示玩偶（Display Doll） (modid = displaydoll) 
+git clone https://github.com/teaconmc/DisplayDoll.git displaydoll
 
 # Clone 贴贴 (modid = nestle) 
 git clone https://github.com/KunoSayo/nestle nestle
