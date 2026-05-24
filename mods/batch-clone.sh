@@ -29,9 +29,6 @@ git clone https://gitea.bot.leisuretimedock.top/R3944Realms/SuperLeadRope superl
 # Clone ConduitStratus (modid = conduit_stratus) 
 git clone https://github.com/vfyjxf/ConduitStratus conduit_stratus
 
-# Clone 铁砧工艺 (modid = anvilcraft) 
-git clone https://github.com/Anvil-Dev/AnvilCraft anvilcraft
-
 # Clone x3d map (modid = x3d_map) 
 git clone https://github.com/xkball/x3dmap x3d_map
 
