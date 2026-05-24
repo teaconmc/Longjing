@@ -29,6 +29,9 @@ git clone https://gitea.bot.leisuretimedock.top/R3944Realms/SuperLeadRope superl
 # Clone ConduitStratus (modid = conduit_stratus) 
 git clone https://github.com/vfyjxf/ConduitStratus conduit_stratus
 
+# Clone 铁砧工艺 (modid = anvilcraft) 
+git clone https://github.com/Anvil-Dev/AnvilCraft anvilcraft
+
 # Clone x3d map (modid = x3d_map) 
 git clone https://github.com/xkball/x3dmap x3d_map
 
@@ -161,6 +164,9 @@ git clone https://github.com/Tower-of-Sighs/SpringMahjong springmahjong
 # Clone 群青 (modid = ultramarine) 
 git clone https://github.com/LocusAzzurro/Ultramarine ultramarine
 
+# Clone 吾有一術 (modid = wenyan_programming) 
+git clone https://github.com/gyxx-xc/WenyanNature wenyan_programming
+
 # Clone 方块小镇 (modid = yuushya) 
 git clone https://gitee.com/yuushyatownscape/yuushya-townscape/ yuushya
 
@@ -175,6 +181,9 @@ git clone https://github.com/KunoSayo/simplepathfinder simple_path_finder
 
 # Clone 万物皆可绳 (modid = super_lead) 
 git clone https://github.com/zhongbai2333/Super-Lead super_lead
+
+# Clone 织影落花 (modid = shadowsandpetals) 
+git clone https://github.com/SShakusora/ShadowsAndPetals shadowsandpetals
 
 # Clone 拾穗的贸易台 (modid = trading_table) 
 git clone https://github.com/HaooooZhang/HarvistaTradingTable trading_table
