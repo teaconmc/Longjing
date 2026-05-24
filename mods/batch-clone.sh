@@ -278,3 +278,6 @@ git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower anvilcraftextrapowe
 # Clone 传送电话 (modid = wayphones) 
 git clone https://github.com/zbx1425/wayphones wayphones
 
+# Clone 摇曳花园 (modid = swaying_garden) 
+git clone https://github.com/TeamTeaMC-Misc/SwayingGarden swaying_garden
+
