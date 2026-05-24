@@ -98,9 +98,6 @@ git clone https://github.com/wiyuka0/mmod mmod
 # Clone 春日影 (modid = vernalecho) 
 git clone https://github.com/PickAID/VernalEcho vernalecho
 
-# Clone 我的肉鸽 (modid = beyond) 
-git clone https://github.com/Ver-shift/SubModulesGeneHunter beyond
-
 # Clone 圣脾 (modid = shengpi) 
 git clone https://github.com/TT432/shengpi shengpi
 
@@ -277,4 +274,7 @@ git clone https://github.com/xiaomian124/A-Better-Foods a_better_foods
 
 # Clone 铁砧工艺：额外电力 | Anvilcraft-ExtraPower (modid = anvilcraftextrapower) 
 git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower anvilcraftextrapower
+
+# Clone 传送电话 (modid = wayphones) 
+git clone https://github.com/zbx1425/wayphones wayphones
 
