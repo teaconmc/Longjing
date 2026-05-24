@@ -248,6 +248,9 @@ git clone https://github.com/KaleidoscopeMods/KaleidoscopeTavern.git kaleidoscop
 # Clone Bakeries (modid = bakeries) 
 git clone https://github.com/Renyigesai/Bakeries-26.1.2 bakeries
 
+# Clone Phone Generator (modid = phone_generator) 
+git clone https://gitee.com/zxypp/phone_generator_mod phone_generator
+
 # Clone 联界门 (modid = link_portals) 
 git clone https://github.com/haohao-0407/Link-Portals link_portals
 
@@ -280,4 +283,7 @@ git clone https://github.com/zbx1425/wayphones wayphones
 
 # Clone 摇曳花园 (modid = swaying_garden) 
 git clone https://github.com/TeamTeaMC-Misc/SwayingGarden swaying_garden
+
+# Clone CampFireRevolution (modid = campfirerevolution) 
+git clone https://github.com/Mine-JUFE/CampFireRevolution campfirerevolution
 
