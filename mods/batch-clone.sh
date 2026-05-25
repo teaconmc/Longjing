@@ -20,9 +20,6 @@ git clone https://gitea.bot.leisuretimedock.top/R3944Realms/LendAndRegret lendan
 # Clone 家具计划 (modid = furnitureplan) 
 git clone https://github.com/MakerTechno/Forge-FurniturePlan/ furnitureplan
 
-# Clone ThatSkyInteractions (modid = thatskyinteractions) 
-git clone https://github.com/LouisQuepierts/ThatSkyInteractions thatskyinteractions
-
 # Clone 超级拴绳 (modid = superlead) 
 git clone https://gitea.bot.leisuretimedock.top/R3944Realms/SuperLeadRope superlead
 
