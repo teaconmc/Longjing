@@ -98,6 +98,9 @@ git clone https://github.com/wiyuka0/mmod mmod
 # Clone 春日影 (modid = vernalecho) 
 git clone https://github.com/PickAID/VernalEcho vernalecho
 
+# Clone 我的肉鸽 (modid = beyond) 
+git clone https://github.com/Ver-shift/SubModulesGeneHunter beyond
+
 # Clone 圣脾 (modid = shengpi) 
 git clone https://github.com/TT432/shengpi shengpi
 
@@ -233,6 +236,9 @@ git clone https://github.com/Andrewgutv/WearingEmoji/ wearingemoji
 # Clone 墨迹工艺 (modid = inkraft) 
 git clone https://github.com/s5lc/Inkraft.git inkraft
 
+# Clone 海瑞的连锁挖矿 (modid = dh_s_veinminer) 
+git clone https://github.com/Harry-hq/dh_s_veinminer dh_s_veinminer
+
 # Clone MDT-Companion (modid = mdt_companion) 
 git clone https://github.com/XiaoHuNao/MDT-Companion mdt_companion
 
@@ -295,4 +301,16 @@ git clone https://github.com/DynamicTreesTeam/DynamicTrees dynamictrees
 
 # Clone Grack (modid = grack) 
 git clone https://github.com/XiaoPangxie732/Grack grack
+
+# Clone NetherLink (modid = netherlink) 
+git clone https://github.com/MUYUTwilighter/NetherLink netherlink
+
+# Clone 兰法斯：本德森 (modid = lanfasie_benderson) 
+git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
+
+# Clone 动量 (modid = momentum) 
+git clone https://github.com/AkiraHane/Momentum momentum
+
+# Clone 混沌炼金 (modid = transmutatoria) 
+git clone https://github.com/linngdu664/transmutatoria transmutatoria
 
