@@ -293,3 +293,6 @@ git clone https://github.com/QiuShui1012/AnvilCraft-VoidInAir/ voidinair
 # Clone 动态的树 (modid = dynamictrees) 
 git clone https://github.com/DynamicTreesTeam/DynamicTrees dynamictrees
 
+# Clone Grack (modid = grack) 
+git clone https://github.com/XiaoPangxie732/Grack grack
+
