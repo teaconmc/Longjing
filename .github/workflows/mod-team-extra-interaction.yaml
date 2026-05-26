@@ -1,10 +1,10 @@
-name: 'TeaCon 2026 | 多彩水晶 | 好漂亮的水晶啊'
+name: 'TeaCon 2026 | 更多交互 | 噶了给墓高寿'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-colorful-crystals.yaml'
-      - 'mods/team-colorful-crystals/HEAD'
-      - 'mods/team-colorful-crystals/sentinel'
+      - '.github/workflows/mod-team-extra-interaction.yaml'
+      - 'mods/team-extra-interaction/HEAD'
+      - 'mods/team-extra-interaction/sentinel'
   workflow_dispatch:
     inputs:
       commit:
@@ -13,7 +13,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build 多彩水晶'
+    name: 'Build 更多交互'
     environment: Build
     runs-on: ubuntu-latest
     env:
@@ -21,8 +21,8 @@ jobs:
       CONTEST_SEQ: '4'
       CONTEST_SLUG: 2026
       CONTEST_TITLE: 'TeaCon 2026'
-      TEAM_ID: 'colorful-crystals'
-      TEAM_SEQ: '511'
+      TEAM_ID: 'extra-interaction'
+      TEAM_SEQ: '505'
     steps:
       - name: Checkout Build Environment
         uses: actions/checkout@v6
@@ -45,15 +45,15 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build 多彩水晶'
+      - name: 'Checkout Repository for Build 更多交互'
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-colorful-crystals/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-colorful-crystals/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
-          git reset --hard `cat ../../mods/team-colorful-crystals/HEAD`
+          git remote add origin `cat ../../mods/team-extra-interaction/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-extra-interaction/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
+          git reset --hard `cat ../../mods/team-extra-interaction/HEAD`
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }

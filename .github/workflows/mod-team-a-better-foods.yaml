@@ -1,4 +1,4 @@
-name: 'TeaCon 2026 | A Better Foods | CatPixel Craft'
+name: 'TeaCon 2026 | 更多的食物 | CatPixel Craft'
 on:
   push:
     paths:
@@ -13,7 +13,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build A Better Foods'
+    name: 'Build 更多的食物'
     environment: Build
     runs-on: ubuntu-latest
     env:
@@ -32,19 +32,20 @@ jobs:
         with:
           distribution: 'microsoft'
           java-version: '25'
-      - name: Apply Cache
-        uses: actions/cache@v5
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys:
-            ${{ runner.os }}-gradle-
+      # 因未知原因，构建缓存可能会干扰 Mod 构建，故临时禁用缓存，待问题查清后再考虑恢复。
+      #- name: Apply Cache
+      #  uses: actions/cache@v5
+      #  with:
+      #    path: |
+      #      ~/.gradle/caches
+      #      ~/.gradle/wrapper
+      #    key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+      #    restore-keys:
+      #      ${{ runner.os }}-gradle-
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build A Better Foods'
+      - name: 'Checkout Repository for Build 更多的食物'
         shell: bash
         run: |
           mkdir -p build/repo

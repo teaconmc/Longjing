@@ -1,10 +1,10 @@
-name: 'TeaCon 2026 | 多彩水晶 | 好漂亮的水晶啊'
+name: 'TeaCon 2026 | ThatSkyInteractions | ThatSkyMC'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-colorful-crystals.yaml'
-      - 'mods/team-colorful-crystals/HEAD'
-      - 'mods/team-colorful-crystals/sentinel'
+      - '.github/workflows/mod-team-thatskyinteractions.yaml'
+      - 'mods/team-thatskyinteractions/HEAD'
+      - 'mods/team-thatskyinteractions/sentinel'
   workflow_dispatch:
     inputs:
       commit:
@@ -13,7 +13,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build 多彩水晶'
+    name: 'Build ThatSkyInteractions'
     environment: Build
     runs-on: ubuntu-latest
     env:
@@ -21,8 +21,8 @@ jobs:
       CONTEST_SEQ: '4'
       CONTEST_SLUG: 2026
       CONTEST_TITLE: 'TeaCon 2026'
-      TEAM_ID: 'colorful-crystals'
-      TEAM_SEQ: '511'
+      TEAM_ID: 'thatskyinteractions'
+      TEAM_SEQ: '422'
     steps:
       - name: Checkout Build Environment
         uses: actions/checkout@v6
@@ -45,15 +45,15 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build 多彩水晶'
+      - name: 'Checkout Repository for Build ThatSkyInteractions'
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-colorful-crystals/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-colorful-crystals/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
-          git reset --hard `cat ../../mods/team-colorful-crystals/HEAD`
+          git remote add origin `cat ../../mods/team-thatskyinteractions/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-thatskyinteractions/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
+          git reset --hard `cat ../../mods/team-thatskyinteractions/HEAD`
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
