@@ -20,6 +20,9 @@ git clone https://gitea.bot.leisuretimedock.top/R3944Realms/LendAndRegret lendan
 # Clone 家具计划 (modid = furnitureplan) 
 git clone https://github.com/MakerTechno/Forge-FurniturePlan/ furnitureplan
 
+# Clone ThatSkyInteractions (modid = thatskyinteractions) 
+git clone https://github.com/LouisQuepierts/ThatSkyInteractions thatskyinteractions
+
 # Clone 超级拴绳 (modid = superlead) 
 git clone https://gitea.bot.leisuretimedock.top/R3944Realms/SuperLeadRope superlead
 
@@ -268,6 +271,9 @@ git clone https://github.com/TouhouLittleMaid/TouhouLittleMaid-26.1.git touhou_l
 
 # Clone 超级管道速滑 SuperPipeSlide (modid = superpipeslide) 
 git clone https://github.com/MarbleGateKeeper/SuperPipeSlide superpipeslide
+
+# Clone 更多的食物 (modid = a_better_foods) 
+git clone https://github.com/xiaomian124/A-Better-Foods a_better_foods
 
 # Clone 铁砧工艺：额外电力 | Anvilcraft-ExtraPower (modid = anvilcraftextrapower) 
 git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower anvilcraftextrapower
