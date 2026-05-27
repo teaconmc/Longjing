@@ -311,6 +311,9 @@ git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
 # Clone 动量 (modid = momentum) 
 git clone https://github.com/AkiraHane/Momentum momentum
 
+# Clone 网络音乐机：听听B站 (modid = net_music_can_play_bili) 
+git clone https://github.com/zhongbai2333/NetMusicCanPlayBili net_music_can_play_bili
+
 # Clone 混沌炼金 (modid = transmutatoria) 
 git clone https://github.com/linngdu664/transmutatoria transmutatoria
 
