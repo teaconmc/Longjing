@@ -21,6 +21,9 @@ curl -so 'raw-deps.json' -H "Authorization: Bearer $BILUOCHUN_TOKEN" "$BILUOCHUN
 # If so, the build cannot continue and we have to stop early. 
 jq -r '[ .[] | select(.review_status != 1) ] | length | if . != 0 then halt_error(1) else "All dependencies are approved" end' raw-deps.json || die '发现仍在审核或已拒绝的前置库，构建无法继续'
 
+# Check if any dependencies aren't ready
+jq -r '[ .[] | select(.ready != true) ] | length | if . != 0 then halt_error(1) else "All dependencies are readt" end' raw-deps.json || die '发现未就绪的前置库，构建无法继续'
+
 jq -M '[ .[] | select(.type != 1) | { name: .filename, file: .download_url } ]' raw-deps.json > main-deps.json
 
 # If requested (see build.sh, line 38), fetch the list of all submitted works from Biluochun, 
