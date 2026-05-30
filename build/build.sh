@@ -47,15 +47,25 @@ else
     GRADLE_EXEC=gradle
 fi
 
-# Here used to be --max-workers=1 to workaround an recurring issue regarding reobf failure.
-# However, according to https://github.com/MinecraftForge/ForgeGradle/pull/755, the issue should have been fixed. 
-# If we observe anything similar to theMinecraftForge/ForgeGradle#697 again, add it back.
-#
 # We add empty socks.proxyHost, http.proxyHost and https.proxyHost system properties, so that any pre-existing 
 # proxy configurations are void in CI environment. We do not need any proxy on GitHub Action.
 #
 # We add USERNAME and TOKEN environmental variables for those who use GitHub Package Registry.
 # For more information, see the below doc page on GitHub docs:
 # https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry
+
+if [ -f ../../$INFO_DIR/maven_coordinate ]; then
+  USERNAME=$GITHUB_USERNAME TOKEN=$GITHUB_TOKEN $GRADLE_EXEC -Dsocks.proxyHost= -Dhttp.proxyHost= -Dhttps.proxyHost= --stacktrace publishToMavenLocal
+  OLD_IFS=$IFS
+  IFS=:
+  read -r GROUP ARTIFACT VERSION <<< ../../$INFO_DIR/maven_coordinate
+  IFS=$OLD_IFS
+  TARGET_FILE=$HOME/.m2/repository/${group//./\/}/$artifact/$version/$artifact-$version.jar
+  [ -f $TARGET_FILE ] || die "无法根据输入的 Maven Coordinate $(cat ../../$INFO_DIR/maven_coordinate) 定位到指定文件"
+  echo "ARTIFACT_NAME=$artifact-$version.jar" >> $GITHUB_ENV
+  echo "ARTIFACT_LOCAL_PATH=$TARGET_FILE" >> $GITHUB_ENV
+  echo "artifact=$TARGET_FILE" >> $GITHUB_OUTPUT
+else
 TEACON_ARTIFACT_TASK=$OUTPUT_JAR_TASK USERNAME=$GITHUB_USERNAME TOKEN=$GITHUB_TOKEN \
   $GRADLE_EXEC -Dsocks.proxyHost= -Dhttp.proxyHost= -Dhttps.proxyHost= --stacktrace -I ../setup.gradle "${BUILD_COMMAND[@]}" teaconLongjingProcessing
+fi
