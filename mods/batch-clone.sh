@@ -119,9 +119,6 @@ git clone https://github.com/ZhuRuoLing/NekoPlus nekoplus
 # Clone NeoMTR 纸板箱特色我的世界铁路 (modid = mtr) 
 git clone https://github.com/zbx1425/NeoMTR mtr
 
-# Clone 随处随笔 WorldComment (modid = worldcomment) 
-git clone https://github.com/zbx1425/world-comment worldcomment
-
 # Clone Mino++ (modid = minopp) 
 git clone https://github.com/zbx1425/minopp minopp
 
