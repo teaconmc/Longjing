@@ -8,9 +8,6 @@ git clone https://github.com/teaconmc/DisplayDoll.git displaydoll
 # Clone 贴贴 (modid = nestle) 
 git clone https://github.com/KunoSayo/nestle nestle
 
-# Clone 工业基石 (modid = industrybase) 
-git clone https://github.com/BinZhengStudio/IndustryBase industrybase
-
 # Clone AAA Particles: World (modid = aaa_particles_world) 
 git clone https://github.com/ChloePrime/AAA-Particles-World aaa_particles_world
 
