@@ -71,6 +71,9 @@ git clone https://github.com/luoxueyasha/AdvancedClover advanced_clover
 # Clone V我50 (modid = vw50) 
 git clone https://github.com/Glyceryl6/vw50-26.1.2 vw50
 
+# Clone 收获：遗产 (modid = harvestheritage) 
+git clone https://github.com/theabab23333/HarvestHeritage harvestheritage
+
 # Clone NeoMystiasIzakaya (modid = neo_mystias_izakaya) 
 git clone https://github.com/Crystal1921/NeoMystiasIzakaya neo_mystias_izakaya
 
@@ -139,6 +142,9 @@ git clone https://github.com/LocusAzzurro/IcarusWings locusazzurro_icaruswings
 
 # Clone 藿香 (modid = ageratum) 
 git clone https://github.com/Anvil-Dev/Ageratum ageratum
+
+# Clone 以太工艺 (modid = ether_craft) 
+git clone https://github.com/FantasyIT-Projects/ether-craft-neo ether_craft
 
 # Clone 来自深渊：弹药包 (modid = cartridge) 
 git clone https://github.com/Chlamydomonos/Cartridge cartridge
@@ -302,15 +308,24 @@ git clone https://github.com/MUYUTwilighter/NetherLink netherlink
 # Clone 兰法斯：本德森 (modid = lanfasie_benderson) 
 git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
 
+# Clone 动量 (modid = momentum) 
+git clone https://github.com/AkiraHane/Momentum momentum
+
 # Clone 网络音乐机：听听B站 (modid = net_music_can_play_bili) 
 git clone https://github.com/zhongbai2333/NetMusicCanPlayBili net_music_can_play_bili
 
 # Clone 混沌炼金 (modid = transmutatoria) 
 git clone https://github.com/linngdu664/transmutatoria transmutatoria
 
+# Clone 伤害枢纽 (modid = damagenexus) 
+git clone https://github.com/NaimJeg/DamageNexus-NeoForge26.1.2 damagenexus
+
 # Clone 会饮 (modid = convivium) 
 git clone https://github.com/khjxiaogu/Convivium convivium
 
 # Clone 方块建模 (modid = yuushya_modelling) 
 git clone https://github.com/Crystal1921/Yuushya-Modelling/tree/26.1 yuushya_modelling
+
+# Clone 无限地牢（Dungeon-Infinity） (modid = dungeon_infinity) 
+git clone https://github.com/Minecraft-LightLand/Dungeon-Infinity dungeon_infinity
 
