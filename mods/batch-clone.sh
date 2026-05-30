@@ -143,9 +143,6 @@ git clone https://github.com/LocusAzzurro/IcarusWings locusazzurro_icaruswings
 # Clone 藿香 (modid = ageratum) 
 git clone https://github.com/Anvil-Dev/Ageratum ageratum
 
-# Clone 以太工艺 (modid = ether_craft) 
-git clone https://github.com/FantasyIT-Projects/ether-craft-neo/settings ether_craft
-
 # Clone 来自深渊：弹药包 (modid = cartridge) 
 git clone https://github.com/Chlamydomonos/Cartridge cartridge
 
