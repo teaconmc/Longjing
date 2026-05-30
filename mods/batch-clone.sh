@@ -317,3 +317,9 @@ git clone https://github.com/zhongbai2333/NetMusicCanPlayBili net_music_can_play
 # Clone 混沌炼金 (modid = transmutatoria) 
 git clone https://github.com/linngdu664/transmutatoria transmutatoria
 
+# Clone 会饮 (modid = convivium) 
+git clone https://github.com/khjxiaogu/Convivium convivium
+
+# Clone 方块建模 (modid = yuushya_modelling) 
+git clone https://github.com/Crystal1921/Yuushya-Modelling/tree/26.1 yuushya_modelling
+
