@@ -16,7 +16,7 @@ on:
         required: false
         type: string
 concurrency:
-  group: polling
+  group: polling-${{ inputs.teams }}
   cancel-in-progress: true
 jobs:
   fetch-update:
@@ -60,4 +60,7 @@ jobs:
           git commit -m "`date -u`: create/update new build workflow(s)" || true
           git add mods
           git commit -m "`date -u`: trigger new build(s)" || true
-          git push
+          for i in $(seq 1 5); do
+            git pull --rebase
+            git push && break || sleep $i
+          done
