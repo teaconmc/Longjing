@@ -329,3 +329,6 @@ git clone https://github.com/Crystal1921/Yuushya-Modelling/tree/26.1 yuushya_mod
 # Clone 无限地牢（Dungeon-Infinity） (modid = dungeon_infinity) 
 git clone https://github.com/Minecraft-LightLand/Dungeon-Infinity dungeon_infinity
 
+# Clone 玩偶 (modid = mpsdoll) 
+git clone https://github.com/XiaoPangxie732/Doll mpsdoll
+
