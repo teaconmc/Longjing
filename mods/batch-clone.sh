@@ -323,9 +323,6 @@ git clone https://github.com/NaimJeg/DamageNexus-NeoForge26.1.2 damagenexus
 # Clone 会饮 (modid = convivium) 
 git clone https://github.com/khjxiaogu/Convivium convivium
 
-# Clone 方块建模 (modid = yuushya_modelling) 
-git clone https://github.com/Crystal1921/Yuushya-Modelling/tree/26.1 yuushya_modelling
-
 # Clone 无限地牢（Dungeon-Infinity） (modid = dungeon_infinity) 
 git clone https://github.com/Minecraft-LightLand/Dungeon-Infinity dungeon_infinity
 
