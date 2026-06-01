@@ -60,7 +60,7 @@ if [ -f ../../$INFO_DIR/maven_coordinate ]; then
   IFS=:
   cat ../../$INFO_DIR/maven_coordinate | read -r GROUP ARTIFACT VERSION
   IFS=$OLD_IFS
-  TARGET_FILE=$HOME/.m2/repository/${group//./\/}/$artifact/$version/$artifact-$version.jar
+  TARGET_FILE=$HOME/.m2/repository/${GROUP//./\/}/$ARTIFACT/$VERSION/$ARTIFACT-$VERSION.jar
   ls -R $HOME/.m2/repository/
   [ -f $TARGET_FILE ] || die "::error::无法根据输入的 Maven Coordinate $(cat ../../$INFO_DIR/maven_coordinate) 定位到指定文件。推定路径：$TARGET_FILE"
   echo "ARTIFACT_NAME=$artifact-$version.jar" >> $GITHUB_ENV
