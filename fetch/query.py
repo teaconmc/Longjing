@@ -213,7 +213,7 @@ def write_team_info(team: Team, contest_seq: int, contest_name: str, contest_slu
 def write_readme(contest_title: str, team_list: List[Team]):
     from html import escape
 
-    readme = f'# 「{contest_title}」参赛团队列表\n\n|作品信息|作品简介|注意事项|\n|:------------|:------------|:------------|\n'
+    readme = f'# 「{contest_title}」作品列表\n\n|作品信息|作品简介|注意事项|\n|:------------|:------------|:------------|\n'
 
     for team in team_list:
         workflow_name=f"mod-team-{team['work_id'].replace('_', '-')}.yaml"
