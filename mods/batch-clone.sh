@@ -323,9 +323,21 @@ git clone https://github.com/NaimJeg/DamageNexus-NeoForge26.1.2 damagenexus
 # Clone 会饮 (modid = convivium) 
 git clone https://github.com/khjxiaogu/Convivium convivium
 
+# Clone 方块建模 (modid = yuushya_modelling) 
+git clone https://github.com/Crystal1921/Yuushya-Modelling yuushya_modelling
+
 # Clone 无限地牢（Dungeon-Infinity） (modid = dungeon_infinity) 
 git clone https://github.com/Minecraft-LightLand/Dungeon-Infinity dungeon_infinity
 
 # Clone 玩偶 (modid = mpsdoll) 
 git clone https://github.com/XiaoPangxie732/Doll mpsdoll
+
+# Clone 让我看看 (modid = let_me_see_see) 
+git clone https://github.com/xkball/LetMeSeeSee let_me_see_see
+
+# Clone 魔法差分机(Magic Differential Engine) (modid = magic_diff_engine) 
+git clone https://github.com/CurrySatori/Magic_Differential_Engine magic_diff_engine
+
+# Clone Sip Moment (modid = sip_moment) 
+git clone https://github.com/Renyigesai/sipmoment-template-26.1.2 sip_moment
 
