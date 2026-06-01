@@ -56,9 +56,11 @@ fi
 
 if [ -f ../../$INFO_DIR/maven_coordinate ]; then
   USERNAME=$GITHUB_USERNAME TOKEN=$GITHUB_TOKEN $GRADLE_EXEC -Dsocks.proxyHost= -Dhttp.proxyHost= -Dhttps.proxyHost= --stacktrace publishToMavenLocal
+  # 临时覆盖 IFS 为 :，然后借助 read 命令分割 Maven Coordinate，并分别赋值到正确的变量名中 
   IFS=: read -r GROUP ARTIFACT VERSION < ../../$INFO_DIR/maven_coordinate
+  # 尝试构建正确的文件路径
   TARGET_FILE=$HOME/.m2/repository/${GROUP//./\/}/$ARTIFACT/$VERSION/$ARTIFACT-$VERSION.jar
-  ls -R $HOME/.m2/repository/
+  # 检查文件是否存在。若不存在，报错退出
   [ -f $TARGET_FILE ] || die "::error::无法根据输入的 Maven Coordinate $(cat ../../$INFO_DIR/maven_coordinate) 定位到指定文件。推定路径：$TARGET_FILE"
   echo "ARTIFACT_NAME=$ARTIFACT-$VERSION.jar" >> $GITHUB_ENV
   echo "ARTIFACT_LOCAL_PATH=$TARGET_FILE" >> $GITHUB_ENV
