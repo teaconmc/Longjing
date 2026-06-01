@@ -56,10 +56,7 @@ fi
 
 if [ -f ../../$INFO_DIR/maven_coordinate ]; then
   USERNAME=$GITHUB_USERNAME TOKEN=$GITHUB_TOKEN $GRADLE_EXEC -Dsocks.proxyHost= -Dhttp.proxyHost= -Dhttps.proxyHost= --stacktrace publishToMavenLocal
-  OLD_IFS=$IFS
-  IFS=:
-  cat ../../$INFO_DIR/maven_coordinate | read -r GROUP ARTIFACT VERSION
-  IFS=$OLD_IFS
+  IFS=: read -r GROUP ARTIFACT VERSION <<< ../../$INFO_DIR/maven_coordinate
   TARGET_FILE=$HOME/.m2/repository/${GROUP//./\/}/$ARTIFACT/$VERSION/$ARTIFACT-$VERSION.jar
   ls -R $HOME/.m2/repository/
   [ -f $TARGET_FILE ] || die "::error::无法根据输入的 Maven Coordinate $(cat ../../$INFO_DIR/maven_coordinate) 定位到指定文件。推定路径：$TARGET_FILE"
