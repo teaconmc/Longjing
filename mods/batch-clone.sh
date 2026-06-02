@@ -185,6 +185,9 @@ git clone https://github.com/KunoSayo/simplepathfinder simple_path_finder
 # Clone 万物皆可绳 (modid = super_lead) 
 git clone https://github.com/zhongbai2333/Super-Lead super_lead
 
+# Clone CoffeechatMC (modid = ccm) 
+git clone https://github.com/deplayeris/coffeechatmc ccm
+
 # Clone 织影落花 (modid = shadowsandpetals) 
 git clone https://github.com/SShakusora/ShadowsAndPetals shadowsandpetals
 
