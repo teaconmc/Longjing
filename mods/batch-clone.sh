@@ -353,3 +353,6 @@ git clone https://github.com/zxy19/maid_storage_manager maid_storage_manager
 # Clone 八荒 (modid = eightwastelands) 
 git clone https://github.com/piaoxue8042-coder/eightwastelands-template-1.21.1.git eightwastelands
 
+# Clone Girlfriends (modid = girlfriends) 
+git clone https://github.com/Viola-Siemens/Girlfriends girlfriends
+
