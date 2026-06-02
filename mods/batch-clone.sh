@@ -320,9 +320,6 @@ git clone https://github.com/zhongbai2333/NetMusicCanPlayBili net_music_can_play
 # Clone 混沌炼金 (modid = transmutatoria) 
 git clone https://github.com/linngdu664/transmutatoria transmutatoria
 
-# Clone 伤害枢纽 (modid = damagenexus) 
-git clone https://github.com/NaimJeg/DamageNexus-NeoForge26.1.2 damagenexus
-
 # Clone 会饮 (modid = convivium) 
 git clone https://github.com/khjxiaogu/Convivium convivium
 
