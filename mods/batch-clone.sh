@@ -320,6 +320,9 @@ git clone https://github.com/zhongbai2333/NetMusicCanPlayBili net_music_can_play
 # Clone 混沌炼金 (modid = transmutatoria) 
 git clone https://github.com/linngdu664/transmutatoria transmutatoria
 
+# Clone 伤害枢纽 (modid = damagenexus) 
+git clone https://github.com/NaimJeg/DamageNexus-NeoForge26.1.2 damagenexus
+
 # Clone 会饮 (modid = convivium) 
 git clone https://github.com/khjxiaogu/Convivium convivium
 
@@ -343,4 +346,10 @@ git clone https://github.com/Renyigesai/sipmoment-template-26.1.2 sip_moment
 
 # Clone Minecraft Mod MCP (modid = mcpmod) 
 git clone https://github.com/langyo/minecraft-mod-mcp mcpmod
+
+# Clone 女仆仓管 (modid = maid_storage_manager) 
+git clone https://github.com/zxy19/maid_storage_manager maid_storage_manager
+
+# Clone 八荒 (modid = eightwastelands) 
+git clone https://github.com/piaoxue8042-coder/eightwastelands-template-1.21.1.git eightwastelands
 
