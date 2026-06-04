@@ -212,6 +212,9 @@ git clone https://github.com/Amotassic/Extra-Interaction extra_interaction
 # Clone 深岩银河激光指示器 (modid = drglaserpointer) 
 git clone https://github.com/linngdu664/DRG-Laser-Pointer-Mod drglaserpointer
 
+# Clone 我的尖塔 (modid = minethespire) 
+git clone https://github.com/PajangForever/Mine-the-Spire minethespire
+
 # Clone 卫戍工艺【Garrison Craft】 (modid = garrison_craft) 
 git clone https://github.com/kanyBD1/garrison_craft garrison_craft
 
@@ -346,6 +349,9 @@ git clone https://github.com/langyo/minecraft-mod-mcp mcpmod
 
 # Clone 女仆仓管 (modid = maid_storage_manager) 
 git clone https://github.com/zxy19/maid_storage_manager maid_storage_manager
+
+# Clone 八荒 (modid = eightwastelands) 
+git clone https://github.com/piaoxue8042-coder/eightwastelands-template-1.21.1.git eightwastelands
 
 # Clone Girlfriends (modid = girlfriends) 
 git clone https://github.com/Viola-Siemens/Girlfriends girlfriends
