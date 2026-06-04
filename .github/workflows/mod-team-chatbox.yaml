@@ -32,15 +32,16 @@ jobs:
         with:
           distribution: 'microsoft'
           java-version: '25'
-      - name: Apply Cache
-        uses: actions/cache@v5
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys:
-            ${{ runner.os }}-gradle-
+      # 因未知原因，构建缓存可能会干扰 Mod 构建，故临时禁用缓存，待问题查清后再考虑恢复。
+      #- name: Apply Cache
+      #  uses: actions/cache@v5
+      #  with:
+      #    path: |
+      #      ~/.gradle/caches
+      #      ~/.gradle/wrapper
+      #    key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+      #    restore-keys:
+      #      ${{ runner.os }}-gradle-
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
@@ -69,6 +70,7 @@ jobs:
           GRADLE_WRAPPER_CHECK: ${{ steps.gradle_wrapper_check.outcome == 'success' }}
           GITHUB_USERNAME: 'teacon-bot[bot]'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INFO_DIR: mods/team-chatbox
         run: cd build && ./build.sh
       # We need at least Python 3.11 to ensure existence of tomllib (see PEP 680)
       - name: Setup Python
