@@ -362,3 +362,6 @@ git clone https://github.com/CratonMC/Craton craton
 # Clone 新鲜的食物 (modid = fresh_food) 
 git clone https://github.com/TeamTeaMC-Misc/Fresh-Food fresh_food
 
+# Clone 枢革墟烬 (modid = magic_io) 
+git clone https://github.com/yhzcake/magicio magic_io
+
