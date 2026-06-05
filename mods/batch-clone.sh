@@ -239,6 +239,9 @@ git clone https://github.com/Andrewgutv/WearingEmoji/ wearingemoji
 # Clone 墨迹工艺 (modid = inkraft) 
 git clone https://github.com/s5lc/Inkraft.git inkraft
 
+# Clone 海瑞的连锁挖矿 (modid = dh_s_veinminer) 
+git clone https://github.com/Harry-hq/dh_s_veinminer dh_s_veinminer
+
 # Clone MDT-Companion (modid = mdt_companion) 
 git clone https://github.com/XiaoHuNao/MDT-Companion mdt_companion
 
