@@ -7,9 +7,15 @@ This simple sub-routine will do basic check against build artifact to make sure
 2. The mod size is within the limit, or is allowed to exceed the limit.
 '''
 
+import json
 import os
 import tomllib
 import zipfile
+
+with open(os.environ.get('LICENSE_REPORT')) as f:
+    report = json.load(f)
+    for license_obj in report['licenses']:
+        print(f"Detected license: {license_obj['spdx_id']}")
 
 # Retrieve mod id for current team, fail if not configured (should not happen)
 team_id=os.environ.get('TEAM_ID', None)

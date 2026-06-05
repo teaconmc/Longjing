@@ -57,6 +57,11 @@ jobs:
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
+      - name: Check License
+        id: license_check
+        uses: 3TUSK/LicenseChecker@main
+        with:
+          project-path: ./build
       - name: Validate Gradle Wrapper
         id: gradle_wrapper_check
         continue-on-error: true
@@ -80,6 +85,8 @@ jobs:
       - name: Mod Description File Validation
         id: description
         shell: bash
+        env:
+          LICENSE_REPORT: $${{ steps.license_check.outputs.report-file }}
         run: ./build/mods_toml.py
       - name: Prepare for Dedicated Server Launching Test
         id: dedicated_server_launching_setup
