@@ -12,10 +12,11 @@ import os
 import tomllib
 import zipfile
 
-#with open(os.environ.get('LICENSE_REPORT')) as f:
-#    report = json.load(f)
-#    for license_obj in report['licenses']:
-#        print(f"Detected license: {license_obj['spdx_id']}")
+if os.environ.get('LICENSE_REPORT', None):
+    with open(os.environ.get('LICENSE_REPORT')) as f:
+        report = json.load(f)
+        for license_obj in report['licenses']:
+            print(f"Detected license: {license_obj['spdx_id']}")
 
 # Retrieve mod id for current team, fail if not configured (should not happen)
 team_id=os.environ.get('TEAM_ID', None)
