@@ -365,3 +365,6 @@ git clone https://github.com/TeamTeaMC-Misc/Fresh-Food fresh_food
 # Clone 枢革墟烬 (modid = magic_io) 
 git clone https://github.com/yhzcake/magicio magic_io
 
+# Clone 吾有一术：附属 (modid = wenyan_addon) 
+git clone https://github.com/gyxx-xc/WenyanAddon wenyan_addon
+
