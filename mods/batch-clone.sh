@@ -269,6 +269,9 @@ git clone https://github.com/Glyceryl6/AstralCraft-26.1.2 astral_craft
 # Clone 相对工艺 (modid = relativity_craft) 
 git clone https://github.com/Polari-Stars-MC/Relativity-Craft relativity_craft
 
+# Clone 幻想存有论 (modid = gensokyoontology) 
+git clone https://github.com/Pseudoparadox/GensokyoOntologics gensokyoontology
+
 # Clone 节气 (modid = eclipticseasons) 
 git clone https://github.com/TeamTeaMC/Ecliptic-Seasons eclipticseasons
 
@@ -350,6 +353,9 @@ git clone https://github.com/langyo/minecraft-mod-mcp mcpmod
 # Clone 女仆仓管 (modid = maid_storage_manager) 
 git clone https://github.com/zxy19/maid_storage_manager maid_storage_manager
 
+# Clone 八荒 (modid = eightwastelands) 
+git clone https://github.com/piaoxue8042-coder/eightwastelands_26.1.2.git eightwastelands
+
 # Clone Girlfriends (modid = girlfriends) 
 git clone https://github.com/Viola-Siemens/Girlfriends girlfriends
 
@@ -373,4 +379,7 @@ git clone https://github.com/C20C01/MusicBox cc_mb
 
 # Clone 方生未逝 (modid = living_unvanished) 
 git clone https://github.com/qyl27/LivingUnvanished living_unvanished
+
+# Clone LiveHelper (modid = live_helper) 
+git clone https://github.com/burningtnt/LiveHelper.git live_helper
 
