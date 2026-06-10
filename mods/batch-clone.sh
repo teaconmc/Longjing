@@ -383,9 +383,6 @@ git clone https://github.com/qyl27/LivingUnvanished living_unvanished
 # Clone LiveHelper (modid = live_helper) 
 git clone https://github.com/burningtnt/LiveHelper.git live_helper
 
-# Clone 美食世界-Delicacy'World (modid = delicacyworld) 
-git clone https://github.com/BlackRuaByte/DelicacyWorld delicacyworld
-
 # Clone 简单跑酷 (modid = parkour) 
 git clone https://github.com/Moflop/Parkour parkour
 
