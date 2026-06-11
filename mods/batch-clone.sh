@@ -383,6 +383,9 @@ git clone https://github.com/burningtnt/LiveHelper.git live_helper
 # Clone 美食世界-Delicacy'World (modid = delicacyworld) 
 git clone https://gitee.com/BlackRuaBtye/delicacyworld delicacyworld
 
+# Clone 简单跑酷 (modid = parkour) 
+git clone https://github.com/Moflop/Parkour parkour
+
 # Clone 高人一等 (modid = manabove) 
 git clone https://github.com/Zershyan/ManAbove manabove
 
