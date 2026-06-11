@@ -392,3 +392,6 @@ git clone https://github.com/Zershyan/ManAbove manabove
 # Clone Nature Rebirth (modid = nature_rebirth) 
 git clone https://github.com/gloomybanana/nature_rebirth nature_rebirth
 
+# Clone ObeliskDepths (modid = obeliskdepths) 
+git clone https://github.com/NaimJeg/ObeliskDepths-Neoforge-26.1.2.git obeliskdepths
+
