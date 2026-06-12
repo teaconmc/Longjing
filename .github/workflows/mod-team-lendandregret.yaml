@@ -46,6 +46,7 @@ jobs:
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
       - name: 'Checkout Repository for Build 有借无还'
+        id: repo_checkout
         shell: bash
         run: |
           mkdir -p build/repo
@@ -83,7 +84,7 @@ jobs:
         with:
           python-version: '3.11' 
       - name: Mod Description File Validation
-        id: description
+        id: metadata_validation
         shell: bash
         env:
           LICENSE_REPORT: ${{ steps.license_check.outputs.report-file }}
@@ -125,5 +126,12 @@ jobs:
         shell: bash
         env: 
           BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
+          STEP_REPO_CHECKOUT_OUTCOME: ${{ steps.repo_checkout.outcome }}
+          STEP_LICENSE_CHECK_OUTCOME: ${{ steps.license_check.outcome }}
+          STEP_BUILDING_OUTCOME: ${{ steps.building.outcome }}
+          STEP_METADTA_VALIDATION_OUTCOME: ${{ steps.metadata_validation.outcome }}
+          STEP_PRE_DSLT_OUTCOME: ${{ steps.dedicated_server_launching_setup.outcome }}
+          STEP_DSLT_OUTCOME: ${{ steps.dedicated_server_launching.outcome }}
+          STEP_PUBLISH_OUTCOME: ${{ steps.publication.outcome }}
         run: cd build && ./failure-callback.sh
 # Change this counter to trigger all mod rebuild 
