@@ -176,9 +176,6 @@ git clone https://gitee.com/yuushyatownscape/yuushya-townscape/ yuushya
 # Clone NetMusic 网络音乐机 (modid = netmusic) 
 git clone https://github.com/TartaricAcid/NetMusic netmusic
 
-# Clone Re-Connection Chat (modid = reconnectionchat) 
-git clone https://github.com/0x724a/ReConnectionChat reconnectionchat
-
 # Clone 简单路径查找器 (modid = simple_path_finder) 
 git clone https://github.com/KunoSayo/simplepathfinder simple_path_finder
 
