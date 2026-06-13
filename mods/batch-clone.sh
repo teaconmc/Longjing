@@ -380,6 +380,3 @@ git clone https://gitee.com/BlackRuaBtye/delicacyworld delicacyworld
 # Clone 简单跑酷 (modid = parkour) 
 git clone https://github.com/Moflop/Parkour parkour
 
-# Clone Nature Rebirth (modid = nature_rebirth) 
-git clone https://github.com/gloomybanana/nature_rebirth nature_rebirth
-
