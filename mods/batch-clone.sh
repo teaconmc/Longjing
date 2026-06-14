@@ -383,9 +383,6 @@ git clone https://github.com/Moflop/Parkour parkour
 # Clone 高人一等 (modid = manabove) 
 git clone https://github.com/Zershyan/ManAbove manabove
 
-# Clone Nature Rebirth (modid = nature_rebirth) 
-git clone https://github.com/gloomybanana/nature_rebirth nature_rebirth
-
 # Clone ObeliskDepths (modid = obeliskdepths) 
 git clone https://github.com/NaimJeg/ObeliskDepths obeliskdepths
 
