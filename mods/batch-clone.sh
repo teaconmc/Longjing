@@ -35,9 +35,6 @@ git clone https://github.com/Anvil-Dev/AnvilCraft anvilcraft
 # Clone x3d map (modid = x3d_map) 
 git clone https://github.com/xkball/x3dmap x3d_map
 
-# Clone Blueteath (modid = blueteath) 
-git clone https://github.com/Gebardensprache/Blueteath blueteath
-
 # Clone MadParticle (modid = madparticle) 
 git clone https://github.com/USS-Shenzhou/MadParticle madparticle
 
@@ -157,9 +154,6 @@ git clone https://github.com/WhiseNT/OurThoughtsAreOne.git ourthoughtsareone
 
 # Clone 和弦 (modid = kord) 
 git clone https://github.com/LNatit/KORD kord
-
-# Clone Anesthesia (modid = anesthesia) 
-git clone https://github.com/CNDRU/Anesthesia.git anesthesia
 
 # Clone 春有约麻将 (modid = springmahjong) 
 git clone https://github.com/Tower-of-Sighs/SpringMahjong springmahjong
