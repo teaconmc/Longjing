@@ -46,6 +46,7 @@ jobs:
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
       - name: 'Checkout Repository for Build 动态的树'
+        id: repo_checkout
         shell: bash
         run: |
           mkdir -p build/repo
@@ -57,6 +58,11 @@ jobs:
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
+      - name: Check License
+        id: license_check
+        uses: 3TUSK/LicenseChecker@main
+        with:
+          project-path: ./build/repo
       - name: Validate Gradle Wrapper
         id: gradle_wrapper_check
         continue-on-error: true
@@ -70,6 +76,7 @@ jobs:
           GRADLE_WRAPPER_CHECK: ${{ steps.gradle_wrapper_check.outcome == 'success' }}
           GITHUB_USERNAME: 'teacon-bot[bot]'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INFO_DIR: mods/team-dynamictrees
         run: cd build && ./build.sh
       # We need at least Python 3.11 to ensure existence of tomllib (see PEP 680)
       - name: Setup Python
@@ -77,8 +84,10 @@ jobs:
         with:
           python-version: '3.11' 
       - name: Mod Description File Validation
-        id: description
+        id: metadata_validation
         shell: bash
+        env:
+          LICENSE_REPORT: ${{ steps.license_check.outputs.report-file }}
         run: ./build/mods_toml.py
       - name: Prepare for Dedicated Server Launching Test
         id: dedicated_server_launching_setup
@@ -117,5 +126,12 @@ jobs:
         shell: bash
         env: 
           BILUOCHUN_TOKEN: ${{ secrets.BILUOCHUN_TOKEN }}
+          STEP_REPO_CHECKOUT_OUTCOME: ${{ steps.repo_checkout.outcome }}
+          STEP_LICENSE_CHECK_OUTCOME: ${{ steps.license_check.outcome }}
+          STEP_BUILDING_OUTCOME: ${{ steps.building.outcome }}
+          STEP_METADTA_VALIDATION_OUTCOME: ${{ steps.metadata_validation.outcome }}
+          STEP_PRE_DSLT_OUTCOME: ${{ steps.dedicated_server_launching_setup.outcome }}
+          STEP_DSLT_OUTCOME: ${{ steps.dedicated_server_launching.outcome }}
+          STEP_PUBLISH_OUTCOME: ${{ steps.publication.outcome }}
         run: cd build && ./failure-callback.sh
 # Change this counter to trigger all mod rebuild 
