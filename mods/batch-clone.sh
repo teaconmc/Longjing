@@ -383,6 +383,9 @@ git clone https://github.com/Moflop/Parkour parkour
 # Clone 高人一等 (modid = manabove) 
 git clone https://github.com/Zershyan/ManAbove manabove
 
+# Clone Nature Rebirth (modid = nature_rebirth) 
+git clone https://github.com/gloomybanana/nature_rebirth nature_rebirth
+
 # Clone ObeliskDepths (modid = obeliskdepths) 
 git clone https://github.com/NaimJeg/ObeliskDepths obeliskdepths
 
@@ -391,4 +394,19 @@ git clone https://github.com/redColmula55/cauldronpp-neoforge cauldronpp
 
 # Clone Crock Pot (modid = crockpot) 
 git clone https://github.com/SihenZhang/CrockPot crockpot
+
+# Clone 舌战群儒 (modid = spitfight) 
+git clone https://github.com/redColmula55/spit-fight-neoforge spitfight
+
+# Clone 天线美学 (modid = antennaaesthetics) 
+git clone https://github.com/Cilotta/AntennaAesthetics antennaaesthetics
+
+# Clone Orga''s AutoSprint (modid = autosprint) 
+git clone https://github.com/luoxueyasha/autosprint autosprint
+
+# Clone 女仆的烘焙坊 (modid = maid_bakeries) 
+git clone https://github.com/Renyigesai/maidbakeries-template-26.1.2 maid_bakeries
+
+# Clone 街头主义 The Streetism (modid = thestreetism) 
+git clone https://github.com/cuitteacon2026/thestreetism thestreetism
 
