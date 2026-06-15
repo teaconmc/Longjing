@@ -392,6 +392,3 @@ git clone https://github.com/redColmula55/cauldronpp-neoforge cauldronpp
 # Clone Crock Pot (modid = crockpot) 
 git clone https://github.com/SihenZhang/CrockPot crockpot
 
-# Clone Orga''s AutoSprint (modid = autosprint) 
-git clone https://github.com/luoxueyasha/autosprint?tab=readme-ov-file autosprint
-
