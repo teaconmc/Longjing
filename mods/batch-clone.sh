@@ -47,9 +47,6 @@ git clone https://github.com/MarbleGateKeeper/SkywardDive skywarddive
 # Clone Roads (modid = roads) 
 git clone https://github.com/xkball/roads roads
 
-# Clone 蜂会 (modid = beecrasy) 
-git clone https://github.com/khjxiaogu/Beecrasy beecrasy
-
 # Clone 苇原 (modid = ashihara) 
 git clone https://github.com/Kogasa-Studio/Ashihara ashihara
 
