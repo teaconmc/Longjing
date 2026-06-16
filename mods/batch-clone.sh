@@ -59,9 +59,6 @@ git clone https://github.com/Gu-ZT/aleeve-atlas aleeve_atlas
 # Clone 树脂枪 (modid = resin_gun) 
 git clone https://github.com/Creative-Raft/resin_gun resin_gun
 
-# Clone 铁砧工艺：猪+ (modid = anvilcraft_pigsplus) 
-git clone https://github.com/TBPig/AnvilCraft-PigsPlus anvilcraft_pigsplus
-
 # Clone 进阶四叶草 Advanced Clover (modid = advanced_clover) 
 git clone https://github.com/luoxueyasha/AdvancedClover advanced_clover
 
@@ -130,9 +127,6 @@ git clone https://github.com/hotpad100c/mincartrevolution-neo minecartrevolution
 
 # Clone 本质主义 (modid = essentialism) 
 git clone https://github.com/Polari-Stars-MC/essentialism essentialism
-
-# Clone 泰拉巨石 (modid = terraria_boulders) 
-git clone https://github.com/Magic-team-jvav/TerrariaBoulders terraria_boulders
 
 # Clone 伊卡洛斯之翼 (modid = locusazzurro_icaruswings) 
 git clone https://github.com/LocusAzzurro/IcarusWings locusazzurro_icaruswings
@@ -305,9 +299,6 @@ git clone https://github.com/XiaoPangxie732/Grack grack
 # Clone NetherLink (modid = netherlink) 
 git clone https://github.com/MUYUTwilighter/NetherLink netherlink
 
-# Clone 兰法斯：本德森 (modid = lanfasie_benderson) 
-git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
-
 # Clone 动量 (modid = momentum) 
 git clone https://github.com/AkiraHane/Momentum momentum
 
@@ -394,9 +385,6 @@ git clone https://github.com/redColmula55/cauldronpp-neoforge cauldronpp
 
 # Clone Crock Pot (modid = crockpot) 
 git clone https://github.com/SihenZhang/CrockPot crockpot
-
-# Clone 舌战群儒 (modid = spitfight) 
-git clone https://github.com/redColmula55/spit-fight-neoforge spitfight
 
 # Clone 天线美学 (modid = antennaaesthetics) 
 git clone https://github.com/Cilotta/AntennaAesthetics antennaaesthetics
