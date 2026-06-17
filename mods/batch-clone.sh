@@ -302,9 +302,6 @@ git clone https://github.com/DynamicTreesTeam/DynamicTrees dynamictrees
 # Clone Grack (modid = grack) 
 git clone https://github.com/XiaoPangxie732/Grack grack
 
-# Clone NetherLink (modid = netherlink) 
-git clone https://github.com/MUYUTwilighter/NetherLink netherlink
-
 # Clone 兰法斯：本德森 (modid = lanfasie_benderson) 
 git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
 
