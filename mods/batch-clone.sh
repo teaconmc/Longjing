@@ -47,6 +47,9 @@ git clone https://github.com/MarbleGateKeeper/SkywardDive skywarddive
 # Clone Roads (modid = roads) 
 git clone https://github.com/xkball/roads roads
 
+# Clone 蜂会 (modid = beecrasy) 
+git clone https://github.com/khjxiaogu/Beecrasy beecrasy
+
 # Clone 苇原 (modid = ashihara) 
 git clone https://github.com/Kogasa-Studio/Ashihara ashihara
 
@@ -55,6 +58,9 @@ git clone https://github.com/Gu-ZT/aleeve-atlas aleeve_atlas
 
 # Clone 树脂枪 (modid = resin_gun) 
 git clone https://github.com/Creative-Raft/resin_gun resin_gun
+
+# Clone 铁砧工艺：猪+ (modid = anvilcraft_pigsplus) 
+git clone https://github.com/TBPig/AnvilCraft-PigsPlus anvilcraft_pigsplus
 
 # Clone 进阶四叶草 Advanced Clover (modid = advanced_clover) 
 git clone https://github.com/luoxueyasha/AdvancedClover advanced_clover
@@ -125,6 +131,9 @@ git clone https://github.com/hotpad100c/mincartrevolution-neo minecartrevolution
 # Clone 本质主义 (modid = essentialism) 
 git clone https://github.com/Polari-Stars-MC/essentialism essentialism
 
+# Clone 泰拉巨石 (modid = terraria_boulders) 
+git clone https://github.com/Magic-team-jvav/TerrariaBoulders terraria_boulders
+
 # Clone 伊卡洛斯之翼 (modid = locusazzurro_icaruswings) 
 git clone https://github.com/LocusAzzurro/IcarusWings locusazzurro_icaruswings
 
@@ -136,6 +145,9 @@ git clone https://github.com/FantasyIT-Projects/ether-craft-neo ether_craft
 
 # Clone 来自深渊：弹药包 (modid = cartridge) 
 git clone https://github.com/Chlamydomonos/Cartridge cartridge
+
+# Clone Programmable Magic (modid = programmable_magic) 
+git clone https://github.com/creepebucket/programmable_magic programmable_magic
 
 # Clone 我们意念合一 (modid = ourthoughtsareone) 
 git clone https://github.com/WhiseNT/OurThoughtsAreOne.git ourthoughtsareone
@@ -293,6 +305,9 @@ git clone https://github.com/XiaoPangxie732/Grack grack
 # Clone NetherLink (modid = netherlink) 
 git clone https://github.com/MUYUTwilighter/NetherLink netherlink
 
+# Clone 兰法斯：本德森 (modid = lanfasie_benderson) 
+git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
+
 # Clone 动量 (modid = momentum) 
 git clone https://github.com/AkiraHane/Momentum momentum
 
@@ -325,6 +340,9 @@ git clone https://github.com/CurrySatori/Magic_Differential_Engine magic_diff_en
 
 # Clone Sip Moment (modid = sip_moment) 
 git clone https://github.com/Renyigesai/sipmoment-template-26.1.2 sip_moment
+
+# Clone Minecraft Mod MCP (modid = mcpmod) 
+git clone https://github.com/langyo/minecraft-mod-mcp mcpmod
 
 # Clone 女仆仓管 (modid = maid_storage_manager) 
 git clone https://github.com/zxy19/maid_storage_manager maid_storage_manager
@@ -377,6 +395,9 @@ git clone https://github.com/redColmula55/cauldronpp-neoforge cauldronpp
 # Clone Crock Pot (modid = crockpot) 
 git clone https://github.com/SihenZhang/CrockPot crockpot
 
+# Clone 舌战群儒 (modid = spitfight) 
+git clone https://github.com/redColmula55/spit-fight-neoforge spitfight
+
 # Clone 天线美学 (modid = antennaaesthetics) 
 git clone https://github.com/Cilotta/AntennaAesthetics antennaaesthetics
 
@@ -388,4 +409,10 @@ git clone https://github.com/Renyigesai/maidbakeries-template-26.1.2 maid_bakeri
 
 # Clone 街头主义 The Streetism (modid = thestreetism) 
 git clone https://github.com/cuitteacon2026/thestreetism thestreetism
+
+# Clone Valorant (modid = valorant) 
+git clone https://github.com/StrangeSmell/Valorant valorant
+
+# Clone Neo ECO AE Extension (modid = neoecoae) 
+git clone https://github.com/DancingSnow0517/NeoECOAEExtension neoecoae
 
