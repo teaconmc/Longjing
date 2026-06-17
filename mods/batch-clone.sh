@@ -326,9 +326,6 @@ git clone https://github.com/CurrySatori/Magic_Differential_Engine magic_diff_en
 # Clone Sip Moment (modid = sip_moment) 
 git clone https://github.com/Renyigesai/sipmoment-template-26.1.2 sip_moment
 
-# Clone Minecraft Mod MCP (modid = mcpmod) 
-git clone https://github.com/langyo/minecraft-mod-mcp mcpmod
-
 # Clone 女仆仓管 (modid = maid_storage_manager) 
 git clone https://github.com/zxy19/maid_storage_manager maid_storage_manager
 
