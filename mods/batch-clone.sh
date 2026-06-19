@@ -278,9 +278,6 @@ git clone https://github.com/MarbleGateKeeper/SuperPipeSlide superpipeslide
 # Clone 更多的食物 (modid = a_better_foods) 
 git clone https://github.com/xiaomian124/A-Better-Foods a_better_foods
 
-# Clone 铁砧工艺：额外电力 | Anvilcraft-ExtraPower (modid = anvilcraftextrapower) 
-git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower anvilcraftextrapower
-
 # Clone 传送电话 (modid = wayphones) 
 git clone https://github.com/zbx1425/wayphones wayphones
 
