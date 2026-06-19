@@ -146,6 +146,9 @@ git clone https://github.com/FantasyIT-Projects/ether-craft-neo ether_craft
 # Clone 来自深渊：弹药包 (modid = cartridge) 
 git clone https://github.com/Chlamydomonos/Cartridge cartridge
 
+# Clone Programmable Magic (modid = programmable_magic) 
+git clone https://github.com/creepebucket/programmable_magic programmable_magic
+
 # Clone 我们意念合一 (modid = ourthoughtsareone) 
 git clone https://github.com/WhiseNT/OurThoughtsAreOne.git ourthoughtsareone
 
@@ -278,6 +281,9 @@ git clone https://github.com/MarbleGateKeeper/SuperPipeSlide superpipeslide
 # Clone 更多的食物 (modid = a_better_foods) 
 git clone https://github.com/xiaomian124/A-Better-Foods a_better_foods
 
+# Clone 铁砧工艺：额外电力 | Anvilcraft-ExtraPower (modid = anvilcraftextrapower) 
+git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower26.1 anvilcraftextrapower
+
 # Clone 传送电话 (modid = wayphones) 
 git clone https://github.com/zbx1425/wayphones wayphones
 
@@ -353,6 +359,9 @@ git clone https://github.com/TeamTeaMC-Misc/Fresh-Food fresh_food
 # Clone 枢革墟烬 (modid = magic_io) 
 git clone https://github.com/yhzcake/magicio magic_io
 
+# Clone 吾有一术：新秩序 (modid = wenyan_addon) 
+git clone https://github.com/gyxx-xc/WenyanAddon wenyan_addon
+
 # Clone 撅电报 (modid = cc_ms) 
 git clone https://github.com/C20C01/MorSneak cc_ms
 
@@ -415,4 +424,10 @@ git clone https://github.com/wither12345/BetterRodMod better_rod
 
 # Clone BoxDeco (modid = boxdeco) 
 git clone https://github.com/zbx1425/boxdeco boxdeco
+
+# Clone 女仆的路径剧本 (modid = path_script) 
+git clone https://github.com/zxy19/maid-path-script path_script
+
+# Clone Lights up(舞台灯光) (modid = lights_up) 
+git clone https://github.com/MakerTechno/LightsUp lights_up
 
