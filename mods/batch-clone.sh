@@ -278,9 +278,6 @@ git clone https://github.com/TouhouLittleMaid/TouhouLittleMaid-26.1.git touhou_l
 # Clone 超级管道速滑 SuperPipeSlide (modid = superpipeslide) 
 git clone https://github.com/MarbleGateKeeper/SuperPipeSlide superpipeslide
 
-# Clone 更多的食物 (modid = a_better_foods) 
-git clone https://github.com/xiaomian124/A-Better-Foods a_better_foods
-
 # Clone 铁砧工艺：额外电力 | Anvilcraft-ExtraPower (modid = anvilcraftextrapower) 
 git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower26.1 anvilcraftextrapower
 
@@ -304,9 +301,6 @@ git clone https://github.com/XiaoPangxie732/Grack grack
 
 # Clone NetherLink (modid = netherlink) 
 git clone https://github.com/MUYUTwilighter/NetherLink netherlink
-
-# Clone 兰法斯：本德森 (modid = lanfasie_benderson) 
-git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
 
 # Clone 动量 (modid = momentum) 
 git clone https://github.com/AkiraHane/Momentum momentum
