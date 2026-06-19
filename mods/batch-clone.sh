@@ -359,9 +359,6 @@ git clone https://github.com/TeamTeaMC-Misc/Fresh-Food fresh_food
 # Clone 枢革墟烬 (modid = magic_io) 
 git clone https://github.com/yhzcake/magicio magic_io
 
-# Clone 吾有一术：附属 (modid = wenyan_addon) 
-git clone https://github.com/gyxx-xc/WenyanAddon wenyan_addon
-
 # Clone 撅电报 (modid = cc_ms) 
 git clone https://github.com/C20C01/MorSneak cc_ms
 
@@ -421,4 +418,7 @@ git clone https://github.com/Low-Drag-MC/KilaGraphDemo kilagraphdemo
 
 # Clone 更好的鱼竿 (modid = better_rod) 
 git clone https://github.com/wither12345/BetterRodMod better_rod
+
+# Clone BoxDeco (modid = boxdeco) 
+git clone https://github.com/zbx1425/boxdeco boxdeco
 
