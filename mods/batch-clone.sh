@@ -302,6 +302,9 @@ git clone https://github.com/DynamicTreesTeam/DynamicTrees dynamictrees
 # Clone Grack (modid = grack) 
 git clone https://github.com/XiaoPangxie732/Grack grack
 
+# Clone NetherLink (modid = netherlink) 
+git clone https://github.com/MUYUTwilighter/NetherLink netherlink
+
 # Clone 兰法斯：本德森 (modid = lanfasie_benderson) 
 git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
 
@@ -412,4 +415,10 @@ git clone https://github.com/StrangeSmell/Valorant valorant
 
 # Clone Neo ECO AE Extension (modid = neoecoae) 
 git clone https://github.com/DancingSnow0517/NeoECOAEExtension neoecoae
+
+# Clone KilaGraph (modid = kilagraphdemo) 
+git clone https://github.com/Low-Drag-MC/KilaGraphDemo kilagraphdemo
+
+# Clone 更好的鱼竿 (modid = better_rod) 
+git clone https://github.com/wither12345/BetterRodMod better_rod
 
