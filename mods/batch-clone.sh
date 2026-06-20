@@ -212,9 +212,6 @@ git clone https://github.com/PajangForever/Mine-the-Spire minethespire
 # Clone 卫戍工艺【Garrison Craft】 (modid = garrison_craft) 
 git clone https://github.com/kanyBD1/garrison_craft garrison_craft
 
-# Clone 旧炉映花 (modid = siedeflora) 
-git clone https://github.com/Signifier-Dollhouse/Siedeflora siedeflora
-
 # Clone 多彩水晶 (modid = colorful_crystals) 
 git clone https://github.com/MercuryGryph/ColorfulCrystals colorful_crystals
 
@@ -277,6 +274,9 @@ git clone https://github.com/TouhouLittleMaid/TouhouLittleMaid-26.1.git touhou_l
 
 # Clone 超级管道速滑 SuperPipeSlide (modid = superpipeslide) 
 git clone https://github.com/MarbleGateKeeper/SuperPipeSlide superpipeslide
+
+# Clone 更多的食物 (modid = a_better_foods) 
+git clone https://github.com/xiaomian124/A-Better-Foods a_better_foods
 
 # Clone 铁砧工艺：额外电力 | Anvilcraft-ExtraPower (modid = anvilcraftextrapower) 
 git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower26.1 anvilcraftextrapower
@@ -427,4 +427,13 @@ git clone https://github.com/zxy19/maid-path-script path_script
 
 # Clone Lights up(舞台灯光) (modid = lights_up) 
 git clone https://github.com/MakerTechno/LightsUp lights_up
+
+# Clone 拾贰木砧 (modid = woodenanvil) 
+git clone https://github.com/XII-idea/twelve-wooden-anvil.git woodenanvil
+
+# Clone Geometry Node (modid = geometry_node) 
+git clone https://github.com/FSA9/-MC-Geometry-Node.git geometry_node
+
+# Clone 2004 (modid = mirage2004) 
+git clone https://github.com/Litt1eBai/2004 mirage2004
 
