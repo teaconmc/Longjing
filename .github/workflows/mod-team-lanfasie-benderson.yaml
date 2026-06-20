@@ -1,4 +1,4 @@
-name: 'TeaCon 2026 | 兰法斯：本德森 | 银小明绝赞爆肝中'
+name: 'TeaCon 2026 | 兰法斯：本德森之章 | 银小明绝赞爆肝中'
 on:
   push:
     paths:
@@ -13,7 +13,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build 兰法斯：本德森'
+    name: 'Build 兰法斯：本德森之章'
     environment: Build
     runs-on: ubuntu-latest
     env:
@@ -45,7 +45,7 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build 兰法斯：本德森'
+      - name: 'Checkout Repository for Build 兰法斯：本德森之章'
         id: repo_checkout
         shell: bash
         run: |
