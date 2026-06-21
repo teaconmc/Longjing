@@ -305,6 +305,9 @@ git clone https://github.com/MUYUTwilighter/NetherLink netherlink
 # Clone 兰法斯：本德森之章 (modid = lanfasie_benderson) 
 git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
 
+# Clone 动量 (modid = momentum) 
+git clone https://github.com/AkiraHane/Momentum momentum
+
 # Clone 网络音乐机：听听B站 (modid = net_music_can_play_bili) 
 git clone https://github.com/zhongbai2333/NetMusicCanPlayBili net_music_can_play_bili
 
