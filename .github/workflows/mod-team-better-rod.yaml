@@ -1,10 +1,10 @@
-name: 'TeaCon 2026 | x3d map | xkball and ?, Ⅰ'
+name: 'TeaCon 2026 | 更好的鱼竿 | wither123'
 on:
   push:
     paths:
-      - '.github/workflows/mod-team-x3d-map.yaml'
-      - 'mods/team-x3d-map/HEAD'
-      - 'mods/team-x3d-map/sentinel'
+      - '.github/workflows/mod-team-better-rod.yaml'
+      - 'mods/team-better-rod/HEAD'
+      - 'mods/team-better-rod/sentinel'
   workflow_dispatch:
     inputs:
       commit:
@@ -13,7 +13,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build x3d map'
+    name: 'Build 更好的鱼竿'
     environment: Build
     runs-on: ubuntu-latest
     env:
@@ -21,8 +21,8 @@ jobs:
       CONTEST_SEQ: '4'
       CONTEST_SLUG: 2026
       CONTEST_TITLE: 'TeaCon 2026'
-      TEAM_ID: 'x3d-map'
-      TEAM_SEQ: '426'
+      TEAM_ID: 'better-rod'
+      TEAM_SEQ: '587'
     steps:
       - name: Checkout Build Environment
         uses: actions/checkout@v6
@@ -45,16 +45,16 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build x3d map'
+      - name: 'Checkout Repository for Build 更好的鱼竿'
         id: repo_checkout
         shell: bash
         run: |
           mkdir -p build/repo
           cd build/repo
           git init
-          git remote add origin `cat ../../mods/team-x3d-map/remote`
-          git fetch --depth=1 origin `cat ../../mods/team-x3d-map/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
-          git reset --hard `cat ../../mods/team-x3d-map/HEAD`
+          git remote add origin `cat ../../mods/team-better-rod/remote`
+          git fetch --depth=1 origin `cat ../../mods/team-better-rod/HEAD` || { echo '::error::Git 仓库检出失败，请检查仓库是否可公开访问！'; exit -1; }
+          git reset --hard `cat ../../mods/team-better-rod/HEAD`
           git submodule init
           git submodule update
           [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
@@ -76,7 +76,7 @@ jobs:
           GRADLE_WRAPPER_CHECK: ${{ steps.gradle_wrapper_check.outcome == 'success' }}
           GITHUB_USERNAME: 'teacon-bot[bot]'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          INFO_DIR: mods/team-x3d-map
+          INFO_DIR: mods/team-better-rod
         run: cd build && ./build.sh
       # We need at least Python 3.11 to ensure existence of tomllib (see PEP 680)
       - name: Setup Python
