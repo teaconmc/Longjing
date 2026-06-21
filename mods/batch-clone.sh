@@ -263,9 +263,6 @@ git clone https://github.com/Pseudoparadox/GensokyoOntologics gensokyoontology
 # Clone 节气 (modid = eclipticseasons) 
 git clone https://github.com/TeamTeaMC/Ecliptic-Seasons eclipticseasons
 
-# Clone 更好的单方块 (modid = oneblock) 
-git clone https://github.com/TeamTeaMC-Misc/One-Block oneblock
-
 # Clone 车万女仆 (modid = touhou_little_maid) 
 git clone https://github.com/TouhouLittleMaid/TouhouLittleMaid-26.1.git touhou_little_maid
 
@@ -281,17 +278,11 @@ git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower26.1 anvilcraftextra
 # Clone 传送电话 (modid = wayphones) 
 git clone https://github.com/zbx1425/wayphones wayphones
 
-# Clone 摇曳花园 (modid = swaying_garden) 
-git clone https://github.com/TeamTeaMC-Misc/SwayingGarden swaying_garden
-
 # Clone CampFireRevolution (modid = campfirerevolution) 
 git clone https://github.com/Mine-JUFE/CampFireRevolution campfirerevolution
 
 # Clone 铁砧工艺：天猫行空 (modid = voidinair) 
 git clone https://github.com/QiuShui1012/AnvilCraft-VoidInAir/ voidinair
-
-# Clone 动态的树 (modid = dynamictrees) 
-git clone https://github.com/DynamicTreesTeam/DynamicTrees dynamictrees
 
 # Clone Grack (modid = grack) 
 git clone https://github.com/XiaoPangxie732/Grack grack
@@ -346,9 +337,6 @@ git clone https://github.com/Viola-Siemens/Girlfriends girlfriends
 
 # Clone Craton（克拉通） (modid = craton) 
 git clone https://github.com/CratonMC/Craton craton
-
-# Clone 新鲜的食物 (modid = fresh_food) 
-git clone https://github.com/TeamTeaMC-Misc/Fresh-Food fresh_food
 
 # Clone 枢革墟烬 (modid = magic_io) 
 git clone https://github.com/yhzcake/magicio magic_io
