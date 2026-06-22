@@ -146,6 +146,9 @@ git clone https://github.com/FantasyIT-Projects/ether-craft-neo ether_craft
 # Clone 来自深渊：弹药包 (modid = cartridge) 
 git clone https://github.com/Chlamydomonos/Cartridge cartridge
 
+# Clone Programmable Magic (modid = programmable_magic) 
+git clone https://github.com/creepebucket/programmable_magic programmable_magic
+
 # Clone 我们意念合一 (modid = ourthoughtsareone) 
 git clone https://github.com/WhiseNT/OurThoughtsAreOne ourthoughtsareone
 
@@ -343,6 +346,9 @@ git clone https://github.com/CratonMC/Craton craton
 
 # Clone 枢革墟烬 (modid = magic_io) 
 git clone https://github.com/yhzcake/magicio magic_io
+
+# Clone 吾有一术：新秩序 (modid = wenyan_addon) 
+git clone https://github.com/gyxx-xc/WenyanAddon wenyan_addon
 
 # Clone 撅电报 (modid = cc_ms) 
 git clone https://github.com/C20C01/MorSneak cc_ms
