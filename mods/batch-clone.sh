@@ -344,9 +344,6 @@ git clone https://github.com/CratonMC/Craton craton
 # Clone 枢革墟烬 (modid = magic_io) 
 git clone https://github.com/yhzcake/magicio magic_io
 
-# Clone 吾有一术：新秩序 (modid = wenyan_addon) 
-git clone https://github.com/gyxx-xc/WenyanAddon wenyan_addon
-
 # Clone 撅电报 (modid = cc_ms) 
 git clone https://github.com/C20C01/MorSneak cc_ms
 
