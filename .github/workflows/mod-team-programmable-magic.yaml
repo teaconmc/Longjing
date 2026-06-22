@@ -1,4 +1,4 @@
-name: 'TeaCon 2026 | Programmable Magic | '
+name: 'TeaCon 2026 | Programmable Magic | PrM可编程魔法开发组'
 on:
   push:
     paths:
