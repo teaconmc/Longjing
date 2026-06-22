@@ -149,6 +149,9 @@ git clone https://github.com/Chlamydomonos/Cartridge cartridge
 # Clone Programmable Magic (modid = programmable_magic) 
 git clone https://github.com/creepebucket/programmable_magic programmable_magic
 
+# Clone 我们意念合一 (modid = ourthoughtsareone) 
+git clone https://github.com/WhiseNT/OurThoughtsAreOne ourthoughtsareone
+
 # Clone 和弦 (modid = kord) 
 git clone https://github.com/LNatit/KORD kord
 
@@ -283,6 +286,9 @@ git clone https://github.com/Mine-JUFE/CampFireRevolution campfirerevolution
 
 # Clone 铁砧工艺：天猫行空 (modid = voidinair) 
 git clone https://github.com/QiuShui1012/AnvilCraft-VoidInAir/ voidinair
+
+# Clone 动态的树 (modid = dynamictrees) 
+git clone https://github.com/DynamicTreesTeam/DynamicTrees dynamictrees
 
 # Clone Grack (modid = grack) 
 git clone https://github.com/XiaoPangxie732/Grack grack
