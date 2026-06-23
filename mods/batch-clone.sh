@@ -311,9 +311,6 @@ git clone https://github.com/linngdu664/transmutatoria transmutatoria
 # Clone 伤害枢纽 (modid = damagenexus) 
 git clone https://github.com/NaimJeg/DamageNexus damagenexus
 
-# Clone 会饮 (modid = convivium) 
-git clone https://github.com/khjxiaogu/Convivium convivium
-
 # Clone 方块建模 (modid = yuushya_modelling) 
 git clone https://github.com/Crystal1921/Yuushya-Modelling yuushya_modelling
 
