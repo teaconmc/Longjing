@@ -131,9 +131,6 @@ git clone https://github.com/Polari-Stars-MC/essentialism essentialism
 # Clone 泰拉巨石 (modid = terraria_boulders) 
 git clone https://github.com/Magic-team-jvav/TerrariaBoulders terraria_boulders
 
-# Clone 伊卡洛斯之翼 (modid = locusazzurro_icaruswings) 
-git clone https://github.com/LocusAzzurro/IcarusWings locusazzurro_icaruswings
-
 # Clone 藿香 (modid = ageratum) 
 git clone https://github.com/Anvil-Dev/Ageratum ageratum
 
