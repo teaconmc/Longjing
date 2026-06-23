@@ -386,9 +386,6 @@ git clone https://github.com/SihenZhang/CrockPot crockpot
 # Clone 舌战群儒 (modid = spitfight) 
 git clone https://github.com/redColmula55/spit-fight-neoforge spitfight
 
-# Clone 天线美学 (modid = antennaaesthetics) 
-git clone https://github.com/Cilotta/AntennaAesthetics antennaaesthetics
-
 # Clone Orga''s AutoSprint (modid = autosprint) 
 git clone https://github.com/luoxueyasha/autosprint autosprint
 
