@@ -68,6 +68,9 @@ git clone https://github.com/luoxueyasha/AdvancedClover advanced_clover
 # Clone V我50 (modid = vw50) 
 git clone https://github.com/Glyceryl6/vw50-26.1.2 vw50
 
+# Clone 收获：遗产 (modid = harvestheritage) 
+git clone https://github.com/theabab23333/HarvestHeritage harvestheritage
+
 # Clone NeoMystiasIzakaya (modid = neo_mystias_izakaya) 
 git clone https://github.com/Crystal1921/NeoMystiasIzakaya neo_mystias_izakaya
 
@@ -130,6 +133,9 @@ git clone https://github.com/Polari-Stars-MC/essentialism essentialism
 
 # Clone 泰拉巨石 (modid = terraria_boulders) 
 git clone https://github.com/Magic-team-jvav/TerrariaBoulders terraria_boulders
+
+# Clone 伊卡洛斯之翼 (modid = locusazzurro_icaruswings) 
+git clone https://github.com/LocusAzzurro/IcarusWings locusazzurro_icaruswings
 
 # Clone 藿香 (modid = ageratum) 
 git clone https://github.com/Anvil-Dev/Ageratum ageratum
@@ -304,6 +310,9 @@ git clone https://github.com/linngdu664/transmutatoria transmutatoria
 
 # Clone 伤害枢纽 (modid = damagenexus) 
 git clone https://github.com/NaimJeg/DamageNexus damagenexus
+
+# Clone 会饮 (modid = convivium) 
+git clone https://github.com/khjxiaogu/Convivium convivium
 
 # Clone 方块建模 (modid = yuushya_modelling) 
 git clone https://github.com/Crystal1921/Yuushya-Modelling yuushya_modelling
