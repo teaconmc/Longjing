@@ -67,5 +67,5 @@ if [ -f ../../$INFO_DIR/maven_coordinate ]; then
   echo "artifact=$TARGET_FILE" >> $GITHUB_OUTPUT
 else
 TEACON_ARTIFACT_TASK=$OUTPUT_JAR_TASK USERNAME=$GITHUB_USERNAME TOKEN=$GITHUB_TOKEN \
-  $GRADLE_EXEC -Dorg.gradle.java.home= -Dsocks.proxyHost= -Dhttp.proxyHost= -Dhttps.proxyHost= --stacktrace -I ../setup.gradle "${BUILD_COMMAND[@]}" teaconLongjingProcessing
+  $GRADLE_EXEC -Dorg.gradle.java.home=$JAVA_HOME -Dsocks.proxyHost= -Dhttp.proxyHost= -Dhttps.proxyHost= --stacktrace -I ../setup.gradle "${BUILD_COMMAND[@]}" teaconLongjingProcessing
 fi
