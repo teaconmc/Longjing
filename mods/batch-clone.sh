@@ -68,6 +68,9 @@ git clone https://github.com/luoxueyasha/AdvancedClover advanced_clover
 # Clone V我50 (modid = vw50) 
 git clone https://github.com/Glyceryl6/vw50-26.1.2 vw50
 
+# Clone 收获：遗产 (modid = harvestheritage) 
+git clone https://github.com/theabab23333/HarvestHeritage harvestheritage
+
 # Clone NeoMystiasIzakaya (modid = neo_mystias_izakaya) 
 git clone https://github.com/Crystal1921/NeoMystiasIzakaya neo_mystias_izakaya
 
