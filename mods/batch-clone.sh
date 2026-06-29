@@ -350,6 +350,12 @@ git clone https://github.com/yhzcake/magicio magic_io
 # Clone 吾有一术：新秩序 (modid = wenyan_addon) 
 git clone https://github.com/gyxx-xc/WenyanAddon wenyan_addon
 
+# Clone 撅电报 (modid = cc_ms) 
+git clone https://github.com/C20C01/MorSneak cc_ms
+
+# Clone 纸带八音盒 (modid = cc_mb) 
+git clone https://github.com/C20C01/MusicBox cc_mb
+
 # Clone 方生未逝 (modid = living_unvanished) 
 git clone https://github.com/qyl27/LivingUnvanished living_unvanished
 
