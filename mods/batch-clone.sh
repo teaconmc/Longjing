@@ -173,9 +173,6 @@ git clone https://github.com/TartaricAcid/NetMusic netmusic
 # Clone Re-Connection Chat (modid = reconnectionchat) 
 git clone https://github.com/Jerrymc1365/ReConnectionChat reconnectionchat
 
-# Clone 简单路径查找器 (modid = simple_path_finder) 
-git clone https://github.com/KunoSayo/simplepathfinder simple_path_finder
-
 # Clone 万物皆可绳 (modid = super_lead) 
 git clone https://github.com/zhongbai2333/Super-Lead super_lead
 
