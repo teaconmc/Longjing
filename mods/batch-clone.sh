@@ -191,9 +191,6 @@ git clone https://github.com/HaooooZhang/HarvistaTradingTable trading_table
 # Clone Shake n Stir (modid = shakenstir) 
 git clone https://github.com/hawahz/Shake-n-Stir shakenstir
 
-# Clone TemplateTransformer (modid = templatetransformer) 
-git clone https://github.com/dbydd/TemplateTransformer templatetransformer
-
 # Clone 本机正常 (modid = womm) 
 git clone https://github.com/LNatit/WorksOnMyMachine womm
 
@@ -232,9 +229,6 @@ git clone https://github.com/s5lc/Inkraft.git inkraft
 
 # Clone 海瑞的连锁挖矿 (modid = dh_s_veinminer) 
 git clone https://github.com/Harry-hq/dh_s_veinminer dh_s_veinminer
-
-# Clone MDT-Companion (modid = mdt_companion) 
-git clone https://github.com/XiaoHuNao/MDT-Companion mdt_companion
 
 # Clone 时间胶囊（Time Capsule） (modid = time_capsule) 
 git clone https://github.com/mrqx0195/Time-Capsule time_capsule
@@ -281,9 +275,6 @@ git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower26.1 anvilcraftextra
 # Clone 传送电话 (modid = wayphones) 
 git clone https://github.com/zbx1425/wayphones wayphones
 
-# Clone CampFireRevolution (modid = campfirerevolution) 
-git clone https://github.com/Mine-JUFE/CampFireRevolution campfirerevolution
-
 # Clone 铁砧工艺：天猫行空 (modid = voidinair) 
 git clone https://github.com/QiuShui1012/AnvilCraft-VoidInAir/ voidinair
 
@@ -325,9 +316,6 @@ git clone https://github.com/XiaoPangxie732/Doll mpsdoll
 
 # Clone 让我看看 (modid = let_me_see_see) 
 git clone https://github.com/xkball/LetMeSeeSee let_me_see_see
-
-# Clone 魔法差分机(Magic Differential Engine) (modid = magic_diff_engine) 
-git clone https://github.com/CurrySatori/Magic_Differential_Engine magic_diff_engine
 
 # Clone Sip Moment (modid = sip_moment) 
 git clone https://github.com/Renyigesai/sipmoment-template-26.1.2 sip_moment
