@@ -26,9 +26,6 @@ git clone https://github.com/LouisQuepierts/ThatSkyInteractions thatskyinteracti
 # Clone 超级拴绳 (modid = superlead) 
 git clone https://gitea.bot.leisuretimedock.top/R3944Realms/SuperLeadRope superlead
 
-# Clone ConduitStratus (modid = conduit_stratus) 
-git clone https://github.com/vfyjxf/ConduitStratus conduit_stratus
-
 # Clone 铁砧工艺 (modid = anvilcraft) 
 git clone https://github.com/Anvil-Dev/AnvilCraft anvilcraft
 
