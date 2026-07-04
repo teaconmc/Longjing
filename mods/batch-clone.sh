@@ -393,7 +393,7 @@ git clone https://github.com/Low-Drag-MC/KilaGraphDemo kilagraphdemo
 git clone https://github.com/wither12345/BetterRodMod better_rod
 
 # Clone BoxDeco (modid = boxdeco) 
-git clone https://github.com/zbx1425/boxdeco boxdeco
+git clone https://github.com/zbx1425/BoxDeco boxdeco
 
 # Clone 女仆的路径剧本 (modid = path_script) 
 git clone https://github.com/zxy19/maid-path-script path_script
