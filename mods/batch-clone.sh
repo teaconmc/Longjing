@@ -311,6 +311,9 @@ git clone https://github.com/XiaoPangxie732/Doll mpsdoll
 # Clone 让我看看 (modid = let_me_see_see) 
 git clone https://github.com/xkball/LetMeSeeSee let_me_see_see
 
+# Clone 魔法差分机(Magic Differential Engine) (modid = magic_diff_engine) 
+git clone https://github.com/CurrySatori/Magic_Differential_Engine magic_diff_engine
+
 # Clone Sip Moment (modid = sip_moment) 
 git clone https://github.com/Renyigesai/sipmoment-template-26.1.2 sip_moment
 
@@ -400,6 +403,9 @@ git clone https://github.com/MakerTechno/LightsUp lights_up
 
 # Clone 拾贰木砧 (modid = woodenanvil) 
 git clone https://github.com/XII-idea/twelve-wooden-anvil.git woodenanvil
+
+# Clone Geometry Node (modid = geometry_node) 
+git clone https://github.com/FSA9/-MC-Geometry-Node.git geometry_node
 
 # Clone 2004 (modid = mirage2004) 
 git clone https://github.com/Litt1eBai/2004 mirage2004
