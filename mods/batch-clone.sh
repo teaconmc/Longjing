@@ -56,9 +56,6 @@ git clone https://github.com/Gu-ZT/aleeve-atlas aleeve_atlas
 # Clone 树脂枪 (modid = resin_gun) 
 git clone https://github.com/Creative-Raft/resin_gun resin_gun
 
-# Clone 铁砧工艺：猪+ (modid = anvilcraft_pigsplus) 
-git clone https://github.com/TBPig/AnvilCraft-PigsPlus anvilcraft_pigsplus
-
 # Clone 进阶四叶草 Advanced Clover (modid = advanced_clover) 
 git clone https://github.com/luoxueyasha/AdvancedClover advanced_clover
 
