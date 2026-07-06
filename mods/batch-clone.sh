@@ -344,9 +344,6 @@ git clone https://github.com/C20C01/MusicBox cc_mb
 # Clone 方生未逝 (modid = living_unvanished) 
 git clone https://github.com/qyl27/LivingUnvanished living_unvanished
 
-# Clone LiveHelper (modid = live_helper) 
-git clone https://github.com/burningtnt/LiveHelper.git live_helper
-
 # Clone 美食世界-Delicacy''World (modid = delicacyworld) 
 git clone https://gitee.com/BlackRuaBtye/delicacyworld delicacyworld
 
