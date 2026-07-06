@@ -311,9 +311,6 @@ git clone https://github.com/XiaoPangxie732/Doll mpsdoll
 # Clone 让我看看 (modid = let_me_see_see) 
 git clone https://github.com/xkball/LetMeSeeSee let_me_see_see
 
-# Clone 魔法差分机(Magic Differential Engine) (modid = magic_diff_engine) 
-git clone https://github.com/CurrySatori/Magic_Differential_Engine magic_diff_engine
-
 # Clone Sip Moment (modid = sip_moment) 
 git clone https://github.com/Renyigesai/sipmoment-template-26.1.2 sip_moment
 
