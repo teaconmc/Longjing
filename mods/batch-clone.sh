@@ -218,9 +218,6 @@ git clone https://github.com/zx1316/better-snowball-fight-3-lite bsf3lite
 # Clone 无穷桌游 (modid = infinite_board_games) 
 git clone https://github.com/XiaoPangxie732/InfiniteBoardGames infinite_board_games
 
-# Clone 可穿戴Emoji (modid = wearingemoji) 
-git clone https://github.com/Andrewgutv/WearingEmoji/ wearingemoji
-
 # Clone 墨迹工艺 (modid = inkraft) 
 git clone https://github.com/s5lc/Inkraft.git inkraft
 
