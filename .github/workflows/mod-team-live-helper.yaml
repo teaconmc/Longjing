@@ -1,4 +1,4 @@
-name: 'TeaCon 2026 | LiveHelper | Burning_TNT 的队伍'
+name: 'TeaCon 2026 | LiveHelper | LiveHelper 直播助手'
 on:
   push:
     paths:
