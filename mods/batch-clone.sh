@@ -86,12 +86,6 @@ git clone https://gitea.bot.leisuretimedock.top/Leisuretimedock/RedEnvelope rede
 # Clone 急 (modid = hurriedness) 
 git clone https://github.com/XiaoPangxie732/Hurriedness hurriedness
 
-# Clone MMod (modid = mmod) 
-git clone https://github.com/wiyuka0/mmod mmod
-
-# Clone 春日影 (modid = vernalecho) 
-git clone https://github.com/PickAID/VernalEcho vernalecho
-
 # Clone 我的肉鸽 (modid = beyond) 
 git clone https://github.com/Ver-shift/SubModulesGeneHunter beyond
 
@@ -152,9 +146,6 @@ git clone https://github.com/WhiseNT/OurThoughtsAreOne ourthoughtsareone
 # Clone 和弦 (modid = kord) 
 git clone https://github.com/LNatit/KORD kord
 
-# Clone 春有约麻将 (modid = springmahjong) 
-git clone https://github.com/Tower-of-Sighs/SpringMahjong springmahjong
-
 # Clone 群青 (modid = ultramarine) 
 git clone https://github.com/LocusAzzurro/Ultramarine ultramarine
 
@@ -167,17 +158,11 @@ git clone https://gitee.com/yuushyatownscape/yuushya-townscape/ yuushya
 # Clone NetMusic 网络音乐机 (modid = netmusic) 
 git clone https://github.com/TartaricAcid/NetMusic netmusic
 
-# Clone Re-Connection Chat (modid = reconnectionchat) 
-git clone https://github.com/Jerrymc1365/ReConnectionChat reconnectionchat
-
 # Clone 简单路径查找器 (modid = simple_path_finder) 
 git clone https://github.com/KunoSayo/simplepathfinder simple_path_finder
 
 # Clone 万物皆可绳 (modid = super_lead) 
 git clone https://github.com/zhongbai2333/Super-Lead super_lead
-
-# Clone CoffeechatMC (modid = ccm) 
-git clone https://github.com/deplayeris/coffeechatmc ccm
 
 # Clone 织影落花 (modid = shadowsandpetals) 
 git clone https://github.com/SShakusora/ShadowsAndPetals shadowsandpetals
@@ -244,9 +229,6 @@ git clone https://github.com/haohao-0407/Link-Portals link_portals
 
 # Clone 吉星工艺（Astral Craft） (modid = astral_craft) 
 git clone https://github.com/Glyceryl6/AstralCraft-26.1.2 astral_craft
-
-# Clone 相对工艺 (modid = relativity_craft) 
-git clone https://github.com/Polari-Stars-MC/Relativity-Craft relativity_craft
 
 # Clone 幻想存有论 (modid = gensokyoontology) 
 git clone https://github.com/Pseudoparadox/GensokyoOntologics gensokyoontology
