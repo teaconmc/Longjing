@@ -188,9 +188,6 @@ git clone https://github.com/linngdu664/DRG-Laser-Pointer-Mod drglaserpointer
 # Clone 我的尖塔 (modid = minethespire) 
 git clone https://github.com/PajangForever/Mine-the-Spire minethespire
 
-# Clone 卫戍工艺【Garrison Craft】 (modid = garrison_craft) 
-git clone https://github.com/kanyBD1/garrison_craft garrison_craft
-
 # Clone 多彩水晶 (modid = colorful_crystals) 
 git clone https://github.com/MercuryGryph/ColorfulCrystals colorful_crystals
 
