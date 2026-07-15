@@ -245,6 +245,9 @@ git clone https://github.com/xiaomian124/A-Better-Foods a_better_foods
 # Clone 铁砧工艺：额外电力 | Anvilcraft-ExtraPower (modid = anvilcraftextrapower) 
 git clone https://github.com/Leaden-TP/Anvilcraft-ExtraPower26.1 anvilcraftextrapower
 
+# Clone 铁砧工艺：天猫行空 (modid = voidinair) 
+git clone https://github.com/QiuShui1012/AnvilCraft-VoidInAir/ voidinair
+
 # Clone 动态的树 (modid = dynamictrees) 
 git clone https://github.com/DynamicTreesTeam/DynamicTrees dynamictrees
 
