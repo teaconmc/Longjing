@@ -194,9 +194,6 @@ git clone https://github.com/MercuryGryph/ColorfulCrystals colorful_crystals
 # Clone chatbox (modid = chatbox) 
 git clone https://github.com/zhenshiz/chatbox chatbox
 
-# Clone 更好的打雪仗3：重制版 (modid = bsf3lite) 
-git clone https://github.com/zx1316/better-snowball-fight-3-lite bsf3lite
-
 # Clone 无穷桌游 (modid = infinite_board_games) 
 git clone https://github.com/XiaoPangxie732/InfiniteBoardGames infinite_board_games
 
