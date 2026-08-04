@@ -119,9 +119,6 @@ git clone https://github.com/zbx1425/minopp minopp
 # Clone MinecartRevolution (modid = minecartrevolution) 
 git clone https://github.com/hotpad100c/mincartrevolution-neo minecartrevolution
 
-# Clone 本质主义 (modid = essentialism) 
-git clone https://github.com/Polari-Stars-MC/essentialism essentialism
-
 # Clone 泰拉巨石 (modid = terraria_boulders) 
 git clone https://github.com/Magic-team-jvav/TerrariaBoulders terraria_boulders
 
