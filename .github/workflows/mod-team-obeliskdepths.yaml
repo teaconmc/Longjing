@@ -57,7 +57,9 @@ jobs:
           git reset --hard `cat ../../mods/team-obeliskdepths/HEAD`
           git submodule init
           git submodule update
-          [ -f build.gradle ] || [ -f build.gradle.kts ] || { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
+          # Haha, there is also Stonecutter's Multiloader template that does not follow standards!
+          # See how it is structured: https://github.com/stonecutter-versioning/stonecutter-template-multiloader
+          [ -f build.gradle ] || [ -f build.gradle.kts ] || [ -f stonecutter.gradle.kts ] { echo '::error::Git 仓库检出疑似失败，请检查碧螺春中分支名是否正确！'; exit -1; }
       - name: Check License
         id: license_check
         uses: 3TUSK/LicenseChecker@main
