@@ -251,6 +251,9 @@ git clone https://github.com/XiaoPangxie732/Grack grack
 # Clone NetherLink (modid = netherlink) 
 git clone https://github.com/MUYUTwilighter/NetherLink netherlink
 
+# Clone 兰法斯：本德森之章 (modid = lanfasie_benderson) 
+git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
+
 # Clone 动量 (modid = momentum) 
 git clone https://github.com/AkiraHane/Momentum momentum
 
