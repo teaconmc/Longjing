@@ -83,9 +83,6 @@ git clone https://gitea.bot.leisuretimedock.top/Leisuretimedock/RedEnvelope rede
 # Clone 急 (modid = hurriedness) 
 git clone https://github.com/XiaoPangxie732/Hurriedness hurriedness
 
-# Clone 我的肉鸽 (modid = beyond) 
-git clone https://github.com/Ver-shift/SubModulesGeneHunter beyond
-
 # Clone 圣脾 (modid = shengpi) 
 git clone https://github.com/TT432/shengpi shengpi
 
@@ -133,12 +130,6 @@ git clone https://github.com/Chlamydomonos/Cartridge cartridge
 
 # Clone Programmable Magic (modid = programmable_magic) 
 git clone https://github.com/creepebucket/programmable_magic programmable_magic
-
-# Clone 我们意念合一 (modid = ourthoughtsareone) 
-git clone https://github.com/WhiseNT/OurThoughtsAreOne ourthoughtsareone
-
-# Clone 和弦 (modid = kord) 
-git clone https://github.com/LNatit/KORD kord
 
 # Clone 群青 (modid = ultramarine) 
 git clone https://github.com/LocusAzzurro/Ultramarine ultramarine
@@ -199,9 +190,6 @@ git clone https://github.com/s5lc/Inkraft.git inkraft
 
 # Clone 海瑞的连锁挖矿 (modid = dh_s_veinminer) 
 git clone https://github.com/Harry-hq/dh_s_veinminer dh_s_veinminer
-
-# Clone 时间胶囊（Time Capsule） (modid = time_capsule) 
-git clone https://github.com/mrqx0195/Time-Capsule time_capsule
 
 # Clone 叁玖库 (modid = lib39) 
 git clone https://gitea.bot.leisuretimedock.top/R3944Realms/lib39 lib39
@@ -373,7 +361,4 @@ git clone https://github.com/XII-idea/twelve-wooden-anvil.git woodenanvil
 
 # Clone Geometry Node (modid = geometry_node) 
 git clone https://github.com/FSA9/-MC-Geometry-Node.git geometry_node
-
-# Clone 2004 (modid = mirage2004) 
-git clone https://github.com/Litt1eBai/2004 mirage2004
 
