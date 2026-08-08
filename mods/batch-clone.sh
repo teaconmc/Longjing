@@ -41,9 +41,6 @@ git clone https://github.com/USS-Shenzhou/Channel channel
 # Clone 我想加入天际俯冲 Skyward Dive (modid = skywarddive) 
 git clone https://github.com/MarbleGateKeeper/SkywardDive skywarddive
 
-# Clone Roads (modid = roads) 
-git clone https://github.com/xkball/roads roads
-
 # Clone 蜂会 (modid = beecrasy) 
 git clone https://github.com/khjxiaogu/Beecrasy beecrasy
 
