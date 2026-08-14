@@ -1,4 +1,4 @@
-name: 'TeaCon 2026 | Programmable Magic | PrM可编程魔法开发组'
+name: 'TeaCon 2026 | Arcanism | Arcanism / 魔导主义 开发组'
 on:
   push:
     paths:
@@ -13,7 +13,7 @@ on:
         type: string
 jobs:
   publish:
-    name: 'Build Programmable Magic'
+    name: 'Build Arcanism'
     environment: Build
     runs-on: ubuntu-latest
     env:
@@ -45,7 +45,7 @@ jobs:
       # We cannot use action/checkout@v2 because it does not support non-GitHub repositroy.
       # The clone logic used here is adapted from https://stackoverflow.com/a/3489576 for
       # sake of a faster build.
-      - name: 'Checkout Repository for Build Programmable Magic'
+      - name: 'Checkout Repository for Build Arcanism'
         id: repo_checkout
         shell: bash
         run: |
