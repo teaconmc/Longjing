@@ -14,17 +14,11 @@ git clone https://github.com/BinZhengStudio/IndustryBase industrybase
 # Clone AAA Particles: World (modid = aaa_particles_world) 
 git clone https://github.com/ChloePrime/AAA-Particles-World aaa_particles_world
 
-# Clone 有借无还 (modid = lendandregret) 
-git clone https://gitea.bot.leisuretimedock.top/R3944Realms/LendAndRegret lendandregret
-
 # Clone 家具计划 (modid = furnitureplan) 
 git clone https://github.com/MakerTechno/Forge-FurniturePlan/ furnitureplan
 
 # Clone ThatSkyInteractions (modid = thatskyinteractions) 
 git clone https://github.com/LouisQuepierts/ThatSkyInteractions thatskyinteractions
-
-# Clone 超级拴绳 (modid = superlead) 
-git clone https://gitea.bot.leisuretimedock.top/R3944Realms/SuperLeadRope superlead
 
 # Clone 铁砧工艺 (modid = anvilcraft) 
 git clone https://github.com/Anvil-Dev/AnvilCraft anvilcraft
@@ -76,9 +70,6 @@ git clone https://github.com/Anvil-Dev/Anisum anisum
 
 # Clone 傀儡装配（Modular Golems） (modid = modulargolems) 
 git clone https://github.com/Minecraft-LightLand/ModularGolems modulargolems
-
-# Clone 红包🧧 (modid = redenvelope) 
-git clone https://gitea.bot.leisuretimedock.top/Leisuretimedock/RedEnvelope redenvelope
 
 # Clone 急 (modid = hurriedness) 
 git clone https://github.com/XiaoPangxie732/Hurriedness hurriedness
@@ -187,9 +178,6 @@ git clone https://github.com/s5lc/Inkraft.git inkraft
 
 # Clone 海瑞的连锁挖矿 (modid = dh_s_veinminer) 
 git clone https://github.com/Harry-hq/dh_s_veinminer dh_s_veinminer
-
-# Clone 叁玖库 (modid = lib39) 
-git clone https://gitea.bot.leisuretimedock.top/R3944Realms/lib39 lib39
 
 # Clone 森罗物语：酒馆 (modid = kaleidoscope_tavern) 
 git clone https://github.com/KaleidoscopeMods/KaleidoscopeTavern.git kaleidoscope_tavern
