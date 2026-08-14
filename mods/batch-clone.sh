@@ -119,6 +119,9 @@ git clone https://github.com/FantasyIT-Projects/ether-craft-neo ether_craft
 # Clone 来自深渊：弹药包 (modid = cartridge) 
 git clone https://github.com/Chlamydomonos/Cartridge cartridge
 
+# Clone Arcanism (modid = programmable_magic) 
+git clone https://github.com/creepebucket/arcanism programmable_magic
+
 # Clone 群青 (modid = ultramarine) 
 git clone https://github.com/LocusAzzurro/Ultramarine ultramarine
 
