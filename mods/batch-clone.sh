@@ -5,9 +5,6 @@
 # Clone 展示玩偶（Display Doll） (modid = displaydoll) 
 git clone https://github.com/teaconmc/DisplayDoll.git displaydoll
 
-# Clone 贴贴 (modid = nestle) 
-git clone https://github.com/KunoSayo/nestle nestle
-
 # Clone 工业基石 (modid = industrybase) 
 git clone https://github.com/BinZhengStudio/IndustryBase industrybase
 
@@ -133,9 +130,6 @@ git clone https://gitee.com/yuushyatownscape/yuushya-townscape/ yuushya
 
 # Clone NetMusic 网络音乐机 (modid = netmusic) 
 git clone https://github.com/TartaricAcid/NetMusic netmusic
-
-# Clone 简单路径查找器 (modid = simple_path_finder) 
-git clone https://github.com/KunoSayo/simplepathfinder simple_path_finder
 
 # Clone 万物皆可绳 (modid = super_lead) 
 git clone https://github.com/zhongbai2333/Super-Lead super_lead
