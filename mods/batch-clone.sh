@@ -95,7 +95,7 @@ git clone https://github.com/ZhuRuoLing/NekoPlus nekoplus
 # Clone NeoMTR 纸板箱特色我的世界铁路 (modid = mtr) 
 git clone https://github.com/zbx1425/NeoMTR mtr
 
-# Clone 随处随笔 WorldComment (modid = worldcomment) 
+# Clone 随笔评论 WorldComment (modid = worldcomment) 
 git clone https://github.com/zbx1425/world-comment worldcomment
 
 # Clone Mino++ (modid = minopp) 
@@ -265,6 +265,9 @@ git clone https://github.com/langyo/minecraft-mod-mcp mcpmod
 
 # Clone 女仆仓管 (modid = maid_storage_manager) 
 git clone https://github.com/zxy19/maid_storage_manager maid_storage_manager
+
+# Clone Girlfriends (modid = girlfriends) 
+git clone https://github.com/Viola-Siemens/Girlfriends girlfriends
 
 # Clone Craton（克拉通） (modid = craton) 
 git clone https://github.com/CratonMC/Craton craton
