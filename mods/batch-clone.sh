@@ -5,6 +5,12 @@
 # Clone 展示玩偶（Display Doll） (modid = displaydoll) 
 git clone https://github.com/teaconmc/DisplayDoll.git displaydoll
 
+# Clone 贴贴 (modid = nestle) 
+git clone https://github.com/KunoSayo/nestle nestle
+
+# Clone 工业基石 (modid = industrybase) 
+git clone https://github.com/BinZhengStudio/IndustryBase industrybase
+
 # Clone AAA Particles: World (modid = aaa_particles_world) 
 git clone https://github.com/ChloePrime/AAA-Particles-World aaa_particles_world
 
@@ -43,6 +49,9 @@ git clone https://github.com/Creative-Raft/resin_gun resin_gun
 
 # Clone 铁砧工艺：猪+ (modid = anvilcraft_pigsplus) 
 git clone https://github.com/TBPig/AnvilCraft-PigsPlus anvilcraft_pigsplus
+
+# Clone 进阶四叶草 Advanced Clover (modid = advanced_clover) 
+git clone https://github.com/luoxueyasha/AdvancedClover advanced_clover
 
 # Clone V我50 (modid = vw50) 
 git clone https://github.com/Glyceryl6/vw50-26.1.2 vw50
@@ -92,6 +101,9 @@ git clone https://github.com/zbx1425/world-comment worldcomment
 # Clone Mino++ (modid = minopp) 
 git clone https://github.com/zbx1425/minopp minopp
 
+# Clone MinecartRevolution (modid = minecartrevolution) 
+git clone https://github.com/hotpad100c/mincartrevolution-neo minecartrevolution
+
 # Clone 泰拉巨石 (modid = terraria_boulders) 
 git clone https://github.com/Magic-team-jvav/TerrariaBoulders terraria_boulders
 
@@ -121,6 +133,9 @@ git clone https://gitee.com/yuushyatownscape/yuushya-townscape/ yuushya
 
 # Clone NetMusic 网络音乐机 (modid = netmusic) 
 git clone https://github.com/TartaricAcid/NetMusic netmusic
+
+# Clone 简单路径查找器 (modid = simple_path_finder) 
+git clone https://github.com/KunoSayo/simplepathfinder simple_path_finder
 
 # Clone 万物皆可绳 (modid = super_lead) 
 git clone https://github.com/zhongbai2333/Super-Lead super_lead
@@ -164,6 +179,9 @@ git clone https://github.com/XiaoPangxie732/InfiniteBoardGames infinite_board_ga
 # Clone 墨迹工艺 (modid = inkraft) 
 git clone https://github.com/s5lc/Inkraft.git inkraft
 
+# Clone 海瑞的连锁挖矿 (modid = dh_s_veinminer) 
+git clone https://github.com/Harry-hq/dh_s_veinminer dh_s_veinminer
+
 # Clone 森罗物语：酒馆 (modid = kaleidoscope_tavern) 
 git clone https://github.com/KaleidoscopeMods/KaleidoscopeTavern.git kaleidoscope_tavern
 
@@ -206,6 +224,9 @@ git clone https://github.com/DynamicTreesTeam/DynamicTrees dynamictrees
 # Clone Grack (modid = grack) 
 git clone https://github.com/XiaoPangxie732/Grack grack
 
+# Clone NetherLink (modid = netherlink) 
+git clone https://github.com/MUYUTwilighter/NetherLink netherlink
+
 # Clone 兰法斯：本德森之章 (modid = lanfasie_benderson) 
 git clone https://github.com/cvrunmin/LanfasieBenderson lanfasie_benderson
 
@@ -245,9 +266,6 @@ git clone https://github.com/langyo/minecraft-mod-mcp mcpmod
 # Clone 女仆仓管 (modid = maid_storage_manager) 
 git clone https://github.com/zxy19/maid_storage_manager maid_storage_manager
 
-# Clone Girlfriends (modid = girlfriends) 
-git clone https://github.com/Viola-Siemens/Girlfriends girlfriends
-
 # Clone Craton（克拉通） (modid = craton) 
 git clone https://github.com/CratonMC/Craton craton
 
@@ -268,6 +286,9 @@ git clone https://github.com/qyl27/LivingUnvanished living_unvanished
 
 # Clone LiveHelper (modid = live_helper) 
 git clone https://github.com/burningtnt/LiveHelper.git live_helper
+
+# Clone 美食世界-Delicacy''World (modid = delicacyworld) 
+git clone https://gitee.com/BlackRuaBtye/delicacyworld delicacyworld
 
 # Clone 简单跑酷 (modid = parkour) 
 git clone https://github.com/Moflop/Parkour parkour
