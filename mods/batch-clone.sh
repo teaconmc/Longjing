@@ -56,6 +56,9 @@ git clone https://github.com/luoxueyasha/AdvancedClover advanced_clover
 # Clone V我50 (modid = vw50) 
 git clone https://github.com/Glyceryl6/vw50-26.1.2 vw50
 
+# Clone 收获：遗产 (modid = harvestheritage) 
+git clone https://github.com/theabab23333/HarvestHeritage harvestheritage
+
 # Clone NeoMystiasIzakaya (modid = neo_mystias_izakaya) 
 git clone https://github.com/Crystal1921/NeoMystiasIzakaya neo_mystias_izakaya
 
@@ -139,6 +142,9 @@ git clone https://github.com/zhongbai2333/Super-Lead super_lead
 
 # Clone 织影落花 (modid = shadowsandpetals) 
 git clone https://github.com/SShakusora/ShadowsAndPetals shadowsandpetals
+
+# Clone 拾穗的贸易台 (modid = trading_table) 
+git clone https://github.com/HaooooZhang/HarvistaTradingTable trading_table
 
 # Clone Shake n Stir (modid = shakenstir) 
 git clone https://github.com/hawahz/Shake-n-Stir shakenstir
