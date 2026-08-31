@@ -239,9 +239,6 @@ git clone https://github.com/zhongbai2333/NetMusicCanPlayBili net_music_can_play
 # Clone 混沌炼金 (modid = transmutatoria) 
 git clone https://github.com/linngdu664/transmutatoria transmutatoria
 
-# Clone 伤害枢纽 (modid = damagenexus) 
-git clone https://github.com/NaimJeg/DamageNexus damagenexus
-
 # Clone 会饮 (modid = convivium) 
 git clone https://github.com/khjxiaogu/Convivium convivium
 
@@ -301,9 +298,6 @@ git clone https://github.com/Zershyan/ManAbove manabove
 
 # Clone Nature Rebirth (modid = nature_rebirth) 
 git clone https://github.com/gloomybanana/nature_rebirth nature_rebirth
-
-# Clone ObeliskDepths (modid = obeliskdepths) 
-git clone https://github.com/NaimJeg/ObeliskDepths obeliskdepths
 
 # Clone Cauldron++ (modid = cauldronpp) 
 git clone https://github.com/redColmula55/cauldronpp-neoforge cauldronpp
