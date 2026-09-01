@@ -299,9 +299,6 @@ git clone https://github.com/Zershyan/ManAbove manabove
 # Clone Nature Rebirth (modid = nature_rebirth) 
 git clone https://github.com/gloomybanana/nature_rebirth nature_rebirth
 
-# Clone Cauldron++ (modid = cauldronpp) 
-git clone https://github.com/redColmula55/cauldronpp-neoforge cauldronpp
-
 # Clone Crock Pot (modid = crockpot) 
 git clone https://github.com/SihenZhang/CrockPot crockpot
 
