@@ -176,9 +176,6 @@ git clone https://github.com/zx1316/better-snowball-fight-3-lite bsf3lite
 # Clone 无穷桌游 (modid = infinite_board_games) 
 git clone https://github.com/XiaoPangxie732/InfiniteBoardGames infinite_board_games
 
-# Clone 墨迹工艺 (modid = inkraft) 
-git clone https://github.com/s5lc/Inkraft.git inkraft
-
 # Clone 海瑞的连锁挖矿 (modid = dh_s_veinminer) 
 git clone https://github.com/Harry-hq/dh_s_veinminer dh_s_veinminer
 
