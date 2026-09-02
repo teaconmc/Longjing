@@ -311,9 +311,6 @@ git clone https://github.com/luoxueyasha/autosprint autosprint
 # Clone 女仆的烘焙坊 (modid = maid_bakeries) 
 git clone https://github.com/Renyigesai/maidbakeries-template-26.1.2 maid_bakeries
 
-# Clone 街头主义 The Streetism (modid = thestreetism) 
-git clone https://github.com/cuitteacon2026/thestreetism thestreetism
-
 # Clone Valorant (modid = valorant) 
 git clone https://github.com/StrangeSmell/Valorant valorant
 
