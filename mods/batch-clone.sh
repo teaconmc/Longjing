@@ -251,9 +251,6 @@ git clone https://github.com/Crystal1921/Yuushya-Modelling yuushya_modelling
 # Clone 无限地牢（Dungeon-Infinity） (modid = dungeon_infinity) 
 git clone https://github.com/Minecraft-LightLand/Dungeon-Infinity dungeon_infinity
 
-# Clone 玩偶 (modid = mpsdoll) 
-git clone https://github.com/XiaoPangxie732/Doll mpsdoll
-
 # Clone 让我看看 (modid = let_me_see_see) 
 git clone https://github.com/xkball/LetMeSeeSee let_me_see_see
 
@@ -310,9 +307,6 @@ git clone https://github.com/redColmula55/cauldronpp-neoforge cauldronpp
 
 # Clone Crock Pot (modid = crockpot) 
 git clone https://github.com/SihenZhang/CrockPot crockpot
-
-# Clone 舌战群儒 (modid = spitfight) 
-git clone https://github.com/redColmula55/spit-fight-neoforge spitfight
 
 # Clone Orga''s AutoSprint (modid = autosprint) 
 git clone https://github.com/luoxueyasha/autosprint autosprint
