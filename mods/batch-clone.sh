@@ -125,6 +125,9 @@ git clone https://github.com/creepebucket/arcanism programmable_magic
 # Clone 群青 (modid = ultramarine) 
 git clone https://github.com/LocusAzzurro/Ultramarine ultramarine
 
+# Clone 吾有一術 (modid = wenyan_programming) 
+git clone https://github.com/gyxx-xc/WenyanNature wenyan_programming
+
 # Clone 方块小镇 (modid = yuushya) 
 git clone https://gitee.com/yuushyatownscape/yuushya-townscape/ yuushya
 
