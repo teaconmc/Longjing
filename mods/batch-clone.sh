@@ -35,9 +35,6 @@ git clone https://github.com/USS-Shenzhou/Channel channel
 # Clone 我想加入天际俯冲 Skyward Dive (modid = skywarddive) 
 git clone https://github.com/MarbleGateKeeper/SkywardDive skywarddive
 
-# Clone 蜂会 (modid = beecrasy) 
-git clone https://github.com/khjxiaogu/Beecrasy beecrasy
-
 # Clone 苇原 (modid = ashihara) 
 git clone https://github.com/Kogasa-Studio/Ashihara ashihara
 
