@@ -287,7 +287,7 @@ git clone https://github.com/qyl27/LivingUnvanished living_unvanished
 # Clone LiveHelper (modid = live_helper) 
 git clone https://github.com/burningtnt/LiveHelper.git live_helper
 
-# Clone 美食世界-Delicacy''World (modid = delicacyworld) 
+# Clone 美食世界-Delicacy'World (modid = delicacyworld) 
 git clone https://gitee.com/BlackRuaBtye/delicacyworld delicacyworld
 
 # Clone 简单跑酷 (modid = parkour) 
@@ -311,7 +311,7 @@ git clone https://github.com/SihenZhang/CrockPot crockpot
 # Clone 舌战群儒 (modid = spitfight) 
 git clone https://github.com/redColmula55/spit-fight-neoforge spitfight
 
-# Clone Orga''s AutoSprint (modid = autosprint) 
+# Clone Orga's AutoSprint (modid = autosprint) 
 git clone https://github.com/luoxueyasha/autosprint autosprint
 
 # Clone 女仆的烘焙坊 (modid = maid_bakeries) 
