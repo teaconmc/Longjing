@@ -166,7 +166,7 @@ def write_team_info(team: Team, contest_seq: int, contest_name: str, contest_slu
     # If force_update is set, write a random UUID to the sentinel file to trigger a new update.
     if force_update:
         with open(f"{info_dir}/sentinel", 'w') as f:
-            f.write(uuid.uuid4())
+            f.write(uuid.uuid4().hex)
     
     # We use `git ls-remote $repo_url HEAD` to get the latest commit and use it to 
     # determine if we should trigger a build.
