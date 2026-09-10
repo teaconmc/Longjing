@@ -344,6 +344,3 @@ git clone https://github.com/MakerTechno/LightsUp lights_up
 # Clone 拾贰木砧 (modid = woodenanvil) 
 git clone https://github.com/XII-idea/twelve-wooden-anvil.git woodenanvil
 
-# Clone Geometry Node (modid = geometry_node) 
-git clone https://github.com/FSA9/-MC-Geometry-Node.git geometry_node
-
